@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8B0045">
+    <title>Essência Farmácia - Cosméticos & Perfumaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
+                     alt="Essência Farmácia" 
+                     class="logo-img">
+                <div class="logo-texto">
+                    <h1>Essência Farmácia</h1>
+                    <p>Cosméticos & Perfumaria</p>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+                <div class="menu-mobile" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Produtos de Beleza e Cuidados</h2>
+                <p>Salon Line, Salon Line Kids, Seda, L'Oréal Paris e muito mais</p>
+                <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <h2>Categorias</h2>
+            <div class="categoria-buttons">
+                <button class="btn-categoria active" data-categoria="todos">
+                    <i class="fas fa-th-large"></i> Todos
+                </button>
+                <button class="btn-categoria" data-categoria="cabelo">
+                    <i class="fas fa-spa"></i> Cabelos
+                </button>
+                <button class="btn-categoria" data-categoria="kids">
+                    <i class="fas fa-child"></i> Kids
+                </button>
+                <button class="btn-categoria" data-categoria="higiene">
+                    <i class="fas fa-shower"></i> Higiene
+                </button>
+                <button class="btn-categoria" data-categoria="corpo">
+                    <i class="fas fa-hand-sparkles"></i> Corpo
+                </button>
+                <button class="btn-categoria" data-categoria="pele">
+                    <i class="fas fa-smile"></i> Pele
+                </button>
+            </div>
+            
+            <div class="marca-filtro">
+                <h3>Filtrar por Marca</h3>
+                <div class="marca-buttons">
+                    <button class="btn-marca active" data-marca="todas">Todas</button>
+                    <button class="btn-marca" data-marca="salon line">Salon Line</button>
+                    <button class="btn-marca" data-marca="salon line kids">Salon Line Kids</button>
+                    <button class="btn-marca" data-marca="seda">Seda</button>
+                    <button class="btn-marca" data-marca="l'oréal paris">L'Oréal Paris</button>
+                    <button class="btn-marca" data-marca="dove">Dove</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="🔍 Buscar produtos..." id="search-input">
+            </div>
+            <div class="contador-produtos" id="contador-produtos"></div>
+            <div class="produtos-grid" id="produtosGrid"></div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
+                         alt="Essência Farmácia" 
+                         class="sobre-logo">
+                    <h3>Essência Farmácia</h3>
+                    <p>Trabalhamos com as melhores marcas de cosméticos e perfumaria. Nossa missão é oferecer produtos de qualidade com o melhor atendimento e preços competitivos.</p>
+                    <div class="info-contato">
+                        <div class="contato-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg a Sáb: 9h às 19h</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sua Localização</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
+                             alt="Essência Farmácia">
+                        <h3>Essência Farmácia</h3>
+                    </div>
+                    <p>Produtos de beleza que cuidam de você</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@essenciafarmacia.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sua Localização</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Essência Farmácia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/produtos/salon-line-kids.js"></script>
+    <script src="js/produtos/salon-line-adulto.js"></script>
+    <script src="js/produtos/seda.js"></script>
+    <script src="js/produtos/loreal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
