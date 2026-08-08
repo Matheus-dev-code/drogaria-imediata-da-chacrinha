@@ -115,7 +115,7 @@ function criarProdutoCard(produto) {
 }
 
 function verificarDisponibilidade(nome, marca, preco) {
-    const numeroWhatsApp = '5511999999999';
+    const numeroWhatsApp = '5521969583871';
     const mensagem = `Olá! Gostaria de verificar a disponibilidade do produto:\n\n*${nome}*\nMarca: ${marca}\nPreço: ${preco}\n\nTem em estoque? Poderia me informar o prazo de entrega?`;
     window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`, '_blank');
 }
