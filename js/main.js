@@ -6,7 +6,10 @@ const todosProdutos = [
     ...produtosSalonLineKids,
     ...produtosSalonLineAdulto,  
     ...produtosSeda,
-    ...produtosLoreal
+    ...produtosLoreal,
+    ...produtosPaixao,
+    ...produtosMaxton,
+    ...produtosCoreton,
 ];
 
 // ========================================
@@ -233,10 +236,18 @@ function renderizarProdutos(produtosArray) {
 let categoriaAtual = 'todos';
 let marcaAtual = 'todas';
 
+function normalizarTexto(texto) {
+    return String(texto || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim();
+}
+
 function aplicarFiltros() {
     produtosFiltrados = todosProdutos.filter(produto => {
         const tipoMatch = categoriaAtual === 'todos' || produto.tipo === categoriaAtual;
-        const marcaMatch = marcaAtual === 'todas' || produto.marca.toLowerCase() === marcaAtual;
+        const marcaMatch = marcaAtual === 'todas' || normalizarTexto(produto.marca) === normalizarTexto(marcaAtual);
         return tipoMatch && marcaMatch;
     });
     
@@ -263,7 +274,7 @@ document.querySelectorAll('.btn-marca').forEach(btn => {
 });
 
 document.getElementById('search-input').addEventListener('input', function() {
-    const termo = this.value.toLowerCase();
+    const termo = normalizarTexto(this.value);
     
     if (termo === '') {
         aplicarFiltros();
@@ -271,10 +282,10 @@ document.getElementById('search-input').addEventListener('input', function() {
     }
     
     produtosFiltrados = todosProdutos.filter(produto => {
-        return produto.nome.toLowerCase().includes(termo) ||
-               produto.marca.toLowerCase().includes(termo) ||
-               produto.descricao.toLowerCase().includes(termo) ||
-               formatarCategoria(produto.categoria).toLowerCase().includes(termo);
+        return normalizarTexto(produto.nome).includes(termo) ||
+               normalizarTexto(produto.marca).includes(termo) ||
+               normalizarTexto(produto.descricao).includes(termo) ||
+               normalizarTexto(formatarCategoria(produto.categoria)).includes(termo);
     });
     
     paginaAtual = 1;
@@ -334,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const footerYear = document.querySelector('.footer-bottom p');
     if (footerYear) {
-        footerYear.innerHTML = footerYear.innerHTML.replace('2024', new Date().getFullYear());
+        footerYear.innerHTML = footerYear.innerHTML.replace('2026', new Date().getFullYear());
     }
 });
 
