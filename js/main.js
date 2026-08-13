@@ -10,6 +10,7 @@ const todosProdutos = [
     ...produtosPaixao,
     ...produtosMaxton,
     ...produtosCoreton,
+    ...produtosDove,
 ];
 
 // ========================================
