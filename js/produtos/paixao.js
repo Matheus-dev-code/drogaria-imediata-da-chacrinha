@@ -3,9 +3,9 @@
 // ========================================
 
 const produtosPaixao = [
-    // ========== Creme Hidratante (7) ==========
+    // ========== Creme Hidratante (6) ==========
     {
-        id: 801,
+        id: 301,
         nome: "Creme hidratante Avelã Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -13,10 +13,11 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/avela.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 802,
+        id: 302,
         nome: "Creme hidratante Flor de Baunilha Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -24,10 +25,11 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/flor.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 803,
+        id: 303,
         nome: "Creme hidratante Framboesa Negra Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -35,10 +37,11 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/framboesa.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 804,
+        id: 304,
         nome: "Creme hidratante Inspiradora Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -46,10 +49,11 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/inspiradora.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 805,
+        id: 305,
         nome: "Creme hidratante Irresistivel Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -57,10 +61,11 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/irresistivel.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 806,
+        id: 306,
         nome: "Creme hidratante Tentadora Paixão - hidratante corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -68,12 +73,13 @@ const produtosPaixao = [
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
         imagem: "img/paixao/hidratante-corporal/tentadora.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     
     // ========== Óleo Corporal (8) ==========
     {
-        id: 808,
+        id: 307,
         nome: "Óleo Corporal Avelã Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -81,10 +87,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/avela-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 809,
+        id: 308,
         nome: "Óleo Corporal Flor de Baunilha Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -92,10 +99,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/flor-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 810,
+        id: 309,
         nome: "Óleo Corporal Framboesa Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -103,10 +111,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/framboesa-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 811,
+        id: 310,
         nome: "Óleo Corporal Inspiradora Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -114,10 +123,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/inspiradora-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 812,
+        id: 311,
         nome: "Óleo Corporal Irresistivel Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -125,10 +135,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/irresistivel-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 813,
+        id: 312,
         nome: "Óleo Corporal Tentadora Paixão - óleo corporal 100ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -136,10 +147,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
         imagem: "img/paixao/oleo-corporal/tentadora-100.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 814,
+        id: 313,
         nome: "Óleo Corporal Inspiradora Paixão - óleo corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -147,10 +159,11 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 200ml",
         preco: "R$ 24,99",
         imagem: "img/paixao/oleo-corporal/inspiradora-200.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 815,
+        id: 314,
         nome: "Óleo Corporal Tentadora Paixão - óleo corporal 200ml",
         marca: "Paixão",
         tipo: "corpo",
@@ -158,6 +171,7 @@ const produtosPaixao = [
         descricao: "Óleo Corporal 200ml",
         preco: "R$ 24,99",
         imagem: "img/paixao/oleo-corporal/tentadora-200.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     }
 ];

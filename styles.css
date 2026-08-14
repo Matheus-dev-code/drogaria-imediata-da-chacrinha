@@ -13,6 +13,8 @@
     --gray: #666666;
     --kids: #FF6B6B;
     --kids-light: #FF8E8E;
+    --esgotado: #ff4444;
+    --estoque: #4CAF50;
 }
 
 body {
@@ -51,6 +53,7 @@ header .container {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .logo-img {
@@ -337,8 +340,9 @@ nav ul li a {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: transform 0.2s;
+    transition: transform 0.2s, opacity 0.3s;
     touch-action: manipulation;
+    position: relative;
 }
 
 .produto-card:active {
@@ -347,6 +351,58 @@ nav ul li a {
 
 .produto-card.destaque {
     border: 2px solid var(--secondary);
+}
+
+/* Estilos para produto esgotado */
+.produto-card.esgotado {
+    opacity: 0.75;
+    position: relative;
+}
+
+.produto-card.esgotado::after {
+    content: 'ESGOTADO';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    background: rgba(255, 0, 0, 0.85);
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 5px;
+    z-index: 10;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+/* Badge de esgotado na imagem */
+.esgotado-badge-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--esgotado);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 0 2px 10px rgba(255,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .produto-imagem {
@@ -436,6 +492,7 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+/* Botões */
 .btn-whatsapp {
     display: block;
     width: 100%;
@@ -459,6 +516,14 @@ nav ul li a {
 
 .btn-whatsapp i {
     margin-right: 5px;
+}
+
+.btn-esgotado {
+    transition: all 0.2s !important;
+}
+
+.btn-esgotado:active {
+    transform: scale(0.95);
 }
 
 /* Badges */
@@ -696,6 +761,11 @@ footer {
 }
 
 /* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -709,6 +779,27 @@ footer {
 
 .produto-card {
     animation: fadeInUp 0.4s ease-out;
+}
+
+/* Estilos do Modal Admin */
+#adminModal input:focus {
+    border-color: #8B0045;
+}
+
+#btnLoginAdmin:hover {
+    background: #6a0035;
+}
+
+#btnFecharModal:hover {
+    background: #bbb;
+}
+
+#resetEstoqueBtn:hover {
+    background: #cc0000;
+}
+
+#logoutAdminBtn:hover {
+    background: rgba(255,255,255,0.2);
 }
 
 /* Tablet e Desktop */
@@ -801,5 +892,16 @@ footer {
         text-align: center;
         margin-left: 0;
         margin-top: 8px;
+    }
+    
+    .produto-card.esgotado::after {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+    
+    #adminBar {
+        font-size: 11px !important;
+        gap: 10px !important;
+        padding: 6px 12px !important;
     }
 }

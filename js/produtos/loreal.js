@@ -4,11 +4,10 @@
 
 const produtosLoreal = [  
 
-    // ========== oleo extraordinario (3) ==========
-
+    // ========== Oleo Extraordinario (3) ==========
 
     {
-        id: 601,
+        id: 501,
         nome: "Shampoo Óleo Extraordinario 200ml Elseve L'Oréal Paris ",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -16,10 +15,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/oleo/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 602,
+        id: 502,
         nome: "Condicionador 200ml Óleo Extraordinario L'Oréal Paris ",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -27,10 +27,11 @@ const produtosLoreal = [
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/oleo/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 602,
+        id: 503,
         nome: "Óleo 100ml Óleo Extraordinario Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -38,14 +39,14 @@ const produtosLoreal = [
         descricao: "Óleo 100ml Elseve",
         preco: "R$ 42,99",
         imagem: "img/loreal/elseve/oleo/oleo.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Longo dos sonhos (4) ==========
-
+    // ========== Longo dos Sonhos (4) ==========
 
     {
-        id: 603,
+        id: 504,
         nome: "Shampoo 400ml Longo dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -53,10 +54,11 @@ const produtosLoreal = [
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/longo-dos-sonhos/sh-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 505,
         nome: "Condicionador 400ml Longo dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -64,10 +66,11 @@ const produtosLoreal = [
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
         imagem: "img/loreal/elseve/longo-dos-sonhos/cond-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 506,
         nome: "Creme de Pentear 250ml Longo dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -75,10 +78,11 @@ const produtosLoreal = [
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
         imagem: "img/loreal/elseve/longo-dos-sonhos/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 507,
         nome: "Mascara 300g Longo dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -86,13 +90,14 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
         imagem: "img/loreal/elseve/longo-dos-sonhos/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Cachos Longos dos sonhos (5) ==========
+    // ========== Cachos Longos dos Sonhos (5) ==========
 
     {
-        id: 604,
+        id: 508,
         nome: "Shampoo 400ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -100,10 +105,11 @@ const produtosLoreal = [
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh-400ml.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 509,
         nome: "Shampoo 200ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -111,10 +117,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 510,
         nome: "Condicionador 200ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -122,10 +129,11 @@ const produtosLoreal = [
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 511,
         nome: "Creme de Pentear 250ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -133,10 +141,11 @@ const produtosLoreal = [
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
         imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 512,
         nome: "Mascara 300g Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -144,13 +153,14 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
         imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Liso  dos sonhos (4) ==========
+    // ========== Liso dos Sonhos (4) ==========
 
     {
-        id: 604,
+        id: 513,
         nome: "Shampoo 200ml Liso Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -158,10 +168,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/liso-dos-sonhos/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 514,
         nome: "Condicionador 200ml Liso Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -169,10 +180,11 @@ const produtosLoreal = [
         descricao: "Condiconador 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/liso-dos-sonhos/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 515,
         nome: "Creme de Pentear 250ml Liso Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -180,10 +192,11 @@ const produtosLoreal = [
         descricao: " Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
         imagem: "img/loreal/elseve/liso-dos-sonhos/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 516,
         nome: "Mascara 300g Liso Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -191,13 +204,14 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
         imagem: "img/loreal/elseve/liso-dos-sonhos/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Glycolic gloss (5) ==========
+    // ========== Glycolic Gloss (5) ==========
 
     {
-        id: 604,
+        id: 517,
         nome: "Shampoo 400ml Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -205,10 +219,11 @@ const produtosLoreal = [
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/glycolic-gloss/sh-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 518,
         nome: "Shampoo 200ml Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -216,10 +231,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/glycolic-gloss/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 519,
         nome: "Condicioandor 200ml Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -227,10 +243,11 @@ const produtosLoreal = [
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/glycolic-gloss/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 520,
         nome: "Creme de Pentear 250ml Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -238,10 +255,11 @@ const produtosLoreal = [
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/glycolic-gloss/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 521,
         nome: "Mascara 300g Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -249,14 +267,14 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/glycolic-gloss/masc.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
-    
 
     // ========== Hidra Hialuronico (6) ==========
 
     {
-        id: 604,
+        id: 522,
         nome: "Shampoo 400ml Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -264,10 +282,11 @@ const produtosLoreal = [
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/sh-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 523,
         nome: "Condicionador 400ml Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -275,10 +294,11 @@ const produtosLoreal = [
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 35,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/cond-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 524,
         nome: "Shampoo 200ml Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -286,10 +306,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 525,
         nome: "Condicionador 200ml Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -297,10 +318,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 526,
         nome: "Creme de Pentear 250ml Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -308,10 +330,11 @@ const produtosLoreal = [
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 527,
         nome: "Mascara 300g Hidra Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -319,13 +342,14 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
         imagem: "img/loreal/elseve/hidra-hialuronico/masc.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Pure Hialuronico (5) ==========
 
     {
-        id: 604,
+        id: 528,
         nome: " Shampoo 400ml Pure Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -333,10 +357,11 @@ const produtosLoreal = [
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/pure-hialuronico/sh-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 529,
         nome: "Condicionador 400ml Pure Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -344,10 +369,11 @@ const produtosLoreal = [
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
         imagem: "img/loreal/elseve/pure-hialuronico/cond-400.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 530,
         nome: "Shampoo 200ml  Pure Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -355,10 +381,11 @@ const produtosLoreal = [
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
         imagem: "img/loreal/elseve/pure-hialuronico/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 531,
         nome: "Condicionador 200ml Pure Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
@@ -366,22 +393,19 @@ const produtosLoreal = [
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
         imagem: "img/loreal/elseve/pure-hialuronico/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 604,
+        id: 532,
         nome: "Mascara 300g Pure Hialuronico Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
         tipo: "cabelo",
         categoria: "Mascara",
-        descricao: " Elseve",
+        descricao: "Elseve",
         preco: "R$ 31,99",
         imagem: "img/loreal/elseve/pure-hialuronico/masc.jpe",
-        destaque: false
-    },
-
-
-    
-    
-
+        destaque: false,
+        esgotado: false
+    }
 ];

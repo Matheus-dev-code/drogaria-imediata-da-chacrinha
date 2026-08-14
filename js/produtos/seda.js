@@ -2,11 +2,10 @@
 // PRODUTOS Seda/Seda Boom
 // ========================================
 
-
 const produtosSeda = [
     // ========== Boom (8) ==========
     {
-        id: 400,
+        id: 901,
         nome: "Creme de Pentear 1KG Definição Flexivel Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -14,10 +13,11 @@ const produtosSeda = [
         descricao: "Creme de Pentear 1KG Seda Boom",
         preco: "R$ 29,99",
         imagem: "img/Seda/boom/definicao-flexivel/cr-1.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 401,
+        id: 902,
         nome: "Creme de Pentear 350ml Volumao Power Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -25,10 +25,11 @@ const produtosSeda = [
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
         imagem: "img/Seda/boom/volumao/cr-350.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 402,
+        id: 903,
         nome: "Creme de Pentear 350ml Definição intensa Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -36,21 +37,23 @@ const produtosSeda = [
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
         imagem: "img/Seda/boom/definicao-intensa/cr-350.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 403,
-        nome: "Mascara  Nutrição intensa 500g Seda Boom",
+        id: 904,
+        nome: "Mascara Nutrição intensa 500g Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
         categoria: "Mascara",
         descricao: "Mascara de nutrição Seda Boom 500g",
         preco: "R$ 29,99",
         imagem: "img/Seda/boom/volumao/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 404,
+        id: 905,
         nome: "Mascara Definição Intensa 500g Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -58,10 +61,11 @@ const produtosSeda = [
         descricao: "Mascara de Definição 500g Seda Boom",
         preco: "R$ 29,99",
         imagem: "img/Seda/boom/definicao-intensa/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 405,
+        id: 906,
         nome: "Condicionador Hidratante 250ml Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -69,10 +73,11 @@ const produtosSeda = [
         descricao: "Condicionador 250ml Seda Boom",
         preco: "R$ 17,99",
         imagem: "img/Seda/boom/modelador/condicionador.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 406,
+        id: 907,
         nome: "Mascara Hidratação Duradoura 500g Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -80,10 +85,11 @@ const produtosSeda = [
         descricao: "Mascara 500g Seda Boom",
         preco: "R$ 29,99",
         imagem: "img/Seda/boom/modelador/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 407,
+        id: 908,
         nome: "Creme de Pentear 350ml Modelador anti-frizz Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -91,14 +97,14 @@ const produtosSeda = [
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
         imagem: "img/Seda/boom/modelador/cr-350.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Colageno - vitamina C (3) ==========
 
-
     {
-        id: 408,
+        id: 909,
         nome: "Shampoo 300ml Colageno-Vitamina C Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -106,10 +112,11 @@ const produtosSeda = [
         descricao: "Shampoo 300ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/colageno-vita-c/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 409,
+        id: 910,
         nome: "Condicionador 250ml Colageno-Vitamina C Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -117,36 +124,38 @@ const produtosSeda = [
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/colageno-vita-c/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 410,
+        id: 911,
         nome: "Creme de Pentear 300ml Colageno-Vitamina C Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Creme de Pentear ",
+        categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
         imagem: "img/Seda/colageno-vita-c/cr-300.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Ceramidas (4) ==========
 
-
     {
-        id: 411,
+        id: 912,
         nome: "Kit Shampoo 300ml + Cond 190ml Brilho Ceramidas Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Kit ",
+        categoria: "Kit",
         descricao: "Kit Shampoo 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
         imagem: "img/Seda/ceramidas/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 412,
+        id: 913,
         nome: "Shampoo 325ml Brilho Ceramidas Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -154,10 +163,11 @@ const produtosSeda = [
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/ceramidas/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 413,
+        id: 914,
         nome: "Condicionador 325ml Brilho Ceramidas Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -165,35 +175,38 @@ const produtosSeda = [
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/ceramidas/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 414,
+        id: 915,
         nome: "Mascara 300g Brilho Ceramidas",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Mascara ",
+        categoria: "Mascara",
         descricao: "Mascara 300g Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/ceramidas/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Glycol vita c (3) ==========
 
     {
-        id: 415,
+        id: 916,
         nome: "Shampoo 300ml Glycol+Vitamina C 2% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "Shampo 300ml Seda",
-        preco: "R$ 14,99 ",
+        preco: "R$ 14,99",
         imagem: "img/Seda/glycol/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 416,
+        id: 917,
         nome: "Condicionador 300ml Glycol+Vitamina C 4% Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -201,46 +214,50 @@ const produtosSeda = [
         descricao: "Condicionador 300ml Seda",
         preco: "R$ 15,99",
         imagem: "img/Seda/glycol/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 417,
+        id: 918,
         nome: "Mascara 300g Glycol+Vitamina C 6% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Mascara ",
+        categoria: "Mascara",
         descricao: "Mascara 300g Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/glycol/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Liso Perfeito (5) ==========
 
     {
-        id: 418,
+        id: 919,
         nome: "Kit Sh 300ml + Cond 190ml Liso Perfeito Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Kit ",
+        categoria: "Kit",
         descricao: "Kit Sh 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
         imagem: "img/Seda/liso-perfeito/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 419,
+        id: 920,
         nome: "Shampoo 325ml Liso Perfeito Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/liso-perfeito/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 420,
+        id: 921,
         nome: "Condicionador 325ml Liso Perfeito Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -248,35 +265,38 @@ const produtosSeda = [
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 15,99",
         imagem: "img/Seda/liso-perfeito/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 421,
-        nome: "Creme de Pentear 1KG Liso Perfeito Seda ",
+        id: 922,
+        nome: "Creme de Pentear 1KG Liso Perfeito Seda",
         marca: "Seda",
         tipo: "Adulto",
         categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 1KG Seda",
         preco: "R$ 20,99",
         imagem: "img/Seda/liso-perfeito/cr-1.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 422,
+        id: 923,
         nome: "Creme de Pentear 300ml Liso Perfeito Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Creme de Pentear ",
+        categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
         imagem: "img/Seda/liso-perfeito/cr-300.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Toque de Seda (4) ==========
 
     {
-        id: 423,
+        id: 924,
         nome: "Kit Sh 300ml + Cond 190ml Toque de Seda Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -284,140 +304,152 @@ const produtosSeda = [
         descricao: "Kit Sh 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
         imagem: "img/Seda/toque-de-seda/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 424,
+        id: 925,
         nome: "Shampoo 300ml Toque de Seda 2% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "shampoo 300ml Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/toque-de-seda/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 425,
+        id: 926,
         nome: "Condicionador 250ml Toque de Seda 4% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: " Condicionador",
+        categoria: "Condicionador",
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 15,99",
         imagem: "img/Seda/toque-de-seda/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 426,
+        id: 927,
         nome: "Creme de Pentear 300ml Toque de Seda 5% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Creme de Pentear ",
+        categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 11,99",
         imagem: "img/Seda/toque-de-seda/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Babosa (3) ==========
 
     {
-        id: 427,
+        id: 928,
         nome: "Shampoo 300ml Babosa-Prebiotic 2% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "Shampoo 300ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/babosa/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 428,
+        id: 929,
         nome: "Condicionador 250ml Babosa-Prebiotic 4% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Condicionador ",
+        categoria: "Condicionador",
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/babosa/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 429,
+        id: 930,
         nome: "Creme de Pentear 300ml Babosa-Prebiotic 5% Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Creme de Pentear ",
+        categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
         imagem: "img/Seda/babosa/cr.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== cachos (2) ==========
+    // ========== Cachos (2) ==========
 
     {
-        id: 430,
+        id: 931,
         nome: "Shampoo 325ml Cachos Definidos Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/cachos-definidos/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 431,
+        id: 932,
         nome: "Mascara Cachos Definidos 300g Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Mascara ",
+        categoria: "Mascara",
         descricao: "Mascara 300g Seda",
         preco: "R$ 19,99",
         imagem: "img/Seda/cachos-definidos/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ==========  fora de linha (5) ==========
+    // ========== Fora de Linha (5) ==========
 
     {
-        id: 432,
+        id: 933,
         nome: "Shampoo 325ml Hidratação Diaria Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Shampoo ",
+        categoria: "Shampoo",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
         imagem: "img/Seda/fora-de-linha/sh-hidra.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 432,
+        id: 934,
         nome: "Condicionador 325ml Óleo de Argan Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Condicionador ",
+        categoria: "Condicionador",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
         imagem: "img/Seda/fora-de-linha/argan.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 433,
+        id: 935,
         nome: "Condicionador 325ml Restauração Instantanea Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Condicionador ",
+        categoria: "Condicionador",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
         imagem: "img/Seda/fora-de-linha/rest.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 434,
+        id: 936,
         nome: "Condicionador 325ml CrespoForce Seda",
         marca: "Seda",
         tipo: "Adulto",
@@ -425,27 +457,19 @@ const produtosSeda = [
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
         imagem: "img/Seda/fora-de-linha/crespo.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 435,
+        id: 937,
         nome: "Condicionador 325ml Colageno+Vitamina C Seda",
         marca: "Seda",
         tipo: "Adulto",
-        categoria: "Condicionador ",
+        categoria: "Condicionador",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
         imagem: "img/Seda/fora-de-linha/col.jpe",
-        destaque: true
-    },
-
-
-
-
-
-
-
-
-    
-
-    ];
+        destaque: true,
+        esgotado: false
+    }
+];

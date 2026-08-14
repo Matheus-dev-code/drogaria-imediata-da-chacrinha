@@ -1,5 +1,5 @@
 // ========================================
-// PRODUTOS SALON LINE ADULTO -  PRODUTOS
+// PRODUTOS SALON LINE ADULTO - PRODUTOS
 // ========================================
 
 const produtosSalonLineAdulto = [
@@ -13,7 +13,8 @@ const produtosSalonLineAdulto = [
         descricao: "Kit Sh + Cond Salon line",
         preco: "R$ 34,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/kit.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 202,
@@ -24,7 +25,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 37,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/creme-1kg.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 203,
@@ -35,7 +37,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear Salon Line 300ml",
         preco: "R$ 16,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/creme-300ml.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 204,
@@ -46,7 +49,8 @@ const produtosSalonLineAdulto = [
         descricao: "Mascara Salon Line 300g",
         preco: "R$ 19,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/mascara.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 205,
@@ -57,11 +61,11 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina Salon Line",
         preco: "R$ 28,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/gelatina.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Definição Cremes somente (3) ==========
-
 
     {
         id: 206,
@@ -72,7 +76,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 1KG SalonLine",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/definicao/xo.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 207,
@@ -83,7 +88,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear Salon Line 1KG",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/definicao/alongada.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 208,
@@ -94,7 +100,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear Salon line 1KG",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/definicao/duradoura.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== To xerosa - vibes pop (5) ==========
@@ -107,7 +114,8 @@ const produtosSalonLineAdulto = [
         descricao: "Kit Sh 300ml + Cond 200ml Salon Line",
         preco: "R$ 33,99",
         imagem: "img/Salon-adulto/xerosa/vibes/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 210,
@@ -118,7 +126,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 800g Salin Line",
         preco: "R$ 43,99",
         imagem: "img/Salon-adulto/xerosa/vibes/creme-800g.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 211,
@@ -129,7 +138,8 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 500g Salon Line",
         preco: "R$ 30,99",
         imagem: "img/Salon-adulto/xerosa/vibes/gelatina.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 212,
@@ -140,7 +150,8 @@ const produtosSalonLineAdulto = [
         descricao: "Body splash 200ml Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/vibes/body.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 213,
@@ -151,7 +162,8 @@ const produtosSalonLineAdulto = [
         descricao: "Oleo de tratamento 60ml Salon Line ",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/vibes/oleo.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== To xerosa - Glamour chic (5) ==========
@@ -164,7 +176,8 @@ const produtosSalonLineAdulto = [
         descricao: "Kit Sh 300ml + Cond 200ml Salon line",
         preco: "R$ 37,99",
         imagem: "img/Salon-adulto/xerosa/glamour/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 215,
@@ -175,7 +188,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 800g Salon line",
         preco: "R$ 38,99",
         imagem: "img/Salon-adulto/xerosa/glamour/creme-800g.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 216,
@@ -186,7 +200,8 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 500g Salon Line",
         preco: "R$ 30,99",
         imagem: "img/Salon-adulto/xerosa/glamour/gelatina.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 217,
@@ -197,7 +212,8 @@ const produtosSalonLineAdulto = [
         descricao: "Body Splash Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/glamour/body.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 218,
@@ -208,11 +224,11 @@ const produtosSalonLineAdulto = [
         descricao: "Óleo serum 200ml Salon Line",
         preco: "R$ 36,49",
         imagem: "img/Salon-adulto/xerosa/glamour/serum.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== To xerosa - Baunilha Doce (4) ==========
-
 
     {
         id: 219,
@@ -223,7 +239,8 @@ const produtosSalonLineAdulto = [
         descricao: "Kit Sh 300ml + Cond 200ml Salon Line ",
         preco: "R$ 33,99",
         imagem: "img/Salon-adulto/xerosa/baunilha/kit.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 220,
@@ -234,7 +251,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 800g Salon Line",
         preco: "R$ 38,99",
         imagem: "img/Salon-adulto/xerosa/baunilha/creme-800g.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 221,
@@ -245,7 +263,8 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 500g Salon line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/baunilha/gelatina.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 222,
@@ -256,11 +275,11 @@ const produtosSalonLineAdulto = [
         descricao: "Óleo de Tratamento 60ml Salon Line",
         preco: "R$ 24,49",
         imagem: "img/Salon-adulto/xerosa/baunilha/oleo.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
 
     // ========== To xerosa - Flores Brilhantes (1) ==========
-
 
     {
         id: 223,
@@ -271,11 +290,11 @@ const produtosSalonLineAdulto = [
         descricao: "Body splash 200ml Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/flores/body.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== To xerosa - Rose Intense (1) ==========
-
 
     {
         id: 224,
@@ -286,7 +305,8 @@ const produtosSalonLineAdulto = [
         descricao: "Body Splash 200ml Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/rose/body.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== De Repente Pronta! (4) ==========
@@ -299,7 +319,8 @@ const produtosSalonLineAdulto = [
         descricao: "Shampoo 500ml Salon Line",
         preco: "R$ 22,99",
         imagem: "img/Salon-adulto/de-repente-pronta/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 226,
@@ -310,7 +331,8 @@ const produtosSalonLineAdulto = [
         descricao: "Condicionador 500ml Salon Line",
         preco: "R$ 23,49",
         imagem: "img/Salon-adulto/de-repente-pronta/cond.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 227,
@@ -321,7 +343,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear em spray 300ml Salon Line",
         preco: "R$ 24,49",
         imagem: "img/Salon-adulto/de-repente-pronta/cr-spray.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 228,
@@ -332,11 +355,11 @@ const produtosSalonLineAdulto = [
         descricao: "Mascara 500g Salon Line",
         preco: "R$ 24,49",
         imagem: "img/Salon-adulto/de-repente-pronta/mascara.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
 
     // ========== Definição Natural (7) ==========
-
 
     {
         id: 229,
@@ -347,7 +370,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/definicao-natural/creme-1KG.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 230,
@@ -358,7 +382,8 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear 300ml Salon Line",
         preco: "R$ 16,99",
         imagem: "img/Salon-adulto/definicao-natural/creme-300ml.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 231,
@@ -369,7 +394,8 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 550g Salon Line ",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/definicao-natural/gelatina.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 232,
@@ -380,7 +406,8 @@ const produtosSalonLineAdulto = [
         descricao: "Mascara 300g Salon Line",
         preco: "R$ 22,99",
         imagem: "img/Salon-adulto/definicao-natural/mascara.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 233,
@@ -391,7 +418,8 @@ const produtosSalonLineAdulto = [
         descricao: "Mousse 240ml Salon Line",
         preco: "R$ 36,99",
         imagem: "img/Salon-adulto/definicao-natural/mousse.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 234,
@@ -402,7 +430,8 @@ const produtosSalonLineAdulto = [
         descricao: "Óleo Salon Line 120ml ",
         preco: "R$ 38,49",
         imagem: "img/Salon-adulto/definicao-natural/oleo-booster.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 235,
@@ -413,11 +442,11 @@ const produtosSalonLineAdulto = [
         descricao: "Óleo 50ml Salon Line",
         preco: "R$ 23,49",
         imagem: "img/Salon-adulto/definicao-natural/oleo-50ml.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
     // ========== Super Oleos (5) ==========
-
 
     {
         id: 236,
@@ -428,7 +457,8 @@ const produtosSalonLineAdulto = [
         descricao: "Shampoo 300ml Salon Line",
         preco: "R$ 21,99",
         imagem: "img/Salon-adulto/super-oleos/sh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 237,
@@ -439,7 +469,8 @@ const produtosSalonLineAdulto = [
         descricao: "Ativador de CAchos 500ml Salon Line",
         preco: "R$ 25,49",
         imagem: "img/Salon-adulto/super-oleos/ativador-500.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 238,
@@ -450,7 +481,8 @@ const produtosSalonLineAdulto = [
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
         imagem: "img/Salon-adulto/super-oleos/ativador-300.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
         id: 239,
@@ -461,7 +493,8 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 400g Salon Line",
         preco: "R$ 28,99",
         imagem: "img/Salon-adulto/super-oleos/gelatina.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
         id: 240,
@@ -472,7 +505,7 @@ const produtosSalonLineAdulto = [
         descricao: "Creme + Gelatina Salon line 1KG",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/super-oleos/creme.jpe",
-        destaque: false
-    },
-
-]
+        destaque: false,
+        esgotado: false
+    }
+];

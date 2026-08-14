@@ -1,14 +1,13 @@
 // ========================================
-// PRODUTOS L'ORÉAL PARIS
+// PRODUTOS DOVE
 // ========================================
 
 const produtosDove = [
 
-    // ========== Aerosol (3) ==========
-
+    // ========== Aerosol (12) ==========
 
     {
-        id: 601,
+        id: 701,
         nome: "Desodorante Aerosol Dove Original 250ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -16,10 +15,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 250ml",
         preco: "R$ 27,99",
         imagem: "img/dove/des/original-250.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 702,
         nome: "Desodorante Aerosol Dove Original 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -27,10 +27,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/original.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 703,
         nome: "Desodorante Aerosol Dove Invisible Care 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -38,10 +39,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/invisible.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 704,
         nome: "Desodorante Aerosol Dove Beauty Care 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -49,10 +51,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/beauty.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 705,
         nome: "Desodorante Aerosol Dove Fresh Care Roma 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -60,10 +63,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/roma.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 706,
         nome: "Desodorante Aerosol Dove Fresh Care Pêssego 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -71,10 +75,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/pessego.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 707,
         nome: "Desodorante Aerosol Dove Fresh Care Pepino & Chá 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -82,10 +87,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/pepino.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 708,
         nome: "Desodorante Aerosol Dove Fresh Care Pêra 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -93,10 +99,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/pera.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 709,
         nome: "Desodorante Aerosol Dove Sensitive Care S/perfume 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -104,10 +111,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/sem.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 710,
         nome: "Desodorante Aerosol Dove Men +Care Energy Boost 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -115,10 +123,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/energy.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 711,
         nome: "Desodorante Aerosol Dove Men +Care Invisible Fresh 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -126,10 +135,11 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/invisible-fresh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 712,
         nome: "Desodorante Aerosol Dove Men +Care Invisible Dry 150ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -137,14 +147,14 @@ const produtosDove = [
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
         imagem: "img/dove/des/Invisible-dry.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Roll-on (3) ==========
-
+    // ========== Roll-on (5) ==========
 
     {
-        id: 601,
+        id: 713,
         nome: "Desodorante Roll-on Dove Original 50ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -152,10 +162,11 @@ const produtosDove = [
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
         imagem: "img/dove/des/original-roll-on.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 714,
         nome: "Desodorante Roll-on Fresh Care Lavanda 50ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -163,10 +174,11 @@ const produtosDove = [
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
         imagem: "img/dove/des/lavanda-roll-on.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 715,
         nome: "Desodorante Roll-on Dove Fresh Care Pêssego 50ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -174,10 +186,11 @@ const produtosDove = [
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
         imagem: "img/dove/des/pessego-roll-on.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 716,
         nome: "Desodorante Roll-on Dove Fresh Care Roma 50ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -185,10 +198,11 @@ const produtosDove = [
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
         imagem: "img/dove/des/roma-roll-on.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 717,
         nome: "Desodorante Roll-on Dove Men +Care 50ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -196,13 +210,14 @@ const produtosDove = [
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
         imagem: "img/dove/des/invisible-dry-roll-on.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== deo em creme (3) ==========
+    // ========== Deo em creme (3) ==========
 
     {
-        id: 601,
+        id: 718,
         nome: "Creme Desodorante Dove - previne Diária  50g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -210,10 +225,11 @@ const produtosDove = [
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
         imagem: "img/dove/des/cr-diaria.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 719,
         nome: "Creme Desodorante Dove - previne irritação  50g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -221,10 +237,11 @@ const produtosDove = [
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
         imagem: "img/dove/des/cr-irritacao.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 720,
         nome: "Creme Desodorante Dove - previne escurecimento 50g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -232,13 +249,14 @@ const produtosDove = [
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
         imagem: "img/dove/des/cr-escurecimento.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== deo em Stick (3) ==========
+    // ========== Deo em Stick (2) ==========
 
     {
-        id: 601,
+        id: 721,
         nome: "Stick Desodorante Dove - Fresh 45g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -246,10 +264,11 @@ const produtosDove = [
         descricao: "Stick Desodorante Dove 45g",
         preco: "R$ 22,49",
         imagem: "img/dove/des/stick-fresh.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 722,
         nome: "Stick Desodorante Dove - powder 45g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -257,15 +276,14 @@ const produtosDove = [
         descricao: "Stick Desodorante Dove 45g",
         preco: "R$ 22,49",
         imagem: "img/dove/des/stick-powder.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    
-
-    // ========== Serum corporal (3) ==========
+    // ========== Serum corporal (4) ==========
 
     {
-        id: 601,
+        id: 723,
         nome: "Sérum Corporal Dove - Pró-Retinol 180ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -273,10 +291,11 @@ const produtosDove = [
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
         imagem: "img/dove/creme/retinol.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 724,
         nome: "Sérum Corporal Dove - Hialurônico 180ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -284,10 +303,11 @@ const produtosDove = [
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
         imagem: "img/dove/creme/hialuronico.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 725,
         nome: "Sérum Corporal Dove - Pantenol 180ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -295,10 +315,11 @@ const produtosDove = [
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
         imagem: "img/dove/creme/pantenol.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 726,
         nome: "Sérum Corporal Dove - Pró-Ceramidas 180ml ",
         marca: "Dove",
         tipo: "Corpo",
@@ -306,24 +327,26 @@ const produtosDove = [
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
         imagem: "img/dove/creme/ceramidas.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== Sabonete em barra (3) ==========
+    // ========== Sabonete em barra (5) ==========
 
     {
-        id: 601,
+        id: 727,
         nome: "Sabonete em Barra Dove - Original 90g ",
         marca: "Dove",
         tipo: "Corpo",
         categoria: "Sabonete",
         descricao: "Sabonete em Barra Dove 90g",
-        preco: "R$ 5,49",
+        preco: "R$ 5,99",
         imagem: "img/dove/sabonete/original.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 728,
         nome: "Sabonete em Barra Dove - Pele Sensivel 90g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -331,10 +354,11 @@ const produtosDove = [
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
         imagem: "img/dove/sabonete/pele.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 729,
         nome: "Sabonete em Barra Dove - Antibacteriano 90g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -342,10 +366,11 @@ const produtosDove = [
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
         imagem: "img/dove/sabonete/antibac.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 730,
         nome: "Sabonete em Barra Dove - Karité 90g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -353,10 +378,11 @@ const produtosDove = [
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
         imagem: "img/dove/sabonete/karite.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 731,
         nome: "Sabonete em Barra Dove - Erva Doce 90g ",
         marca: "Dove",
         tipo: "Corpo",
@@ -364,13 +390,14 @@ const produtosDove = [
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
         imagem: "img/dove/sabonete/erva.jpe",
-        destaque: false
+        destaque: false,
+        esgotado: false
     },
 
-    // ========== oleo de banho (3) ==========
+    // ========== Óleo de banho (2) ==========
 
     {
-        id: 601,
+        id: 732,
         nome: "Óleo de Banho de Glicerina Dove 240ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -378,10 +405,11 @@ const produtosDove = [
         descricao: "Óleo de Banho Dove 240ml",
         preco: "R$ 29,99",
         imagem: "img/dove/sabonete/oleo.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 733,
         nome: "Dove Óleo Sérum Corporal Dove 150ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -389,13 +417,14 @@ const produtosDove = [
         descricao: "Óleo Serum Corporal Dove 150ml",
         preco: "R$ 48,99",
         imagem: "img/dove/oleo/serum.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
 
-    // ========== Sabonete Liquido  (3) ==========
+    // ========== Sabonete Liquido (4) ==========
 
     {
-        id: 601,
+        id: 734,
         nome: "Sabonete Liquido Dove - Original 250ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -403,10 +432,11 @@ const produtosDove = [
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
         imagem: "img/dove/sabonete-liquido/original.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 735,
         nome: "Sabonete Liquido Dove - Karité e Baunilha 250ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -414,10 +444,11 @@ const produtosDove = [
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
         imagem: "img/dove/sabonete-liquido/karite.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 736,
         nome: "Sabonete Liquido Dove - Pele Sensivel 250ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -425,10 +456,11 @@ const produtosDove = [
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
         imagem: "img/dove/sabonete-liquido/pele.jpe",
-        destaque: true
+        destaque: true,
+        esgotado: false
     },
     {
-        id: 601,
+        id: 737,
         nome: "Sabonete Liquido Dove - Antibacteriano 250ml",
         marca: "Dove",
         tipo: "Corpo",
@@ -436,18 +468,7 @@ const produtosDove = [
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 16,49",
         imagem: "img/dove/sabonete-liquido/antibac.jpe",
-        destaque: true
-    },
-
-
-
-
-    
-
-
-
-
-
-    
-
- ]
+        destaque: true,
+        esgotado: false
+    }
+];

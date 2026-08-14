@@ -14,6 +14,147 @@ const todosProdutos = [
 ];
 
 // ========================================
+// SISTEMA DE AUTENTICAÇÃO ADMIN
+// ========================================
+
+let isAdmin = false;
+const ADMIN_SENHA = '973893'; // Altere para a senha que desejar
+
+function verificarAdmin() {
+    const sessionAdmin = sessionStorage.getItem('adminAutenticado');
+    if (sessionAdmin === 'true') {
+        isAdmin = true;
+    }
+    return isAdmin;
+}
+
+function autenticarAdmin(senha) {
+    if (senha === ADMIN_SENHA) {
+        isAdmin = true;
+        sessionStorage.setItem('adminAutenticado', 'true');
+        location.reload();
+        return true;
+    }
+    return false;
+}
+
+function logoutAdmin() {
+    isAdmin = false;
+    sessionStorage.removeItem('adminAutenticado');
+    location.reload();
+}
+
+function mostrarLoginAdmin() {
+    const modalExistente = document.getElementById('adminModal');
+    if (modalExistente) modalExistente.remove();
+
+    const modal = document.createElement('div');
+    modal.id = 'adminModal';
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        animation: fadeIn 0.3s ease-out;
+    `;
+
+    modal.innerHTML = `
+        <div style="
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            text-align: center;
+        ">
+            <h2 style="color: #8B0045; margin-bottom: 10px;">🔐 Acesso Administrador</h2>
+            <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Digite a senha para gerenciar os estoques</p>
+            <input type="password" id="senhaAdminInput" placeholder="Digite a senha" style="
+                width: 100%;
+                padding: 12px 16px;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                font-size: 16px;
+                margin-bottom: 15px;
+                outline: none;
+                transition: border-color 0.3s;
+            ">
+            <div style="display: flex; gap: 10px;">
+                <button id="btnLoginAdmin" style="
+                    flex: 1;
+                    padding: 12px;
+                    background: #8B0045;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: background 0.2s;
+                ">Entrar</button>
+                <button id="btnFecharModal" style="
+                    flex: 1;
+                    padding: 12px;
+                    background: #ccc;
+                    color: #333;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: background 0.2s;
+                ">Cancelar</button>
+            </div>
+            <p id="erroSenha" style="color: #ff4444; font-size: 13px; margin-top: 12px; display: none;">Senha incorreta! Tente novamente.</p>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    setTimeout(() => {
+        document.getElementById('senhaAdminInput').focus();
+    }, 100);
+
+    document.getElementById('btnLoginAdmin').addEventListener('click', function() {
+        const senha = document.getElementById('senhaAdminInput').value;
+        const erro = document.getElementById('erroSenha');
+        if (autenticarAdmin(senha)) {
+            modal.remove();
+        } else {
+            erro.style.display = 'block';
+            document.getElementById('senhaAdminInput').value = '';
+            document.getElementById('senhaAdminInput').focus();
+            setTimeout(() => {
+                erro.style.display = 'none';
+            }, 3000);
+        }
+    });
+
+    document.getElementById('senhaAdminInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            document.getElementById('btnLoginAdmin').click();
+        }
+    });
+
+    document.getElementById('btnFecharModal').addEventListener('click', function() {
+        modal.remove();
+    });
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    });
+}
+
+// ========================================
 // FUNÇÕES UTILITÁRIAS
 // ========================================
 
@@ -46,10 +187,50 @@ function formatarCategoria(categoria) {
     return categorias[categoria] || categoria;
 }
 
+// ========================================
+// SISTEMA DE ESGOTADO
+// ========================================
+
+function salvarEstadoEsgotado(id, esgotado) {
+    if (!isAdmin) return;
+    const esgotados = JSON.parse(localStorage.getItem('produtosEsgotados') || '{}');
+    if (esgotado) {
+        esgotados[id] = true;
+    } else {
+        delete esgotados[id];
+    }
+    localStorage.setItem('produtosEsgotados', JSON.stringify(esgotados));
+}
+
+function carregarEstadosEsgotados() {
+    const esgotados = JSON.parse(localStorage.getItem('produtosEsgotados') || '{}');
+    todosProdutos.forEach(produto => {
+        if (produto.id in esgotados) {
+            produto.esgotado = esgotados[produto.id];
+        } else {
+            produto.esgotado = false;
+        }
+    });
+}
+
+function resetarTodosEsgotados() {
+    if (!isAdmin) return;
+    localStorage.removeItem('produtosEsgotados');
+    todosProdutos.forEach(produto => {
+        produto.esgotado = false;
+    });
+    renderizarProdutos(todosProdutos);
+}
+
+// ========================================
+// CRIAÇÃO DE CARDS
+// ========================================
+
 function criarProdutoCard(produto) {
     const card = document.createElement('div');
     card.className = 'produto-card';
     if (produto.destaque) card.classList.add('destaque');
+    if (produto.esgotado) card.classList.add('esgotado');
     card.setAttribute('data-tipo', produto.tipo);
     card.setAttribute('data-categoria', produto.categoria);
     card.setAttribute('data-marca', produto.marca.toLowerCase());
@@ -71,6 +252,13 @@ function criarProdutoCard(produto) {
         tag.className = 'tag-promocao';
         tag.textContent = 'Destaque';
         imagemDiv.appendChild(tag);
+    }
+    
+    if (produto.esgotado) {
+        const esgotadoBadge = document.createElement('div');
+        esgotadoBadge.className = 'esgotado-badge-img';
+        esgotadoBadge.textContent = 'ESGOTADO';
+        imagemDiv.appendChild(esgotadoBadge);
     }
     
     const infoDiv = document.createElement('div');
@@ -104,6 +292,51 @@ function criarProdutoCard(produto) {
         freteSpan.className = 'frete-gratis';
         freteSpan.textContent = 'Frete Grátis';
         infoDiv.appendChild(freteSpan);
+    }
+    
+    // Botão de alternar esgotado - SÓ APARECE PARA ADMIN
+    if (isAdmin) {
+        const btnEsgotado = document.createElement('button');
+        btnEsgotado.className = 'btn-esgotado';
+        btnEsgotado.textContent = produto.esgotado ? '✅ Em Estoque' : '❌ Esgotado';
+        btnEsgotado.style.background = produto.esgotado ? '#4CAF50' : '#ff4444';
+        btnEsgotado.style.color = 'white';
+        btnEsgotado.style.border = 'none';
+        btnEsgotado.style.borderRadius = '8px';
+        btnEsgotado.style.padding = '8px 12px';
+        btnEsgotado.style.fontSize = '12px';
+        btnEsgotado.style.fontWeight = '600';
+        btnEsgotado.style.cursor = 'pointer';
+        btnEsgotado.style.marginBottom = '8px';
+        btnEsgotado.style.width = '100%';
+        btnEsgotado.style.transition = 'all 0.2s';
+
+        btnEsgotado.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (!isAdmin) return;
+            
+            produto.esgotado = !produto.esgotado;
+            this.textContent = produto.esgotado ? '✅ Em Estoque' : '❌ Esgotado';
+            this.style.background = produto.esgotado ? '#4CAF50' : '#ff4444';
+            
+            if (produto.esgotado) {
+                card.classList.add('esgotado');
+                if (!imagemDiv.querySelector('.esgotado-badge-img')) {
+                    const badge = document.createElement('div');
+                    badge.className = 'esgotado-badge-img';
+                    badge.textContent = 'ESGOTADO';
+                    imagemDiv.appendChild(badge);
+                }
+            } else {
+                card.classList.remove('esgotado');
+                const badge = imagemDiv.querySelector('.esgotado-badge-img');
+                if (badge) badge.remove();
+            }
+            
+            salvarEstadoEsgotado(produto.id, produto.esgotado);
+        });
+        
+        infoDiv.appendChild(btnEsgotado);
     }
     
     const btnWhatsapp = document.createElement('button');
@@ -331,6 +564,8 @@ document.addEventListener('click', (e) => {
 // ========================================
 
 document.addEventListener('DOMContentLoaded', () => {
+    verificarAdmin();
+    carregarEstadosEsgotados();
     renderizarProdutos(todosProdutos);
     
     window.addEventListener('scroll', () => {
@@ -348,6 +583,83 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footerYear) {
         footerYear.innerHTML = footerYear.innerHTML.replace('2026', new Date().getFullYear());
     }
+
+    // Clique duplo no logo para login admin
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        logo.addEventListener('dblclick', function(e) {
+            e.stopPropagation();
+            if (isAdmin) {
+                if (confirm('Você está logado como administrador. Deseja sair?')) {
+                    logoutAdmin();
+                }
+            } else {
+                mostrarLoginAdmin();
+            }
+        });
+    }
+
+    // Barra de admin quando logado
+    if (isAdmin) {
+        const header = document.querySelector('header');
+        const adminBar = document.createElement('div');
+        adminBar.id = 'adminBar';
+        adminBar.style.cssText = `
+            position: fixed;
+            top: ${header.offsetHeight}px;
+            left: 0;
+            right: 0;
+            background: #8B0045;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            z-index: 998;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        `;
+        adminBar.innerHTML = `
+            <span>👑 <strong>Modo Administrador</strong> - Gerenciando estoques</span>
+            <button id="resetEstoqueBtn" style="
+                background: #ff4444;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 4px 16px;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.2s;
+            ">🔄 Resetar Todos</button>
+            <button id="logoutAdminBtn" style="
+                background: transparent;
+                color: white;
+                border: 1px solid white;
+                border-radius: 20px;
+                padding: 4px 16px;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.2s;
+            ">🚪 Sair</button>
+        `;
+        document.body.appendChild(adminBar);
+
+        document.getElementById('resetEstoqueBtn').addEventListener('click', function() {
+            if (confirm('⚠️ Resetar TODOS os estados de esgotado? Isso vai marcar todos os produtos como "Em Estoque".')) {
+                resetarTodosEsgotados();
+                alert('✅ Todos os estados foram resetados!');
+            }
+        });
+
+        document.getElementById('logoutAdminBtn').addEventListener('click', function() {
+            logoutAdmin();
+        });
+    }
 });
 
 // Smooth scroll para links internos
@@ -357,7 +669,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             const headerHeight = document.querySelector('header').offsetHeight;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+            const adminBar = document.getElementById('adminBar');
+            const extraOffset = adminBar ? adminBar.offsetHeight : 0;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraOffset - 20;
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
