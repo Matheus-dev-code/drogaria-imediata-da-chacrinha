@@ -11,6 +11,8 @@ const todosProdutos = [
     ...produtosMaxton,
     ...produtosCoreton,
     ...produtosDove,
+    ...produtosNivea,
+    ...produtosMuriel,
 ];
 
 // ========================================
