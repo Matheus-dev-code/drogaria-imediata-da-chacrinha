@@ -171,7 +171,42 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
+    <!-- ======================================== -->
+    <!-- 🔥 FIREBASE SDK E CONFIGURAÇÃO            -->
+    <!-- ======================================== -->
+    
+    <!-- 1. Carrega as bibliotecas do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <!-- 2. Configuração do Firebase (SUAS CONFIGURAÇÕES) -->
+    <script>
+        // 🔥 SUAS CONFIGURAÇÕES DO FIREBASE
+        const firebaseConfig = {
+            apiKey: "AIzaSyC0hMPHp-KXtJ4vEzsZAUtPL_hn5b8FSdU",
+            authDomain: "drogariaestoque-c30f3.firebaseapp.com",
+            databaseURL: "https://drogariaestoque-c30f3-default-rtdb.firebaseio.com",
+            projectId: "drogariaestoque-c30f3",
+            storageBucket: "drogariaestoque-c30f3.firebasestorage.app",
+            messagingSenderId: "495015342103",
+            appId: "1:495015342103:web:90e4a6216cd305f38aec52",
+            measurementId: "G-K6NHPR92NG"
+        };
+        
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        // Cria uma referência para o database e deixa global
+        window.database = firebase.database();
+        
+        console.log('🔥 Firebase conectado com sucesso!');
+        console.log('📦 Projeto:', firebaseConfig.projectId);
+    </script>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS DOS PRODUTOS                    -->
+    <!-- ======================================== -->
+    
     <script src="js/produtos/salon-line-kids.js"></script>
     <script src="js/produtos/salon-line-adulto.js"></script>
     <script src="js/produtos/seda.js"></script>

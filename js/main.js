@@ -18,7 +18,7 @@ const todosProdutos = [
 // ========================================
 
 let isAdmin = false;
-const ADMIN_SENHA = '973893'; // Altere para a senha que desejar
+const ADMIN_SENHA = 'admin123';
 
 function verificarAdmin() {
     const sessionAdmin = sessionStorage.getItem('adminAutenticado');
@@ -188,21 +188,56 @@ function formatarCategoria(categoria) {
 }
 
 // ========================================
-// SISTEMA DE ESGOTADO
+// SISTEMA DE ESGOTADO COM FIREBASE
 // ========================================
 
-function salvarEstadoEsgotado(id, esgotado) {
-    if (!isAdmin) return;
-    const esgotados = JSON.parse(localStorage.getItem('produtosEsgotados') || '{}');
-    if (esgotado) {
-        esgotados[id] = true;
-    } else {
-        delete esgotados[id];
+let carregandoEstoque = true;
+
+// Função para verificar se o Firebase está disponível
+function verificarFirebase() {
+    if (typeof window.database === 'undefined') {
+        console.warn('⚠️ Firebase não disponível. Usando localStorage como fallback.');
+        return false;
     }
-    localStorage.setItem('produtosEsgotados', JSON.stringify(esgotados));
+    return true;
 }
 
-function carregarEstadosEsgotados() {
+// Carrega os dados do Firebase
+function carregarEstoqueFirebase() {
+    return new Promise((resolve) => {
+        if (!verificarFirebase()) {
+            carregarEstoqueLocal();
+            resolve();
+            return;
+        }
+
+        const estoqueRef = window.database.ref('estoque');
+        estoqueRef.on('value', (snapshot) => {
+            const data = snapshot.val() || {};
+            carregandoEstoque = false;
+            
+            // Aplica os dados aos produtos
+            todosProdutos.forEach(produto => {
+                if (produto.id in data) {
+                    produto.esgotado = data[produto.id];
+                } else {
+                    produto.esgotado = false;
+                }
+            });
+            
+            // Renderiza os produtos
+            renderizarProdutos(todosProdutos);
+            resolve();
+        }, (error) => {
+            console.error('❌ Erro ao carregar estoque do Firebase:', error);
+            carregarEstoqueLocal();
+            resolve();
+        });
+    });
+}
+
+// Fallback: Carrega do localStorage se Firebase falhar
+function carregarEstoqueLocal() {
     const esgotados = JSON.parse(localStorage.getItem('produtosEsgotados') || '{}');
     todosProdutos.forEach(produto => {
         if (produto.id in esgotados) {
@@ -211,15 +246,65 @@ function carregarEstadosEsgotados() {
             produto.esgotado = false;
         }
     });
+    carregandoEstoque = false;
+    renderizarProdutos(todosProdutos);
 }
 
+// Salva o estado no Firebase
+function salvarEstadoFirebase(id, esgotado) {
+    if (!isAdmin) return;
+    
+    if (!verificarFirebase()) {
+        // Fallback para localStorage
+        const esgotados = JSON.parse(localStorage.getItem('produtosEsgotados') || '{}');
+        if (esgotado) {
+            esgotados[id] = true;
+        } else {
+            delete esgotados[id];
+        }
+        localStorage.setItem('produtosEsgotados', JSON.stringify(esgotados));
+        return;
+    }
+
+    const updates = {};
+    updates[id] = esgotado;
+    window.database.ref('estoque').update(updates)
+        .then(() => {
+            console.log('✅ Estoque atualizado no Firebase:', id, esgotado);
+        })
+        .catch((error) => {
+            console.error('❌ Erro ao salvar no Firebase:', error);
+            alert('Erro ao salvar a alteração. Tente novamente.');
+        });
+}
+
+// Resetar todos os estoques
 function resetarTodosEsgotados() {
     if (!isAdmin) return;
-    localStorage.removeItem('produtosEsgotados');
-    todosProdutos.forEach(produto => {
-        produto.esgotado = false;
-    });
-    renderizarProdutos(todosProdutos);
+    
+    if (confirm('⚠️ Resetar TODOS os estados de esgotado? Isso vai marcar todos os produtos como "Em Estoque".')) {
+        if (verificarFirebase()) {
+            window.database.ref('estoque').set({})
+                .then(() => {
+                    todosProdutos.forEach(produto => {
+                        produto.esgotado = false;
+                    });
+                    renderizarProdutos(todosProdutos);
+                    alert('✅ Todos os estados foram resetados!');
+                })
+                .catch((error) => {
+                    console.error('❌ Erro ao resetar:', error);
+                    alert('Erro ao resetar. Tente novamente.');
+                });
+        } else {
+            localStorage.removeItem('produtosEsgotados');
+            todosProdutos.forEach(produto => {
+                produto.esgotado = false;
+            });
+            renderizarProdutos(todosProdutos);
+            alert('✅ Todos os estados foram resetados (local)!');
+        }
+    }
 }
 
 // ========================================
@@ -333,7 +418,8 @@ function criarProdutoCard(produto) {
                 if (badge) badge.remove();
             }
             
-            salvarEstadoEsgotado(produto.id, produto.esgotado);
+            // Salva no Firebase
+            salvarEstadoFirebase(produto.id, produto.esgotado);
         });
         
         infoDiv.appendChild(btnEsgotado);
@@ -563,10 +649,15 @@ document.addEventListener('click', (e) => {
 // INICIALIZAR
 // ========================================
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     verificarAdmin();
-    carregarEstadosEsgotados();
-    renderizarProdutos(todosProdutos);
+    
+    // Mostra loading enquanto carrega o estoque
+    const grid = document.getElementById('produtosGrid');
+    grid.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;">🔄 Carregando estoque...</p>';
+    
+    // Carrega os dados do Firebase
+    await carregarEstoqueFirebase();
     
     window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
@@ -646,14 +737,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 cursor: pointer;
                 transition: all 0.2s;
             ">🚪 Sair</button>
+            <span style="font-size: 11px; opacity: 0.7;">💾 Salvando em tempo real</span>
         `;
         document.body.appendChild(adminBar);
 
         document.getElementById('resetEstoqueBtn').addEventListener('click', function() {
-            if (confirm('⚠️ Resetar TODOS os estados de esgotado? Isso vai marcar todos os produtos como "Em Estoque".')) {
-                resetarTodosEsgotados();
-                alert('✅ Todos os estados foram resetados!');
-            }
+            resetarTodosEsgotados();
         });
 
         document.getElementById('logoutAdminBtn').addEventListener('click', function() {
