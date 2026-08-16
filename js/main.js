@@ -13,6 +13,11 @@ const todosProdutos = [
     ...produtosDove,
     ...produtosNivea,
     ...produtosMuriel,
+    ...produtosAcnezil,
+    ...produtosAsepxia,
+    ...produtosBepantriz,
+    ...produtosBepantol,
+    ...produtosCicatricure,
 ];
 
 // ========================================
