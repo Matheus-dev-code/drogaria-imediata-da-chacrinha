@@ -71,7 +71,7 @@ const produtosSalonLineKids = [
         tipo: "kids",
         categoria: "creme-de-pentear-kids",
         descricao: "Creme de Pentear Cachinhos Definidos 1KG",
-        preco: "R$ 37,99",
+        preco: "R$ 41,99",
         imagem: "img/Salon-kids/Salon-line-kids/cr-melancia.jpe",
         destaque: false,
         esgotado: false
@@ -83,7 +83,7 @@ const produtosSalonLineKids = [
         tipo: "kids",
         categoria: "creme-de-pentear-kids",
         descricao: "Creme de Pentear Cachinhos Brilhantes 1KG",
-        preco: "R$ 37,99",
+        preco: "R$ 41,99",
         imagem: "img/Salon-kids/Salon-line-kids/cr-uva.jpe",
         destaque: false,
         esgotado: false
