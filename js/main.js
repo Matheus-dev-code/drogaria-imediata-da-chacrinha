@@ -19,6 +19,8 @@ const todosProdutos = [
     ...produtosBepantol,
     ...produtosCicatricure,
     ...produtosFacebeautiful,
+    ...produtosRexona,
+    ...produtosBabysec,
 ];
 
 // ========================================
