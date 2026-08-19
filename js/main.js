@@ -21,6 +21,11 @@ const todosProdutos = [
     ...produtosFacebeautiful,
     ...produtosRexona,
     ...produtosBabysec,
+    ...produtosMonange,
+    ...produtosGiovannababy,
+    ...produtosMarcia,
+    ...produtosNatuhair,
+    ...produtosGranado,
 ];
 
 // ========================================
