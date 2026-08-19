@@ -4,13 +4,13 @@
 
 const produtosMuriel = [
 
-    // ========== Colonia 250ml (12) ==========
+    // ========== Colônia (Perfumaria) ==========
 
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Flor da Mata Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Flor da Mata Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -20,9 +20,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Rosa Mosqueta Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Rosa Mosqueta Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -32,9 +32,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Alfazema Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Alfazema Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -44,9 +44,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Lavanda Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Lavanda Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -56,9 +56,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Mammy Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Mammy Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -68,9 +68,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Deo Colônia Acqua essence Flor de Cerejeira Muriel 250ml ",
+        nome: "Deo Colônia Acqua essence Flor de Cerejeira Muriel 250ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "perfumaria",
         categoria: "Colonia",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
@@ -79,13 +79,13 @@ const produtosMuriel = [
         esgotado: false
     },
 
-    // ==========  oleo de banho 230ml (12) ==========
+    // ========== Óleo de Banho (Corpo) ==========
 
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Amêndoa com Avelã Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Amêndoa com Avelã Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -95,9 +95,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Amêndoa com Colágeno Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Amêndoa com Colágeno Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -107,9 +107,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Árabe Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Árabe Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -119,9 +119,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Pistache com Colágeno Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Pistache com Colágeno Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -131,9 +131,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Elixir de Cerejeira com Colágeno Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Elixir de Cerejeira com Colágeno Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -143,9 +143,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Romã Care Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Romã Care Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -155,9 +155,9 @@ const produtosMuriel = [
     },
     {
         id: 701,
-        nome: "Óleo de Banho Glicerinado Rosa Mosqueta com Colageno Muriel 230ml ",
+        nome: "Óleo de Banho Glicerinado Rosa Mosqueta com Colageno Muriel 230ml",
         marca: "Muriel",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Óleo de banho",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
@@ -165,6 +165,4 @@ const produtosMuriel = [
         destaque: false,
         esgotado: false
     },
-
-
-]
+];

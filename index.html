@@ -24,12 +24,19 @@
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#categorias">Categorias</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                 </ul>
-                <div class="menu-mobile" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="nav-actions">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <div class="menu-mobile" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -42,6 +49,24 @@
                 <h2>Produtos de Beleza e Cuidados</h2>
                 <p>Salon Line, Salon Line Kids, Seda, L'Oréal Paris, Paixão e muito mais</p>
                 <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="destaques" id="destaques">
+        <div class="container">
+            <h2>🌟 Em Destaque</h2>
+            <p class="destaques-subtitulo">Os produtos mais queridos pelos nossos clientes</p>
+            <div class="destaques-grid" id="destaquesGrid"></div>
+            <div class="destaques-paginacao" id="destaquesPaginacao">
+                <button class="btn-pagina destaque-prev" id="destaquePrev" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="destaque-info" id="destaqueInfo">Página 1 de 1</span>
+                <button class="btn-pagina destaque-next" id="destaqueNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -69,6 +94,15 @@
                 <button class="btn-categoria" data-categoria="pele">
                     <i class="fas fa-smile"></i> Pele
                 </button>
+                <button class="btn-categoria" data-categoria="perfumaria">
+                    <i class="fas fa-perfume"></i> Perfumaria
+                </button>
+                <button class="btn-categoria" data-categoria="maquiagem">
+                    <i class="fas fa-paint-brush"></i> Maquiagem
+                </button>
+                <button class="btn-categoria" data-categoria="tintas">
+                    <i class="fas fa-palette"></i> Tintas
+                </button>
             </div>
             
             <div class="marca-filtro">
@@ -94,11 +128,10 @@
                     <button class="btn-marca" data-marca="babysec">Babysec</button>
                     <button class="btn-marca" data-marca="monange">Monange</button>
                     <button class="btn-marca" data-marca="giovanna baby">Giovanna Baby</button>
-                    <button class="btn-marca" data-marca="face beautiful">Face Beautiful / Lovely</button>
+                    <button class="btn-marca" data-marca="face beautiful">Face Beautiful</button>
                     <button class="btn-marca" data-marca="marcia">Marcia</button>
                     <button class="btn-marca" data-marca="natuhair">Natuhair</button>
                     <button class="btn-marca" data-marca="granado">Granado</button>
-
                 </div>
             </div>
         </div>
@@ -162,6 +195,7 @@
                     <h3>Links Rápidos</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
                         <li><a href="#produtos">Produtos</a></li>
                         <li><a href="#categorias">Categorias</a></li>
                         <li><a href="#sobre">Sobre</a></li>
@@ -180,24 +214,70 @@
         </div>
     </footer>
 
-    <!-- Botão WhatsApp Flutuante -->
+    <!-- Carrinho Modal -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Meu Carrinho</h2>
+                <button class="cart-close" id="cartClose">&times;</button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <div class="frete-progress" id="freteProgress">
+                    <div class="frete-info">
+                        <span id="freteTexto">💸 Faltam R$ 10,00 para frete grátis!</span>
+                        <span id="freteStatus">🛒</span>
+                    </div>
+                    <div class="frete-bar">
+                        <div class="frete-bar-fill" id="freteBarFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <button class="btn-primary btn-continuar-comprando" onclick="fecharCarrinho()">Continuar Comprando</button>
+                </div>
+                <div class="cart-items" id="cartItems"></div>
+            </div>
+            <div class="cart-footer" id="cartFooter">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-esvaziar" id="btnEsvaziarCarrinho">
+                        <i class="fas fa-trash"></i> Esvaziar
+                    </button>
+                    <button class="btn-finalizar" id="btnFinalizarPedido">
+                        <i class="fab fa-whatsapp"></i> Finalizar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Produto adicionado ao carrinho!</span>
+    </div>
+
+    <!-- Botão Topo -->
+    <button class="btn-topo" id="btnTopo" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float -->
     <a href="https://wa.me/5521969583871?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
        class="whatsapp-float" 
        target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ======================================== -->
-    <!-- 🔥 FIREBASE SDK E CONFIGURAÇÃO            -->
-    <!-- ======================================== -->
-    
-    <!-- 1. Carrega as bibliotecas do Firebase -->
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
-
-    <!-- 2. Configuração do Firebase (SUAS CONFIGURAÇÕES) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
     <script>
-        // 🔥 SUAS CONFIGURAÇÕES DO FIREBASE
         const firebaseConfig = {
             apiKey: "AIzaSyC0hMPHp-KXtJ4vEzsZAUtPL_hn5b8FSdU",
             authDomain: "drogariaestoque-c30f3.firebaseapp.com",
@@ -208,21 +288,12 @@
             appId: "1:495015342103:web:90e4a6216cd305f38aec52",
             measurementId: "G-K6NHPR92NG"
         };
-        
-        // Inicializa o Firebase
         firebase.initializeApp(firebaseConfig);
-        
-        // Cria uma referência para o database e deixa global
         window.database = firebase.database();
-        
-        console.log('🔥 Firebase conectado com sucesso!');
-        console.log('📦 Projeto:', firebaseConfig.projectId);
+        console.log('🔥 Firebase conectado');
     </script>
 
-    <!-- ======================================== -->
-    <!-- SCRIPTS DOS PRODUTOS                    -->
-    <!-- ======================================== -->
-    
+    <!-- Produtos JS -->
     <script src="js/produtos/salon-line-kids.js"></script>
     <script src="js/produtos/salon-line-adulto.js"></script>
     <script src="js/produtos/seda.js"></script>
@@ -246,6 +317,8 @@
     <script src="js/produtos/marcia.js"></script>
     <script src="js/produtos/natuhair.js"></script>
     <script src="js/produtos/granado.js"></script>
+
+    <!-- Main JS -->
     <script src="js/main.js"></script>
 </body>
 </html>

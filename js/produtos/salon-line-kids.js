@@ -13,7 +13,7 @@ const produtosSalonLineKids = [
         descricao: "Creme para Pentear Cachinhos Sem Nós Kids 1KG",
         preco: "R$ 37,99",
         imagem: "img/Salon-kids/Salon-line-kids/cr-morango.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -61,7 +61,7 @@ const produtosSalonLineKids = [
         descricao: "Creme de Pentear Cachinhos Sem Frizz 1KG",
         preco: "R$ 37,99",
         imagem: "img/Salon-kids/Salon-line-kids/cr-açai.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -149,7 +149,7 @@ const produtosSalonLineKids = [
         descricao: "Creme de Pentear chiclete kids 300ml",
         preco: "R$ 19,99",
         imagem: "img/Salon-kids/Salon-line-kids-chiclete/cr-chiclete-300ml.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -199,7 +199,7 @@ const produtosSalonLineKids = [
         descricao: "Ativador de Cachos Kids Super Oleos 300ml",
         preco: "R$ 23,99",
         imagem: "img/Salon-kids/Salon-line-kids-super-oleos/ativador-de-cachos.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
 
@@ -249,7 +249,7 @@ const produtosSalonLineKids = [
         descricao: "Mascara Salon Line Kids 500g",
         preco: "R$ 21,49",
         imagem: "img/Salon-kids/Salon-line-kids-hidratacao/mascara.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -341,7 +341,7 @@ const produtosSalonLineKids = [
         descricao: "Kit Sh + Cond Salon Line Kids",
         preco: "R$ 21,99",
         imagem: "img/Salon-kids/Salon-line-kids-hidra/kit.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {

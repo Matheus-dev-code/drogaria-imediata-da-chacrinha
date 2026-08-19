@@ -13,7 +13,7 @@ const produtosSalonLineAdulto = [
         descricao: "Kit Sh + Cond Salon line",
         preco: "R$ 34,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/kit.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -49,7 +49,7 @@ const produtosSalonLineAdulto = [
         descricao: "Mascara Salon Line 300g",
         preco: "R$ 19,99",
         imagem: "img/Salon-adulto/cachos-ostentacao/mascara.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -88,7 +88,7 @@ const produtosSalonLineAdulto = [
         descricao: "Creme de Pentear Salon Line 1KG",
         preco: "R$ 39,99",
         imagem: "img/Salon-adulto/definicao/alongada.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -150,7 +150,7 @@ const produtosSalonLineAdulto = [
         descricao: "Body splash 200ml Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/vibes/body.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -212,7 +212,7 @@ const produtosSalonLineAdulto = [
         descricao: "Body Splash Salon Line",
         preco: "R$ 31,99",
         imagem: "img/Salon-adulto/xerosa/glamour/body.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -275,7 +275,7 @@ const produtosSalonLineAdulto = [
         descricao: "Óleo de Tratamento 60ml Salon Line",
         preco: "R$ 24,49",
         imagem: "img/Salon-adulto/xerosa/baunilha/oleo.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
 
@@ -355,7 +355,7 @@ const produtosSalonLineAdulto = [
         descricao: "Mascara 500g Salon Line",
         preco: "R$ 24,49",
         imagem: "img/Salon-adulto/de-repente-pronta/mascara.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
 
@@ -418,7 +418,7 @@ const produtosSalonLineAdulto = [
         descricao: "Mousse 240ml Salon Line",
         preco: "R$ 36,99",
         imagem: "img/Salon-adulto/definicao-natural/mousse.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {
@@ -493,7 +493,7 @@ const produtosSalonLineAdulto = [
         descricao: "Gelatina 400g Salon Line",
         preco: "R$ 28,99",
         imagem: "img/Salon-adulto/super-oleos/gelatina.jpe",
-        destaque: true,
+        destaque: false,
         esgotado: false
     },
     {

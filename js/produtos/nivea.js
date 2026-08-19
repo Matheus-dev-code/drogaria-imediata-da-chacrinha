@@ -3,15 +3,14 @@
 // ========================================
 
 const produtosNivea = [
-    
 
-    // ========== Aerosol 250ml (12) ==========
+    // ========== Aerosol 250ml (Desodorantes - Higiene) ==========
 
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Active Dry Impact 72H 250ml ",
+        nome: "Desodorante Aerosol Nivea Men Active Dry Impact 72H 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -21,9 +20,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Original Protect 72H 250ml ",
+        nome: "Desodorante Aerosol Nivea Men Original Protect 72H 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -33,9 +32,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Derma Control Defende 250ml ",
+        nome: "Desodorante Aerosol Nivea Derma Control Defende 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -45,9 +44,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Dry Confort 72H 250ml ",
+        nome: "Desodorante Aerosol Nivea Dry Confort 72H 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -57,9 +56,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Black & White Clear 250ml ",
+        nome: "Desodorante Aerosol Nivea Black & White Clear 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -69,9 +68,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Pearl & Beauty 250ml ",
+        nome: "Desodorante Aerosol Nivea Pearl & Beauty 250ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
@@ -80,14 +79,13 @@ const produtosNivea = [
         esgotado: false
     },
 
-    // ========== Aerosol 150ml (12) ==========
-
+    // ========== Aerosol 150ml (Desodorantes - Higiene) ==========
 
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Derma Control Vitamina C 150ml ",
+        nome: "Desodorante Aerosol Nivea Derma Control Vitamina C 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -97,9 +95,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Derma Control Pró-vitamina B5 150ml ",
+        nome: "Desodorante Aerosol Nivea Derma Control Pró-vitamina B5 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -109,9 +107,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Derma Control Vitamina E 150ml ",
+        nome: "Desodorante Aerosol Nivea Derma Control Vitamina E 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -121,9 +119,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Black & White Clear 150ml ",
+        nome: "Desodorante Aerosol Nivea Black & White Clear 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -133,9 +131,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Black & White Fresh 150ml ",
+        nome: "Desodorante Aerosol Nivea Black & White Fresh 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -145,9 +143,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Protect & Care 150ml ",
+        nome: "Desodorante Aerosol Nivea Protect & Care 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -157,9 +155,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Fresh Natural 150ml ",
+        nome: "Desodorante Aerosol Nivea Fresh Natural 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -169,9 +167,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Dry Confort 150ml ",
+        nome: "Desodorante Aerosol Nivea Dry Confort 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -181,9 +179,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Pearl & Beauty 150ml ",
+        nome: "Desodorante Aerosol Nivea Pearl & Beauty 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -193,9 +191,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Derma Control Sensitive 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Derma Control Sensitive 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -205,9 +203,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Derma Control Defende 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Derma Control Defende 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -217,9 +215,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Black & White Original 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Black & White Original 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -229,9 +227,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Black & White Fresh 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Black & White Fresh 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -241,9 +239,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Amadeirado 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Amadeirado 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -253,9 +251,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Active Dry Impact 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Active Dry Impact 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -265,9 +263,9 @@ const produtosNivea = [
     },
     {
         id: 701,
-        nome: "Desodorante Aerosol Nivea Men Original 150ml ",
+        nome: "Desodorante Aerosol Nivea Men Original 150ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
@@ -276,13 +274,13 @@ const produtosNivea = [
         esgotado: false
     },
 
-    // ========== Roll-on (12) ==========
+    // ========== Roll-on (Desodorantes - Higiene) ==========
 
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Derma Control Defende 50ml ",
+        nome: "Desodorante Roll-on Nivea Derma Control Defende 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -292,9 +290,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Derma Vitamina E 50ml ",
+        nome: "Desodorante Roll-on Nivea Derma Vitamina E 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -304,9 +302,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Black & White Clear 50ml ",
+        nome: "Desodorante Roll-on Nivea Black & White Clear 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -316,9 +314,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Dry Comfort 50ml ",
+        nome: "Desodorante Roll-on Nivea Dry Comfort 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -328,9 +326,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Protect & Care 50ml ",
+        nome: "Desodorante Roll-on Nivea Protect & Care 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -340,9 +338,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Pearl & Beauty 50ml ",
+        nome: "Desodorante Roll-on Nivea Pearl & Beauty 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -352,9 +350,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Men Active Dry Impact 50ml ",
+        nome: "Desodorante Roll-on Nivea Men Active Dry Impact 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
@@ -364,9 +362,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Desodorante Roll-on Nivea Men Black & White Original 50ml ",
+        nome: "Desodorante Roll-on Nivea Men Black & White Original 50ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "higiene",
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 12,99",
@@ -375,13 +373,13 @@ const produtosNivea = [
         esgotado: false
     },
 
-    // ========== Creme Corporal (12) ==========
+    // ========== Creme Corporal (Corpo) ==========
 
     {
         id: 717,
-        nome: "Creme Corporal Nivea Milk 400ml ",
+        nome: "Creme Corporal Nivea Milk 400ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 400ml",
         preco: "R$ 25,99",
@@ -391,9 +389,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Creme Corporal Nivea Beleza Radiante 400ml ",
+        nome: "Creme Corporal Nivea Beleza Radiante 400ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 400ml",
         preco: "R$ 26,99",
@@ -403,9 +401,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Creme Corporal Nivea Milk 200ml ",
+        nome: "Creme Corporal Nivea Milk 200ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
@@ -415,9 +413,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Creme Corporal Nivea Beleza Radiante 200ml ",
+        nome: "Creme Corporal Nivea Beleza Radiante 200ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
@@ -427,9 +425,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Creme Corporal Nivea Soft Milk 200ml ",
+        nome: "Creme Corporal Nivea Soft Milk 200ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
@@ -439,9 +437,9 @@ const produtosNivea = [
     },
     {
         id: 717,
-        nome: "Creme Corporal Nivea Q10 Firmador 200ml ",
+        nome: "Creme Corporal Nivea Q10 Firmador 200ml",
         marca: "Nivea",
-        tipo: "Corpo",
+        tipo: "corpo",
         categoria: "Creme Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 31,99",
@@ -450,13 +448,13 @@ const produtosNivea = [
         esgotado: false
     },
 
-    // ========== Creme Facial (12) ==========
+    // ========== Creme Facial (Pele) ==========
 
     {
         id: 717,
         nome: "Creme Facial Antissinais Noturno Cellular Nivea 49g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 49g",
         preco: "R$ 54,99",
@@ -468,7 +466,7 @@ const produtosNivea = [
         id: 717,
         nome: "Creme Facial Antissinais Diurno Cellular Nivea 49g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 49g",
         preco: "R$ 54,99",
@@ -480,7 +478,7 @@ const produtosNivea = [
         id: 717,
         nome: "Creme Facial 7em1 Noturno Nivea 100g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
@@ -492,7 +490,7 @@ const produtosNivea = [
         id: 717,
         nome: "Creme Facial 7em1 Antissinais Nivea 100g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
@@ -504,7 +502,7 @@ const produtosNivea = [
         id: 717,
         nome: "Creme Facial 7em1 Nutritivo Nivea 100g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
@@ -516,7 +514,7 @@ const produtosNivea = [
         id: 717,
         nome: "Creme Facial 7em1 Beleza Radiante Nivea 100g",
         marca: "Nivea",
-        tipo: "Rosto",
+        tipo: "pele",
         categoria: "Creme Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
@@ -524,21 +522,19 @@ const produtosNivea = [
         destaque: false,
         esgotado: false
     },
+
+    // ========== Óleo De Banho (Corpo) ==========
+
     {
         id: 717,
-        nome: "Óleo De Banho Nivea 200ml ",
+        nome: "Óleo De Banho Nivea 200ml",
         marca: "Nivea",
-        tipo: "Corpo",
-        categoria: "Sabonete Líquido",
+        tipo: "corpo",
+        categoria: "Óleo de Banho",
         descricao: "Óleo de Banho Nivea 200ml",
         preco: "R$ 42,99",
         imagem: "img/nivea/sabonete/oleo.jpe",
         destaque: false,
         esgotado: false
     },
-
-    
-
-
-    
-]
+];
