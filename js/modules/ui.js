@@ -181,6 +181,11 @@ function verificarDisponibilidade(nome, marca, preco) {
         `Preço: ${preco}\n\n` +
         `Tem em estoque? Poderia me informar o prazo de entrega?`;
 
+    // 📊 Registra evento no Analytics
+    if (typeof registrarVerificarDisponibilidade === 'function') {
+        registrarVerificarDisponibilidade({ nome, marca });
+    }
+
     window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`, '_blank');
 }
 

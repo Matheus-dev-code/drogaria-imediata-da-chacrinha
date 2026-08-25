@@ -54,6 +54,11 @@ function adicionarAoCarrinho(produto) {
         });
     }
 
+    // 📊 Registra evento no Analytics
+    if (typeof registrarAdicaoAoCarrinho === 'function') {
+        registrarAdicaoAoCarrinho(produto, 1);
+    }
+
     salvarCarrinho();
     mostrarToast(`${produto.nome} adicionado!`);
     atualizarBotoesCarrinho();
@@ -62,7 +67,15 @@ function adicionarAoCarrinho(produto) {
 }
 
 function removerDoCarrinho(id) {
+    const itemRemovido = carrinho.find(item => item.id === id);
+    
     carrinho = carrinho.filter(item => item.id !== id);
+    
+    // 📊 Registra evento no Analytics
+    if (itemRemovido && typeof registrarRemocaoDoCarrinho === 'function') {
+        registrarRemocaoDoCarrinho(itemRemovido);
+    }
+    
     salvarCarrinho();
     renderizarCarrinho();
     atualizarBotoesCarrinho();
@@ -208,16 +221,28 @@ function atualizarBotoesCarrinho() {
 function abrirCarrinho() {
     const overlay = document.getElementById('cartOverlay');
     if (!overlay) return;
+    
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     renderizarCarrinho();
+    
+    // 📊 Registra evento no Analytics
+    if (typeof registrarAberturaCarrinho === 'function') {
+        registrarAberturaCarrinho();
+    }
 }
 
 function fecharCarrinho() {
     const overlay = document.getElementById('cartOverlay');
     if (!overlay) return;
+    
     overlay.classList.remove('open');
     document.body.style.overflow = '';
+    
+    // 📊 Registra evento no Analytics
+    if (typeof registrarFechamentoCarrinho === 'function') {
+        registrarFechamentoCarrinho();
+    }
 }
 
 function finalizarPedido() {
@@ -226,16 +251,22 @@ function finalizarPedido() {
         return;
     }
 
+    const total = calcularTotalCarrinho();
+    const totalItens = carrinho.reduce((sum, item) => sum + item.quantidade, 0);
+
+    // 📊 Registra evento no Analytics
+    if (typeof registrarPedidoFinalizado === 'function') {
+        registrarPedidoFinalizado(total, totalItens);
+    }
+
     const numeroWhatsApp = '5521969583871';
     let mensagem = '🛒 *PEDIDO - Drogaria Imediata da Chacrinha*\n\n';
     mensagem += '*Produtos:*\n';
 
-    let total = 0;
     carrinho.forEach(item => {
         const precoNum = converterPreco(item.preco);
         const quantidade = Number(item.quantidade || 0);
         const subtotal = precoNum * quantidade;
-        total += subtotal;
         mensagem += `${quantidade}x ${item.nome} - ${item.preco}\n`;
     });
 

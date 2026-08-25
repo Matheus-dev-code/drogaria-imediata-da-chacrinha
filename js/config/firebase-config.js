@@ -13,10 +13,26 @@ const firebaseConfig = {
     measurementId: "G-K6NHPR92NG"
 };
 
-// Inicializa Firebase se disponível
+// Inicializa Firebase
 if (typeof firebase !== 'undefined') {
-    firebase.initializeApp(firebaseConfig);
+    // Inicializa o Firebase App
+    if (!firebase.apps || !firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    } else {
+        firebase.app();
+    }
+    
+    // Inicializa o Realtime Database
     window.database = firebase.database();
+    
+    // Inicializa o Google Analytics
+    if (firebase.analytics) {
+        window.analytics = firebase.analytics();
+        console.log('📊 Google Analytics ativado com sucesso!');
+    } else {
+        console.warn('⚠️ Firebase Analytics não disponível. Verifique se o script foi carregado.');
+    }
+    
     console.log('🔥 Firebase conectado com sucesso');
 } else {
     console.warn('⚠️ Firebase não carregado. Usando localStorage como fallback.');
