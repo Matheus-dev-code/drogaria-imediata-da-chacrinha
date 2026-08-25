@@ -563,7 +563,7 @@ const produtosLoreal = [
         categoria: "Mascara",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/collagen-lifter/mascara.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/masc.jpe",
         destaque: false,
         esgotado: false
     },
@@ -590,7 +590,7 @@ const produtosLoreal = [
         categoria: "shampoo",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/repacap/sh.jpe",
+        imagem: "img/loreal/elseve/reparacao/sh.jpe",
         destaque: false,
         esgotado: false
     },
@@ -602,7 +602,7 @@ const produtosLoreal = [
         categoria: "condicionador",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/repacao/cond.jpe",
+        imagem: "img/loreal/elseve/reparacao/cond.jpe",
         destaque: false,
         esgotado: false
     },
@@ -614,7 +614,7 @@ const produtosLoreal = [
         categoria: "Creme de Pentear",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/repacao/cr.jpe",
+        imagem: "img/loreal/elseve/reparacao/cr.jpe",
         destaque: false,
         esgotado: false
     },
@@ -626,7 +626,7 @@ const produtosLoreal = [
         categoria: "Mascara",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/oleo/mascara.jpe",
+        imagem: "img/loreal/elseve/reparacao/mascara.jpe",
         destaque: false,
         esgotado: false
     },
