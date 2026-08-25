@@ -52,10 +52,8 @@ const idsAvaliacao = {
 
 function enriquecerProdutos(produtos) {
     return produtos.map(produto => {
-        // Promoção
         produto.promocao = idsPromocao.includes(produto.id);
 
-        // Avaliação
         if (idsAvaliacao[produto.id]) {
             produto.avaliacao = idsAvaliacao[produto.id];
         } else {
@@ -67,14 +65,9 @@ function enriquecerProdutos(produtos) {
 
         produto.totalAvaliacoes = Math.floor(50 + Math.random() * 200);
 
-        // 🔥 NOVO: Garante que o campo 'linha' exista
-        // Se o produto já tem 'linha' (como os da L'Oréal), mantém
-        // Se não tem, cria um valor padrão baseado na marca
         if (!produto.linha) {
-            // Tenta extrair a linha do nome do produto (se tiver)
             const nomeParts = produto.nome.split(' - ');
             if (nomeParts.length > 1) {
-                // Pega a primeira parte do nome como linha (ex: "Shampoo Óleo Extraordinário" -> "Óleo Extraordinário")
                 const possibleLine = nomeParts[0].replace(/^(Shampoo|Condicionador|Máscara|Creme|Kit|Óleo|Sabonete|Desodorante|Hidratante)\s+/i, '').trim();
                 if (possibleLine && possibleLine.length > 2) {
                     produto.linha = possibleLine;
@@ -82,12 +75,10 @@ function enriquecerProdutos(produtos) {
                     produto.linha = produto.marca;
                 }
             } else {
-                // Se não tem linha definida, usa a marca
                 produto.linha = produto.marca;
             }
         }
 
-        // Se a linha estiver vazia, usa a marca
         if (!produto.linha || produto.linha.trim() === '') {
             produto.linha = produto.marca;
         }
@@ -1340,16 +1331,11 @@ function criarProdutoCard(
             .toLowerCase()
     );
 
-    // 🔥 NOVO: Atributo para filtrar por linha
     card.setAttribute(
         'data-linha',
         String(produto.linha || '')
             .toLowerCase()
     );
-
-    // ========================================
-    // IMAGEM
-    // ========================================
 
     const imagemDiv =
         document.createElement('div');
@@ -1377,10 +1363,6 @@ function criarProdutoCard(
 
     imagemDiv.appendChild(img);
 
-    // ========================================
-    // BADGE DE PROMOÇÃO
-    // ========================================
-
     if (produto.promocao) {
 
         const badge =
@@ -1394,10 +1376,6 @@ function criarProdutoCard(
 
         imagemDiv.appendChild(badge);
     }
-
-    // ========================================
-    // DESTAQUE
-    // ========================================
 
     if (
         produto.destaque &&
@@ -1416,10 +1394,6 @@ function criarProdutoCard(
         imagemDiv.appendChild(tag);
     }
 
-    // ========================================
-    // ESGOTADO
-    // ========================================
-
     if (produto.esgotado) {
 
         const esgotadoBadge =
@@ -1436,10 +1410,6 @@ function criarProdutoCard(
         );
     }
 
-    // ========================================
-    // NO CARRINHO
-    // ========================================
-
     if (estaNoCarrinho(produto.id)) {
 
         const badge =
@@ -1453,10 +1423,6 @@ function criarProdutoCard(
 
         imagemDiv.appendChild(badge);
     }
-
-    // ========================================
-    // INFORMAÇÕES
-    // ========================================
 
     const infoDiv =
         document.createElement('div');
@@ -1508,11 +1474,6 @@ function criarProdutoCard(
         tagsDiv
     );
 
-    // ========================================
-    // 🔥 NOVO: EXIBIÇÃO DA LINHA
-    // ========================================
-
-    // Só exibe a linha se for diferente da marca (para não repetir)
     const linhaExibir = produto.linha && produto.linha !== produto.marca;
     if (linhaExibir) {
         const linhaSpan = document.createElement('span');
@@ -1528,13 +1489,8 @@ function criarProdutoCard(
             padding: 2px 10px;
             border-radius: 12px;
         `;
-        // Insere antes do nome do produto
         infoDiv.insertBefore(linhaSpan, infoDiv.querySelector('.produto-nome'));
     }
-
-    // ========================================
-    // NOME E DESCRIÇÃO
-    // ========================================
 
     infoDiv.innerHTML += `
         <h3 class="produto-nome">
@@ -1545,10 +1501,6 @@ function criarProdutoCard(
             ${produto.descricao}
         </p>
     `;
-
-    // ========================================
-    // AVALIAÇÃO
-    // ========================================
 
     const avaliacaoDiv =
         document.createElement('div');
@@ -1573,10 +1525,6 @@ function criarProdutoCard(
     infoDiv.appendChild(
         avaliacaoDiv
     );
-
-    // ========================================
-    // PREÇO
-    // ========================================
 
     const precoDiv =
         document.createElement('p');
@@ -1609,10 +1557,6 @@ function criarProdutoCard(
     infoDiv.appendChild(
         precoDiv
     );
-
-    // ========================================
-    // FRETE GRÁTIS
-    // ========================================
 
     const precosFreteGratis = [
         '8.90',
@@ -1652,10 +1596,6 @@ function criarProdutoCard(
             freteSpan
         );
     }
-
-    // ========================================
-    // CONTROLE ADMINISTRATIVO
-    // ========================================
 
     if (isAdmin) {
 
@@ -1780,10 +1720,6 @@ function criarProdutoCard(
         );
     }
 
-    // ========================================
-    // WHATSAPP
-    // ========================================
-
     const btnWhatsapp =
         document.createElement('button');
 
@@ -1805,10 +1741,6 @@ function criarProdutoCard(
     infoDiv.appendChild(
         btnWhatsapp
     );
-
-    // ========================================
-    // CARRINHO
-    // ========================================
 
     if (!produto.esgotado) {
 
@@ -2130,7 +2062,7 @@ function scrollParaPesquisa() {
 
     const searchContainer =
         document.querySelector(
-            '.search-container'
+            '.search-wrapper'
         );
 
     const header =
@@ -2416,7 +2348,6 @@ let categoriaAtual =
 let marcaAtual =
     'todas';
 
-// 🔥 NOVO: Filtro por linha
 let linhaAtual =
     'todas';
 
@@ -2452,7 +2383,6 @@ function aplicarFiltros() {
                         marcaAtual
                     );
 
-                // 🔥 NOVO: Verifica se a linha corresponde
                 const linhaMatch =
                     linhaAtual === 'todas' ||
                     normalizarTexto(
@@ -2473,9 +2403,10 @@ function aplicarFiltros() {
     paginaAtual = 1;
 
     mostrarPagina(true);
+
+    atualizarFiltrosAtivos();
 }
 
-// 🔥 NOVO: Função para extrair linhas únicas dos produtos
 function obterLinhasUnicas() {
     const linhas = new Set();
     produtosEnriquecidos.forEach(produto => {
@@ -2487,195 +2418,132 @@ function obterLinhasUnicas() {
 }
 
 // ========================================
-// EVENTOS PARA FILTROS
+// CONTROLE DOS DROPDOWNS DE FILTROS
 // ========================================
 
-document
-    .querySelectorAll('.btn-categoria')
-    .forEach(btn => {
-
-        btn.addEventListener(
-            'click',
-            function () {
-
-                document
-                    .querySelectorAll(
-                        '.btn-categoria'
-                    )
-                    .forEach(
-                        b =>
-                            b.classList.remove(
-                                'active'
-                            )
-                    );
-
-                this.classList.add(
-                    'active'
-                );
-
-                categoriaAtual =
-                    this.getAttribute(
-                        'data-categoria'
-                    );
-
-                aplicarFiltros();
-            }
-        );
-    });
-
-document
-    .querySelectorAll('.btn-marca')
-    .forEach(btn => {
-
-        btn.addEventListener(
-            'click',
-            function () {
-
-                document
-                    .querySelectorAll(
-                        '.btn-marca'
-                    )
-                    .forEach(
-                        b =>
-                            b.classList.remove(
-                                'active'
-                            )
-                    );
-
-                this.classList.add(
-                    'active'
-                );
-
-                marcaAtual =
-                    this.getAttribute(
-                        'data-marca'
-                    );
-
-                aplicarFiltros();
-            }
-        );
-    });
-
-// 🔥 NOVO: Cria os botões de filtro por linha
-function criarFiltrosLinha() {
-    const linhasUnicas = obterLinhasUnicas();
-    const container = document.querySelector('.marca-filtro');
+function atualizarFiltrosAtivos() {
+    const container = document.getElementById('filtrosAtivos');
+    if (!container) return;
     
-    if (!container || linhasUnicas.length === 0) return;
-
-    // Cria um novo container para as linhas
-    const linhaContainer = document.createElement('div');
-    linhaContainer.className = 'linha-filtro';
-    linhaContainer.style.cssText = `
-        margin-top: 16px;
-        padding: 0 16px;
-    `;
-
-    const titulo = document.createElement('h3');
-    titulo.textContent = 'Filtrar por Linha';
-    titulo.style.cssText = `
-        color: var(--gray);
-        font-weight: 600;
-        margin-bottom: 12px;
-        font-size: 13px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.6px;
-    `;
-    linhaContainer.appendChild(titulo);
-
-    const buttonsDiv = document.createElement('div');
-    buttonsDiv.className = 'linha-buttons';
-    buttonsDiv.style.cssText = `
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 8px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    `;
-
-    // Botão "Todas"
-    const btnTodas = document.createElement('button');
-    btnTodas.className = 'btn-linha active';
-    btnTodas.textContent = 'Todas';
-    btnTodas.style.cssText = `
-        padding: 8px 16px;
-        border: 1.5px solid var(--border);
-        background: var(--paper);
-        color: var(--gray);
-        border-radius: 50px;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 12.5px;
-        white-space: nowrap;
-        transition: all 0.25s ease;
-        touch-action: manipulation;
-        flex-shrink: 0;
-    `;
-    btnTodas.dataset.linha = 'todas';
-    buttonsDiv.appendChild(btnTodas);
-
-    linhasUnicas.forEach(linha => {
-        const btn = document.createElement('button');
-        btn.className = 'btn-linha';
-        btn.textContent = linha;
-        btn.style.cssText = `
-            padding: 8px 16px;
-            border: 1.5px solid var(--border);
-            background: var(--paper);
-            color: var(--gray);
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 12.5px;
-            white-space: nowrap;
-            transition: all 0.25s ease;
-            touch-action: manipulation;
-            flex-shrink: 0;
-        `;
-        btn.dataset.linha = linha;
-        buttonsDiv.appendChild(btn);
-
-        btn.addEventListener('click', function() {
-            document.querySelectorAll('.btn-linha').forEach(b => {
-                b.classList.remove('active');
-                b.style.background = 'var(--paper)';
-                b.style.color = 'var(--gray)';
-                b.style.borderColor = 'var(--border)';
-            });
-            this.classList.add('active');
-            this.style.background = 'var(--secondary)';
-            this.style.color = 'var(--primary-dark)';
-            this.style.borderColor = 'var(--secondary)';
-
-            linhaAtual = this.dataset.linha;
-            aplicarFiltros();
-        });
-    });
-
-    // Evento para o botão "Todas"
-    btnTodas.addEventListener('click', function() {
-        document.querySelectorAll('.btn-linha').forEach(b => {
-            b.classList.remove('active');
-            b.style.background = 'var(--paper)';
-            b.style.color = 'var(--gray)';
-            b.style.borderColor = 'var(--border)';
-        });
-        this.classList.add('active');
-        this.style.background = 'var(--secondary)';
-        this.style.color = 'var(--primary-dark)';
-        this.style.borderColor = 'var(--secondary)';
-
-        linhaAtual = 'todas';
-        aplicarFiltros();
-    });
-
-    linhaContainer.appendChild(buttonsDiv);
-    container.parentNode.insertBefore(linhaContainer, container.nextSibling);
+    const ativos = [];
+    
+    if (categoriaAtual !== 'todos') {
+        const btn = document.querySelector(`.btn-categoria[data-categoria="${categoriaAtual}"]`);
+        if (btn) {
+            const nome = btn.querySelector('span')?.textContent || categoriaAtual;
+            ativos.push(nome);
+        }
+    }
+    
+    if (marcaAtual !== 'todas') {
+        const select = document.getElementById('marcaSelect');
+        const option = select?.querySelector(`option[value="${marcaAtual}"]`);
+        ativos.push(option?.textContent || marcaAtual);
+    }
+    
+    if (linhaAtual !== 'todas') {
+        const select = document.getElementById('linhaSelect');
+        const option = select?.querySelector(`option[value="${linhaAtual}"]`);
+        ativos.push(option?.textContent || linhaAtual);
+    }
+    
+    if (ativos.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+    
+    container.innerHTML = `Filtros: ${ativos.map(a => `<span class="ativo">${a}</span>`).join(' ')}`;
 }
 
+function obterLinhasPorMarca(marca) {
+    const linhas = new Set();
+    produtosEnriquecidos.forEach(produto => {
+        if (normalizarTexto(produto.marca) === normalizarTexto(marca)) {
+            if (produto.linha && produto.linha !== produto.marca) {
+                linhas.add(produto.linha);
+            }
+        }
+    });
+    return Array.from(linhas).sort();
+}
+
+function atualizarSelectMarcas() {
+    const select = document.getElementById('marcaSelect');
+    if (!select) return;
+    
+    const opcoes = select.options;
+    let temOpcao = false;
+    
+    for (let i = 0; i < opcoes.length; i++) {
+        if (opcoes[i].value === marcaAtual) {
+            temOpcao = true;
+            break;
+        }
+    }
+    
+    if (!temOpcao && marcaAtual !== 'todas') {
+        marcaAtual = 'todas';
+        select.value = 'todas';
+        document.getElementById('linhasWrapper').style.display = 'none';
+        linhaAtual = 'todas';
+    }
+}
+
+// ========================================
+// EVENTOS DOS FILTROS
+// ========================================
+
+// Categorias
+document.querySelectorAll('.btn-categoria').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.btn-categoria').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        categoriaAtual = this.getAttribute('data-categoria');
+        aplicarFiltros();
+    });
+});
+
+// Select de Marcas
+const marcaSelect = document.getElementById('marcaSelect');
+if (marcaSelect) {
+    marcaSelect.addEventListener('change', function() {
+        const valor = this.value;
+        marcaAtual = valor;
+        
+        const linhasWrapper = document.getElementById('linhasWrapper');
+        const linhaSelect = document.getElementById('linhaSelect');
+        
+        const linhas = obterLinhasPorMarca(valor);
+        
+        if (linhas.length > 0 && valor !== 'todas') {
+            linhasWrapper.style.display = 'block';
+            linhaSelect.innerHTML = '<option value="todas">Todas as Linhas</option>';
+            linhas.forEach(linha => {
+                const option = document.createElement('option');
+                option.value = linha;
+                option.textContent = linha;
+                linhaSelect.appendChild(option);
+            });
+            linhaAtual = 'todas';
+        } else {
+            linhasWrapper.style.display = 'none';
+            linhaAtual = 'todas';
+        }
+        
+        aplicarFiltros();
+    });
+}
+
+// Select de Linhas
+const linhaSelect = document.getElementById('linhaSelect');
+if (linhaSelect) {
+    linhaSelect.addEventListener('change', function() {
+        linhaAtual = this.value;
+        aplicarFiltros();
+    });
+}
+
+// Busca
 const searchInput =
     document.getElementById(
         'search-input'
@@ -2730,7 +2598,6 @@ if (searchInput) {
                                 termo
                             ) ||
 
-                            // 🔥 NOVO: Busca também pela linha
                             normalizarTexto(
                                 produto.linha || ''
                             ).includes(
@@ -2788,11 +2655,6 @@ habilitarScrollHorizontal(
 habilitarScrollHorizontal(
     '.marca-buttons'
 );
-
-// 🔥 NOVO: Scroll horizontal para os botões de linha
-setTimeout(() => {
-    habilitarScrollHorizontal('.linha-buttons');
-}, 500);
 
 // ========================================
 // MENU MOBILE
@@ -3135,14 +2997,15 @@ document.addEventListener(
     'DOMContentLoaded',
     async () => {
 
-        // Carrinho
         carregarCarrinho();
 
-        // Admin
         await verificarAdmin();
 
-        // 🔥 Cria os filtros de linha
-        criarFiltrosLinha();
+        // Sincroniza o select de marcas com o estado inicial
+        const selectMarca = document.getElementById('marcaSelect');
+        if (selectMarca) {
+            selectMarca.value = 'todas';
+        }
 
         const grid =
             document.getElementById(
@@ -3155,7 +3018,6 @@ document.addEventListener(
                 '<p style="text-align:center;grid-column:1/-1;padding:40px;">🔄 Carregando estoque...</p>';
         }
 
-        // Estoque
         await carregarEstoqueFirebase();
 
         setTimeout(() => {
@@ -3165,10 +3027,6 @@ document.addEventListener(
             initScrollReveal();
 
         }, 500);
-
-        // ========================================
-        // HEADER AO ROLAR
-        // ========================================
 
         window.addEventListener(
             'scroll',
@@ -3200,10 +3058,6 @@ document.addEventListener(
             }
         );
 
-        // ========================================
-        // ANO DO RODAPÉ
-        // ========================================
-
         const footerYear =
             document.querySelector(
                 '.footer-bottom p'
@@ -3217,10 +3071,6 @@ document.addEventListener(
                     new Date().getFullYear()
                 );
         }
-
-        // ========================================
-        // LOGIN ADMIN PELO LOGO
-        // ========================================
 
         const logo =
             document.querySelector(
@@ -3253,10 +3103,6 @@ document.addEventListener(
                 }
             );
         }
-
-        // ========================================
-        // BARRA ADMIN
-        // ========================================
 
         if (isAdmin) {
 
@@ -3438,70 +3284,6 @@ document
         );
     });
 
-    // ========================================
-// CONTROLE DOS DROPDOWNS DE FILTROS
-// ========================================
-
-function atualizarFiltrosAtivos() {
-    const container = document.getElementById('filtrosAtivos');
-    const ativos = [];
-    
-    if (categoriaAtual !== 'todos') {
-        const btn = document.querySelector(`.btn-categoria[data-categoria="${categoriaAtual}"]`);
-        if (btn) {
-            const nome = btn.querySelector('span')?.textContent || categoriaAtual;
-            ativos.push(nome);
-        }
-    }
-    
-    if (marcaAtual !== 'todas') {
-        ativos.push(marcaAtual);
-    }
-    
-    if (linhaAtual !== 'todas') {
-        ativos.push(linhaAtual);
-    }
-    
-    if (ativos.length === 0) {
-        container.innerHTML = '';
-        return;
-    }
-    
-    container.innerHTML = `Filtros: ${ativos.map(a => `<span class="ativo">${a}</span>`).join(' ')}`;
-}
-
-function obterLinhasPorMarca(marca) {
-    const linhas = new Set();
-    produtosEnriquecidos.forEach(produto => {
-        if (normalizarTexto(produto.marca) === normalizarTexto(marca)) {
-            if (produto.linha && produto.linha !== produto.marca) {
-                linhas.add(produto.linha);
-            }
-        }
-    });
-    return Array.from(linhas).sort();
-}
-
-function atualizarSelectMarcas() {
-    const select = document.getElementById('marcaSelect');
-    const opcoes = select.options;
-    let temOpcao = false;
-    
-    for (let i = 0; i < opcoes.length; i++) {
-        if (opcoes[i].value === marcaAtual) {
-            temOpcao = true;
-            break;
-        }
-    }
-    
-    if (!temOpcao && marcaAtual !== 'todas') {
-        marcaAtual = 'todas';
-        select.value = 'todas';
-        document.getElementById('linhasWrapper').style.display = 'none';
-        linhaAtual = 'todas';
-    }
-}
-
 // ========================================
 // FUNÇÕES GLOBAIS
 // ========================================
@@ -3538,3 +3320,6 @@ window.logoutAdmin =
 
 window.verificarDisponibilidade =
     verificarDisponibilidade;
+
+console.log('✅ Sistema carregado com sucesso!');
+console.log('📦 Total de produtos:', produtosEnriquecidos.length);
