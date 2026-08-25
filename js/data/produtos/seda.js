@@ -18,6 +18,45 @@ const produtosSeda = [
         esgotado: false
     },
     {
+        id: 901,
+        nome: "Creme de Pentear 1KG Definição Seda Boom",
+        marca: "Seda",
+        linha: "Boom",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/definicao/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 901,
+        nome: "Creme de Pentear 1KG Definição Intensa Seda Boom",
+        marca: "Seda",
+        linha: "Boom",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/definicao-intensa/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 901,
+        nome: "Creme de Pentear 1KG Volumão Power Seda Boom",
+        marca: "Seda",
+        linha: "Boom",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/volumao/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
         id: 902,
         nome: "Creme de Pentear 350ml Volumao Power Seda Boom",
         marca: "Seda",
@@ -71,13 +110,26 @@ const produtosSeda = [
     },
     {
         id: 906,
+        nome: "Shampoo Hidratante 250ml Seda Boom",
+        marca: "Seda",
+        linha: "Boom",
+        tipo: "cabelo",
+        categoria: "Condicionador",
+        descricao: "Shampoo 250ml Seda Boom",
+        preco: "R$ 18,99",
+        imagem: "img/Seda/boom/modelador/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 906,
         nome: "Condicionador Hidratante 250ml Seda Boom",
         marca: "Seda",
         linha: "Boom",
         tipo: "cabelo",
         categoria: "Condicionador",
         descricao: "Condicionador 250ml Seda Boom",
-        preco: "R$ 17,99",
+        preco: "R$ 19,99",
         imagem: "img/Seda/boom/modelador/condicionador.jpe",
         destaque: false,
         esgotado: false
@@ -202,6 +254,35 @@ const produtosSeda = [
         descricao: "Mascara 300g Seda",
         preco: "R$ 17,99",
         imagem: "img/Seda/ceramidas/mascara.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Mega Crescimento (2) ==========
+
+    {
+        id: 916,
+        nome: "Shampoo 300ml Mega Crescimento Seda",
+        marca: "Seda",
+        linha: "Mega Crescimento",
+        tipo: "cabelo",
+        categoria: "Shampoo",
+        descricao: "Shampo 300ml Seda",
+        preco: "R$ 14,99",
+        imagem: "img/Seda/mega-crescimento/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 917,
+        nome: "Condicionador 250ml Mega Crescimento Seda",
+        marca: "Seda",
+        linha: "Mega Crescimento",
+        tipo: "cabelo",
+        categoria: "Condicionador",
+        descricao: "Condicionador 250ml Seda",
+        preco: "R$ 16,99",
+        imagem: "img/Seda/mega-crescimento/cond.jpe",
         destaque: false,
         esgotado: false
     },
