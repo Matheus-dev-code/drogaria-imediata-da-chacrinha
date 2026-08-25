@@ -3438,6 +3438,70 @@ document
         );
     });
 
+    // ========================================
+// CONTROLE DOS DROPDOWNS DE FILTROS
+// ========================================
+
+function atualizarFiltrosAtivos() {
+    const container = document.getElementById('filtrosAtivos');
+    const ativos = [];
+    
+    if (categoriaAtual !== 'todos') {
+        const btn = document.querySelector(`.btn-categoria[data-categoria="${categoriaAtual}"]`);
+        if (btn) {
+            const nome = btn.querySelector('span')?.textContent || categoriaAtual;
+            ativos.push(nome);
+        }
+    }
+    
+    if (marcaAtual !== 'todas') {
+        ativos.push(marcaAtual);
+    }
+    
+    if (linhaAtual !== 'todas') {
+        ativos.push(linhaAtual);
+    }
+    
+    if (ativos.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+    
+    container.innerHTML = `Filtros: ${ativos.map(a => `<span class="ativo">${a}</span>`).join(' ')}`;
+}
+
+function obterLinhasPorMarca(marca) {
+    const linhas = new Set();
+    produtosEnriquecidos.forEach(produto => {
+        if (normalizarTexto(produto.marca) === normalizarTexto(marca)) {
+            if (produto.linha && produto.linha !== produto.marca) {
+                linhas.add(produto.linha);
+            }
+        }
+    });
+    return Array.from(linhas).sort();
+}
+
+function atualizarSelectMarcas() {
+    const select = document.getElementById('marcaSelect');
+    const opcoes = select.options;
+    let temOpcao = false;
+    
+    for (let i = 0; i < opcoes.length; i++) {
+        if (opcoes[i].value === marcaAtual) {
+            temOpcao = true;
+            break;
+        }
+    }
+    
+    if (!temOpcao && marcaAtual !== 'todas') {
+        marcaAtual = 'todas';
+        select.value = 'todas';
+        document.getElementById('linhasWrapper').style.display = 'none';
+        linhaAtual = 'todas';
+    }
+}
+
 // ========================================
 // FUNÇÕES GLOBAIS
 // ========================================

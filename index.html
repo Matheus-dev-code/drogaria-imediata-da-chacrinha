@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#8B0045">
-    <title>Drogaria Imediata Da Chacrinha - Cosméticos & Perfumaria</title>
+    <title>Drogaria Imediata da Chacrinha - Cosméticos & Perfumaria</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
-                     alt="Drogaria Imediata da Chacrinha" 
-                     class="logo-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                    alt="Drogaria Imediata da Chacrinha" class="logo-img">
                 <div class="logo-texto">
                     <h1>Drogaria Imediata da Chacrinha</h1>
                     <p>Cosméticos & Perfumaria</p>
@@ -71,68 +72,98 @@
         </div>
     </section>
 
-    <!-- Categorias -->
+    <!-- Categorias e Filtros -->
     <section class="categorias" id="categorias">
         <div class="container">
             <h2>Categorias</h2>
-            <div class="categoria-buttons">
-                <button class="btn-categoria active" data-categoria="todos">
-                    <i class="fas fa-th-large"></i> Todos
+
+            <!-- Categorias em grid -->
+            <div class="categorias-grid">
+                <button class="btn-categoria active" data-categoria="todos" title="Todos os produtos">
+                    <i class="fas fa-th-large"></i>
+                    <span>Todos</span>
                 </button>
-                <button class="btn-categoria" data-categoria="cabelo">
-                    <i class="fas fa-spa"></i> Cabelos
+                <button class="btn-categoria" data-categoria="cabelo" title="Produtos para cabelos">
+                    <i class="fas fa-spa"></i>
+                    <span>Cabelos</span>
                 </button>
-                <button class="btn-categoria" data-categoria="kids">
-                    <i class="fas fa-child"></i> Kids
+                <button class="btn-categoria" data-categoria="kids" title="Produtos infantis">
+                    <i class="fas fa-child"></i>
+                    <span>Kids</span>
                 </button>
-                <button class="btn-categoria" data-categoria="corpo">
-                    <i class="fas fa-hand-sparkles"></i> Corpo
+                <button class="btn-categoria" data-categoria="corpo" title="Cuidados com o corpo">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <span>Corpo</span>
                 </button>
-                <button class="btn-categoria" data-categoria="higiene">
-                    <i class="fas fa-shower"></i> Higiene
+                <button class="btn-categoria" data-categoria="higiene" title="Produtos de higiene">
+                    <i class="fas fa-shower"></i>
+                    <span>Higiene</span>
                 </button>
-                <button class="btn-categoria" data-categoria="pele">
-                    <i class="fas fa-smile"></i> Pele
+                <button class="btn-categoria" data-categoria="pele" title="Cuidados com a pele">
+                    <i class="fas fa-smile"></i>
+                    <span>Pele</span>
                 </button>
-                <button class="btn-categoria" data-categoria="perfumaria">
-                    <i class="fas fa-perfume"></i> Perfumaria
+                <button class="btn-categoria" data-categoria="perfumaria" title="Perfumes e colônias">
+                    <i class="fas fa-perfume"></i>
+                    <span>Perfumaria</span>
                 </button>
-                <button class="btn-categoria" data-categoria="maquiagem">
-                    <i class="fas fa-paint-brush"></i> Maquiagem
+                <button class="btn-categoria" data-categoria="maquiagem" title="Maquiagem e acessórios">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Maquiagem</span>
                 </button>
-                <button class="btn-categoria" data-categoria="tintas">
-                    <i class="fas fa-palette"></i> Tintas
+                <button class="btn-categoria" data-categoria="tintas" title="Tintas e descolorantes">
+                    <i class="fas fa-palette"></i>
+                    <span>Tintas</span>
                 </button>
             </div>
-            
-            <div class="marca-filtro">
-                <h3>Filtrar por Marca</h3>
-                <div class="marca-buttons">
-                    <button class="btn-marca active" data-marca="todas">Todas</button>
-                    <button class="btn-marca" data-marca="salon line">Salon Line</button>
-                    <button class="btn-marca" data-marca="salon line kids">Salon Line Kids</button>
-                    <button class="btn-marca" data-marca="seda">Seda</button>
-                    <button class="btn-marca" data-marca="l'oréal paris">L'Oréal Paris</button>
-                    <button class="btn-marca" data-marca="paixao">Paixão</button>
-                    <button class="btn-marca" data-marca="maxton">Maxton</button>
-                    <button class="btn-marca" data-marca="cor&ton">Cor & Ton</button>
-                    <button class="btn-marca" data-marca="dove">Dove</button>
-                    <button class="btn-marca" data-marca="nivea">Nivea</button>
-                    <button class="btn-marca" data-marca="muriel">Muriel</button>
-                    <button class="btn-marca" data-marca="acnezil">Acnezil</button>
-                    <button class="btn-marca" data-marca="asepxia">Asepxia</button>
-                    <button class="btn-marca" data-marca="bepantriz">Bepantriz</button>
-                    <button class="btn-marca" data-marca="bepantol">Bepantol</button>
-                    <button class="btn-marca" data-marca="cicatricure">Cicatricure</button>
-                    <button class="btn-marca" data-marca="rexona">Rexona</button>
-                    <button class="btn-marca" data-marca="babysec">Babysec</button>
-                    <button class="btn-marca" data-marca="monange">Monange</button>
-                    <button class="btn-marca" data-marca="giovanna baby">Giovanna Baby</button>
-                    <button class="btn-marca" data-marca="face beautiful">Face Beautiful</button>
-                    <button class="btn-marca" data-marca="marcia">Marcia</button>
-                    <button class="btn-marca" data-marca="natuhair">Natuhair</button>
-                    <button class="btn-marca" data-marca="granado">Granado</button>
+
+            <!-- Filtros rápidos -->
+            <div class="filtros-rapidos">
+                <!-- Busca -->
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar produtos..." id="search-input">
                 </div>
+
+                <!-- Dropdown de Marcas -->
+                <div class="dropdown-wrapper">
+                    <select id="marcaSelect" aria-label="Filtrar por marca">
+                        <option value="todas">Todas as Marcas</option>
+                        <option value="acnezil">Acnezil</option>
+                        <option value="asepxia">Asepxia</option>
+                        <option value="babysec">Babysec</option>
+                        <option value="bepantol">Bepantol</option>
+                        <option value="bepantriz">Bepantriz</option>
+                        <option value="cicatricure">Cicatricure</option>
+                        <option value="cor&ton">Cor &amp; Ton</option>
+                        <option value="dove">Dove</option>
+                        <option value="face beautiful">Face Beautiful</option>
+                        <option value="giovanna baby">Giovanna Baby</option>
+                        <option value="granado">Granado</option>
+                        <option value="l'oréal paris">L'Oréal Paris</option>
+                        <option value="marcia">Marcia</option>
+                        <option value="maxton">Maxton</option>
+                        <option value="monange">Monange</option>
+                        <option value="muriel">Muriel</option>
+                        <option value="natuhair">Natuhair</option>
+                        <option value="nivea">Nivea</option>
+                        <option value="paixao">Paixão</option>
+                        <option value="rexona">Rexona</option>
+                        <option value="salon line">Salon Line</option>
+                        <option value="salon line kids">Salon Line Kids</option>
+                        <option value="seda">Seda</option>
+                    </select>
+                </div>
+
+                <!-- Dropdown de Linhas (aparece apenas quando necessário) -->
+                <div class="dropdown-wrapper" id="linhasWrapper" style="display:none;">
+                    <select id="linhaSelect" aria-label="Filtrar por linha">
+                        <option value="todas">Todas as Linhas</option>
+                    </select>
+                </div>
+
+                <!-- Contador de filtros ativos -->
+                <span class="filtros-ativos" id="filtrosAtivos"></span>
             </div>
         </div>
     </section>
@@ -141,9 +172,6 @@
     <section class="produtos" id="produtos">
         <div class="container">
             <h2>Nossos Produtos</h2>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="🔍 Buscar produtos..." id="search-input">
-            </div>
             <div class="contador-produtos" id="contador-produtos"></div>
             <div class="produtos-grid" id="produtosGrid"></div>
         </div>
@@ -155,11 +183,11 @@
             <h2>Sobre Nós</h2>
             <div class="sobre-content">
                 <div class="sobre-texto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
-                         alt="Drogaria Imediata da Chacrinha" 
-                         class="sobre-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                        alt="Drogaria Imediata da Chacrinha" class="sobre-logo">
                     <h3>Drogaria Imediata da Chacrinha</h3>
-                    <p>Trabalhamos com as melhores marcas de cosméticos e perfumaria. Nossa missão é oferecer produtos de qualidade com o melhor atendimento e preços competitivos.</p>
+                    <p>Trabalhamos com as melhores marcas de cosméticos e perfumaria. Nossa missão é oferecer produtos
+                        de qualidade com o melhor atendimento e preços competitivos.</p>
                     <div class="info-contato">
                         <div class="contato-item">
                             <i class="fab fa-whatsapp"></i>
@@ -185,8 +213,8 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10" 
-                             alt="Drogaria Imediata da Chacrinha">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                            alt="Drogaria Imediata da Chacrinha">
                         <h3>Drogaria Imediata da Chacrinha</h3>
                     </div>
                     <p>Produtos de beleza que cuidam de você</p>
@@ -234,7 +262,8 @@
                 <div class="cart-empty">
                     <i class="fas fa-shopping-bag"></i>
                     <p>Seu carrinho está vazio</p>
-                    <button class="btn-primary btn-continuar-comprando" onclick="fecharCarrinho()">Continuar Comprando</button>
+                    <button class="btn-primary btn-continuar-comprando" onclick="fecharCarrinho()">Continuar
+                        Comprando</button>
                 </div>
                 <div class="cart-items" id="cartItems"></div>
             </div>
@@ -267,9 +296,8 @@
     </button>
 
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/5521969583871?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
-       class="whatsapp-float" 
-       target="_blank">
+    <a href="https://wa.me/5521969583871?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!"
+        class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -319,6 +347,7 @@
     <script src="js/produtos/granado.js"></script>
 
     <!-- Main JS -->
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
