@@ -31,6 +31,30 @@ const produtosLoreal = [
         esgotado: false
     },
     {
+        id: 506,
+        nome: "Creme de Pentear 250ml Óleo Extraordinario L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 250ml Elseve",
+        preco: "R$ 20,99",
+        imagem: "img/loreal/elseve/oleo/cr.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 507,
+        nome: "Mascara 300g Óleo Extraordinario Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Mascara",
+        descricao: "Mascara 300g Elseve",
+        preco: "R$ 31,99",
+        imagem: "img/loreal/elseve/oleo/mascara.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
         id: 503,
         nome: "Óleo 100ml Óleo Extraordinario Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
@@ -109,6 +133,18 @@ const produtosLoreal = [
         esgotado: false
     },
     {
+        id: 510,
+        nome: "Condicionador 200ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Condicionador",
+        descricao: "Condicionador 200ml Elseve",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
         id: 509,
         nome: "Shampoo 200ml Cachos Longos Dos Sonhos Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
@@ -159,6 +195,30 @@ const produtosLoreal = [
 
     // ========== Liso dos Sonhos (4) ==========
 
+    {
+        id: 513,
+        nome: "Shampoo 400ml Liso Dos Sonhos Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Shampoo",
+        descricao: "Shampoo 400ml Elseve",
+        preco: "R$ 34,99",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/sh-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 514,
+        nome: "Condicionador 400ml Liso Dos Sonhos Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Condicionador",
+        descricao: "Condiconador 400ml Elseve",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/cond-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
     {
         id: 513,
         nome: "Shampoo 200ml Liso Dos Sonhos Elseve L'Oréal Paris",
@@ -223,6 +283,18 @@ const produtosLoreal = [
         esgotado: false
     },
     {
+        id: 519,
+        nome: "Condicioandor 400ml Glycolic Gloss Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Condicionador",
+        descricao: "Condicionador 400ml Elseve",
+        preco: "R$ 34,99",
+        imagem: "img/loreal/elseve/glycolic-gloss/cond-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
         id: 518,
         nome: "Shampoo 200ml Glycolic Gloss Elseve L'Oréal Paris",
         marca: "L'Oréal Paris",
@@ -267,6 +339,18 @@ const produtosLoreal = [
         descricao: "Mascara 300g Elseve",
         preco: "R$ 33,99",
         imagem: "img/loreal/elseve/glycolic-gloss/masc.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 503,
+        nome: "Óleo 100ml Glycolic Gloss Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Óleo",
+        descricao: "Óleo 100ml Elseve",
+        preco: "R$ 46,99",
+        imagem: "img/loreal/elseve/glycolic-gloss/oleo.jpe",
         destaque: false,
         esgotado: false
     },
@@ -407,5 +491,144 @@ const produtosLoreal = [
         imagem: "img/loreal/elseve/pure-hialuronico/masc.jpe",
         destaque: false,
         esgotado: false
-    }
+    },
+
+    // ========== Collagen Lifter (3) ==========
+
+    {
+        id: 501,
+        nome: "Shampoo Collagen Lifter 400ml Elseve L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "shampoo",
+        descricao: "Shampoo 400ml Elseve",
+        preco: "R$ 34,99",
+        imagem: "img/loreal/elseve/collagen-lifter/sh-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 502,
+        nome: "Condicionador 400ml Collagen Lifter L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "condicionador",
+        descricao: "Condicionador 400ml Elseve",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/elseve/collagen-lifter/cond-400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 501,
+        nome: "Shampoo Collagen Lifter 200ml Elseve L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "shampoo",
+        descricao: "Shampoo 200ml Elseve",
+        preco: "R$ 18,99",
+        imagem: "img/loreal/elseve/collagen-lifter/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 502,
+        nome: "Condicionador 200ml Collagen Lifter L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "condicionador",
+        descricao: "Condicionador 200ml Elseve",
+        preco: "R$ 19,99",
+        imagem: "img/loreal/elseve/collagen-lifter/cond.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 506,
+        nome: "Creme de Pentear 250ml Collagen Lifter L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 250ml Elseve",
+        preco: "R$ 20,99",
+        imagem: "img/loreal/elseve/collagen-lifter/cr.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 507,
+        nome: "Mascara 300g Collagen Lifter Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Mascara",
+        descricao: "Mascara 300g Elseve",
+        preco: "R$ 31,99",
+        imagem: "img/loreal/elseve/collagen-lifter/mascara.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 503,
+        nome: "Óleo 100ml Collagen Lifter Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Óleo",
+        descricao: "Óleo 100ml Elseve",
+        preco: "R$ 44,99",
+        imagem: "img/loreal/elseve/collagen-lifter/oleo.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Reparação total (3) ==========
+
+    {
+        id: 501,
+        nome: "Shampoo Reparação Total 200ml Elseve L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "shampoo",
+        descricao: "Shampoo 200ml Elseve",
+        preco: "R$ 18,99",
+        imagem: "img/loreal/elseve/repacap/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 502,
+        nome: "Condicionador 200ml Reparação Total L'Oréal Paris ",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "condicionador",
+        descricao: "Condicionador 200ml Elseve",
+        preco: "R$ 19,99",
+        imagem: "img/loreal/elseve/repacao/cond.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 506,
+        nome: "Creme de Pentear 250ml Reparação Total L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 250ml Elseve",
+        preco: "R$ 20,99",
+        imagem: "img/loreal/elseve/repacao/cr.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 507,
+        nome: "Mascara 300g Reparação Total Elseve L'Oréal Paris",
+        marca: "L'Oréal Paris",
+        tipo: "cabelo",
+        categoria: "Mascara",
+        descricao: "Mascara 300g Elseve",
+        preco: "R$ 31,99",
+        imagem: "img/loreal/elseve/oleo/mascara.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    
 ];
