@@ -96,22 +96,35 @@ document.addEventListener('DOMContentLoaded', async () => {
 // ========================================
 
 function configurarEventosCarrinho() {
+    // Abrir carrinho
     const cartIcon = document.getElementById('cartIcon');
-    if (cartIcon) cartIcon.addEventListener('click', abrirCarrinho);
+    if (cartIcon) {
+        cartIcon.addEventListener('click', abrirCarrinho);
+    }
 
+    // Fechar carrinho
     const cartClose = document.getElementById('cartClose');
-    if (cartClose) cartClose.addEventListener('click', fecharCarrinho);
+    if (cartClose) {
+        cartClose.addEventListener('click', fecharCarrinho);
+    }
 
+    // Fechar carrinho ao clicar fora
     const cartOverlay = document.getElementById('cartOverlay');
     if (cartOverlay) {
         cartOverlay.addEventListener('click', function(e) {
-            if (e.target === this) fecharCarrinho();
+            if (e.target === this) {
+                fecharCarrinho();
+            }
         });
     }
 
+    // MODIFICADO: Botão finalizar agora abre o checkout
     const btnFinalizarPedido = document.getElementById('btnFinalizarPedido');
-    if (btnFinalizarPedido) btnFinalizarPedido.addEventListener('click', finalizarPedido);
+    if (btnFinalizarPedido) {
+        btnFinalizarPedido.addEventListener('click', abrirCheckout);
+    }
 
+    // Esvaziar carrinho
     const btnEsvaziarCarrinho = document.getElementById('btnEsvaziarCarrinho');
     if (btnEsvaziarCarrinho) {
         btnEsvaziarCarrinho.addEventListener('click', function() {
@@ -126,10 +139,225 @@ function configurarEventosCarrinho() {
             }
         });
     }
+
+    // Fechar carrinho com tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            fecharCarrinho();
+            fecharCheckout();
+        }
+    });
 }
 
 // ========================================
-// FUNÇÕES GLOBAIS (para acesso via HTML)
+// CONFIGURAÇÃO DOS EVENTOS DE FILTROS
+// ========================================
+
+function configurarEventosFiltros() {
+    // Categorias
+    document.querySelectorAll('.btn-categoria').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.btn-categoria').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            categoriaAtual = this.getAttribute('data-categoria');
+            aplicarFiltros();
+        });
+    });
+
+    // Select de Marcas
+    const marcaSelect = document.getElementById('marcaSelect');
+    if (marcaSelect) {
+        marcaSelect.addEventListener('change', function() {
+            const valor = this.value;
+            marcaAtual = valor;
+
+            const linhasWrapper = document.getElementById('linhasWrapper');
+            const linhaSelect = document.getElementById('linhaSelect');
+            const linhas = obterLinhasPorMarca(valor);
+
+            if (linhas.length > 0 && valor !== 'todas') {
+                linhasWrapper.style.display = 'block';
+                linhaSelect.innerHTML = '<option value="todas">Todas as Linhas</option>';
+                
+                linhas.forEach(linha => {
+                    const option = document.createElement('option');
+                    option.value = linha;
+                    option.textContent = linha;
+                    linhaSelect.appendChild(option);
+                });
+                
+                linhaAtual = 'todas';
+            } else {
+                linhasWrapper.style.display = 'none';
+                linhaAtual = 'todas';
+            }
+
+            aplicarFiltros();
+        });
+    }
+
+    // Select de Linhas
+    const linhaSelect = document.getElementById('linhaSelect');
+    if (linhaSelect) {
+        linhaSelect.addEventListener('change', function() {
+            linhaAtual = this.value;
+            aplicarFiltros();
+        });
+    }
+
+    // Busca
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        let debounceTimer;
+        
+        searchInput.addEventListener('input', function() {
+            clearTimeout(debounceTimer);
+            
+            debounceTimer = setTimeout(() => {
+                const termo = normalizarTexto(this.value);
+
+                if (termo === '') {
+                    aplicarFiltros();
+                    return;
+                }
+
+                // 📊 Registra evento de busca no Analytics
+                if (typeof registrarBusca === 'function') {
+                    registrarBusca(termo);
+                }
+
+                produtosFiltrados = produtosEnriquecidos.filter(produto => {
+                    return normalizarTexto(produto.nome).includes(termo) ||
+                        normalizarTexto(produto.marca).includes(termo) ||
+                        normalizarTexto(produto.descricao).includes(termo) ||
+                        normalizarTexto(formatarCategoria(produto.categoria)).includes(termo) ||
+                        normalizarTexto(produto.linha || '').includes(termo);
+                });
+
+                paginaAtual = 1;
+                mostrarPagina(true);
+            }, 300);
+        });
+    }
+}
+
+// ========================================
+// CONFIGURAÇÃO DOS EVENTOS DE DESTAQUES
+// ========================================
+
+function configurarEventosDestaques() {
+    const destaquePrev = document.getElementById('destaquePrev');
+    if (destaquePrev) {
+        destaquePrev.addEventListener('click', () => mudarPaginaDestaques(-1));
+    }
+
+    const destaqueNext = document.getElementById('destaqueNext');
+    if (destaqueNext) {
+        destaqueNext.addEventListener('click', () => mudarPaginaDestaques(1));
+    }
+}
+
+// ========================================
+// CONFIGURAÇÃO DO MENU MOBILE
+// ========================================
+
+function configurarMenuMobile() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (!menuToggle || !navMenu) return;
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        }
+    });
+
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        const header = document.querySelector('header');
+        if (header && !header.contains(e.target) && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        }
+    });
+}
+
+// ========================================
+// CONFIGURAÇÃO DO BOTÃO VOLTAR AO TOPO
+// ========================================
+
+function configurarBotaoTopo() {
+    const btnTopo = document.getElementById('btnTopo');
+    if (!btnTopo) return;
+
+    window.addEventListener('scroll', () => {
+        btnTopo.classList.toggle('show', window.scrollY > 400);
+    });
+
+    btnTopo.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// ========================================
+// CONFIGURAÇÃO DO SMOOTH SCROLL
+// ========================================
+
+function configurarSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) scrollParaElemento(target);
+        });
+    });
+}
+
+// ========================================
+// CONFIGURAÇÃO DO SCROLL REVEAL
+// ========================================
+
+function configurarScrollReveal() {
+    if (typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.produto-card, .destaques-grid .produto-card, .sobre-texto')
+        .forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+}
+
+// ========================================
+// FUNÇÕES GLOBAIS
 // ========================================
 
 window.adicionarAoCarrinho = adicionarAoCarrinho;
@@ -137,9 +365,14 @@ window.removerDoCarrinho = removerDoCarrinho;
 window.alterarQuantidade = alterarQuantidade;
 window.abrirCarrinho = abrirCarrinho;
 window.fecharCarrinho = fecharCarrinho;
-window.finalizarPedido = finalizarPedido;
+window.abrirCheckout = abrirCheckout;
+window.fecharCheckout = fecharCheckout;
+window.processarCheckout = processarCheckout;
+window.mostrarObservacaoPagamento = mostrarObservacaoPagamento;
 window.mudarPagina = mudarPagina;
 window.mudarPaginaDestaques = mudarPaginaDestaques;
 window.mostrarLoginAdmin = mostrarLoginAdmin;
 window.logoutAdmin = logoutAdmin;
 window.verificarDisponibilidade = verificarDisponibilidade;
+
+console.log('✅ Main.js carregado com sucesso!');
