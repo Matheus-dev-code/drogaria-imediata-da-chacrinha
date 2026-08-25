@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     configurarBotaoTopo();
     configurarSmoothScroll();
     configurarEventosCarrinho();
+    configurarLogo(); // NOVA FUNÇÃO
 
     // 4. Sincroniza select de marcas
     const selectMarca = document.getElementById('marcaSelect');
@@ -68,20 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         footerYear.innerHTML = footerYear.innerHTML.replace('2026', new Date().getFullYear());
     }
 
-    // 9. Configura logo para login admin (duplo clique)
-    const logo = document.querySelector('.logo');
-    if (logo) {
-        logo.addEventListener('dblclick', function(e) {
-            e.stopPropagation();
-            if (isAdmin) {
-                if (confirm('Você está logado como administrador. Deseja sair?')) {
-                    logoutAdmin();
-                }
-            } else {
-                mostrarLoginAdmin();
-            }
-        });
-    }
+    // 9. Configura logo (agora com clique para voltar ao topo)
+    configurarLogo();
 
     // 10. Cria barra de admin se necessário
     if (isAdmin) {
@@ -90,6 +79,40 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     console.log('✅ Sistema carregado com sucesso!');
 });
+
+// ========================================
+// CONFIGURAÇÃO DO LOGO
+// ========================================
+
+function configurarLogo() {
+    const logo = document.querySelector('.logo');
+    
+    if (!logo) return;
+
+    // CLIQUE ÚNICO: Volta para o topo
+    logo.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // DUPLO CLIQUE: Abre login admin
+    logo.addEventListener('dblclick', function(e) {
+        e.stopPropagation();
+        
+        if (isAdmin) {
+            if (confirm('Você está logado como administrador. Deseja sair?')) {
+                logoutAdmin();
+            }
+        } else {
+            mostrarLoginAdmin();
+        }
+    });
+
+    // Muda o cursor para indicar que é clicável
+    logo.style.cursor = 'pointer';
+    logo.style.userSelect = 'none';
+    logo.title = 'Voltar ao início';
+}
 
 // ========================================
 // CONFIGURAÇÃO DOS EVENTOS DO CARRINHO
@@ -118,7 +141,7 @@ function configurarEventosCarrinho() {
         });
     }
 
-    // MODIFICADO: Botão finalizar agora abre o checkout
+    // Botão finalizar agora abre o checkout
     const btnFinalizarPedido = document.getElementById('btnFinalizarPedido');
     if (btnFinalizarPedido) {
         btnFinalizarPedido.addEventListener('click', abrirCheckout);

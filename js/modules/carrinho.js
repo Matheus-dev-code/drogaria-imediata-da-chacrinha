@@ -11,7 +11,8 @@ const BAIRROS_ATENDIDOS = [
     'Chacrinha',
     'Bato',
     'Chácara',
-    'Vila Valqueire (limitado,Consultar Local)'
+    'Capitão Menezes',
+    'Capitão Machado'
 ];
 
 // ========================================
@@ -38,6 +39,34 @@ function salvarCarrinho() {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     atualizarBadge();
     atualizarFreteProgresso();
+}
+
+// ========================================
+// SALVAR E CARREGAR DADOS DO CLIENTE
+// ========================================
+
+function salvarDadosCliente(dados) {
+    try {
+        localStorage.setItem('dadosCliente', JSON.stringify(dados));
+        console.log('💾 Dados do cliente salvos com sucesso!');
+    } catch (e) {
+        console.error('❌ Erro ao salvar dados do cliente:', e);
+    }
+}
+
+function carregarDadosCliente() {
+    try {
+        const dados = JSON.parse(localStorage.getItem('dadosCliente') || '{}');
+        return dados;
+    } catch (e) {
+        console.error('❌ Erro ao carregar dados do cliente:', e);
+        return {};
+    }
+}
+
+function limparDadosCliente() {
+    localStorage.removeItem('dadosCliente');
+    console.log('🗑️ Dados do cliente removidos');
 }
 
 // ========================================
@@ -499,8 +528,8 @@ function abrirCheckout() {
                             font-weight: 600;
                             color: #333;
                             font-size: 14px;
-                        ">🏠 Complemento (opcional)</label>
-                        <input type="text" id="checkoutComplemento" placeholder="Apto, bloco, casa, etc."
+                        ">🏠 Complemento *</label>
+                        <input type="text" id="checkoutComplemento" required placeholder="Apto, bloco, casa, etc."
                             style="
                                 width: 100%;
                                 padding: 12px;
@@ -509,6 +538,12 @@ function abrirCheckout() {
                                 font-size: 14px;
                                 outline: none;
                             ">
+                        <small style="
+                            display: block;
+                            margin-top: 4px;
+                            color: #999;
+                            font-size: 11px;
+                        ">Se não tiver, digite "Não possui"</small>
                     </div>
 
                     <!-- Referência -->
@@ -519,8 +554,8 @@ function abrirCheckout() {
                             font-weight: 600;
                             color: #333;
                             font-size: 14px;
-                        ">🔍 Ponto de Referência (opcional)</label>
-                        <input type="text" id="checkoutReferencia" placeholder="Próximo a..."
+                        ">🔍 Ponto de Referência *</label>
+                        <input type="text" id="checkoutReferencia" required placeholder="Próximo a..."
                             style="
                                 width: 100%;
                                 padding: 12px;
@@ -529,6 +564,12 @@ function abrirCheckout() {
                                 font-size: 14px;
                                 outline: none;
                             ">
+                        <small style="
+                            display: block;
+                            margin-top: 4px;
+                            color: #999;
+                            font-size: 11px;
+                        ">Ex: Próximo à padaria, igreja, etc.</small>
                     </div>
 
                     <!-- Pagamento -->
@@ -603,7 +644,7 @@ function abrirCheckout() {
                             font-weight: 600;
                             color: #333;
                             font-size: 14px;
-                        ">💵 Troco para quanto? (opcional)</label>
+                        ">💵 Troco para quanto? *</label>
                         <input type="text" id="checkoutTroco" placeholder="Ex: Troco para R$ 100,00"
                             style="
                                 width: 100%;
@@ -644,11 +685,40 @@ function abrirCheckout() {
     document.body.appendChild(modal);
     document.body.style.overflow = 'hidden';
 
+    // 🔄 Preenche os dados salvos do cliente
+    const dadosSalvos = carregarDadosCliente();
+    
+    setTimeout(() => {
+        if (dadosSalvos.nome) {
+            document.getElementById('checkoutNome').value = dadosSalvos.nome;
+        }
+        if (dadosSalvos.endereco) {
+            document.getElementById('checkoutEndereco').value = dadosSalvos.endereco;
+        }
+        if (dadosSalvos.numero) {
+            document.getElementById('checkoutNumero').value = dadosSalvos.numero;
+        }
+        if (dadosSalvos.bairro) {
+            document.getElementById('checkoutBairro').value = dadosSalvos.bairro;
+        }
+        if (dadosSalvos.complemento) {
+            document.getElementById('checkoutComplemento').value = dadosSalvos.complemento;
+        }
+        if (dadosSalvos.referencia) {
+            document.getElementById('checkoutReferencia').value = dadosSalvos.referencia;
+        }
+        
+        // Mostra mensagem se os dados foram preenchidos automaticamente
+        if (dadosSalvos.nome) {
+            mostrarToast('👋 Bem-vindo de volta! Seus dados foram preenchidos.');
+        }
+    }, 100);
+
     // Foca no primeiro campo
     setTimeout(() => {
         const input = document.getElementById('checkoutNome');
         if (input) input.focus();
-    }, 100);
+    }, 200);
 
     // Fecha ao clicar fora
     modal.addEventListener('click', function(e) {
@@ -666,11 +736,15 @@ function mostrarObservacaoPagamento(valor) {
     const obsPix = document.getElementById('observacaoPix');
     const obsDinheiro = document.getElementById('observacaoDinheiro');
     const campoTroco = document.getElementById('campoTroco');
+    const inputTroco = document.getElementById('checkoutTroco');
     
     // Esconde tudo primeiro
     if (obsPix) obsPix.style.display = 'none';
     if (obsDinheiro) obsDinheiro.style.display = 'none';
     if (campoTroco) campoTroco.style.display = 'none';
+    
+    // Remove required do campo de troco por padrão
+    if (inputTroco) inputTroco.required = false;
     
     // Mostra conforme seleção
     if (valor === 'PIX') {
@@ -678,6 +752,7 @@ function mostrarObservacaoPagamento(valor) {
     } else if (valor === 'Dinheiro') {
         if (obsDinheiro) obsDinheiro.style.display = 'block';
         if (campoTroco) campoTroco.style.display = 'block';
+        if (inputTroco) inputTroco.required = true;
     }
 }
 
@@ -698,11 +773,68 @@ function processarCheckout() {
     const pagamento = document.getElementById('checkoutPagamento').value;
     const troco = document.getElementById('checkoutTroco').value.trim();
 
-    // Validações
-    if (!nome || !endereco || !numero || !bairro || !pagamento) {
-        mostrarToast('⚠️ Preencha todos os campos obrigatórios!');
+    // Validações - TODOS os campos são obrigatórios
+    if (!nome) {
+        mostrarToast('⚠️ Informe seu nome completo!');
+        document.getElementById('checkoutNome').focus();
         return;
     }
+    
+    if (!endereco) {
+        mostrarToast('⚠️ Informe seu endereço!');
+        document.getElementById('checkoutEndereco').focus();
+        return;
+    }
+    
+    if (!numero) {
+        mostrarToast('⚠️ Informe o número!');
+        document.getElementById('checkoutNumero').focus();
+        return;
+    }
+    
+    if (!bairro) {
+        mostrarToast('⚠️ Selecione o bairro!');
+        document.getElementById('checkoutBairro').focus();
+        return;
+    }
+    
+    if (!complemento) {
+        mostrarToast('⚠️ Informe o complemento (ou digite "Não possui")!');
+        document.getElementById('checkoutComplemento').focus();
+        return;
+    }
+    
+    if (!referencia) {
+        mostrarToast('⚠️ Informe um ponto de referência!');
+        document.getElementById('checkoutReferencia').focus();
+        return;
+    }
+    
+    if (!pagamento) {
+        mostrarToast('⚠️ Selecione a forma de pagamento!');
+        document.getElementById('checkoutPagamento').focus();
+        return;
+    }
+    
+    // Se for Dinheiro, troco é obrigatório
+    if (pagamento === 'Dinheiro' && !troco) {
+        mostrarToast('⚠️ Informe o valor do troco (ou digite "Não precisa")!');
+        document.getElementById('checkoutTroco').focus();
+        return;
+    }
+
+    // 💾 Salva os dados do cliente para próxima compra
+    const dadosCliente = {
+        nome: nome,
+        endereco: endereco,
+        numero: numero,
+        bairro: bairro,
+        complemento: complemento,
+        referencia: referencia
+    };
+    
+    salvarDadosCliente(dadosCliente);
+    console.log('💾 Dados do cliente salvos para próxima compra!');
 
     // Calcula o total
     const total = calcularTotalCarrinho();
@@ -723,14 +855,8 @@ function processarCheckout() {
     mensagem += `📝 Nome: ${nome}\n`;
     mensagem += `📍 Endereço: ${endereco}, ${numero}\n`;
     mensagem += `🏘️ Bairro: ${bairro}\n`;
-    
-    if (complemento) {
-        mensagem += `🏠 Complemento: ${complemento}\n`;
-    }
-    
-    if (referencia) {
-        mensagem += `🔍 Referência: ${referencia}\n`;
-    }
+    mensagem += `🏠 Complemento: ${complemento}\n`;
+    mensagem += `🔍 Referência: ${referencia}\n`;
     
     // Formata a forma de pagamento
     if (pagamento === 'Cartão de Crédito') {
@@ -739,11 +865,7 @@ function processarCheckout() {
         mensagem += `💳 Pagamento: Cartão de Débito (Na maquininha)\n`;
     } else if (pagamento === 'Dinheiro') {
         mensagem += `💵 Pagamento: Dinheiro\n`;
-        if (troco) {
-            mensagem += `💵 Troco: ${troco}\n`;
-        } else {
-            mensagem += `💵 Troco: Não precisa\n`;
-        }
+        mensagem += `💵 Troco: ${troco}\n`;
     } else if (pagamento === 'PIX') {
         mensagem += `⚡ Pagamento: PIX\n`;
         mensagem += `⚠️ *PIX:* Solicitarei a chave para pagamento. Entrega liberada após envio do comprovante.\n`;
@@ -789,6 +911,9 @@ function processarCheckout() {
 
 window.carregarCarrinho = carregarCarrinho;
 window.salvarCarrinho = salvarCarrinho;
+window.salvarDadosCliente = salvarDadosCliente;
+window.carregarDadosCliente = carregarDadosCliente;
+window.limparDadosCliente = limparDadosCliente;
 window.adicionarAoCarrinho = adicionarAoCarrinho;
 window.removerDoCarrinho = removerDoCarrinho;
 window.alterarQuantidade = alterarQuantidade;
