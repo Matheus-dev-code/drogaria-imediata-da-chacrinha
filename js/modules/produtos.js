@@ -21,6 +21,8 @@ const idsAvaliacao = {
 // ========================================
 
 function carregarTodosProdutos() {
+    console.log('🔄 Carregando produtos...');
+    
     const arraysProdutos = [
         { nome: 'Salon Line Kids', dados: typeof produtosSalonLineKids !== 'undefined' ? produtosSalonLineKids : [] },
         { nome: 'Salon Line Adulto', dados: typeof produtosSalonLineAdulto !== 'undefined' ? produtosSalonLineAdulto : [] },
@@ -47,6 +49,7 @@ function carregarTodosProdutos() {
         { nome: 'Granado', dados: typeof produtosGranado !== 'undefined' ? produtosGranado : [] }
     ];
 
+    // Mostra diagnóstico de carregamento
     arraysProdutos.forEach(item => {
         if (item.dados.length === 0) {
             console.warn(`⚠️ ${item.nome}: Nenhum produto carregado`);
@@ -55,19 +58,75 @@ function carregarTodosProdutos() {
         }
     });
 
+    // Junta todos os produtos em um único array
     todosProdutos = arraysProdutos
         .map(item => item.dados)
         .flat();
 
-    console.log(`📦 Total de produtos: ${todosProdutos.length}`);
+    console.log(`📦 Total de produtos carregados: ${todosProdutos.length}`);
 
-    return enriquecerProdutos(todosProdutos);
+    // 🔧 CORRIGE IDs DUPLICADOS AUTOMATICAMENTE
+    corrigirIdsDuplicados(todosProdutos);
+
+    // Enriquece os produtos (adiciona avaliação, promoção, etc)
+    const produtosEnriquecidosArray = enriquecerProdutos(todosProdutos);
+    
+    console.log(`✅ Produtos processados com sucesso!`);
+    
+    return produtosEnriquecidosArray;
 }
+
+// ========================================
+// CORREÇÃO AUTOMÁTICA DE IDs DUPLICADOS
+// ========================================
+
+function corrigirIdsDuplicados(produtos) {
+    console.log('🔧 Verificando IDs duplicados...');
+    
+    const idsVistos = new Set();
+    let contadorCorrecoes = 0;
+    let contadorSemId = 0;
+    let contadorDuplicados = 0;
+    
+    produtos.forEach((produto, index) => {
+        // Verifica se o ID é inválido
+        if (!produto.id || produto.id === null || produto.id === undefined) {
+            produto.id = 10000 + index;
+            contadorSemId++;
+            contadorCorrecoes++;
+        }
+        // Verifica se o ID já foi usado
+        else if (idsVistos.has(produto.id)) {
+            produto.id = 10000 + index;
+            contadorDuplicados++;
+            contadorCorrecoes++;
+        }
+        
+        idsVistos.add(produto.id);
+    });
+    
+    if (contadorCorrecoes > 0) {
+        console.log(`✅ Correções realizadas:`);
+        if (contadorSemId > 0) console.log(`   - ${contadorSemId} produtos sem ID`);
+        if (contadorDuplicados > 0) console.log(`   - ${contadorDuplicados} IDs duplicados`);
+        console.log(`   - Total: ${contadorCorrecoes} correções`);
+    } else {
+        console.log('✅ Todos os IDs são únicos!');
+    }
+    
+    return produtos;
+}
+
+// ========================================
+// ENRIQUECIMENTO DE PRODUTOS
+// ========================================
 
 function enriquecerProdutos(produtos) {
     return produtos.map(produto => {
+        // Adiciona flag de promoção
         produto.promocao = idsPromocao.includes(produto.id);
 
+        // Adiciona avaliação
         if (idsAvaliacao[produto.id]) {
             produto.avaliacao = idsAvaliacao[produto.id];
         } else {
@@ -77,7 +136,10 @@ function enriquecerProdutos(produtos) {
             }
         }
 
+        // Adiciona total de avaliações
         produto.totalAvaliacoes = Math.floor(50 + Math.random() * 200);
+
+        // Garante que tenha linha
         produto.linha = produto.linha || produto.marca;
 
         return produto;
@@ -98,7 +160,10 @@ function mostrarPagina(scrollParaProdutos = false) {
     const grid = document.getElementById('produtosGrid');
     const contador = document.getElementById('contador-produtos');
 
-    if (!grid) return;
+    if (!grid) {
+        console.error('❌ Grid de produtos não encontrado');
+        return;
+    }
 
     grid.innerHTML = '';
 
@@ -202,6 +267,7 @@ function criarProdutoCard(produto) {
     card.setAttribute('data-categoria', produto.categoria);
     card.setAttribute('data-marca', String(produto.marca || '').toLowerCase());
     card.setAttribute('data-linha', String(produto.linha || '').toLowerCase());
+    card.setAttribute('data-id', produto.id);
 
     // Imagem
     const imagemDiv = document.createElement('div');
@@ -216,7 +282,7 @@ function criarProdutoCard(produto) {
     };
     imagemDiv.appendChild(img);
 
-    // Badges
+    // Badge de promoção
     if (produto.promocao) {
         const badge = document.createElement('div');
         badge.className = 'badge-promocao';
@@ -224,6 +290,7 @@ function criarProdutoCard(produto) {
         imagemDiv.appendChild(badge);
     }
 
+    // Badge de esgotado
     if (produto.esgotado) {
         const esgotadoBadge = document.createElement('div');
         esgotadoBadge.className = 'esgotado-badge-img';
@@ -231,6 +298,7 @@ function criarProdutoCard(produto) {
         imagemDiv.appendChild(esgotadoBadge);
     }
 
+    // Badge de no carrinho
     if (estaNoCarrinho(produto.id)) {
         const badge = document.createElement('div');
         badge.className = 'no-carrinho-badge';
@@ -258,6 +326,25 @@ function criarProdutoCard(produto) {
     tagsDiv.appendChild(tipoSpan);
     infoDiv.appendChild(tagsDiv);
 
+    // Linha do produto (se existir)
+    if (produto.linha && produto.linha !== produto.marca) {
+        const linhaSpan = document.createElement('span');
+        linhaSpan.className = 'produto-linha';
+        linhaSpan.textContent = `📌 ${produto.linha}`;
+        linhaSpan.style.cssText = `
+            display: inline-block;
+            font-size: 11px;
+            color: var(--gray);
+            margin-bottom: 4px;
+            font-weight: 500;
+            background: var(--gray-light);
+            padding: 2px 10px;
+            border-radius: 12px;
+        `;
+        infoDiv.appendChild(linhaSpan);
+    }
+
+    // Nome e descrição
     infoDiv.innerHTML += `
         <h3 class="produto-nome">${produto.nome}</h3>
         <p class="produto-descricao">${produto.descricao}</p>
@@ -266,8 +353,33 @@ function criarProdutoCard(produto) {
             <span class="avaliacao-numero">${Number(produto.avaliacao).toFixed(1)}</span>
             <span class="avaliacao-total">(${produto.totalAvaliacoes})</span>
         </div>
-        <p class="produto-preco">${produto.preco}</p>
     `;
+
+    // Preço
+    const precoDiv = document.createElement('p');
+    precoDiv.className = 'produto-preco';
+    
+    if (produto.promocao) {
+        const precoNum = converterPreco(produto.preco);
+        const precoOriginal = precoNum * 1.2;
+        precoDiv.innerHTML = `${produto.preco} <span class="preco-antigo">${formatarPreco(precoOriginal)}</span>`;
+    } else {
+        precoDiv.textContent = produto.preco;
+    }
+    
+    infoDiv.appendChild(precoDiv);
+
+    // Frete grátis
+    const precosFreteGratis = ['8.90', '12.99', '13.99', '14.99', '15.99', '16.99', '17.99'];
+    const precoProduto = converterPreco(produto.preco);
+    const temFreteGratis = precosFreteGratis.some(p => Math.abs(parseFloat(p) - precoProduto) < 0.01);
+
+    if (temFreteGratis) {
+        const freteSpan = document.createElement('span');
+        freteSpan.className = 'frete-gratis';
+        freteSpan.textContent = 'Frete Grátis';
+        infoDiv.appendChild(freteSpan);
+    }
 
     // Botão WhatsApp
     const btnWhatsapp = document.createElement('button');
@@ -303,3 +415,16 @@ function criarProdutoCard(produto) {
 
     return card;
 }
+
+// ========================================
+// FUNÇÕES GLOBAIS
+// ========================================
+
+window.carregarTodosProdutos = carregarTodosProdutos;
+window.corrigirIdsDuplicados = corrigirIdsDuplicados;
+window.renderizarProdutos = renderizarProdutos;
+window.mostrarPagina = mostrarPagina;
+window.mudarPagina = mudarPagina;
+window.criarProdutoCard = criarProdutoCard;
+
+console.log('✅ Módulo de produtos carregado com sucesso!');

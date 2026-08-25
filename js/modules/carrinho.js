@@ -36,22 +36,46 @@ function salvarCarrinho() {
 // ========================================
 
 function adicionarAoCarrinho(produto) {
-    if (!produto || produto.id === undefined) return;
+    if (!produto || !produto.nome) {
+        console.error('❌ Produto inválido:', produto);
+        return;
+    }
 
-    const existente = carrinho.find(item => item.id === produto.id);
+    console.log(`📦 Tentando adicionar: ${produto.nome} (ID: ${produto.id})`);
+
+    // Verifica se o produto já existe no carrinho
+    const existente = carrinho.find(item => {
+        // Verifica pelo ID (se ambos tiverem)
+        if (item.id && produto.id && item.id === produto.id) {
+            return true;
+        }
+        
+        // Verifica pelo nome (fallback)
+        if (item.nome && produto.nome) {
+            return item.nome.toLowerCase() === produto.nome.toLowerCase();
+        }
+        
+        return false;
+    });
 
     if (existente) {
-        existente.quantidade += 1;
+        // Produto já existe - aumenta quantidade
+        existente.quantidade = (existente.quantidade || 1) + 1;
+        console.log(`📦 ${produto.nome} - Quantidade aumentada para ${existente.quantidade}`);
     } else {
-        carrinho.push({
-            id: produto.id,
+        // Produto novo - adiciona ao carrinho
+        const novoItem = {
+            id: produto.id || Date.now(),
             nome: produto.nome,
-            marca: produto.marca,
-            linha: produto.linha || produto.marca,
-            preco: produto.preco,
-            imagem: produto.imagem,
+            marca: produto.marca || '',
+            linha: produto.linha || produto.marca || '',
+            preco: produto.preco || 'R$ 0,00',
+            imagem: produto.imagem || '',
             quantidade: 1
-        });
+        };
+        
+        carrinho.push(novoItem);
+        console.log(`🆕 ${produto.nome} - Adicionado ao carrinho!`);
     }
 
     // 📊 Registra evento no Analytics
@@ -59,11 +83,19 @@ function adicionarAoCarrinho(produto) {
         registrarAdicaoAoCarrinho(produto, 1);
     }
 
+    // Salva e atualiza interface
     salvarCarrinho();
     mostrarToast(`${produto.nome} adicionado!`);
     atualizarBotoesCarrinho();
     animarBadge();
     renderizarCarrinho();
+    
+    // Debug
+    console.log('🛒 Carrinho atual:', carrinho.map(item => ({
+        id: item.id,
+        nome: item.nome,
+        quantidade: item.quantidade
+    })));
 }
 
 function removerDoCarrinho(id) {
@@ -85,7 +117,7 @@ function alterarQuantidade(id, delta) {
     const item = carrinho.find(i => i.id === id);
     if (!item) return;
 
-    item.quantidade += delta;
+    item.quantidade = (item.quantidade || 1) + delta;
 
     if (item.quantidade <= 0) {
         removerDoCarrinho(id);
@@ -264,9 +296,7 @@ function finalizarPedido() {
     mensagem += '*Produtos:*\n';
 
     carrinho.forEach(item => {
-        const precoNum = converterPreco(item.preco);
         const quantidade = Number(item.quantidade || 0);
-        const subtotal = precoNum * quantidade;
         mensagem += `${quantidade}x ${item.nome} - ${item.preco}\n`;
     });
 
@@ -275,3 +305,23 @@ function finalizarPedido() {
 
     window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`, '_blank');
 }
+
+// ========================================
+// FUNÇÕES GLOBAIS
+// ========================================
+
+window.carregarCarrinho = carregarCarrinho;
+window.salvarCarrinho = salvarCarrinho;
+window.adicionarAoCarrinho = adicionarAoCarrinho;
+window.removerDoCarrinho = removerDoCarrinho;
+window.alterarQuantidade = alterarQuantidade;
+window.estaNoCarrinho = estaNoCarrinho;
+window.calcularTotalCarrinho = calcularTotalCarrinho;
+window.renderizarCarrinho = renderizarCarrinho;
+window.atualizarFreteProgresso = atualizarFreteProgresso;
+window.atualizarBotoesCarrinho = atualizarBotoesCarrinho;
+window.abrirCarrinho = abrirCarrinho;
+window.fecharCarrinho = fecharCarrinho;
+window.finalizarPedido = finalizarPedido;
+
+console.log('✅ Módulo de carrinho carregado com sucesso!');
