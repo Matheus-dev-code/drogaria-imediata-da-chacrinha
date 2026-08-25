@@ -1041,38 +1041,34 @@ function formatarCategoria(categoria) {
 }
 
 // ========================================
-// SISTEMA DE ESGOTADO COM FIREBASE
+// ⭐ SISTEMA DE ESGOTADO COM FALLBACK ⭐
 // ========================================
 
 let carregandoEstoque = true;
 
 function verificarFirebase() {
-
     if (
         typeof window.database ===
         'undefined'
     ) {
-
         console.warn(
             '⚠️ Firebase não disponível. Usando localStorage como fallback.'
         );
-
         return false;
     }
-
     return true;
 }
 
+// 🔥 FUNÇÃO MODIFICADA: Carrega do localStorage primeiro, depois sincroniza com Firebase
 function carregarEstoqueFirebase() {
-
     return new Promise((resolve) => {
 
+        // 🔥 PASSO 1: Carrega do localStorage IMEDIATAMENTE
+        carregarEstoqueLocal();
+
+        // 🔥 PASSO 2: Tenta sincronizar com Firebase (se disponível)
         if (!verificarFirebase()) {
-
-            carregarEstoqueLocal();
-
             resolve();
-
             return;
         }
 
@@ -1090,7 +1086,6 @@ function carregarEstoqueFirebase() {
 
                 produtosEnriquecidos.forEach(
                     produto => {
-
                         produto.esgotado =
                             data[produto.id] ||
                             false;
@@ -1114,8 +1109,7 @@ function carregarEstoqueFirebase() {
                     error
                 );
 
-                carregarEstoqueLocal();
-
+                // Mantém o localStorage como fallback
                 resolve();
             }
         );
@@ -1142,6 +1136,7 @@ function carregarEstoqueLocal() {
 
     carregandoEstoque = false;
 
+    // Renderiza imediatamente
     renderizarProdutos(
         produtosEnriquecidos
     );
@@ -1158,57 +1153,47 @@ function salvarEstadoFirebase(
 
     if (!isAdmin) return;
 
-    if (!verificarFirebase()) {
-
-        const esgotados =
-            JSON.parse(
-                localStorage.getItem(
-                    'produtosEsgotados'
-                ) || '{}'
-            );
-
-        if (esgotado) {
-
-            esgotados[id] = true;
-
-        } else {
-
-            delete esgotados[id];
-        }
-
-        localStorage.setItem(
-            'produtosEsgotados',
-            JSON.stringify(esgotados)
+    // Salva localmente primeiro
+    const esgotados =
+        JSON.parse(
+            localStorage.getItem(
+                'produtosEsgotados'
+            ) || '{}'
         );
 
+    if (esgotado) {
+        esgotados[id] = true;
+    } else {
+        delete esgotados[id];
+    }
+
+    localStorage.setItem(
+        'produtosEsgotados',
+        JSON.stringify(esgotados)
+    );
+
+    // Tenta salvar no Firebase
+    if (!verificarFirebase()) {
         return;
     }
 
     const updates = {};
-
     updates[id] = esgotado;
 
     window.database
         .ref('estoque')
         .update(updates)
         .then(() => {
-
             console.log(
                 '✅ Estoque atualizado no Firebase:',
                 id,
                 esgotado
             );
-
         })
         .catch((error) => {
-
             console.error(
                 '❌ Erro ao salvar no Firebase:',
                 error
-            );
-
-            alert(
-                'Erro ao salvar a alteração. Tente novamente.'
             );
         });
 }
@@ -1225,63 +1210,45 @@ function resetarTodosEsgotados() {
         return;
     }
 
-    if (verificarFirebase()) {
+    // Reset local
+    localStorage.removeItem(
+        'produtosEsgotados'
+    );
 
+    produtosEnriquecidos.forEach(
+        produto => {
+            produto.esgotado = false;
+        }
+    );
+
+    renderizarProdutos(
+        produtosEnriquecidos
+    );
+
+    renderizarDestaques(
+        produtosEnriquecidos
+    );
+
+    // Tenta resetar no Firebase também
+    if (verificarFirebase()) {
         window.database
             .ref('estoque')
             .set({})
             .then(() => {
-
-                produtosEnriquecidos.forEach(
-                    produto => {
-                        produto.esgotado = false;
-                    }
-                );
-
-                renderizarProdutos(
-                    produtosEnriquecidos
-                );
-
-                renderizarDestaques(
-                    produtosEnriquecidos
-                );
-
                 alert(
                     '✅ Todos os estados foram resetados!'
                 );
             })
             .catch((error) => {
-
                 console.error(
-                    '❌ Erro ao resetar:',
+                    '❌ Erro ao resetar no Firebase:',
                     error
                 );
-
                 alert(
-                    'Erro ao resetar. Tente novamente.'
+                    '✅ Resetado localmente! (Firebase falhou)'
                 );
             });
-
     } else {
-
-        localStorage.removeItem(
-            'produtosEsgotados'
-        );
-
-        produtosEnriquecidos.forEach(
-            produto => {
-                produto.esgotado = false;
-            }
-        );
-
-        renderizarProdutos(
-            produtosEnriquecidos
-        );
-
-        renderizarDestaques(
-            produtosEnriquecidos
-        );
-
         alert(
             '✅ Todos os estados foram resetados (local)!'
         );
@@ -3018,6 +2985,7 @@ document.addEventListener(
                 '<p style="text-align:center;grid-column:1/-1;padding:40px;">🔄 Carregando estoque...</p>';
         }
 
+        // 🔥 CARREGA O ESTOQUE (com fallback local)
         await carregarEstoqueFirebase();
 
         setTimeout(() => {
