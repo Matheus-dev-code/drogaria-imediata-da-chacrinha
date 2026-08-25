@@ -37,6 +37,31 @@
     --radius-lg: 26px;
 }
 
+/* Filtro por linha */
+.linha-filtro {
+    margin-top: 16px;
+}
+
+.linha-buttons {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.linha-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-linha.active {
+    background: var(--secondary) !important;
+    color: var(--primary-dark) !important;
+    border-color: var(--secondary) !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1750,6 +1775,8 @@ footer {
     }
 }
 
+
+
 @media (hover: hover) {
     .categoria-buttons,
     .marca-buttons {
@@ -1844,4 +1871,6 @@ footer {
         min-width: 90px;
         padding: 4px 12px;
     }
+
+    
 }
