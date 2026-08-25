@@ -4,13 +4,13 @@
 
 const produtosCoreton = [
 
-    // ========== 1,0 (5) ==========
-
+    // ========== 1,0 ==========
 
     {
         id: 601,
-        nome: "Tinta Cor&Ton 1.0 Preto Azulado ",
+        nome: "Tinta Cor&Ton 1.0 Preto Azulado",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -23,6 +23,7 @@ const produtosCoreton = [
         id: 602,
         nome: "Tinta Cor&Ton 1.7+ Preto Azulado Especial",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -33,8 +34,9 @@ const produtosCoreton = [
     },
     {
         id: 603,
-        nome: "Tinta Cor&Ton 1.110 Preto Ônix ",
+        nome: "Tinta Cor&Ton 1.110 Preto Ônix",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -44,13 +46,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 2,0 (5) ==========
-
+    // ========== 2,0 ==========
 
     {
         id: 604,
-        nome: "Tinta Cor&Ton 2.0 Preto  ",
+        nome: "Tinta Cor&Ton 2.0 Preto",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -61,8 +63,9 @@ const produtosCoreton = [
     },
     {
         id: 605,
-        nome: "Tinta Cor&Ton 2.1 Preto Jabuticaba ",
+        nome: "Tinta Cor&Ton 2.1 Preto Jabuticaba",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -72,13 +75,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 3,0 (5) ==========
-
+    // ========== 3,0 ==========
 
     {
         id: 606,
-        nome: "Tinta Cor&Ton 3.0 Castanho Escuro ",
+        nome: "Tinta Cor&Ton 3.0 Castanho Escuro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -88,13 +91,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 4,0 (5) ==========
-
+    // ========== 4,0 ==========
 
     {
         id: 607,
-        nome: "Tinta Cor&Ton 4.0 Castanho Médio ",
+        nome: "Tinta Cor&Ton 4.0 Castanho Médio",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -104,13 +107,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 5,0 (5) ==========
-
+    // ========== 5,0 ==========
 
     {
         id: 608,
-        nome: "Tinta Cor&Ton 5.0 Castanho Claro ",
+        nome: "Tinta Cor&Ton 5.0 Castanho Claro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -121,8 +124,9 @@ const produtosCoreton = [
     },
     {
         id: 609,
-        nome: "Tinta Cor&Ton 5.3 Castanho Claro Dourado ",
+        nome: "Tinta Cor&Ton 5.3 Castanho Claro Dourado",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -133,8 +137,9 @@ const produtosCoreton = [
     },
     {
         id: 610,
-        nome: "Tinta Cor&Ton 5.546 Vermelho Cereja ",
+        nome: "Tinta Cor&Ton 5.546 Vermelho Cereja",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -145,8 +150,9 @@ const produtosCoreton = [
     },
     {
         id: 611,
-        nome: "Tinta Cor&Ton 5.777 Marrom Intenso Profundo ",
+        nome: "Tinta Cor&Ton 5.777 Marrom Intenso Profundo",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -156,13 +162,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 6,0 (5) ==========
-
+    // ========== 6,0 ==========
 
     {
         id: 612,
-        nome: "Tinta Cor&Ton 6.0 Louro Escuro ",
+        nome: "Tinta Cor&Ton 6.0 Louro Escuro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -173,8 +179,9 @@ const produtosCoreton = [
     },
     {
         id: 613,
-        nome: "Tinta Cor&Ton 6.66 Vermelho Carmim ",
+        nome: "Tinta Cor&Ton 6.66 Vermelho Carmim",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -185,8 +192,9 @@ const produtosCoreton = [
     },
     {
         id: 614,
-        nome: "Tinta Cor&Ton 6.7 Chocolate ",
+        nome: "Tinta Cor&Ton 6.7 Chocolate",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -197,8 +205,9 @@ const produtosCoreton = [
     },
     {
         id: 615,
-        nome: "Tinta Cor&Ton 6.646 Vermelho Cereja ",
+        nome: "Tinta Cor&Ton 6.646 Vermelho Cereja",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -208,13 +217,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 7,0 (5) ==========
-
+    // ========== 7,0 ==========
 
     {
         id: 616,
-        nome: "Tinta Cor&Ton 7.1 Louro Cinza Médio ",
+        nome: "Tinta Cor&Ton 7.1 Louro Cinza Médio",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -224,13 +233,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 8,0 (5) ==========
-
+    // ========== 8,0 ==========
 
     {
         id: 617,
-        nome: "Tinta Cor&Ton 8.0 Louro Claro ",
+        nome: "Tinta Cor&Ton 8.0 Louro Claro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -241,8 +250,9 @@ const produtosCoreton = [
     },
     {
         id: 618,
-        nome: "Tinta Cor&Ton 8.1 Louro Cinza Claro ",
+        nome: "Tinta Cor&Ton 8.1 Louro Cinza Claro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -252,13 +262,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 10,0 (5) ==========
-
+    // ========== 10,0 ==========
 
     {
         id: 619,
-        nome: "Tinta Cor&Ton 10.0 Louro Ultra Claro ",
+        nome: "Tinta Cor&Ton 10.0 Louro Ultra Claro",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -268,13 +278,13 @@ const produtosCoreton = [
         esgotado: false
     },
 
-    // ========== 12,0 (5) ==========
-
+    // ========== 12,0 ==========
 
     {
         id: 620,
-        nome: "Tinta Cor&Ton 12.111 Louro Super Platinado ",
+        nome: "Tinta Cor&Ton 12.111 Louro Super Platinado",
         marca: "Cor&ton",
+        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Cor&Ton",
@@ -283,6 +293,4 @@ const produtosCoreton = [
         destaque: false,
         esgotado: false
     },
-    
-
-]
+];
