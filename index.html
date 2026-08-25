@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8B0045">
+    <title>Drogaria Imediata da Chacrinha - Cosméticos & Perfumaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ======================================== -->
+    <!-- HEADER                                   -->
+    <!-- ======================================== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                    alt="Drogaria Imediata da Chacrinha" class="logo-img">
+                <div class="logo-texto">
+                    <h1>Drogaria Imediata da Chacrinha</h1>
+                    <p>Cosméticos & Perfumaria</p>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <div class="menu-mobile" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======================================== -->
+    <!-- BANNER                                   -->
+    <!-- ======================================== -->
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Produtos de Beleza e Cuidados</h2>
+                <p>Salon Line, Salon Line Kids, Seda, L'Oréal Paris, Paixão e muito mais</p>
+                <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- DESTAQUES                                -->
+    <!-- ======================================== -->
+    <section class="destaques" id="destaques">
+        <div class="container">
+            <h2>🌟 Em Destaque</h2>
+            <p class="destaques-subtitulo">Os produtos mais queridos pelos nossos clientes</p>
+            <div class="destaques-grid" id="destaquesGrid"></div>
+            <div class="destaques-paginacao" id="destaquesPaginacao">
+                <button class="btn-pagina destaque-prev" id="destaquePrev" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="destaque-info" id="destaqueInfo">Página 1 de 1</span>
+                <button class="btn-pagina destaque-next" id="destaqueNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- CATEGORIAS E FILTROS                     -->
+    <!-- ======================================== -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <h2>Categorias</h2>
+
+            <!-- Categorias em grid -->
+            <div class="categorias-grid">
+                <button class="btn-categoria active" data-categoria="todos" title="Todos os produtos">
+                    <i class="fas fa-th-large"></i>
+                    <span>Todos</span>
+                </button>
+                <button class="btn-categoria" data-categoria="cabelo" title="Produtos para cabelos">
+                    <i class="fas fa-spa"></i>
+                    <span>Cabelos</span>
+                </button>
+                <button class="btn-categoria" data-categoria="kids" title="Produtos infantis">
+                    <i class="fas fa-child"></i>
+                    <span>Kids</span>
+                </button>
+                <button class="btn-categoria" data-categoria="corpo" title="Cuidados com o corpo">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <span>Corpo</span>
+                </button>
+                <button class="btn-categoria" data-categoria="higiene" title="Produtos de higiene">
+                    <i class="fas fa-shower"></i>
+                    <span>Higiene</span>
+                </button>
+                <button class="btn-categoria" data-categoria="pele" title="Cuidados com a pele">
+                    <i class="fas fa-smile"></i>
+                    <span>Pele</span>
+                </button>
+                <button class="btn-categoria" data-categoria="perfumaria" title="Perfumes e colônias">
+                    <i class="fas fa-perfume"></i>
+                    <span>Perfumaria</span>
+                </button>
+                <button class="btn-categoria" data-categoria="maquiagem" title="Maquiagem e acessórios">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Maquiagem</span>
+                </button>
+                <button class="btn-categoria" data-categoria="tintas" title="Tintas e descolorantes">
+                    <i class="fas fa-palette"></i>
+                    <span>Tintas</span>
+                </button>
+            </div>
+
+            <!-- Filtros rápidos -->
+            <div class="filtros-rapidos">
+                <!-- Busca -->
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar produtos..." id="search-input">
+                </div>
+
+                <!-- Dropdown de Marcas -->
+                <div class="dropdown-wrapper">
+                    <select id="marcaSelect" aria-label="Filtrar por marca">
+                        <option value="todas">Todas as Marcas</option>
+                        <option value="acnezil">Acnezil</option>
+                        <option value="asepxia">Asepxia</option>
+                        <option value="babysec">Babysec</option>
+                        <option value="bepantol">Bepantol</option>
+                        <option value="bepantriz">Bepantriz</option>
+                        <option value="cicatricure">Cicatricure</option>
+                        <option value="cor&ton">Cor &amp; Ton</option>
+                        <option value="dove">Dove</option>
+                        <option value="face beautiful">Face Beautiful</option>
+                        <option value="giovanna baby">Giovanna Baby</option>
+                        <option value="granado">Granado</option>
+                        <option value="l'oréal paris">L'Oréal Paris</option>
+                        <option value="marcia">Marcia</option>
+                        <option value="maxton">Maxton</option>
+                        <option value="monange">Monange</option>
+                        <option value="muriel">Muriel</option>
+                        <option value="natuhair">Natuhair</option>
+                        <option value="nivea">Nivea</option>
+                        <option value="paixao">Paixão</option>
+                        <option value="rexona">Rexona</option>
+                        <option value="salon line">Salon Line</option>
+                        <option value="salon line kids">Salon Line Kids</option>
+                        <option value="seda">Seda</option>
+                    </select>
+                </div>
+
+                <!-- Dropdown de Linhas (aparece apenas quando necessário) -->
+                <div class="dropdown-wrapper" id="linhasWrapper" style="display:none;">
+                    <select id="linhaSelect" aria-label="Filtrar por linha">
+                        <option value="todas">Todas as Linhas</option>
+                    </select>
+                </div>
+
+                <!-- Contador de filtros ativos -->
+                <span class="filtros-ativos" id="filtrosAtivos"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- PRODUTOS                                 -->
+    <!-- ======================================== -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="contador-produtos" id="contador-produtos"></div>
+            <div class="produtos-grid" id="produtosGrid"></div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- SOBRE                                    -->
+    <!-- ======================================== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                        alt="Drogaria Imediata da Chacrinha" class="sobre-logo">
+                    <h3>Drogaria Imediata da Chacrinha</h3>
+                    <p>Trabalhamos com as melhores marcas de cosméticos e perfumaria. Nossa missão é oferecer produtos
+                        de qualidade com o melhor atendimento e preços competitivos.</p>
+                    <div class="info-contato">
+                        <div class="contato-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(21) 96958-3871</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg a Sáb: 9h às 19h</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chacrinha - Rio de Janeiro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                            alt="Drogaria Imediata da Chacrinha">
+                        <h3>Drogaria Imediata da Chacrinha</h3>
+                    </div>
+                    <p>Produtos de beleza que cuidam de você</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p><i class="fab fa-whatsapp"></i> (21) 96958-3871</p>
+                    <p><i class="fas fa-envelope"></i> contato@drogariaimediata.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chacrinha - Rio de Janeiro</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Drogaria Imediata Da Chacrinha Perfumaria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================== -->
+    <!-- CARRINHO MODAL                           -->
+    <!-- ======================================== -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Meu Carrinho</h2>
+                <button class="cart-close" id="cartClose">&times;</button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <div class="frete-progress" id="freteProgress">
+                    <div class="frete-info">
+                        <span id="freteTexto">💸 Faltam R$ 10,00 para frete grátis!</span>
+                        <span id="freteStatus">🛒</span>
+                    </div>
+                    <div class="frete-bar">
+                        <div class="frete-bar-fill" id="freteBarFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <button class="btn-primary btn-continuar-comprando" onclick="fecharCarrinho()">Continuar
+                        Comprando</button>
+                </div>
+                <div class="cart-items" id="cartItems"></div>
+            </div>
+            <div class="cart-footer" id="cartFooter">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-esvaziar" id="btnEsvaziarCarrinho">
+                        <i class="fas fa-trash"></i> Esvaziar
+                    </button>
+                    <button class="btn-finalizar" id="btnFinalizarPedido">
+                        <i class="fab fa-whatsapp"></i> Finalizar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- TOAST NOTIFICATION                       -->
+    <!-- ======================================== -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Produto adicionado ao carrinho!</span>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- BOTÃO VOLTAR AO TOPO                     -->
+    <!-- ======================================== -->
+    <button class="btn-topo" id="btnTopo" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ======================================== -->
+    <!-- WHATSAPP FLOAT                           -->
+    <!-- ======================================== -->
+    <a href="https://wa.me/5521969583871?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!"
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS - FIREBASE SDK                   -->
+    <!-- ======================================== -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS - CONFIGURAÇÃO                   -->
+    <!-- ======================================== -->
+    <script src="js/config/firebase-config.js"></script>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS - PRODUTOS (DATA)                -->
+    <!-- ======================================== -->
+    <script src="js/data/produtos/salon-line-kids.js"></script>
+    <script src="js/data/produtos/salon-line-adulto.js"></script>
+    <script src="js/data/produtos/seda.js"></script>
+    <script src="js/data/produtos/loreal.js"></script>
+    <script src="js/data/produtos/paixao.js"></script>
+    <script src="js/data/produtos/maxton.js"></script>
+    <script src="js/data/produtos/coreton.js"></script>
+    <script src="js/data/produtos/dove.js"></script>
+    <script src="js/data/produtos/nivea.js"></script>
+    <script src="js/data/produtos/muriel.js"></script>
+    <script src="js/data/produtos/acnezil.js"></script>
+    <script src="js/data/produtos/asepxia.js"></script>
+    <script src="js/data/produtos/bepantriz.js"></script>
+    <script src="js/data/produtos/bepantol.js"></script>
+    <script src="js/data/produtos/face-beautiful.js"></script>
+    <script src="js/data/produtos/cicatricure.js"></script>
+    <script src="js/data/produtos/rexona.js"></script>
+    <script src="js/data/produtos/babysec.js"></script>
+    <script src="js/data/produtos/monange.js"></script>
+    <script src="js/data/produtos/giovanna-baby.js"></script>
+    <script src="js/data/produtos/marcia.js"></script>
+    <script src="js/data/produtos/natuhair.js"></script>
+    <script src="js/data/produtos/granado.js"></script>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS - MÓDULOS                        -->
+    <!-- ======================================== -->
+    <script src="js/modules/utils.js"></script>
+    <script src="js/modules/produtos.js"></script>
+    <script src="js/modules/carrinho.js"></script>
+    <script src="js/modules/filtros.js"></script>
+    <script src="js/modules/destaques.js"></script>
+    <script src="js/modules/admin.js"></script>
+    <script src="js/modules/ui.js"></script>
+
+    <!-- ======================================== -->
+    <!-- SCRIPT - MAIN (COORDENA TUDO)            -->
+    <!-- ======================================== -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
