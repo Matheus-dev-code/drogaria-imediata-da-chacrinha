@@ -11,22 +11,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 2. Inicializa sistemas
     carregarCarrinho();
+    
+    // 3. Verifica admin ANTES de configurar a UI
     await verificarAdmin();
+    
+    // 4. Adiciona botão de admin no header (sempre visível)
+    adicionarBotaoAdmin();
 
-    // 3. Configura interface
+    // 5. Configura interface
     configurarEventosFiltros();
     configurarEventosDestaques();
     configurarMenuMobile();
     configurarBotaoTopo();
     configurarSmoothScroll();
     configurarEventosCarrinho();
-    configurarLogo(); // NOVA FUNÇÃO
 
-    // 4. Sincroniza select de marcas
+    // 6. Sincroniza select de marcas
     const selectMarca = document.getElementById('marcaSelect');
     if (selectMarca) selectMarca.value = 'todas';
 
-    // 5. Carrega estoque
+    // 7. Carrega estoque
     const grid = document.getElementById('produtosGrid');
     if (grid) {
         grid.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;">🔄 Carregando estoque...</p>';
@@ -40,16 +44,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         carregarEstoqueLocal();
     }
 
-    // 6. Atualiza interface
+    // 8. Atualiza interface
     setTimeout(() => {
         atualizarBotoesCarrinho();
         initScrollReveal();
         habilitarScrollHorizontal('.categoria-buttons');
         habilitarScrollHorizontal('.marca-buttons');
+        
+        // Se for admin, adiciona botões de toggle
+        if (isAdmin) {
+            adicionarBotoesToggleEsgotado();
+        }
+        
         console.log('✅ Interface atualizada');
     }, 500);
 
-    // 7. Configura header com scroll
+    // 9. Configura header com scroll
     window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         if (!header) return;
@@ -63,19 +73,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // 8. Atualiza ano no footer
+    // 10. Atualiza ano no footer
     const footerYear = document.querySelector('.footer-bottom p');
     if (footerYear) {
         footerYear.innerHTML = footerYear.innerHTML.replace('2026', new Date().getFullYear());
     }
 
-    // 9. Configura logo (agora com clique para voltar ao topo)
+    // 11. Configura logo
     configurarLogo();
 
-    // 10. Cria barra de admin se necessário
-    if (isAdmin) {
-        criarBarraAdmin();
-    }
+    // 12. Inicia observação de cards para admin
+    observarCards();
 
     console.log('✅ Sistema carregado com sucesso!');
 });
@@ -95,7 +103,7 @@ function configurarLogo() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // DUPLO CLIQUE: Abre login admin
+    // DUPLO CLIQUE: Abre login admin (fallback)
     logo.addEventListener('dblclick', function(e) {
         e.stopPropagation();
         
@@ -108,10 +116,9 @@ function configurarLogo() {
         }
     });
 
-    // Muda o cursor para indicar que é clicável
     logo.style.cursor = 'pointer';
     logo.style.userSelect = 'none';
-    logo.title = 'Voltar ao início';
+    logo.title = 'Clique para voltar ao início | Duplo clique para admin';
 }
 
 // ========================================
@@ -397,5 +404,7 @@ window.mudarPaginaDestaques = mudarPaginaDestaques;
 window.mostrarLoginAdmin = mostrarLoginAdmin;
 window.logoutAdmin = logoutAdmin;
 window.verificarDisponibilidade = verificarDisponibilidade;
+window.configurarLogo = configurarLogo;
+window.observarCards = observarCards;
 
 console.log('✅ Main.js carregado com sucesso!');

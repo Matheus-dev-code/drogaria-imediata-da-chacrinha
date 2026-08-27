@@ -4,13 +4,12 @@
 
 const produtosMaxton = [
 
-    // ========== 1,0 ==========
+    // ========== 1,0 (5) ==========
 
     {
         id: 401,
-        nome: "Tinta Maxton 1.0 Preto",
+        nome: "Tinta Maxton 1.0 Preto ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -21,9 +20,8 @@ const produtosMaxton = [
     },
     {
         id: 402,
-        nome: "Tinta Maxton 1.01 Preto Carvão",
+        nome: "Tinta Maxton 1.01 Preto Carvão ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -34,9 +32,8 @@ const produtosMaxton = [
     },
     {
         id: 403,
-        nome: "Tinta Maxton 1.7 Preto Azulado",
+        nome: "Tinta Maxton 1.7 Preto Azulado ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -47,9 +44,8 @@ const produtosMaxton = [
     },
     {
         id: 404,
-        nome: "Tinta Maxton 1.77 Preto Azulado Intenso",
+        nome: "Tinta Maxton 1.77 Preto Azulado Intenso ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -60,9 +56,8 @@ const produtosMaxton = [
     },
     {
         id: 405,
-        nome: "Tinta Maxton 1.110 Preto Intenso Profundo",
+        nome: "Tinta Maxton 1.110 Preto Intenso Profundo ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -72,13 +67,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 2,0 ==========
+    // ========== 2,0 (3) ==========
 
     {
         id: 406,
-        nome: "Tinta Maxton 2.0 Preto Natural",
+        nome: "Tinta Maxton 2.0 Preto Natural ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -89,9 +83,8 @@ const produtosMaxton = [
     },
     {
         id: 407,
-        nome: "Tinta Maxton 2.1 Preto Especial",
+        nome: "Tinta Maxton 2.1 Preto Especial ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -102,9 +95,8 @@ const produtosMaxton = [
     },
     {
         id: 408,
-        nome: "Tinta Maxton 2.8 Preto Tabaco",
+        nome: "Tinta Maxton 2.8 Preto Tabaco ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -114,13 +106,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 3,0 ==========
+    // ========== 3,0 (1) ==========
 
     {
         id: 409,
-        nome: "Tinta Maxton 3.0 Castanho Escuro",
+        nome: "Tinta Maxton 3.0 Castanho Escuro ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -130,13 +121,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 4,0 ==========
+    // ========== 4,0 (1) ==========
 
     {
         id: 410,
-        nome: "Tinta Maxton 4.0 Castanho Natural",
+        nome: "Tinta Maxton 4.0 Castanho Natural ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -146,13 +136,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 5,0 ==========
+    // ========== 5,0 (3) ==========
 
     {
         id: 411,
-        nome: "Tinta Maxton 5.0 Castanho Claro",
+        nome: "Tinta Maxton 5.0 Castanho Claro ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -163,9 +152,8 @@ const produtosMaxton = [
     },
     {
         id: 412,
-        nome: "Tinta Maxton 5.26 Marsala Escuro",
+        nome: "Tinta Maxton 5.26 Marsala Escuro ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -178,7 +166,6 @@ const produtosMaxton = [
         id: 413,
         nome: "Tinta Maxton 5.74 Chocolate Intenso Acobreado",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -188,13 +175,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 6,0 ==========
+    // ========== 6,0 (4) ==========
 
     {
         id: 414,
-        nome: "Tinta Maxton 6.0 Louro Escuro",
+        nome: "Tinta Maxton 6.0 Louro Escuro ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -205,9 +191,8 @@ const produtosMaxton = [
     },
     {
         id: 415,
-        nome: "Tinta Maxton 6.1 Louro Cinza Escuro",
+        nome: "Tinta Maxton 6.1 Louro Cinza Escuro ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -218,9 +203,8 @@ const produtosMaxton = [
     },
     {
         id: 416,
-        nome: "Tinta Maxton 6.7 Chocolate",
+        nome: "Tinta Maxton 6.7 Chocolate ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -231,9 +215,8 @@ const produtosMaxton = [
     },
     {
         id: 417,
-        nome: "Tinta Maxton 6.66 Vermelho Cereja",
+        nome: "Tinta Maxton 6.66 Vermelho Cereja ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -243,13 +226,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 7,0 ==========
+    // ========== 7,0 (3) ==========
 
     {
         id: 418,
-        nome: "Tinta Maxton 7.0 Louro Natural",
+        nome: "Tinta Maxton 7.0 Louro Natural ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -260,9 +242,8 @@ const produtosMaxton = [
     },
     {
         id: 419,
-        nome: "Tinta Maxton 7.2 Louro Médio Mate",
+        nome: "Tinta Maxton 7.2 Louro Médio Mate ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -273,9 +254,8 @@ const produtosMaxton = [
     },
     {
         id: 420,
-        nome: "Tinta Maxton 7.37 Marrom Caramelo",
+        nome: "Tinta Maxton 7.37 Marrom Caramelo ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -285,13 +265,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 8,0 ==========
+    // ========== 8,0 (2) ==========
 
     {
         id: 421,
-        nome: "Tinta Maxton 8.1 Louro Claro Acinzentado",
+        nome: "Tinta Maxton 8.1 Louro Claro Acinzentado ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -302,9 +281,8 @@ const produtosMaxton = [
     },
     {
         id: 422,
-        nome: "Tinta Maxton 8.26 Marsala",
+        nome: "Tinta Maxton 8.26 Marsala ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",
@@ -314,13 +292,12 @@ const produtosMaxton = [
         esgotado: false
     },
 
-    // ========== 12,0 ==========
+    // ========== 12,0 (1) ==========
 
     {
         id: 423,
-        nome: "Tinta Maxton 12.11 Louro Platina Cinza Intenso",
+        nome: "Tinta Maxton 12.11 Louro Platina Cinza Intenso ",
         marca: "Maxton",
-        linha: "Tintas",
         tipo: "cabelo",
         categoria: "Tinta",
         descricao: "Tinta para cabelo Maxton",

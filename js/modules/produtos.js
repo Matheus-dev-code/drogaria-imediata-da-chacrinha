@@ -428,3 +428,26 @@ window.mudarPagina = mudarPagina;
 window.criarProdutoCard = criarProdutoCard;
 
 console.log('✅ Módulo de produtos carregado com sucesso!');
+
+// ========================================
+// FUNÇÃO PARA OBSERVAR CARDS (ADMIN)
+// ========================================
+
+function observarCards() {
+    const observer = new MutationObserver(() => {
+        if (typeof isAdmin !== 'undefined' && isAdmin) {
+            if (typeof adicionarBotoesToggleEsgotado === 'function') {
+                adicionarBotoesToggleEsgotado();
+            }
+        }
+    });
+
+    const target = document.getElementById('produtosGrid');
+    if (target) {
+        observer.observe(target, { childList: true, subtree: true });
+        console.log('👀 Observador de cards iniciado');
+    }
+}
+
+// EXPORTA
+window.observarCards = observarCards;

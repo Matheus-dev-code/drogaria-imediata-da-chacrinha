@@ -4,28 +4,31 @@
 
 const produtosAsepxia = [
 
+    // ========== Gel (12) ==========
+
     {
         id: 701,
         nome: "Asepxia Gel Secativo 15g",
         marca: "Asepxia",
-        linha: "Tratamento Acne",
-        tipo: "pele",
+        tipo: "Rosto",
         categoria: "Facial",
         descricao: "Gel Secativo Asepxia 15g",
-        preco: "R$ 24,99",
+        preco: "R$ 24,99 ",
         imagem: "img/asepxia/secativo.jpe",
         destaque: false,
         esgotado: false
     },
+
+    // ========== Sabonete (12) ==========
+
     {
         id: 701,
         nome: "Sabonete Antiacne Detox Asepxia 80g",
         marca: "Asepxia",
-        linha: "Sabonete Antiacne",
-        tipo: "pele",
+        tipo: "Rosto",
         categoria: "Facial",
         descricao: "Sabonete Antiacne Asepxia 80g",
-        preco: "R$ 15,99",
+        preco: "R$ 15,99 ",
         imagem: "img/asepxia/detox.jpe",
         destaque: false,
         esgotado: false
@@ -34,13 +37,14 @@ const produtosAsepxia = [
         id: 701,
         nome: "Sabonete Antiacne Forte Asepxia 80g",
         marca: "Asepxia",
-        linha: "Sabonete Antiacne",
-        tipo: "pele",
+        tipo: "Rosto",
         categoria: "Facial",
         descricao: "Sabonete Antiacne Asepxia 80g",
-        preco: "R$ 12,99",
+        preco: "R$ 12,99 ",
         imagem: "img/asepxia/Forte.jpe",
         destaque: false,
         esgotado: false
     },
-];
+
+
+]
