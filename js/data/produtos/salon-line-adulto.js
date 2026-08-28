@@ -845,7 +845,7 @@ const produtosSalonLineAdulto = [
         categoria: "Ativador de Cachos",
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/oleo-de-coco/ativador-300.jpe",
+        imagem: "img/Salon-adulto/oleo-de-coco/cr-300.jpe",
         destaque: false,
         esgotado: false
     },
@@ -1074,7 +1074,7 @@ const produtosSalonLineAdulto = [
         categoria: "creme relaxante",
         descricao: "Creme Relaxante  Salon Line",
         preco: "R$ 56,99",
-        imagem: "img/Salon-adulto/cr-relaxante/.jpe",
+        imagem: "img/Salon-adulto/cr-relaxante/oil.jpe",
         destaque: false,
         esgotado: false
     },
