@@ -17,6 +17,18 @@ const produtosSalonLineKids = [
         esgotado: false
     },
     {
+        id: 101,
+        nome: "Creme Para Pentear Melão Kids Cachinhos Poderosos 1kg",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "creme-de-pentear-kids",
+        descricao: "Creme para Pentear Cachinhos Poderosos Kids 1KG",
+        preco: "R$ 37,99",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-melao.jpe",
+        destaque: true,
+        esgotado: false
+    },
+    {
         id: 102,
         nome: "Creme para Pentear Manga Kids Cachinhos Ativados 1kg",
         marca: "Salon Line Kids",
@@ -89,6 +101,44 @@ const produtosSalonLineKids = [
         esgotado: false
     },
 
+    // ========== Bob Esponja (3) ==========
+    {
+        id: 101,
+        nome: "Creme Para Pentear Morango Kids Cachinhos sem Nós 1kg",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "creme-de-pentear-kids",
+        descricao: "Creme para Pentear Cachinhos Sem Nós Kids 1KG",
+        preco: "R$ 29,99",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-bob.jpe",
+        destaque: true,
+        esgotado: false
+    },
+    {
+        id: 101,
+        nome: "Body Splash Bob Esponja 200ml",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "Body Splash",
+        descricao: "Body Splash Salon line 200ml",
+        preco: "R$ 24,99",
+        imagem: "img/Salon-adulto/bob-esponja/body-splash.jpe",
+        destaque: true,
+        esgotado: false
+    },
+    {
+        id: 102,
+        nome: "Óleo de Tratamento Bob Esponja 42ml ",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "oleo",
+        descricao: "oleo de tratamento salon line 42ml",
+        preco: "R$ 23,49",
+        imagem: "img/Salon-adulto/bob-esponja/oleo.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
     // ============ GELATINAS (4) ============
     {
         id: 109,
@@ -99,6 +149,30 @@ const produtosSalonLineKids = [
         descricao: "Gelatina Kids Manga 550g",
         preco: "R$ 28,49",
         imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-manga.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 109,
+        nome: "Gelatina Chocolate #todecacho Kids Condicionante 550g",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "gelatina-kids",
+        descricao: "Gelatina Kids Manga 550g",
+        preco: "R$ 28,49",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-chocolate.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 109,
+        nome: "Gelatina Uva #todecacho Kids Condicionante 550g",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "gelatina-kids",
+        descricao: "Gelatina Kids Manga 550g",
+        preco: "R$ 28,49",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-uva.jpe",
         destaque: false,
         esgotado: false
     },
@@ -274,7 +348,7 @@ const produtosSalonLineKids = [
         categoria: "condicionador-kids",
         descricao: "Condicionador Salon Line Kids 300ml",
         preco: "R$ 18,99",
-        imagem: "img/Salon-kids/Salon-line-kids-meu-liso/cond.jpe",
+        imagem: "img/Salon-kids/Desembraracante/cond.jpe",
         destaque: false,
         esgotado: false
     },
@@ -286,7 +360,7 @@ const produtosSalonLineKids = [
         categoria: "creme-kids",
         descricao: "Creme de Pentear kids Meu liso 250ml",
         preco: "R$ 13,99",
-        imagem: "img/Salon-kids/Salon-line-kids-meu-liso/cr.jpe",
+        imagem: "img/Salon-kids/Desembraracante/cr.jpe",
         destaque: false,
         esgotado: false
     },
@@ -301,6 +375,18 @@ const produtosSalonLineKids = [
         descricao: "Kit de SH 300ml + cond 300ml Salon line",
         preco: "R$ 34,99",
         imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/kit.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 127,
+        nome: "Creme Vanilla Vibes Definição Doce Salon line 1Kg",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "Creme",
+        descricao: "Creme  Salon Line kids 1Kg",
+        preco: "R$ 29,99",
+        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/cr.jpe",
         destaque: false,
         esgotado: false
     },
@@ -407,5 +493,17 @@ const produtosSalonLineKids = [
         imagem: "img/Salon-kids/Salon-line-kids/kit-uva.jpe",
         destaque: false,
         esgotado: false
-    }
+    },
+    {
+        id: 132,
+        nome: "Kit SH 300ml + Cond 200ml #todecacho Chocolate Salon Line Kids",
+        marca: "Salon Line Kids",
+        tipo: "kids",
+        categoria: "kit-kids",
+        descricao: "Kit SH 300ml + Cond 200ml Salon Line Kids",
+        preco: "R$ 34,99",
+        imagem: "img/Salon-kids/Salon-line-kids/kit-chocolate.jpe",
+        destaque: false,
+        esgotado: false
+    },
 ];
