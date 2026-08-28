@@ -64,6 +64,18 @@ const produtosSalonLineAdulto = [
         destaque: false,
         esgotado: false
     },
+    {
+        id: 213,
+        nome: "Óleo Booster 120ml Cachos Ostentação Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "oleo",
+        descricao: "Oleo Booster 120ml Salon Line ",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/cachos-ostentacao/booster.jpe",
+        destaque: false,
+        esgotado: false
+    },
 
     // ========== Definição Cremes somente (3) ==========
 
@@ -507,5 +519,614 @@ const produtosSalonLineAdulto = [
         imagem: "img/Salon-adulto/super-oleos/creme.jpe",
         destaque: false,
         esgotado: false
-    }
+    },
+    {
+        id: 235,
+        nome: "Óleo Super Óleos 42ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo",
+        descricao: "Óleo 42ml Salon Line",
+        preco: "R$ 33,99",
+        imagem: "img/Salon-adulto//super-oleos/oleo-42ml.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 235,
+        nome: "Óleo Super Óleos 100ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo",
+        descricao: "Óleo 100ml Salon Line",
+        preco: "R$ 23,99",
+        imagem: "img/Salon-adulto//super-oleos/oleo-100ml.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Gelatina (7) ==========
+
+    {
+        id: 236,
+        nome: "Gelatina Super Volume 15x Salon Line 1Kg",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 1Kg Salon Line",
+        preco: "R$ 41,99",
+        imagem: "img/Salon-adulto/gelatina/rosa-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Super Definição 14x Salon Line 1Kg",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 1Kg Salon Line",
+        preco: "R$ 46,99",
+        imagem: "img/Salon-adulto/gelatina/verde-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Super Volume 15x Salon Line 550g ",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 550g Salon Line",
+        preco: "R$ 28,99",
+        imagem: "img/Salon-adulto/gelatina/rosa-550.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Super Definição 14x Salon Line 550g",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 550g Salon Line",
+        preco: "R$ 31,99",
+        imagem: "img/Salon-adulto/gelatina/verde-550.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Definição Extraordinaria Salon Line 550g",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 550g Salon Line",
+        preco: "R$ 28,99",
+        imagem: "img/Salon-adulto/gelatina/extraordinaria-550.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Super Definição Hidratante Salon Line 550g",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina Salon Line",
+        preco: "R$ 28,99",
+        imagem: "img/Salon-adulto/gelatina/super-definicao-550.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Fixação Ultra Extraordinaria Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 550g Salon Line",
+        preco: "R$ 24,99",
+        imagem: "img/Salon-adulto/gelatina/ultra-verde.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Brilho Gloss Salon Line 310ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 310ml Salon Line",
+        preco: "R$ 28,99",
+        imagem: "img/Salon-adulto/gelatina/brilho-gloss.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 236,
+        nome: "Gelatina Definição Ultra Extraordinaria Salon Line 550g",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 550g Salon Line",
+        preco: "R$ 29,99",
+        imagem: "img/Salon-adulto/gelatina/definicao-ultra.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== CR KG (7) ==========
+
+    {
+        id: 229,
+        nome: "Creme de Pentear Brilho Maximo 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/brilho-maximo.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Definição Intensa 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/definicao-intensa.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Definição Nutritiva 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/definicao-nutritiva.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Definição Ultra Volume 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/definicao-ultra-volume.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Extraordinario 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/extraordinario.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Hidratação Profunda 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/hidratacao-profunda.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Nutrição Reparadora 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/nutricao-reparadora.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Super Óleos 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/super-oleos.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear touca-de-cetim 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/creme-kg/touca-de-cetim.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+     // ========== Arginina (3) ==========
+
+    {
+        id: 229,
+        nome: "Creme de Pentear Arginina 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/arginina/cr-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Ativador de Cachos Arginina 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Ativador de Cachos",
+        descricao: "Ativador de Cachos 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/arginina/ativador-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Ativador de Cachos Arginina 500g Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Ativador de Cachos",
+        descricao: "Ativador de Cachos 500g Salon Line",
+        preco: "R$ 30,99",
+        imagem: "img/Salon-adulto/arginina/ativador-500.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== oleo de amendoas (3) ==========
+
+    
+    {
+        id: 229,
+        nome: "Ativador de Cachos Amendoas 300ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Ativador de Cachos",
+        descricao: "Ativador de Cachos 300ml Salon Line",
+        preco: "R$ 21,99",
+        imagem: "img/Salon-adulto/oleo-de-amendoas/ativador-300.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== oleo de coco (3) ==========
+
+
+    {
+        id: 229,
+        nome: "Creme de Pentear Óleo de Coco 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/oleo-de-coco/cr-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Ativador de Cachos Óleo de Coco 300ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Ativador de Cachos",
+        descricao: "Ativador de Cachos 300ml Salon Line",
+        preco: "R$ 21,99",
+        imagem: "img/Salon-adulto/oleo-de-coco/ativador-300.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Gelatina Óleo de Coco 400g Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Gelatina",
+        descricao: "Gelatina 400g Salon Line",
+        preco: "R$ 328,99",
+        imagem: "img/Salon-adulto/oleo-de-coco/gelatina.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== oleo de Manga (3) ==========
+
+
+    {
+        id: 229,
+        nome: "Creme de Pentear Óleo de Manga 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 37,99",
+        imagem: "img/Salon-adulto/oleo-de-manga/cr-1kg.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Ativador de Cachos Óleo de Manga 300ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Ativador de Cachos",
+        descricao: "Ativador de Cachos 300ml Salon Line",
+        preco: "R$ 21,99",
+        imagem: "img/Salon-adulto/oleo-de-manga/ativador-300.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Multy (7) ==========
+
+    {
+        id: 229,
+        nome: "Creme de Pentear Melancia 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/multy/melancia.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Morango 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/multy/morango.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Uva 1KG Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme-pentear",
+        descricao: "Creme de Pentear 1KG Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/multy/uva.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Óleo de Tratamento De Banana Salon Line 50ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo de Tratamento",
+        descricao: "Óleo de Tratamento 50ml Salon Line",
+        preco: "R$ 23,49",
+        imagem: "img/Salon-adulto/multy/oleo-banana.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Óleo de Tratamento De Maracuja Salon Line 50ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo de Tratamento",
+        descricao: "Óleo de Tratamento 50ml Salon Line",
+        preco: "R$ 23,49",
+        imagem: "img/Salon-adulto/multy/oleo-maracuja.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Óleo de Tratamento De Morango Salon Line 50ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo de Tratamento",
+        descricao: "Óleo de Tratamento 50ml Salon Line",
+        preco: "R$ 23,49",
+        imagem: "img/Salon-adulto/multy/oleo-morango.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Óleo de Tratamento De Uva Salon Line 50ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo de Tratamento",
+        descricao: "Óleo de Tratamento 50ml Salon Line",
+        preco: "R$ 23,49",
+        imagem: "img/Salon-adulto/multy/oleo-uva.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Óleo Sérum Definição Intensa Salon Line 2000ml",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Óleo Sérum",
+        descricao: "Óleo Sérum 200ml Salon Line",
+        preco: "R$ 42,99",
+        imagem: "img/Salon-adulto/multy/serum.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Profix (7) ==========
+
+    {
+        id: 229,
+        nome: "Creme Modelador Forte 500ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme modelador",
+        descricao: "Creme Modelador 500ml Salon Line",
+        preco: "R$ 27,99",
+        imagem: "img/Salon-adulto/profix/forte.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme Modelador Natural 500ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme modelador",
+        descricao: "Creme Modelador 500ml Salon Line",
+        preco: "R$ 25,99",
+        imagem: "img/Salon-adulto/profix/natural.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme de Pentear Natural 300ml Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme modelador",
+        descricao: "Creme Modelador 500ml Salon Line",
+        preco: "R$ 22,49",
+        imagem: "img/Salon-adulto/profix/cr-natural.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== cr relaxante (7) ==========
+
+    {
+        id: 229,
+        nome: "Creme Relaxante Óleo de Coco e Argan Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme relaxante",
+        descricao: "Creme Relaxante  Salon Line",
+        preco: "R$ 41,99",
+        imagem: "img/Salon-adulto/cr-relaxante/verde.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme Relaxante Óleo de Argan Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme relaxante",
+        descricao: "Creme Relaxante  Salon Line",
+        preco: "R$ 38,98",
+        imagem: "img/Salon-adulto/cr-relaxante/argan.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme Relaxante Óleo de Algodão Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme relaxante",
+        descricao: "Creme Relaxante  Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/cr-relaxante/algodao.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Creme Relaxante Cálcio & Oil Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "creme relaxante",
+        descricao: "Creme Relaxante  Salon Line",
+        preco: "R$ 56,99",
+        imagem: "img/Salon-adulto/cr-relaxante/.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Guanidina (7) ==========
+
+    {
+        id: 229,
+        nome: "Guanidina Tradicional Super Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Guanidina",
+        descricao: "Guanidina Salon Line",
+        preco: "R$ 40,99",
+        imagem: "img/Salon-adulto/guanidina/amarelo-super.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Guanidina Semente de Manga Regular Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Guanidina",
+        descricao: "Guanidina Salon Line",
+        preco: "R$ 40,99",
+        imagem: "img/Salon-adulto/guanidina/manga-regular.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Guanidina Semente de Manga Super Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Guanidina",
+        descricao: "Guanidina Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/guanidina/manga-super.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 229,
+        nome: "Guanidina Tradicional Super Salon Line",
+        marca: "Salon Line",
+        tipo: "cabelo",
+        categoria: "Guanidina",
+        descricao: "Guanidina Salon Line",
+        preco: "R$ 39,99",
+        imagem: "img/Salon-adulto/guanidina/verde-super.jpe",
+        destaque: false,
+        esgotado: false
+    },
 ];
