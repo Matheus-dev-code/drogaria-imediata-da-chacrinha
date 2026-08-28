@@ -6,6 +6,42 @@ const produtosSeda = [
     // ========== Boom (8) ==========
     {
         id: 901,
+        nome: "Creme de Pentear 1KG Definição  Seda Boom",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/definicao/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 901,
+        nome: "Creme de Pentear 1KG Volumão  Seda Boom",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/volumao/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 901,
+        nome: "Creme de Pentear 1KG Definição Intensa Seda Boom",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 1KG Seda Boom",
+        preco: "R$ 29,99",
+        imagem: "img/Seda/boom/definicao-intensa/cr-1.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 901,
         nome: "Creme de Pentear 1KG Definição Flexivel Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
@@ -25,6 +61,18 @@ const produtosSeda = [
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
         imagem: "img/Seda/boom/volumao/cr-350.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 908,
+        nome: "Creme de Pentear 350ml Modelador anti-frizz Seda Boom",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Creme",
+        descricao: "Creme de Pentear 350ml Seda Boom",
+        preco: "R$ 15,49",
+        imagem: "img/Seda/boom/modelador/cr-350.jpe",
         destaque: false,
         esgotado: false
     },
@@ -66,12 +114,24 @@ const produtosSeda = [
     },
     {
         id: 906,
+        nome: "Shampoo Hidratante 250ml Seda Boom",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Condicionador",
+        descricao: "Condicionador 250ml Seda Boom",
+        preco: "R$ 18,99",
+        imagem: "img/Seda/boom/modelador/condicionador.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 906,
         nome: "Condicionador Hidratante 250ml Seda Boom",
         marca: "Seda",
         tipo: "Adulto",
         categoria: "Condicionador",
         descricao: "Condicionador 250ml Seda Boom",
-        preco: "R$ 17,99",
+        preco: "R$ 19,99",
         imagem: "img/Seda/boom/modelador/condicionador.jpe",
         destaque: false,
         esgotado: false
@@ -88,18 +148,7 @@ const produtosSeda = [
         destaque: false,
         esgotado: false
     },
-    {
-        id: 908,
-        nome: "Creme de Pentear 350ml Modelador anti-frizz Seda Boom",
-        marca: "Seda",
-        tipo: "Adulto",
-        categoria: "Creme",
-        descricao: "Creme de Pentear 350ml Seda Boom",
-        preco: "R$ 15,49",
-        imagem: "img/Seda/boom/modelador/cr-350.jpe",
-        destaque: false,
-        esgotado: false
-    },
+    
 
     // ========== Colageno - vitamina C (3) ==========
 
@@ -398,6 +447,30 @@ const produtosSeda = [
         esgotado: false
     },
     {
+        id: 931,
+        nome: "Condicionador 325ml Cachos Definidos Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Shampoo",
+        descricao: "Condicionador 325ml Seda",
+        preco: "R$ 15,99",
+        imagem: "img/Seda/cachos-definidos/cond.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 930,
+        nome: "Creme de Pentear 300ml Cachos Definidos Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Creme de Pentear",
+        descricao: "Creme de Pentear 300ml Seda",
+        preco: "R$ 12,49",
+        imagem: "img/Seda/cachos-definidos/cr-350.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
         id: 932,
         nome: "Mascara Cachos Definidos 300g Seda",
         marca: "Seda",
@@ -409,6 +482,61 @@ const produtosSeda = [
         destaque: false,
         esgotado: false
     },
+
+    // ========== Pretos Luminosos (2) ==========
+
+    {
+        id: 931,
+        nome: "Shampoo 325ml Pretos Luminosos Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Shampoo",
+        descricao: "Shampoo 325ml Seda",
+        preco: "R$ 14,99",
+        imagem: "img/Seda/pretos-luminosos/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 931,
+        nome: "Condicionador 325ml Pretos Luminosos Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Shampoo",
+        descricao: "Condicionador 325ml Seda",
+        preco: "R$ 15,99",
+        imagem: "img/Seda/pretos-luminosos/cond.jpe",
+        destaque: false,
+        esgotado: false
+    },
+
+    // ========== Mega Crescimento (2) ==========
+
+    {
+        id: 931,
+        nome: "Shampoo 325ml Mega Crescimento Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Shampoo",
+        descricao: "Shampoo 325ml Seda",
+        preco: "R$ 14,99",
+        imagem: "img/Seda/mega-crescimento/sh.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 931,
+        nome: "Condicionador 325ml Mega Crescimento Seda",
+        marca: "Seda",
+        tipo: "Adulto",
+        categoria: "Shampoo",
+        descricao: "Condicionador 325ml Seda",
+        preco: "R$ 15,99",
+        imagem: "img/Seda/mega-crescimento/cond.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    
 
     // ========== Fora de Linha (5) ==========
 
@@ -460,16 +588,5 @@ const produtosSeda = [
         destaque: true,
         esgotado: false
     },
-    {
-        id: 937,
-        nome: "Condicionador 325ml Colageno+Vitamina C Seda",
-        marca: "Seda",
-        tipo: "Adulto",
-        categoria: "Condicionador",
-        descricao: "Condicionador 325ml Seda",
-        preco: "R$ 9,99",
-        imagem: "img/Seda/fora-de-linha/col.jpe",
-        destaque: true,
-        esgotado: false
-    }
+    
 ];
