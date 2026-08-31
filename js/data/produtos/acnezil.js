@@ -10,7 +10,7 @@ const produtosAcnezil = [
         id: 701,
         nome: "Acnezil Gel de Tratamento para Acne Tratamento 2 20g",
         marca: "Acnezil",
-        tipo: "Rosto",
+        tipo: "Pele",
         categoria: "Facial",
         descricao: "Gel de Tratamento Passo 2 Acnezil 20g",
         preco: "R$ 24,99 ",
@@ -22,7 +22,7 @@ const produtosAcnezil = [
         id: 701,
         nome: "Acnezil Gel Secativo 10g",
         marca: "Acnezil",
-        tipo: "Rosto",
+        tipo: "Pele",
         categoria: "Facial",
         descricao: "Gel Secativo Acnezil 10g",
         preco: "R$ 24,99 ",
@@ -30,4 +30,4 @@ const produtosAcnezil = [
         destaque: false,
         esgotado: false
     },
-]
+];

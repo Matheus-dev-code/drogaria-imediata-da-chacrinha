@@ -10,7 +10,7 @@ const produtosAsepxia = [
         id: 701,
         nome: "Asepxia Gel Secativo 15g",
         marca: "Asepxia",
-        tipo: "Rosto",
+        tipo: "Pele",
         categoria: "Facial",
         descricao: "Gel Secativo Asepxia 15g",
         preco: "R$ 24,99 ",
@@ -25,8 +25,8 @@ const produtosAsepxia = [
         id: 701,
         nome: "Sabonete Antiacne Detox Asepxia 80g",
         marca: "Asepxia",
-        tipo: "Rosto",
-        categoria: "Facial",
+        tipo: "Higiene",
+        categoria: "Higiene Pessoal",
         descricao: "Sabonete Antiacne Asepxia 80g",
         preco: "R$ 15,99 ",
         imagem: "img/asepxia/detox.jpe",
@@ -37,8 +37,8 @@ const produtosAsepxia = [
         id: 701,
         nome: "Sabonete Antiacne Forte Asepxia 80g",
         marca: "Asepxia",
-        tipo: "Rosto",
-        categoria: "Facial",
+        tipo: "Higiene",
+        categoria: "Higiene Pessoal",
         descricao: "Sabonete Antiacne Asepxia 80g",
         preco: "R$ 12,99 ",
         imagem: "img/asepxia/Forte.jpe",
@@ -46,5 +46,4 @@ const produtosAsepxia = [
         esgotado: false
     },
 
-
-]
+];

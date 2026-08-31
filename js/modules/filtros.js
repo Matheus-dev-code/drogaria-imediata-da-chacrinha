@@ -1,5 +1,5 @@
 // ========================================
-// SISTEMA DE FILTROS
+// SISTEMA DE FILTROS - VERSÃO CORRIGIDA
 // ========================================
 
 let categoriaAtual = 'todos';
@@ -7,12 +7,213 @@ let marcaAtual = 'todas';
 let linhaAtual = 'todas';
 
 // ========================================
+// MAPEAMENTO DE CATEGORIAS - CORRIGIDO
+// ========================================
+
+const CATEGORIA_MAP = {
+    // Produtos de cabelo
+    'cabelo': 'cabelo',
+    'capilar': 'cabelo',
+    'shampoo': 'cabelo',
+    'condicionador': 'cabelo',
+    'creme-pentear': 'cabelo',
+    'mascara': 'cabelo',
+    'oleo': 'cabelo',
+    'tonico': 'cabelo',
+    'tinta': 'cabelo',
+    'descolorante': 'cabelo',
+    'guanidina': 'cabelo',
+    'creme relaxante': 'cabelo',
+    'ativador de cachos': 'cabelo',
+    'gelatina': 'cabelo',
+    'kit': 'cabelo',
+
+    // Produtos kids
+    'kids': 'kids',
+    'creme-de-pentear-kids': 'kids',
+    'gelatina-kids': 'kids',
+    'ativador-de-cachos-kids': 'kids',
+    'shampoo-kids': 'kids',
+    'condicionador-kids': 'kids',
+    'mascara-kids': 'kids',
+    'kit-kids': 'kids',
+    'creme-kids': 'kids',
+    'creme-multifuncional-kids': 'kids',
+
+    // Produtos corporais (cremes, hidratantes, óleos corporais)
+    'corpo': 'corpo',
+    'corporal': 'corpo',
+    'corpo e rosto': 'corpo',
+    'hidratante': 'corpo',
+    'oleo corporal': 'corpo',
+    'creme-corpo': 'corpo',
+    'colonia': 'corpo',
+    'body splash': 'corpo',
+    'desodorante': 'corpo',      // Desodorante fica em corpo
+    'oleo de banho': 'corpo',    // Óleo de banho fica em corpo
+
+    // Higiene (sabonetes, fraldas, talcos, produtos íntimos)
+    'higiene': 'higiene',
+    'sabonete': 'higiene',           // ← SABONETE VAI PARA HIGIENE!
+    'sabonete em barra': 'higiene',  // ← SABONETE EM BARRA VAI PARA HIGIENE!
+    'sabonete liquido': 'higiene',   // ← SABONETE LÍQUIDO VAI PARA HIGIENE!
+    'sabonete intimo': 'higiene',    // ← SABONETE ÍNTIMO VAI PARA HIGIENE!
+    'fralda': 'higiene',
+    'talco': 'higiene',
+    'higiene pessoal': 'higiene',
+    'intimo': 'higiene',
+
+    // Pele / Facial
+    'pele': 'pele',
+    'facial': 'pele',
+    'rosto': 'pele',
+    'labial': 'pele',
+    'tratamento facial': 'pele',
+    'creme facial': 'pele',
+    'gel de limpeza': 'pele',
+    'agua micelar': 'pele',
+    'demaquilante': 'pele',
+    'serum facial': 'pele',
+    'mascara facial': 'pele',
+    'protetor labial': 'pele',
+
+    // Perfumaria
+    'perfumaria': 'perfumaria',
+    'perfume': 'perfumaria',
+    'colonias': 'perfumaria',
+    'deo colonia': 'perfumaria',
+
+    // Maquiagem
+    'maquiagem': 'maquiagem',
+    'make': 'maquiagem',
+    'pre-make': 'maquiagem',
+    'pos-make': 'maquiagem',
+    'gloss': 'maquiagem',
+    'primer': 'maquiagem',
+    'fixador': 'maquiagem',
+    'po facial': 'maquiagem',
+    'bruma': 'maquiagem',
+
+    // Tintas
+    'tintas': 'tintas',
+    'tinta': 'tintas',
+    'descolorante': 'tintas',
+    'agua oxigenada': 'tintas',
+    'oxigenada': 'tintas'
+};
+
+// ========================================
+// FUNÇÃO PARA DETERMINAR A CATEGORIA DE UM PRODUTO
+// ========================================
+
+function getCategoriaProduto(produto) {
+    // 1. Tenta usar o campo 'tipoPadrao' (definido em produtos.js)
+    if (produto.tipoPadrao && produto.tipoPadrao !== 'todos') {
+        return produto.tipoPadrao;
+    }
+
+    // 2. Tenta usar o campo 'categoria' do produto
+    if (produto.categoria) {
+        const categoriaLower = String(produto.categoria).toLowerCase().trim();
+        
+        // Verifica se é sabonete (prioridade)
+        if (categoriaLower.includes('sabonete')) {
+            return 'higiene';
+        }
+        
+        for (const [key, value] of Object.entries(CATEGORIA_MAP)) {
+            if (categoriaLower.includes(key) || key.includes(categoriaLower)) {
+                return value;
+            }
+        }
+    }
+
+    // 3. Tenta usar o campo 'tipo'
+    if (produto.tipo) {
+        const tipoLower = String(produto.tipo).toLowerCase().trim();
+        
+        // Verifica se é sabonete (prioridade)
+        if (tipoLower.includes('sabonete')) {
+            return 'higiene';
+        }
+        
+        for (const [key, value] of Object.entries(CATEGORIA_MAP)) {
+            if (tipoLower.includes(key) || key.includes(tipoLower)) {
+                return value;
+            }
+        }
+    }
+
+    // 4. Tenta usar a marca para inferir categoria (ex: produtos kids)
+    if (produto.marca) {
+        const marcaLower = String(produto.marca).toLowerCase();
+        if (marcaLower.includes('kids') || marcaLower.includes('baby')) {
+            return 'kids';
+        }
+    }
+
+    // 5. Tenta pelo nome
+    if (produto.nome) {
+        const nomeLower = String(produto.nome).toLowerCase();
+        
+        // Prioridade para sabonetes
+        if (nomeLower.includes('sabonete')) {
+            return 'higiene';
+        }
+        
+        if (nomeLower.includes('shampoo') || nomeLower.includes('condicionador') || 
+            nomeLower.includes('creme de pentear') || nomeLower.includes('mascara') ||
+            nomeLower.includes('oleo') || nomeLower.includes('tinta')) {
+            return 'cabelo';
+        }
+        if (nomeLower.includes('fralda') || nomeLower.includes('talco')) {
+            return 'higiene';
+        }
+        if (nomeLower.includes('desodorante') || nomeLower.includes('hidratante') || 
+            nomeLower.includes('creme corporal')) {
+            return 'corpo';
+        }
+    }
+
+    // 6. Fallback: 'todos'
+    return 'todos';
+}
+
+// ========================================
+// CATEGORIAS DISPONÍVEIS
+// ========================================
+
+const CATEGORIAS_DISPONIVEIS = {
+    'todos': 'Todos',
+    'cabelo': 'Cabelos',
+    'kids': 'Kids',
+    'corpo': 'Corpo',
+    'higiene': 'Higiene',
+    'pele': 'Pele',
+    'perfumaria': 'Perfumaria',
+    'maquiagem': 'Maquiagem',
+    'tintas': 'Tintas'
+};
+
+// ========================================
 // APLICAÇÃO DE FILTROS
 // ========================================
 
 function aplicarFiltros() {
+    console.log('🔍 Aplicando filtros:', {
+        categoria: categoriaAtual,
+        marca: marcaAtual,
+        linha: linhaAtual
+    });
+
+    if (!produtosEnriquecidos || produtosEnriquecidos.length === 0) {
+        console.warn('⚠️ Nenhum produto disponível para filtrar');
+        return;
+    }
+
     produtosFiltrados = produtosEnriquecidos.filter(produto => {
-        const tipoMatch = categoriaAtual === 'todos' || produto.tipo === categoriaAtual;
+        const categoriaProduto = getCategoriaProduto(produto);
+        const tipoMatch = categoriaAtual === 'todos' || categoriaProduto === categoriaAtual;
         const marcaMatch = marcaAtual === 'todas' || 
             normalizarTexto(produto.marca) === normalizarTexto(marcaAtual);
         const linhaMatch = linhaAtual === 'todas' || 
@@ -21,10 +222,22 @@ function aplicarFiltros() {
         return tipoMatch && marcaMatch && linhaMatch;
     });
 
+    console.log(`📊 Resultado: ${produtosFiltrados.length} produtos encontrados`);
+
     paginaAtual = 1;
     mostrarPagina(true);
     atualizarFiltrosAtivos();
+    
+    const contador = document.getElementById('contador-produtos');
+    if (contador) {
+        const total = produtosFiltrados.length;
+        contador.textContent = total > 0 ? `Mostrando ${total} produto${total > 1 ? 's' : ''}` : 'Nenhum produto encontrado';
+    }
 }
+
+// ========================================
+// ATUALIZAR FILTROS ATIVOS (UI)
+// ========================================
 
 function atualizarFiltrosAtivos() {
     const container = document.getElementById('filtrosAtivos');
@@ -33,23 +246,20 @@ function atualizarFiltrosAtivos() {
     const ativos = [];
 
     if (categoriaAtual !== 'todos') {
-        const btn = document.querySelector(`.btn-categoria[data-categoria="${categoriaAtual}"]`);
-        if (btn) {
-            const nome = btn.querySelector('span')?.textContent || categoriaAtual;
-            ativos.push(nome);
-        }
+        const nome = CATEGORIAS_DISPONIVEIS[categoriaAtual] || categoriaAtual;
+        ativos.push(`<span class="ativo" data-filtro="categoria">${nome}</span>`);
     }
 
     if (marcaAtual !== 'todas') {
         const select = document.getElementById('marcaSelect');
         const option = select?.querySelector(`option[value="${marcaAtual}"]`);
-        ativos.push(option?.textContent || marcaAtual);
+        ativos.push(`<span class="ativo" data-filtro="marca">${option?.textContent || marcaAtual}</span>`);
     }
 
     if (linhaAtual !== 'todas') {
         const select = document.getElementById('linhaSelect');
         const option = select?.querySelector(`option[value="${linhaAtual}"]`);
-        ativos.push(option?.textContent || linhaAtual);
+        ativos.push(`<span class="ativo" data-filtro="linha">${option?.textContent || linhaAtual}</span>`);
     }
 
     if (ativos.length === 0) {
@@ -57,7 +267,49 @@ function atualizarFiltrosAtivos() {
         return;
     }
 
-    container.innerHTML = `Filtros: ${ativos.map(a => `<span class="ativo">${a}</span>`).join(' ')}`;
+    container.innerHTML = `
+        <span style="font-size:12px;color:var(--gray);margin-right:4px;">Filtros:</span>
+        ${ativos.join(' ')}
+        <button onclick="limparTodosFiltros()" style="
+            background:none;
+            border:none;
+            color:var(--esgotado);
+            font-size:12px;
+            font-weight:700;
+            cursor:pointer;
+            padding:2px 8px;
+            border-radius:12px;
+            transition:background 0.2s;
+        ">✕ Limpar</button>
+    `;
+}
+
+// ========================================
+// LIMPAR TODOS OS FILTROS
+// ========================================
+
+function limparTodosFiltros() {
+    categoriaAtual = 'todos';
+    marcaAtual = 'todas';
+    linhaAtual = 'todas';
+
+    document.querySelectorAll('.btn-categoria').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.categoria === 'todos');
+    });
+
+    const marcaSelect = document.getElementById('marcaSelect');
+    if (marcaSelect) marcaSelect.value = 'todas';
+
+    const linhaSelect = document.getElementById('linhaSelect');
+    if (linhaSelect) linhaSelect.value = 'todas';
+
+    document.getElementById('linhasWrapper').style.display = 'none';
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+
+    aplicarFiltros();
+    mostrarToast('🧹 Filtros limpos!');
 }
 
 // ========================================
@@ -78,49 +330,40 @@ function obterLinhasPorMarca(marca) {
     return Array.from(linhas).sort();
 }
 
-function atualizarSelectMarcas() {
-    const select = document.getElementById('marcaSelect');
-    if (!select) return;
-
-    const opcoes = select.options;
-    let temOpcao = false;
-
-    for (let i = 0; i < opcoes.length; i++) {
-        if (opcoes[i].value === marcaAtual) {
-            temOpcao = true;
-            break;
-        }
-    }
-
-    if (!temOpcao && marcaAtual !== 'todas') {
-        marcaAtual = 'todas';
-        select.value = 'todas';
-        document.getElementById('linhasWrapper').style.display = 'none';
-        linhaAtual = 'todas';
-    }
-}
-
 // ========================================
 // CONFIGURAÇÃO DOS EVENTOS DE FILTRO
 // ========================================
 
 function configurarEventosFiltros() {
-    // Categorias
+    console.log('⚙️ Configurando eventos de filtros...');
+
     document.querySelectorAll('.btn-categoria').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
             document.querySelectorAll('.btn-categoria').forEach(b => b.classList.remove('active'));
             this.classList.add('active');
+            
             categoriaAtual = this.getAttribute('data-categoria');
+            console.log(`📂 Categoria selecionada: ${categoriaAtual}`);
+            
+            if (typeof registrarFiltroCategoria === 'function') {
+                registrarFiltroCategoria(categoriaAtual);
+            }
+            
             aplicarFiltros();
         });
     });
 
-    // Select de Marcas
     const marcaSelect = document.getElementById('marcaSelect');
     if (marcaSelect) {
         marcaSelect.addEventListener('change', function() {
             const valor = this.value;
             marcaAtual = valor;
+
+            if (typeof registrarFiltroMarca === 'function') {
+                registrarFiltroMarca(valor);
+            }
 
             const linhasWrapper = document.getElementById('linhasWrapper');
             const linhaSelect = document.getElementById('linhaSelect');
@@ -147,7 +390,6 @@ function configurarEventosFiltros() {
         });
     }
 
-    // Select de Linhas
     const linhaSelect = document.getElementById('linhaSelect');
     if (linhaSelect) {
         linhaSelect.addEventListener('change', function() {
@@ -156,27 +398,56 @@ function configurarEventosFiltros() {
         });
     }
 
-    // Busca
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
+        let debounceTimer;
+        
         searchInput.addEventListener('input', function() {
-            const termo = normalizarTexto(this.value);
+            clearTimeout(debounceTimer);
+            
+            debounceTimer = setTimeout(() => {
+                const termo = normalizarTexto(this.value);
 
-            if (termo === '') {
-                aplicarFiltros();
-                return;
-            }
+                if (termo === '') {
+                    aplicarFiltros();
+                    return;
+                }
 
-            produtosFiltrados = produtosEnriquecidos.filter(produto => {
-                return normalizarTexto(produto.nome).includes(termo) ||
-                    normalizarTexto(produto.marca).includes(termo) ||
-                    normalizarTexto(produto.descricao).includes(termo) ||
-                    normalizarTexto(formatarCategoria(produto.categoria)).includes(termo) ||
-                    normalizarTexto(produto.linha || '').includes(termo);
-            });
+                if (typeof registrarBusca === 'function') {
+                    registrarBusca(termo);
+                }
 
-            paginaAtual = 1;
-            mostrarPagina(true);
+                produtosFiltrados = produtosEnriquecidos.filter(produto => {
+                    return normalizarTexto(produto.nome).includes(termo) ||
+                        normalizarTexto(produto.marca).includes(termo) ||
+                        normalizarTexto(produto.descricao).includes(termo) ||
+                        normalizarTexto(formatarCategoria(produto.categoria)).includes(termo) ||
+                        normalizarTexto(produto.linha || '').includes(termo);
+                });
+
+                paginaAtual = 1;
+                mostrarPagina(true);
+                atualizarFiltrosAtivos();
+            }, 300);
         });
     }
+
+    console.log('✅ Eventos de filtros configurados!');
 }
+
+// ========================================
+// EXPORTA FUNÇÕES GLOBAIS
+// ========================================
+
+window.categoriaAtual = categoriaAtual;
+window.marcaAtual = marcaAtual;
+window.linhaAtual = linhaAtual;
+window.aplicarFiltros = aplicarFiltros;
+window.atualizarFiltrosAtivos = atualizarFiltrosAtivos;
+window.limparTodosFiltros = limparTodosFiltros;
+window.obterLinhasPorMarca = obterLinhasPorMarca;
+window.configurarEventosFiltros = configurarEventosFiltros;
+window.getCategoriaProduto = getCategoriaProduto;
+window.CATEGORIAS_DISPONIVEIS = CATEGORIAS_DISPONIVEIS;
+
+console.log('✅ Módulo de filtros carregado com sucesso!');

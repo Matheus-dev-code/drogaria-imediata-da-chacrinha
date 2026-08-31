@@ -202,3 +202,20 @@ function configurarSmoothScroll() {
         });
     });
 }
+
+// ========================================
+// EXPORTA FUNÇÕES GLOBAIS
+// ========================================
+
+window.renderizarEstrelas = renderizarEstrelas;
+window.mostrarToast = mostrarToast;
+window.atualizarBadge = atualizarBadge;
+window.animarBadge = animarBadge;
+window.initScrollReveal = initScrollReveal;
+window.habilitarScrollHorizontal = habilitarScrollHorizontal;
+window.configurarMenuMobile = configurarMenuMobile;
+window.configurarBotaoTopo = configurarBotaoTopo;
+window.verificarDisponibilidade = verificarDisponibilidade;
+window.configurarSmoothScroll = configurarSmoothScroll;
+
+console.log('✅ Módulo UI carregado com sucesso!');

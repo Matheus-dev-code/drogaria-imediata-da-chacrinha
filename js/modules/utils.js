@@ -59,7 +59,14 @@ function formatarCategoria(categoria) {
         'sabonete-kids': 'Sabonete',
         'shampoo-seda': 'Shampoo',
         'condicionador-seda': 'Condicionador',
-        'creme-seda': 'Creme de Pentear'
+        'creme-seda': 'Creme de Pentear',
+        'facial': 'Facial',
+        'corporal': 'Corporal',
+        'capilar': 'Capilar',
+        'labial': 'Labial',
+        'tinta': 'Tinta',
+        'descolorante': 'Descolorante',
+        'agua oxigenada': 'Água Oxigenada'
     };
 
     return categorias[categoria] || categoria;
@@ -81,3 +88,12 @@ function scrollParaElemento(elemento, offset = 20) {
         behavior: 'smooth'
     });
 }
+
+// EXPORTA FUNÇÕES GLOBAIS
+window.converterPreco = converterPreco;
+window.formatarPreco = formatarPreco;
+window.normalizarTexto = normalizarTexto;
+window.formatarCategoria = formatarCategoria;
+window.scrollParaElemento = scrollParaElemento;
+
+console.log('✅ Utils carregado com sucesso!');

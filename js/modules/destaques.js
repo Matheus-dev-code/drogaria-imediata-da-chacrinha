@@ -90,3 +90,10 @@ function configurarEventosDestaques() {
         destaqueNext.addEventListener('click', () => mudarPaginaDestaques(1));
     }
 }
+
+// EXPORTA FUNÇÕES GLOBAIS
+window.renderizarDestaques = renderizarDestaques;
+window.mudarPaginaDestaques = mudarPaginaDestaques;
+window.configurarEventosDestaques = configurarEventosDestaques;
+
+console.log('✅ Módulo de destaques carregado com sucesso!');

@@ -1,5 +1,5 @@
 // ========================================
-// GERENCIAMENTO DE PRODUTOS
+// GERENCIAMENTO DE PRODUTOS - VERSÃO CORRIGIDA
 // ========================================
 
 let todosProdutos = [];
@@ -50,11 +50,13 @@ function carregarTodosProdutos() {
     ];
 
     // Mostra diagnóstico de carregamento
+    let totalCarregado = 0;
     arraysProdutos.forEach(item => {
         if (item.dados.length === 0) {
             console.warn(`⚠️ ${item.nome}: Nenhum produto carregado`);
         } else {
             console.log(`✅ ${item.nome}: ${item.dados.length} produtos`);
+            totalCarregado += item.dados.length;
         }
     });
 
@@ -68,12 +70,75 @@ function carregarTodosProdutos() {
     // 🔧 CORRIGE IDs DUPLICADOS AUTOMATICAMENTE
     corrigirIdsDuplicados(todosProdutos);
 
+    // 🔧 CORRIGE CATEGORIAS DOS PRODUTOS
+    todosProdutos = padronizarCategorias(todosProdutos);
+
     // Enriquece os produtos (adiciona avaliação, promoção, etc)
     const produtosEnriquecidosArray = enriquecerProdutos(todosProdutos);
     
     console.log(`✅ Produtos processados com sucesso!`);
     
     return produtosEnriquecidosArray;
+}
+
+// ========================================
+// PADRONIZAR CATEGORIAS DOS PRODUTOS
+// ========================================
+
+function padronizarCategorias(produtos) {
+    console.log('🔧 Padronizando categorias dos produtos...');
+    
+    return produtos.map(produto => {
+        // Garante que os campos existam
+        if (!produto.categoria) {
+            produto.categoria = produto.tipo || 'Geral';
+        }
+        
+        // Padroniza o campo 'tipo' para categorias de filtro
+        if (produto.tipo) {
+            const tipoLower = String(produto.tipo).toLowerCase();
+            
+            // Mapeia para categorias padronizadas
+            if (['cabelo', 'capilar', 'shampoo', 'condicionador', 'creme-pentear', 
+                 'mascara', 'oleo', 'tonico', 'tinta', 'descolorante', 'tintas',
+                 'guanidina', 'creme relaxante', 'ativador de cachos', 'gelatina',
+                 'kit'].includes(tipoLower)) {
+                produto.tipoPadrao = 'cabelo';
+            } else if (['kids', 'infantil'].includes(tipoLower) || 
+                       String(produto.marca).toLowerCase().includes('kids') ||
+                       String(produto.marca).toLowerCase().includes('baby')) {
+                produto.tipoPadrao = 'kids';
+            } else if (['corpo', 'corporal', 'desodorante', 'sabonete', 'creme-corpo',
+                       'hidratante', 'oleo corporal', 'colonia', 'body splash',
+                       'desodorante', 'sabonete liquido', 'sabonete em barra',
+                       'oleo de banho'].includes(tipoLower)) {
+                produto.tipoPadrao = 'corpo';
+            } else if (['higiene', 'fralda', 'talco', 'sabonete intimo', 'intimo',
+                       'higiene pessoal'].includes(tipoLower)) {
+                produto.tipoPadrao = 'higiene';
+            } else if (['pele', 'facial', 'rosto', 'labial', 'tratamento facial', 
+                       'creme facial', 'gel de limpeza', 'agua micelar',
+                       'demaquilante', 'serum facial', 'mascara facial',
+                       'protetor labial'].includes(tipoLower)) {
+                produto.tipoPadrao = 'pele';
+            } else if (['perfumaria', 'perfume', 'colonias', 'deo colonia',
+                       'body splash', 'colonia'].includes(tipoLower)) {
+                produto.tipoPadrao = 'perfumaria';
+            } else if (['maquiagem', 'make', 'pre-make', 'pos-make', 'gloss',
+                       'primer', 'fixador', 'po facial', 'bruma'].includes(tipoLower)) {
+                produto.tipoPadrao = 'maquiagem';
+            } else if (['tintas', 'tinta', 'descolorante', 'agua oxigenada',
+                       'oxigenada'].includes(tipoLower)) {
+                produto.tipoPadrao = 'tintas';
+            } else {
+                produto.tipoPadrao = 'todos';
+            }
+        } else {
+            produto.tipoPadrao = 'todos';
+        }
+
+        return produto;
+    });
 }
 
 // ========================================
@@ -142,6 +207,16 @@ function enriquecerProdutos(produtos) {
         // Garante que tenha linha
         produto.linha = produto.linha || produto.marca;
 
+        // Garante que tenha uma categoria padrão
+        if (!produto.categoria) {
+            produto.categoria = produto.tipo || 'Geral';
+        }
+
+        // Garante tipoPadrao
+        if (!produto.tipoPadrao) {
+            produto.tipoPadrao = 'todos';
+        }
+
         return produto;
     });
 }
@@ -168,8 +243,29 @@ function mostrarPagina(scrollParaProdutos = false) {
     grid.innerHTML = '';
 
     if (produtosFiltrados.length === 0) {
-        grid.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;">Nenhum produto encontrado</p>';
-        if (contador) contador.textContent = '';
+        grid.innerHTML = `
+            <div style="
+                grid-column:1/-1;
+                text-align:center;
+                padding:60px 20px;
+                color:var(--gray);
+            ">
+                <i class="fas fa-search" style="font-size:48px;color:var(--border);margin-bottom:16px;display:block;"></i>
+                <p style="font-size:18px;font-weight:600;margin-bottom:8px;">Nenhum produto encontrado</p>
+                <p style="font-size:14px;">Tente ajustar os filtros ou buscar por outro termo</p>
+                <button onclick="limparTodosFiltros()" style="
+                    margin-top:16px;
+                    padding:10px 24px;
+                    background:var(--primary);
+                    color:white;
+                    border:none;
+                    border-radius:25px;
+                    font-weight:600;
+                    cursor:pointer;
+                ">Limpar filtros</button>
+            </div>
+        `;
+        if (contador) contador.textContent = 'Nenhum produto encontrado';
         return;
     }
 
@@ -263,11 +359,10 @@ function criarProdutoCard(produto) {
     if (produto.esgotado) card.classList.add('esgotado');
     if (produto.promocao) card.classList.add('promocao');
 
-    card.setAttribute('data-tipo', produto.tipo);
-    card.setAttribute('data-categoria', produto.categoria);
+    card.setAttribute('data-id', produto.id);
     card.setAttribute('data-marca', String(produto.marca || '').toLowerCase());
     card.setAttribute('data-linha', String(produto.linha || '').toLowerCase());
-    card.setAttribute('data-id', produto.id);
+    card.setAttribute('data-categoria', produto.tipoPadrao || 'todos');
 
     // Imagem
     const imagemDiv = document.createElement('div');
@@ -299,7 +394,7 @@ function criarProdutoCard(produto) {
     }
 
     // Badge de no carrinho
-    if (estaNoCarrinho(produto.id)) {
+    if (window.estaNoCarrinho && estaNoCarrinho(produto.id)) {
         const badge = document.createElement('div');
         badge.className = 'no-carrinho-badge';
         badge.innerHTML = '<i class="fas fa-check"></i> No Carrinho';
@@ -319,7 +414,7 @@ function criarProdutoCard(produto) {
     
     const tipoSpan = document.createElement('span');
     tipoSpan.className = 'produto-tipo';
-    if (produto.tipo === 'kids') tipoSpan.classList.add('kids-tag');
+    if (produto.tipoPadrao === 'kids') tipoSpan.classList.add('kids-tag');
     tipoSpan.textContent = formatarCategoria(produto.categoria);
     
     tagsDiv.appendChild(marcaSpan);
@@ -331,16 +426,6 @@ function criarProdutoCard(produto) {
         const linhaSpan = document.createElement('span');
         linhaSpan.className = 'produto-linha';
         linhaSpan.textContent = `📌 ${produto.linha}`;
-        linhaSpan.style.cssText = `
-            display: inline-block;
-            font-size: 11px;
-            color: var(--gray);
-            margin-bottom: 4px;
-            font-weight: 500;
-            background: var(--gray-light);
-            padding: 2px 10px;
-            border-radius: 12px;
-        `;
         infoDiv.appendChild(linhaSpan);
     }
 
@@ -394,7 +479,7 @@ function criarProdutoCard(produto) {
         btnCarrinho.className = 'btn-add-cart';
         btnCarrinho.dataset.id = produto.id;
         
-        if (estaNoCarrinho(produto.id)) {
+        if (window.estaNoCarrinho && estaNoCarrinho(produto.id)) {
             btnCarrinho.classList.add('in-cart');
             btnCarrinho.innerHTML = '<i class="fas fa-check"></i> No Carrinho';
             btnCarrinho.style.background = '#4CAF50';
@@ -404,7 +489,9 @@ function criarProdutoCard(produto) {
         
         btnCarrinho.addEventListener('click', function(e) {
             e.stopPropagation();
-            adicionarAoCarrinho(produto);
+            if (typeof adicionarAoCarrinho === 'function') {
+                adicionarAoCarrinho(produto);
+            }
         });
         
         infoDiv.appendChild(btnCarrinho);
@@ -422,10 +509,12 @@ function criarProdutoCard(produto) {
 
 window.carregarTodosProdutos = carregarTodosProdutos;
 window.corrigirIdsDuplicados = corrigirIdsDuplicados;
+window.padronizarCategorias = padronizarCategorias;
 window.renderizarProdutos = renderizarProdutos;
 window.mostrarPagina = mostrarPagina;
 window.mudarPagina = mudarPagina;
 window.criarProdutoCard = criarProdutoCard;
+window.observarCards = observarCards;
 
 console.log('✅ Módulo de produtos carregado com sucesso!');
 
@@ -448,6 +537,3 @@ function observarCards() {
         console.log('👀 Observador de cards iniciado');
     }
 }
-
-// EXPORTA
-window.observarCards = observarCards;

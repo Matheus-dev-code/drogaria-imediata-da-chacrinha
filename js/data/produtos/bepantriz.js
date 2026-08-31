@@ -30,4 +30,4 @@ const produtosBepantriz = [
         destaque: false,
         esgotado: false
     },
-]
+];

@@ -10,8 +10,8 @@ const produtosBepantol = [
         id: 701,
         nome: "Bepantol Derma Creme Oil Free 30g",
         marca: "Bepantol",
-        tipo: "Corpo",
-        categoria: "Rosto e Corpo",
+        tipo: "Pele",
+        categoria: "Facial",
         descricao: "Creme Oil Free Bepantol derma 30g",
         preco: "R$ 37,89 ",
         imagem: "img/bepantol/oil.jpe",
@@ -46,8 +46,8 @@ const produtosBepantol = [
         id: 701,
         nome: "Bepantol Derma Hidratante facial restaurador 50ml",
         marca: "Bepantol",
-        tipo: "Facial",
-        categoria: "Rosto",
+        tipo: "Pele",
+        categoria: "Facial",
         descricao: "Hidratante Facial Bepantol Derma 50ml",
         preco: "R$ 67,99 ",
         imagem: "img/bepantol/restaurador.jpe",
@@ -71,7 +71,7 @@ const produtosBepantol = [
         nome: "Bepantol Derma Solução Restauradora 50ml",
         marca: "Bepantol",
         tipo: "Cabelo",
-        categoria: "Cabelo",
+        categoria: "Capilar",
         descricao: "Solução Capilar Restauradora Bepantol derma 30g",
         preco: "R$ 31,99 ",
         imagem: "img/bepantol/solucao.jpe",
@@ -82,7 +82,7 @@ const produtosBepantol = [
         id: 701,
         nome: "Bepantol Derma Protetor Labial 4,5g",
         marca: "Bepantol",
-        tipo: "Labial",
+        tipo: "Pele",
         categoria: "Labial",
         descricao: "Protetor Labial Bepantol Derma 4,5g",
         preco: "R$ 29,99 ",
@@ -91,4 +91,4 @@ const produtosBepantol = [
         esgotado: false
     },
 
-]
+];
