@@ -46,7 +46,9 @@ function carregarTodosProdutos() {
         { nome: 'Giovanna Baby', dados: typeof produtosGiovannababy !== 'undefined' ? produtosGiovannababy : [] },
         { nome: 'Marcia', dados: typeof produtosMarcia !== 'undefined' ? produtosMarcia : [] },
         { nome: 'Natuhair', dados: typeof produtosNatuhair !== 'undefined' ? produtosNatuhair : [] },
-        { nome: 'Granado', dados: typeof produtosGranado !== 'undefined' ? produtosGranado : [] }
+        { nome: 'Granado', dados: typeof produtosGranado !== 'undefined' ? produtosGranado : [] },
+        // ========== NOVO ==========
+        { nome: 'Fofuras', dados: typeof produtosFofuras !== 'undefined' ? produtosFofuras : [] }
     ];
 
     // Mostra diagnóstico de carregamento
@@ -130,6 +132,8 @@ function padronizarCategorias(produtos) {
             } else if (['tintas', 'tinta', 'descolorante', 'agua oxigenada',
                        'oxigenada'].includes(tipoLower)) {
                 produto.tipoPadrao = 'tintas';
+            } else if (['alimentos', 'biscoitos', 'balas', 'chicletes', 'doces'].includes(tipoLower)) {
+                produto.tipoPadrao = 'alimentos';
             } else {
                 produto.tipoPadrao = 'todos';
             }

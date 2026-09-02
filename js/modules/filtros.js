@@ -49,15 +49,15 @@ const CATEGORIA_MAP = {
     'creme-corpo': 'corpo',
     'colonia': 'corpo',
     'body splash': 'corpo',
-    'desodorante': 'corpo',      // Desodorante fica em corpo
-    'oleo de banho': 'corpo',    // Óleo de banho fica em corpo
+    'desodorante': 'corpo',
+    'oleo de banho': 'corpo',
 
     // Higiene (sabonetes, fraldas, talcos, produtos íntimos)
     'higiene': 'higiene',
-    'sabonete': 'higiene',           // ← SABONETE VAI PARA HIGIENE!
-    'sabonete em barra': 'higiene',  // ← SABONETE EM BARRA VAI PARA HIGIENE!
-    'sabonete liquido': 'higiene',   // ← SABONETE LÍQUIDO VAI PARA HIGIENE!
-    'sabonete intimo': 'higiene',    // ← SABONETE ÍNTIMO VAI PARA HIGIENE!
+    'sabonete': 'higiene',
+    'sabonete em barra': 'higiene',
+    'sabonete liquido': 'higiene',
+    'sabonete intimo': 'higiene',
     'fralda': 'higiene',
     'talco': 'higiene',
     'higiene pessoal': 'higiene',
@@ -99,7 +99,14 @@ const CATEGORIA_MAP = {
     'tinta': 'tintas',
     'descolorante': 'tintas',
     'agua oxigenada': 'tintas',
-    'oxigenada': 'tintas'
+    'oxigenada': 'tintas',
+
+    // ========== ALIMENTOS (NOVO) ==========
+    'alimentos': 'alimentos',
+    'biscoitos': 'alimentos',
+    'balas': 'alimentos',
+    'chicletes': 'alimentos',
+    'doces': 'alimentos'
 };
 
 // ========================================
@@ -192,7 +199,8 @@ const CATEGORIAS_DISPONIVEIS = {
     'pele': 'Pele',
     'perfumaria': 'Perfumaria',
     'maquiagem': 'Maquiagem',
-    'tintas': 'Tintas'
+    'tintas': 'Tintas',
+    'alimentos': 'Alimentos'
 };
 
 // ========================================
