@@ -386,6 +386,129 @@ const produtosSkala = [
         imagem: "img/skala/cr/argila-branca.jpe",
         destaque: false,
         esgotado: false
-    }
+    },
+
+        // ========== KITS SHAMPOO + CONDICIONADOR 325ML (10) ==========
+
+    {
+        id: 831,
+        nome: "Kit Shampoo + Condicionador Skala Amido de Milho 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Amido de Milho 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/amido.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 832,
+        nome: "Kit Shampoo + Condicionador Skala Maracujá 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Maracujá 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/maracuja.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 833,
+        nome: "Kit Shampoo + Condicionador Skala Crespinho Divino 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Crespinho Divino 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/crespinho.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 834,
+        nome: "Kit Shampoo + Condicionador Skala #Mais Cachos 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador #Mais Cachos 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/cachos.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 835,
+        nome: "Kit Shampoo + Condicionador Skala Cereja 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Cereja 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/cereja.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 836,
+        nome: "Kit Shampoo + Condicionador Skala Ceramidas 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Ceramidas 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/ceramidas.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 837,
+        nome: "Kit Shampoo + Condicionador Skala Ácido Hialurônico 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Ácido Hialurônico 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/acido.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 838,
+        nome: "Kit Shampoo + Condicionador Skala #Mais Cachinhos 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador #Mais Cachinhos 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/cachinhos.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 839,
+        nome: "Kit Shampoo + Condicionador Skala Uva 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Uva 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/uva.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 840,
+        nome: "Kit Shampoo + Condicionador Skala Morango 325ml",
+        marca: "Skala",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Kit Shampoo + Condicionador Morango 325ml",
+        preco: "R$ 15,99 ",
+        imagem: "img/skala/kit/morango.jpe",
+        destaque: false,
+        esgotado: false
+    },
 
 ];
