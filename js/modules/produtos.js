@@ -47,7 +47,7 @@ function carregarTodosProdutos() {
         { nome: 'Marcia', dados: typeof produtosMarcia !== 'undefined' ? produtosMarcia : [] },
         { nome: 'Natuhair', dados: typeof produtosNatuhair !== 'undefined' ? produtosNatuhair : [] },
         { nome: 'Granado', dados: typeof produtosGranado !== 'undefined' ? produtosGranado : [] },
-        // ========== NOVO ==========
+        { nome: 'Skala', dados: typeof produtosSkala !== 'undefined' ? produtosSkala : [] },
         { nome: 'Fofuras', dados: typeof produtosFofuras !== 'undefined' ? produtosFofuras : [] }
     ];
 

@@ -101,7 +101,7 @@ const CATEGORIA_MAP = {
     'agua oxigenada': 'tintas',
     'oxigenada': 'tintas',
 
-    // ========== ALIMENTOS (NOVO) ==========
+    // ========== ALIMENTOS ==========
     'alimentos': 'alimentos',
     'biscoitos': 'alimentos',
     'balas': 'alimentos',
@@ -406,6 +406,10 @@ function configurarEventosFiltros() {
         });
     }
 
+    // ========================================
+    // CONFIGURAÇÃO DA BUSCA INTELIGENTE
+    // ========================================
+
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         let debounceTimer;
@@ -414,7 +418,7 @@ function configurarEventosFiltros() {
             clearTimeout(debounceTimer);
             
             debounceTimer = setTimeout(() => {
-                const termo = normalizarTexto(this.value);
+                const termo = this.value.trim();
 
                 if (termo === '') {
                     aplicarFiltros();
@@ -425,17 +429,32 @@ function configurarEventosFiltros() {
                     registrarBusca(termo);
                 }
 
-                produtosFiltrados = produtosEnriquecidos.filter(produto => {
-                    return normalizarTexto(produto.nome).includes(termo) ||
-                        normalizarTexto(produto.marca).includes(termo) ||
-                        normalizarTexto(produto.descricao).includes(termo) ||
-                        normalizarTexto(formatarCategoria(produto.categoria)).includes(termo) ||
-                        normalizarTexto(produto.linha || '').includes(termo);
-                });
+                // ========== BUSCA INTELIGENTE ==========
+                const resultados = buscarProdutosInteligente(termo, produtosEnriquecidos);
+                
+                // Verifica se há sugestão de correção
+                const sugestao = sugerirCorrecao(termo, produtosEnriquecidos);
+                if (sugestao && sugestao !== normalizarTextoBusca(termo)) {
+                    console.log(`💡 Sugestão de correção: "${termo}" → "${sugestao}"`);
+                    // Mostra sugestão (opcional)
+                    mostrarToast(`💡 Você quis dizer: "${sugestao}"?`);
+                }
 
+                produtosFiltrados = resultados;
                 paginaAtual = 1;
                 mostrarPagina(true);
                 atualizarFiltrosAtivos();
+                
+                // Mostra quantos resultados foram encontrados
+                const contador = document.getElementById('contador-produtos');
+                if (contador) {
+                    const total = produtosFiltrados.length;
+                    if (total === 0) {
+                        contador.textContent = `🔍 Nenhum resultado para "${termo}"`;
+                    } else {
+                        contador.textContent = `🔍 ${total} resultado${total > 1 ? 's' : ''} para "${termo}"`;
+                    }
+                }
             }, 300);
         });
     }
