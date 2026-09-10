@@ -48,7 +48,13 @@ function carregarTodosProdutos() {
         { nome: 'Natuhair', dados: typeof produtosNatuhair !== 'undefined' ? produtosNatuhair : [] },
         { nome: 'Granado', dados: typeof produtosGranado !== 'undefined' ? produtosGranado : [] },
         { nome: 'Skala', dados: typeof produtosSkala !== 'undefined' ? produtosSkala : [] },
-        { nome: 'Fofuras', dados: typeof produtosFofuras !== 'undefined' ? produtosFofuras : [] }
+        { nome: 'Fofuras', dados: typeof produtosFofuras !== 'undefined' ? produtosFofuras : [] },
+        { nome: 'Pantene', dados: typeof produtosPantene !== 'undefined' ? produtosPantene : [] },
+        { nome: 'Koleston', dados: typeof produtosKoleston !== 'undefined' ? produtosKoleston : [] },
+        { nome: 'Garnier', dados: typeof produtosGarnier !== 'undefined' ? produtosGarnier : [] },
+        { nome: 'Alta Moda', dados: typeof produtosAltaModa !== 'undefined' ? produtosAltaModa : [] },
+        { nome: 'Natucor', dados: typeof produtosNatucor !== 'undefined' ? produtosNatucor : [] },
+        { nome: 'Probelle', dados: typeof produtosProbelle !== 'undefined' ? produtosProbelle : [] },
     ];
 
     // Mostra diagnóstico de carregamento

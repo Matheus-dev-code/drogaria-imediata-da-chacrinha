@@ -605,6 +605,169 @@ const produtosLoreal = [
         imagem: "img/loreal/elseve/collagen-lifter/cr.jpe",
         destaque: false,
         esgotado: false
-    }
+    },
+
+
+
+        // ========== TINTAS L'ORÉAL PARIS - IMÉDIA EXCELLENCE CREME (7) ==========
+
+    {
+        id: 549,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 1 Preto",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 1 Preto",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/1.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 550,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 2 Preto Clássico",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 2 Preto Clássico",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/2.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 551,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 4 Castanho Natural",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 4 Castanho Natural",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/4.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 552,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 5 Castanho Claro",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 5 Castanho Claro",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/5.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 553,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 6 Louro Escuro",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 6 Louro Escuro",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/6.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 554,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 6.7 Chocolate",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 6.7 Chocolate",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/6.7.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 555,
+        nome: "Tinta L'Oréal Paris Imédia Excellence Creme 7 Louro Natural",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tinta Imédia Excellence Creme 7 Louro Natural",
+        preco: "R$ 29,99",
+        imagem: "img/loreal/tinta/7.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+        // ========== TONALIZANTES L'ORÉAL PARIS - CASTING CREME GLOSS (6) ==========
+
+    {
+        id: 556,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 100 Preto Noite",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 100 Preto Noite",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/100.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 557,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 210 Preto Azulado",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 210 Preto Azulado",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/210.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 558,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 300 Castanho Escuro",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 300 Castanho Escuro",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/300.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 559,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 400 Castanho Natural",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 400 Castanho Natural",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/400.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 560,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 500 Castanho Claro",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 500 Castanho Claro",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/500.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 561,
+        nome: "Tonalizante L'Oréal Paris Casting Creme Gloss 600 Louro Escuro",
+        marca: "L'Oréal Paris",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Casting Creme Gloss 600 Louro Escuro",
+        preco: "R$ 35,99",
+        imagem: "img/loreal/tonalizante/600.jpe",
+        destaque: false,
+        esgotado: false
+    },
 
 ];
