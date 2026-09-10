@@ -1126,4 +1126,103 @@ const produtosSalonLineAdulto = [
         destaque: false,
         esgotado: false
     },
+    
+    // ========== TONALIZANTES LIGHT COLOR (8) ==========
+
+    {
+        id: 1601,
+        nome: "Tonalizante Salon Line Light Color 1.0 Preto Azulado",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 1.0 Preto Azulado",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/1.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1602,
+        nome: "Tonalizante Salon Line Light Color 1.110 Preto Azulado Intenso",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 1.110 Preto Azulado Intenso",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/1.110.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1603,
+        nome: "Tonalizante Salon Line Light Color 2.0 Preto",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 2.0 Preto",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/2.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1604,
+        nome: "Tonalizante Salon Line Light Color 3.0 Castanho Escuro",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 3.0 Castanho Escuro",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/3.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1605,
+        nome: "Tonalizante Salon Line Light Color 4.0 Castanho Médio",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 4.0 Castanho Médio",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/4.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1606,
+        nome: "Tonalizante Salon Line Light Color 5.0 Castanho Claro",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 5.0 Castanho Claro",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/5.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1607,
+        nome: "Tonalizante Salon Line Light Color 6.0 Louro Escuro",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 6.0 Louro Escuro",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/6.0.jpe",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: 1608,
+        nome: "Tonalizante Salon Line Light Color 7.0 Louro Natural",
+        marca: "Salon Line",
+        tipo: "Tintas",
+        categoria: "Coloração",
+        descricao: "Tonalizante Light Color 7.0 Louro Natural",
+        preco: "R$ 18,99",
+        imagem: "img/Salon-adulto/tonalizante/7.0.jpe",
+        destaque: false,
+        esgotado: false
+    }
 ];
