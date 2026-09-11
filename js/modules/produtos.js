@@ -55,6 +55,8 @@ function carregarTodosProdutos() {
         { nome: 'Alta Moda', dados: typeof produtosAltaModa !== 'undefined' ? produtosAltaModa : [] },
         { nome: 'Natucor', dados: typeof produtosNatucor !== 'undefined' ? produtosNatucor : [] },
         { nome: 'Probelle', dados: typeof produtosProbelle !== 'undefined' ? produtosProbelle : [] },
+        { nome: 'Diana', dados: typeof produtosDiana !== 'undefined' ? produtosDiana : [] },
+        { nome: 'Always', dados: typeof produtosAlways !== 'undefined' ? produtosAlways : [] },
     ];
 
     // Mostra diagnóstico de carregamento
