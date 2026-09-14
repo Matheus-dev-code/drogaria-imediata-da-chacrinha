@@ -14,7 +14,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Sabonete Liquido Pré-make Com D-pantenol e Vitamina B5 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/pre-make-pantenol.jpe",
+        imagem: "img/face-beautiful/pre-make-pantenol.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Sabonete Liquido Pré-make com Óleo de Rosa Mosqueta e colágeno 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/pre-make-rosa-mosqueta.jpe",
+        imagem: "img/face-beautiful/pre-make-rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -41,7 +41,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Gel de Limpeza Ácido Hialurônico 200ml",
         preco: "R$ 12,99 ",
-        imagem: "img/face-beautiful/gel-de-limpeza-acido.jpe",
+        imagem: "img/face-beautiful/gel-de-limpeza-acido.webp",
         destaque: false,
         esgotado: false
     },
@@ -56,7 +56,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Água Micelar Detox 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/agua-micelar-detox-spray.jpe",
+        imagem: "img/face-beautiful/agua-micelar-detox-spray.webp",
         destaque: false,
         esgotado: false
     },
@@ -71,7 +71,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Loção Demaquilante Rosa Mosquesta 200ml",
         preco: "R$ 13,99 ",
-        imagem: "img/face-beautiful/demaquilante-rosa-mosqueta-200.jpe",
+        imagem: "img/face-beautiful/demaquilante-rosa-mosqueta-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -83,7 +83,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Loção Demaquilante Rosa Mosquesta 100ml",
         preco: "R$ 12,99 ",
-        imagem: "img/face-beautiful/demaquilante-rosa-mosqueta-100.jpe",
+        imagem: "img/face-beautiful/demaquilante-rosa-mosqueta-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Sabonete Liquido Pós-make Vitamina C 100ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/pos-make-vitamina-c.jpe",
+        imagem: "img/face-beautiful/pos-make-vitamina-c.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Sérum Facial Hidratante 30ml",
         preco: "R$ 11,99 ",
-        imagem: "img/face-beautiful/serum-facial/hidratante.jpe",
+        imagem: "img/face-beautiful/serum-facial/hidratante.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Sérum Facial Refrescante 30ml",
         preco: "R$ 11,99 ",
-        imagem: "img/face-beautiful/serum-facial/refrescante.jpe",
+        imagem: "img/face-beautiful/serum-facial/refrescante.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Sérum Facial Pré-Biótico 30ml",
         preco: "R$ 11,99 ",
-        imagem: "img/face-beautiful/serum-facial/biotico.jpe",
+        imagem: "img/face-beautiful/serum-facial/biotico.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Sérum Facial Calmante 30ml",
         preco: "R$ 11,99 ",
-        imagem: "img/face-beautiful/serum-facial/calmante.jpe",
+        imagem: "img/face-beautiful/serum-facial/calmante.webp",
         destaque: false,
         esgotado: false
     },
@@ -164,7 +164,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Pré Maquiagem Primer Facial Hd 30g",
         preco: "R$ 14,99 ",
-        imagem: "img/face-beautiful/primer-facial.jpe",
+        imagem: "img/face-beautiful/primer-facial.webp",
         destaque: false,
         esgotado: false
     },
@@ -179,7 +179,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Luxury Fixador de Maquiagem 100ml",
         preco: "R$ 13,99 ",
-        imagem: "img/face-beautiful/luxury.jpe",
+        imagem: "img/face-beautiful/luxury.webp",
         destaque: false,
         esgotado: false
     },
@@ -194,7 +194,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Bruma Fixadora 100ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/bruma-fixadora.jpe",
+        imagem: "img/face-beautiful/bruma-fixadora.webp",
         destaque: false,
         esgotado: false
     },
@@ -206,7 +206,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Bruma Iluminadora 100ml",
         preco: "R$ 9,99 ",
-        imagem: "img/face-beautiful/bruma-iluminadora.jpe",
+        imagem: "img/face-beautiful/bruma-iluminadora.webp",
         destaque: false,
         esgotado: false
     },
@@ -221,7 +221,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Mascara Facial Preta 50ml",
         preco: "R$ 14,99 ",
-        imagem: "img/face-beautiful/mascara-preta.jpe",
+        imagem: "img/face-beautiful/mascara-preta.webp",
         destaque: false,
         esgotado: false
     },
@@ -233,7 +233,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Mascara Facial Argila Branca 50ml",
         preco: "R$ 14,99 ",
-        imagem: "img/face-beautiful/mascara-argila.jpe",
+        imagem: "img/face-beautiful/mascara-argila.webp",
         destaque: false,
         esgotado: false
     },
@@ -245,7 +245,7 @@ const produtosFacebeautiful = [
         categoria: "Facial",
         descricao: "Mascara Facial Rosa Mosqueta 50ml",
         preco: "R$ 14,99 ",
-        imagem: "img/face-beautiful/mascara-rosa-mosqueta.jpe",
+        imagem: "img/face-beautiful/mascara-rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -260,7 +260,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Gloss Labial 4ml",
         preco: "R$ 12,99 ",
-        imagem: "img/face-beautiful/gloss-kiwi.jpe",
+        imagem: "img/face-beautiful/gloss-kiwi.webp",
         destaque: false,
         esgotado: false
     },
@@ -272,7 +272,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Gloss Labial 4ml",
         preco: "R$ 12,99 ",
-        imagem: "img/face-beautiful/gloss-pitaya.jpe",
+        imagem: "img/face-beautiful/gloss-pitaya.webp",
         destaque: false,
         esgotado: false
     },
@@ -287,7 +287,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Pó de Banana Facial Solto 10g",
         preco: "R$ 10,99 ", 
-        imagem: "img/face-beautiful/po-banana.jpe",
+        imagem: "img/face-beautiful/po-banana.webp",
         destaque: false,
         esgotado: false
     },
@@ -299,7 +299,7 @@ const produtosFacebeautiful = [
         categoria: "Make/Facial",
         descricao: "Pó de Banana Facial Solto 10g",
         preco: "R$ 9,99 ",
-        imagem: "img/face-beautiful/po-rosa-mosqueta.jpe",
+        imagem: "img/face-beautiful/po-rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -314,7 +314,7 @@ const produtosFacebeautiful = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Maracuja 200ml",
         preco: "R$ 9,99 ",
-        imagem: "img/face-beautiful/frutas/sabonete-maracuja.jpe",
+        imagem: "img/face-beautiful/frutas/sabonete-maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -326,7 +326,7 @@ const produtosFacebeautiful = [
         categoria: "Colônia/Perfume",
         descricao: "Body splash maracuja 200ml",
         preco: "R$ 15,99 ",
-        imagem: "img/face-beautiful/frutas/body-splash-maracuja.jpe",
+        imagem: "img/face-beautiful/frutas/body-splash-maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -338,7 +338,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal Pitaya + Rosa Mosqueta 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/frutas/hidratante-pitaya.jpe",
+        imagem: "img/face-beautiful/frutas/hidratante-pitaya.webp",
         destaque: false,
         esgotado: false
     },
@@ -350,7 +350,7 @@ const produtosFacebeautiful = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Morango + Colageno 200ml",
         preco: "R$ 9,99 ",
-        imagem: "img/face-beautiful/frutas/sabonete-morango.jpe",
+        imagem: "img/face-beautiful/frutas/sabonete-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -362,7 +362,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Esfoliante Corporal Morango + Colageno 280g",
         preco: "R$ 13,99 ",
-        imagem: "img/face-beautiful/frutas/esfoliante-morango.jpe",
+        imagem: "img/face-beautiful/frutas/esfoliante-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -374,7 +374,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal Morango + Colageno 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/frutas/hidratante-morango.jpe",
+        imagem: "img/face-beautiful/frutas/hidratante-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -386,7 +386,7 @@ const produtosFacebeautiful = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash Morango 200ml",
         preco: "R$ 15,99 ",
-        imagem: "img/face-beautiful/frutas/body-splash-morango.jpe",
+        imagem: "img/face-beautiful/frutas/body-splash-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -398,7 +398,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal Melancia + Niacinamida 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/frutas/hidratante-melancia.jpe",
+        imagem: "img/face-beautiful/frutas/hidratante-melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -410,7 +410,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal Kiwi + Chá Verde 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/frutas/hidratante-kiwi.jpe",
+        imagem: "img/face-beautiful/frutas/hidratante-kiwi.webp",
         destaque: false,
         esgotado: false
     },
@@ -434,7 +434,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Esfoliante Corporal Melania + Niacinamida 280g",
         preco: "R$ 13,99 ",
-        imagem: "img/face-beautiful/frutas/esfoliante-kiwi.jpe",
+        imagem: "img/face-beautiful/frutas/esfoliante-kiwi.webp",
         destaque: false,
         esgotado: false
     },
@@ -446,7 +446,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Esfoliante Corporal Piña Colada + Pantenol 280g",
         preco: "R$ 13,99 ",
-        imagem: "img/face-beautiful/frutas/esfoliante-pina.jpe",
+        imagem: "img/face-beautiful/frutas/esfoliante-pina.webp",
         destaque: false,
         esgotado: false
     },
@@ -458,7 +458,7 @@ const produtosFacebeautiful = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal Piña Coalda + Pantenol 200ml",
         preco: "R$ 10,99 ",
-        imagem: "img/face-beautiful/frutas/hidratante-pina.jpe",
+        imagem: "img/face-beautiful/frutas/hidratante-pina.webp",
         destaque: false,
         esgotado: false
     },
@@ -470,7 +470,7 @@ const produtosFacebeautiful = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash Piña Coalda + Pantenol 100ml",
         preco: "R$ 11,99 ",
-        imagem: "img/face-beautiful/frutas/body-splash-pina-100.jpe",
+        imagem: "img/face-beautiful/frutas/body-splash-pina-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -482,7 +482,7 @@ const produtosFacebeautiful = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Íntimus 2 Frascos 200ml",
         preco: "R$ 19,99 ",
-        imagem: "img/face-beautiful/intimo/jasmin.jpe",
+        imagem: "img/face-beautiful/intimo/jasmin.webp",
         destaque: false,
         esgotado: false
     },
@@ -494,7 +494,7 @@ const produtosFacebeautiful = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Íntimus 2 Frascos 200ml",
         preco: "R$ 19,99 ",
-        imagem: "img/face-beautiful/intimo/cerejeira.jpe",
+        imagem: "img/face-beautiful/intimo/cerejeira.webp",
         destaque: false,
         esgotado: false
     },
@@ -506,7 +506,7 @@ const produtosFacebeautiful = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Íntimus 2 Frascos 200ml",
         preco: "R$ 19,99 ",
-        imagem: "img/face-beautiful/intimo/neutro.jpe",
+        imagem: "img/face-beautiful/intimo/neutro.webp",
         destaque: false,
         esgotado: false
     },

@@ -14,7 +14,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/1.0.jpe",
+        imagem: "img/maxton/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/1.01.jpe",
+        imagem: "img/maxton/1.01.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/1.7.jpe",
+        imagem: "img/maxton/1.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/1.77.jpe",
+        imagem: "img/maxton/1.77.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/1.110.jpe",
+        imagem: "img/maxton/1.110.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/2.0.jpe",
+        imagem: "img/maxton/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/2.1.jpe",
+        imagem: "img/maxton/2.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/2.8.jpe",
+        imagem: "img/maxton/2.8.webp",
         destaque: false,
         esgotado: false
     },
@@ -116,7 +116,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/3.0.jpe",
+        imagem: "img/maxton/3.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -131,7 +131,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/4.0.jpe",
+        imagem: "img/maxton/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/5.0.jpe",
+        imagem: "img/maxton/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -158,7 +158,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/5.26.jpe",
+        imagem: "img/maxton/5.26.webp",
         destaque: false,
         esgotado: false
     },
@@ -170,7 +170,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/5.74.jpe",
+        imagem: "img/maxton/5.74.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/6.0.jpe",
+        imagem: "img/maxton/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -197,7 +197,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/6.1.jpe",
+        imagem: "img/maxton/6.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -209,7 +209,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/6.7.jpe",
+        imagem: "img/maxton/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -221,7 +221,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/6.66.jpe",
+        imagem: "img/maxton/6.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -236,7 +236,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/7.0.jpe",
+        imagem: "img/maxton/7.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -248,7 +248,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/7.2.jpe",
+        imagem: "img/maxton/7.2.webp",
         destaque: false,
         esgotado: false
     },
@@ -260,7 +260,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/7.37.jpe",
+        imagem: "img/maxton/7.37.webp",
         destaque: false,
         esgotado: false
     },
@@ -275,7 +275,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/8.1.jpe",
+        imagem: "img/maxton/8.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -287,7 +287,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/8.26.jpe",
+        imagem: "img/maxton/8.26.webp",
         destaque: false,
         esgotado: false
     },
@@ -302,7 +302,7 @@ const produtosMaxton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Maxton",
         preco: "R$ 13,99",
-        imagem: "img/maxton/12.11.jpe",
+        imagem: "img/maxton/12.11.webp",
         destaque: false,
         esgotado: false
     }

@@ -14,7 +14,7 @@ const produtosGiovannababy = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 260ml ",
         preco: "R$ 30,99 ",
-        imagem: "img/giovanna-baby/body-splash/classic.jpe",
+        imagem: "img/giovanna-baby/body-splash/classic.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosGiovannababy = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 260ml ",
         preco: "R$ 30,99 ",
-        imagem: "img/giovanna-baby/body-splash/blue.jpe",
+        imagem: "img/giovanna-baby/body-splash/blue.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosGiovannababy = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 260ml ",
         preco: "R$ 30,99 ",
-        imagem: "img/giovanna-baby/body-splash/candy.jpe",
+        imagem: "img/giovanna-baby/body-splash/candy.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosGiovannababy = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 260ml ",
         preco: "R$ 30,99 ",
-        imagem: "img/giovanna-baby/body-splash/turquoise.jpe",
+        imagem: "img/giovanna-baby/body-splash/turquoise.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosGiovannababy = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 260ml ",
         preco: "R$ 30,99 ",
-        imagem: "img/giovanna-baby/body-splash/gold.jpe",
+        imagem: "img/giovanna-baby/body-splash/gold.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/giovanna-baby/desodorante/gold.jpe",
+        imagem: "img/giovanna-baby/desodorante/gold.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/giovanna-baby/desodorante/silver.jpe",
+        imagem: "img/giovanna-baby/desodorante/silver.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/classic.jpe",
+        imagem: "img/giovanna-baby/desodorante/classic.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/blue.jpe",
+        imagem: "img/giovanna-baby/desodorante/blue.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/blanc.jpe",
+        imagem: "img/giovanna-baby/desodorante/blanc.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/candy.jpe",
+        imagem: "img/giovanna-baby/desodorante/candy.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/lilac.jpe",
+        imagem: "img/giovanna-baby/desodorante/lilac.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Giovanna Baby 150ml ",
         preco: "R$ 12,99 ",
-        imagem: "img/giovanna-baby/desodorante/blueberry.jpe",
+        imagem: "img/giovanna-baby/desodorante/blueberry.webp",
         destaque: false,
         esgotado: false
     },
@@ -176,7 +176,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Giovanna Baby 50ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/giovanna-baby/desodorante/roll-on/blanc.jpe",
+        imagem: "img/giovanna-baby/desodorante/roll-on/blanc.webp",
         destaque: false,
         esgotado: false
     },
@@ -188,7 +188,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Giovanna Baby 50ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/giovanna-baby/desodorante/roll-on/cherry.jpe",
+        imagem: "img/giovanna-baby/desodorante/roll-on/cherry.webp",
         destaque: false,
         esgotado: false
     },
@@ -200,7 +200,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Giovanna Baby 50ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/giovanna-baby/desodorante/roll-on/candy.jpe",
+        imagem: "img/giovanna-baby/desodorante/roll-on/candy.webp",
         destaque: false,
         esgotado: false
     },
@@ -212,7 +212,7 @@ const produtosGiovannababy = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Giovanna Baby 50ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/giovanna-baby/desodorante/roll-on/lilac.jpe",
+        imagem: "img/giovanna-baby/desodorante/roll-on/lilac.webp",
         destaque: false,
         esgotado: false
     },

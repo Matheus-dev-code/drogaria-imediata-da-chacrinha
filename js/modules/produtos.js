@@ -57,6 +57,7 @@ function carregarTodosProdutos() {
         { nome: 'Probelle', dados: typeof produtosProbelle !== 'undefined' ? produtosProbelle : [] },
         { nome: 'Diana', dados: typeof produtosDiana !== 'undefined' ? produtosDiana : [] },
         { nome: 'Always', dados: typeof produtosAlways !== 'undefined' ? produtosAlways : [] },
+        { nome: 'Intimus', dados: typeof produtosIntimus !== 'undefined' ? produtosIntimus : [] },
     ];
 
     // Mostra diagnóstico de carregamento

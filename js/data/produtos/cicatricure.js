@@ -14,7 +14,7 @@ const produtosCicatricure = [
         categoria: "Facial",
         descricao: "Gel Creme Facial Cicatricure 50g",
         preco: "R$ 68,99 ",
-        imagem: "img/cicatricure/porcelana.jpe",
+        imagem: "img/cicatricure/porcelana.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosCicatricure = [
         categoria: "Corporal",
         descricao: "Gel para Cicatrizes e Estrias Cicatricure 60g",
         preco: "R$ 52,99 ",
-        imagem: "img/cicatricure/estrias.jpe",
+        imagem: "img/cicatricure/estrias.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosCicatricure = [
         categoria: "Facial",
         descricao: "Creme Facial Cicatricure 50g",
         preco: "R$ 53,99 ",
-        imagem: "img/cicatricure/antissinais.jpe",
+        imagem: "img/cicatricure/antissinais.webp",
         destaque: false,
         esgotado: false
     },

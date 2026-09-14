@@ -14,7 +14,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Shampoo Infantil 250ml ",
         preco: "R$ 19,99 ",
-        imagem: "img/granado/shampoo-infantil/neutro.jpe",
+        imagem: "img/granado/shampoo-infantil/neutro.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Shampoo Infantil 250ml ",
         preco: "R$ 19,99 ",
-        imagem: "img/granado/shampoo-infantil/calendula.jpe",
+        imagem: "img/granado/shampoo-infantil/calendula.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Shampoo Infantil 250ml ",
         preco: "R$ 19,99 ",
-        imagem: "img/granado/shampoo-infantil/erva-doce.jpe",
+        imagem: "img/granado/shampoo-infantil/erva-doce.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Shampoo Infantil 250ml ",
         preco: "R$ 19,99 ",
-        imagem: "img/granado/shampoo-infantil/extrato-de-camomila.jpe",
+        imagem: "img/granado/shampoo-infantil/extrato-de-camomila.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Shampoo Infantil 250ml ",
         preco: "R$ 19,99 ",
-        imagem: "img/granado/shampoo-infantil/lavanda.jpe",
+        imagem: "img/granado/shampoo-infantil/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete Infantil 250ml ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-liquido-infantil/calendula.jpe",
+        imagem: "img/granado/sabonete-liquido-infantil/calendula.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete Infantil 250ml ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-liquido-infantil/camomila.jpe",
+        imagem: "img/granado/sabonete-liquido-infantil/camomila.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete Infantil 250ml ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-liquido-infantil/erva-doce.jpe",
+        imagem: "img/granado/sabonete-liquido-infantil/erva-doce.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete Infantil 250ml ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-liquido-infantil/lavanda.jpe",
+        imagem: "img/granado/sabonete-liquido-infantil/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -128,7 +128,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete em barra Infantil 90g ",
         preco: "R$ 6,99 ",
-        imagem: "img/granado/sabonete-em-barra-infantil/neutro.jpe",
+        imagem: "img/granado/sabonete-em-barra-infantil/neutro.webp",
         destaque: false,
         esgotado: false
     },
@@ -140,7 +140,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete em barra Infantil 90g ",
         preco: "R$ 6,99 ",
-        imagem: "img/granado/sabonete-em-barra-infantil/calendula.jpe",
+        imagem: "img/granado/sabonete-em-barra-infantil/calendula.webp",
         destaque: false,
         esgotado: false
     },
@@ -152,7 +152,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete em barra Infantil 90g ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-em-barra-infantil/camomila.jpe",
+        imagem: "img/granado/sabonete-em-barra-infantil/camomila.webp",
         destaque: false,
         esgotado: false
     },
@@ -164,7 +164,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Sabonete em barra Infantil 90g ",
         preco: "R$ 24,99 ",
-        imagem: "img/granado/sabonete-em-barra-infantil/erva-doce.jpe",
+        imagem: "img/granado/sabonete-em-barra-infantil/erva-doce.webp",
         destaque: false,
         esgotado: false
     },
@@ -179,7 +179,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Talco Infantil 100g ",
         preco: "R$ 17,49 ",
-        imagem: "img/granado/talco-infantil.jpe",
+        imagem: "img/granado/talco-infantil.webp",
         destaque: false,
         esgotado: false
     },
@@ -191,7 +191,7 @@ const produtosGranado = [
         categoria: "Infantil",
         descricao: "Colônia 100ml ",
         preco: "R$ 69,99 ",
-        imagem: "img/granado/colonia-infantil.jpe",
+        imagem: "img/granado/colonia-infantil.webp",
         destaque: false,
         esgotado: false
     },

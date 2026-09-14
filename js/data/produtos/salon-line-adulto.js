@@ -12,7 +12,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Kit Sh + Cond Salon line",
         preco: "R$ 34,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/kit.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/kit.webp",
         destaque: true,
         esgotado: false
     },
@@ -24,7 +24,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 37,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/creme-1kg.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/creme-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -36,7 +36,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Salon Line 300ml",
         preco: "R$ 16,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/creme-300ml.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/creme-300ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -48,7 +48,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Mascara Salon Line 300g",
         preco: "R$ 19,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/mascara.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/mascara.webp",
         destaque: true,
         esgotado: false
     },
@@ -60,7 +60,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/gelatina.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -72,7 +72,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Oleo Booster 120ml Salon Line ",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/cachos-ostentacao/booster.jpe",
+        imagem: "img/Salon-adulto/cachos-ostentacao/booster.webp",
         destaque: false,
         esgotado: false
     },
@@ -87,7 +87,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG SalonLine",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/definicao/xo.jpe",
+        imagem: "img/Salon-adulto/definicao/xo.webp",
         destaque: false,
         esgotado: false
     },
@@ -99,7 +99,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Salon Line 1KG",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/definicao/alongada.jpe",
+        imagem: "img/Salon-adulto/definicao/alongada.webp",
         destaque: true,
         esgotado: false
     },
@@ -111,7 +111,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Salon line 1KG",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/definicao/duradoura.jpe",
+        imagem: "img/Salon-adulto/definicao/duradoura.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Kit Sh 300ml + Cond 200ml Salon Line",
         preco: "R$ 33,99",
-        imagem: "img/Salon-adulto/xerosa/vibes/kit.jpe",
+        imagem: "img/Salon-adulto/xerosa/vibes/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 800g Salin Line",
         preco: "R$ 43,99",
-        imagem: "img/Salon-adulto/xerosa/vibes/creme-800g.jpe",
+        imagem: "img/Salon-adulto/xerosa/vibes/creme-800g.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 500g Salon Line",
         preco: "R$ 30,99",
-        imagem: "img/Salon-adulto/xerosa/vibes/gelatina.jpe",
+        imagem: "img/Salon-adulto/xerosa/vibes/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosSalonLineAdulto = [
         categoria: "Colônia/Perfume",
         descricao: "Body splash 200ml Salon Line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/vibes/body.jpe",
+        imagem: "img/Salon-adulto/xerosa/vibes/body.webp",
         destaque: true,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Oleo de tratamento 60ml Salon Line ",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/vibes/oleo.jpe",
+        imagem: "img/Salon-adulto/xerosa/vibes/oleo.webp",
         destaque: false,
         esgotado: false
     },
@@ -187,7 +187,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Kit Sh 300ml + Cond 200ml Salon line",
         preco: "R$ 37,99",
-        imagem: "img/Salon-adulto/xerosa/glamour/kit.jpe",
+        imagem: "img/Salon-adulto/xerosa/glamour/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -199,7 +199,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 800g Salon line",
         preco: "R$ 38,99",
-        imagem: "img/Salon-adulto/xerosa/glamour/creme-800g.jpe",
+        imagem: "img/Salon-adulto/xerosa/glamour/creme-800g.webp",
         destaque: false,
         esgotado: false
     },
@@ -211,7 +211,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 500g Salon Line",
         preco: "R$ 30,99",
-        imagem: "img/Salon-adulto/xerosa/glamour/gelatina.jpe",
+        imagem: "img/Salon-adulto/xerosa/glamour/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -223,7 +223,7 @@ const produtosSalonLineAdulto = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash Salon Line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/glamour/body.jpe",
+        imagem: "img/Salon-adulto/xerosa/glamour/body.webp",
         destaque: true,
         esgotado: false
     },
@@ -235,7 +235,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo serum 200ml Salon Line",
         preco: "R$ 36,49",
-        imagem: "img/Salon-adulto/xerosa/glamour/serum.jpe",
+        imagem: "img/Salon-adulto/xerosa/glamour/serum.webp",
         destaque: false,
         esgotado: false
     },
@@ -250,7 +250,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Kit Sh 300ml + Cond 200ml Salon Line ",
         preco: "R$ 33,99",
-        imagem: "img/Salon-adulto/xerosa/baunilha/kit.jpe",
+        imagem: "img/Salon-adulto/xerosa/baunilha/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -262,7 +262,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 800g Salon Line",
         preco: "R$ 38,99",
-        imagem: "img/Salon-adulto/xerosa/baunilha/creme-800g.jpe",
+        imagem: "img/Salon-adulto/xerosa/baunilha/creme-800g.webp",
         destaque: false,
         esgotado: false
     },
@@ -274,7 +274,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 500g Salon line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/baunilha/gelatina.jpe",
+        imagem: "img/Salon-adulto/xerosa/baunilha/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -286,7 +286,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo de Tratamento 60ml Salon Line",
         preco: "R$ 24,49",
-        imagem: "img/Salon-adulto/xerosa/baunilha/oleo.jpe",
+        imagem: "img/Salon-adulto/xerosa/baunilha/oleo.webp",
         destaque: true,
         esgotado: false
     },
@@ -301,7 +301,7 @@ const produtosSalonLineAdulto = [
         categoria: "Colônia/Perfume",
         descricao: "Body splash 200ml Salon Line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/flores/body.jpe",
+        imagem: "img/Salon-adulto/xerosa/flores/body.webp",
         destaque: false,
         esgotado: false
     },
@@ -316,7 +316,7 @@ const produtosSalonLineAdulto = [
         categoria: "Colônia/Perfume",
         descricao: "Body Splash 200ml Salon Line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/xerosa/rose/body.jpe",
+        imagem: "img/Salon-adulto/xerosa/rose/body.webp",
         destaque: false,
         esgotado: false
     },
@@ -330,7 +330,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Shampoo 500ml Salon Line",
         preco: "R$ 22,99",
-        imagem: "img/Salon-adulto/de-repente-pronta/sh.jpe",
+        imagem: "img/Salon-adulto/de-repente-pronta/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -342,7 +342,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Condicionador 500ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/de-repente-pronta/cond.jpe",
+        imagem: "img/Salon-adulto/de-repente-pronta/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -354,7 +354,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear em spray 300ml Salon Line",
         preco: "R$ 24,49",
-        imagem: "img/Salon-adulto/de-repente-pronta/cr-spray.jpe",
+        imagem: "img/Salon-adulto/de-repente-pronta/cr-spray.webp",
         destaque: false,
         esgotado: false
     },
@@ -366,7 +366,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Mascara 500g Salon Line",
         preco: "R$ 24,49",
-        imagem: "img/Salon-adulto/de-repente-pronta/mascara.jpe",
+        imagem: "img/Salon-adulto/de-repente-pronta/mascara.webp",
         destaque: true,
         esgotado: false
     },
@@ -381,7 +381,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/definicao-natural/creme-1KG.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/creme-1KG.webp",
         destaque: false,
         esgotado: false
     },
@@ -393,7 +393,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Salon Line",
         preco: "R$ 16,99",
-        imagem: "img/Salon-adulto/definicao-natural/creme-300ml.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/creme-300ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -405,7 +405,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line ",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/definicao-natural/gelatina.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -417,7 +417,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Mascara 300g Salon Line",
         preco: "R$ 22,99",
-        imagem: "img/Salon-adulto/definicao-natural/mascara.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -429,7 +429,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Mousse 240ml Salon Line",
         preco: "R$ 36,99",
-        imagem: "img/Salon-adulto/definicao-natural/mousse.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/mousse.webp",
         destaque: true,
         esgotado: false
     },
@@ -441,7 +441,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo Salon Line 120ml ",
         preco: "R$ 38,49",
-        imagem: "img/Salon-adulto/definicao-natural/oleo-booster.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/oleo-booster.webp",
         destaque: false,
         esgotado: false
     },
@@ -453,7 +453,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo 50ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/definicao-natural/oleo-50ml.jpe",
+        imagem: "img/Salon-adulto/definicao-natural/oleo-50ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -468,7 +468,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Shampoo 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/super-oleos/sh.jpe",
+        imagem: "img/Salon-adulto/super-oleos/sh.webp",
         destaque: false,
         esgotado: false    },
     {
@@ -479,7 +479,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de CAchos 500ml Salon Line",
         preco: "R$ 25,49",
-        imagem: "img/Salon-adulto/super-oleos/ativador-500.jpe",
+        imagem: "img/Salon-adulto/super-oleos/ativador-500.webp",
         destaque: false,
         esgotado: false
     },
@@ -491,7 +491,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/super-oleos/ativador-300.jpe",
+        imagem: "img/Salon-adulto/super-oleos/ativador-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -503,7 +503,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 400g Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/super-oleos/gelatina.jpe",
+        imagem: "img/Salon-adulto/super-oleos/gelatina.webp",
         destaque: true,
         esgotado: false
     },
@@ -515,7 +515,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme + Gelatina Salon line 1KG",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/super-oleos/creme.jpe",
+        imagem: "img/Salon-adulto/super-oleos/creme.webp",
         destaque: false,
         esgotado: false
     },
@@ -527,7 +527,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo 42ml Salon Line",
         preco: "R$ 33,99",
-        imagem: "img/Salon-adulto//super-oleos/oleo-42ml.jpe",
+        imagem: "img/Salon-adulto//super-oleos/oleo-42ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -539,7 +539,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo 100ml Salon Line",
         preco: "R$ 23,99",
-        imagem: "img/Salon-adulto//super-oleos/oleo-100ml.jpe",
+        imagem: "img/Salon-adulto//super-oleos/oleo-100ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -554,7 +554,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 1Kg Salon Line",
         preco: "R$ 41,99",
-        imagem: "img/Salon-adulto/gelatina/rosa-1kg.jpe",
+        imagem: "img/Salon-adulto/gelatina/rosa-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -566,7 +566,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 1Kg Salon Line",
         preco: "R$ 46,99",
-        imagem: "img/Salon-adulto/gelatina/verde-1kg.jpe",
+        imagem: "img/Salon-adulto/gelatina/verde-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -578,7 +578,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/gelatina/rosa-550.jpe",
+        imagem: "img/Salon-adulto/gelatina/rosa-550.webp",
         destaque: false,
         esgotado: false
     },
@@ -590,7 +590,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line",
         preco: "R$ 31,99",
-        imagem: "img/Salon-adulto/gelatina/verde-550.jpe",
+        imagem: "img/Salon-adulto/gelatina/verde-550.webp",
         destaque: false,
         esgotado: false
     },
@@ -602,7 +602,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/gelatina/extraordinaria-550.jpe",
+        imagem: "img/Salon-adulto/gelatina/extraordinaria-550.webp",
         destaque: false,
         esgotado: false
     },
@@ -614,7 +614,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/gelatina/super-definicao-550.jpe",
+        imagem: "img/Salon-adulto/gelatina/super-definicao-550.webp",
         destaque: false,
         esgotado: false
     },
@@ -626,7 +626,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line",
         preco: "R$ 24,99",
-        imagem: "img/Salon-adulto/gelatina/ultra-verde.jpe",
+        imagem: "img/Salon-adulto/gelatina/ultra-verde.webp",
         destaque: false,
         esgotado: false
     },
@@ -638,7 +638,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 310ml Salon Line",
         preco: "R$ 28,99",
-        imagem: "img/Salon-adulto/gelatina/brilho-gloss.jpe",
+        imagem: "img/Salon-adulto/gelatina/brilho-gloss.webp",
         destaque: false,
         esgotado: false
     },
@@ -650,7 +650,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 550g Salon Line",
         preco: "R$ 29,99",
-        imagem: "img/Salon-adulto/gelatina/definicao-ultra.jpe",
+        imagem: "img/Salon-adulto/gelatina/definicao-ultra.webp",
         destaque: false,
         esgotado: false
     },
@@ -665,7 +665,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/brilho-maximo.jpe",
+        imagem: "img/Salon-adulto/creme-kg/brilho-maximo.webp",
         destaque: false,
         esgotado: false
     },
@@ -677,7 +677,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/definicao-intensa.jpe",
+        imagem: "img/Salon-adulto/creme-kg/definicao-intensa.webp",
         destaque: false,
         esgotado: false
     },
@@ -689,7 +689,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/definicao-nutritiva.jpe",
+        imagem: "img/Salon-adulto/creme-kg/definicao-nutritiva.webp",
         destaque: false,
         esgotado: false
     },
@@ -701,7 +701,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/definicao-ultra-volume.jpe",
+        imagem: "img/Salon-adulto/creme-kg/definicao-ultra-volume.webp",
         destaque: false,
         esgotado: false
     },
@@ -713,7 +713,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/extraordinario.jpe",
+        imagem: "img/Salon-adulto/creme-kg/extraordinario.webp",
         destaque: false,
         esgotado: false
     },
@@ -725,7 +725,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/hidratacao-profunda.jpe",
+        imagem: "img/Salon-adulto/creme-kg/hidratacao-profunda.webp",
         destaque: false,
         esgotado: false
     },
@@ -737,7 +737,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/nutricao-reparadora.jpe",
+        imagem: "img/Salon-adulto/creme-kg/nutricao-reparadora.webp",
         destaque: false,
         esgotado: false
     },
@@ -749,7 +749,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/super-oleos.jpe",
+        imagem: "img/Salon-adulto/creme-kg/super-oleos.webp",
         destaque: false,
         esgotado: false
     },
@@ -761,7 +761,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/creme-kg/touca-de-cetim.jpe",
+        imagem: "img/Salon-adulto/creme-kg/touca-de-cetim.webp",
         destaque: false,
         esgotado: false
     },
@@ -776,7 +776,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/arginina/cr-1kg.jpe",
+        imagem: "img/Salon-adulto/arginina/cr-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -788,7 +788,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/arginina/ativador-1kg.jpe",
+        imagem: "img/Salon-adulto/arginina/ativador-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -800,7 +800,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 500g Salon Line",
         preco: "R$ 30,99",
-        imagem: "img/Salon-adulto/arginina/ativador-500.jpe",
+        imagem: "img/Salon-adulto/arginina/ativador-500.webp",
         destaque: false,
         esgotado: false
     },
@@ -816,7 +816,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/oleo-de-amendoas/ativador-300.jpe",
+        imagem: "img/Salon-adulto/oleo-de-amendoas/ativador-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -831,7 +831,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/oleo-de-coco/cr-1kg.jpe",
+        imagem: "img/Salon-adulto/oleo-de-coco/cr-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -843,7 +843,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/oleo-de-coco/cr-300.jpe",
+        imagem: "img/Salon-adulto/oleo-de-coco/cr-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -855,7 +855,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Gelatina 400g Salon Line",
         preco: "R$ 328,99",
-        imagem: "img/Salon-adulto/oleo-de-coco/gelatina.jpe",
+        imagem: "img/Salon-adulto/oleo-de-coco/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -870,7 +870,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 37,99",
-        imagem: "img/Salon-adulto/oleo-de-manga/cr-1kg.jpe",
+        imagem: "img/Salon-adulto/oleo-de-manga/cr-1kg.webp",
         destaque: false,
         esgotado: false
     },
@@ -882,7 +882,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Ativador de Cachos 300ml Salon Line",
         preco: "R$ 21,99",
-        imagem: "img/Salon-adulto/oleo-de-manga/ativador-300.jpe",
+        imagem: "img/Salon-adulto/oleo-de-manga/ativador-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -897,7 +897,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/multy/melancia.jpe",
+        imagem: "img/Salon-adulto/multy/melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -909,7 +909,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/multy/morango.jpe",
+        imagem: "img/Salon-adulto/multy/morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -921,7 +921,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/multy/uva.jpe",
+        imagem: "img/Salon-adulto/multy/uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -933,7 +933,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo de Tratamento 50ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/multy/oleo-banana.jpe",
+        imagem: "img/Salon-adulto/multy/oleo-banana.webp",
         destaque: false,
         esgotado: false
     },
@@ -945,7 +945,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo de Tratamento 50ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/multy/oleo-maracuja.jpe",
+        imagem: "img/Salon-adulto/multy/oleo-maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -957,7 +957,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo de Tratamento 50ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/multy/oleo-morango.jpe",
+        imagem: "img/Salon-adulto/multy/oleo-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -969,7 +969,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo de Tratamento 50ml Salon Line",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/multy/oleo-uva.jpe",
+        imagem: "img/Salon-adulto/multy/oleo-uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -981,7 +981,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Óleo Sérum 200ml Salon Line",
         preco: "R$ 42,99",
-        imagem: "img/Salon-adulto/multy/serum.jpe",
+        imagem: "img/Salon-adulto/multy/serum.webp",
         destaque: false,
         esgotado: false
     },
@@ -996,7 +996,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Modelador 500ml Salon Line",
         preco: "R$ 27,99",
-        imagem: "img/Salon-adulto/profix/forte.jpe",
+        imagem: "img/Salon-adulto/profix/forte.webp",
         destaque: false,
         esgotado: false
     },
@@ -1008,7 +1008,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Modelador 500ml Salon Line",
         preco: "R$ 25,99",
-        imagem: "img/Salon-adulto/profix/natural.jpe",
+        imagem: "img/Salon-adulto/profix/natural.webp",
         destaque: false,
         esgotado: false
     },
@@ -1020,7 +1020,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Modelador 500ml Salon Line",
         preco: "R$ 22,49",
-        imagem: "img/Salon-adulto/profix/cr-natural.jpe",
+        imagem: "img/Salon-adulto/profix/cr-natural.webp",
         destaque: false,
         esgotado: false
     },
@@ -1035,7 +1035,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Relaxante  Salon Line",
         preco: "R$ 41,99",
-        imagem: "img/Salon-adulto/cr-relaxante/verde.jpe",
+        imagem: "img/Salon-adulto/cr-relaxante/verde.webp",
         destaque: false,
         esgotado: false
     },
@@ -1047,7 +1047,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Relaxante  Salon Line",
         preco: "R$ 38,98",
-        imagem: "img/Salon-adulto/cr-relaxante/argan.jpe",
+        imagem: "img/Salon-adulto/cr-relaxante/argan.webp",
         destaque: false,
         esgotado: false
     },
@@ -1059,7 +1059,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Relaxante  Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/cr-relaxante/algodao.jpe",
+        imagem: "img/Salon-adulto/cr-relaxante/algodao.webp",
         destaque: false,
         esgotado: false
     },
@@ -1071,7 +1071,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Creme Relaxante  Salon Line",
         preco: "R$ 56,99",
-        imagem: "img/Salon-adulto/cr-relaxante/oil.jpe",
+        imagem: "img/Salon-adulto/cr-relaxante/oil.webp",
         destaque: false,
         esgotado: false
     },
@@ -1086,7 +1086,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Guanidina Salon Line",
         preco: "R$ 40,99",
-        imagem: "img/Salon-adulto/guanidina/amarelo-super.jpe",
+        imagem: "img/Salon-adulto/guanidina/amarelo-super.webp",
         destaque: false,
         esgotado: false
     },
@@ -1098,7 +1098,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Guanidina Salon Line",
         preco: "R$ 40,99",
-        imagem: "img/Salon-adulto/guanidina/manga-regular.jpe",
+        imagem: "img/Salon-adulto/guanidina/manga-regular.webp",
         destaque: false,
         esgotado: false
     },
@@ -1110,7 +1110,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Guanidina Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/guanidina/manga-super.jpe",
+        imagem: "img/Salon-adulto/guanidina/manga-super.webp",
         destaque: false,
         esgotado: false
     },
@@ -1122,7 +1122,7 @@ const produtosSalonLineAdulto = [
         categoria: "Capilar",
         descricao: "Guanidina Salon Line",
         preco: "R$ 39,99",
-        imagem: "img/Salon-adulto/guanidina/verde-super.jpe",
+        imagem: "img/Salon-adulto/guanidina/verde-super.webp",
         destaque: false,
         esgotado: false
     },
@@ -1137,7 +1137,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 1.0 Preto Azulado",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/1.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1149,7 +1149,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 1.110 Preto Azulado Intenso",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/1.110.jpe",
+        imagem: "img/Salon-adulto/tonalizante/1.110.webp",
         destaque: false,
         esgotado: false
     },
@@ -1161,7 +1161,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 2.0 Preto",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/2.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1173,7 +1173,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 3.0 Castanho Escuro",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/3.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/3.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1185,7 +1185,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 4.0 Castanho Médio",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/4.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1197,7 +1197,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 5.0 Castanho Claro",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/5.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1209,7 +1209,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 6.0 Louro Escuro",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/6.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -1221,7 +1221,7 @@ const produtosSalonLineAdulto = [
         categoria: "Coloração",
         descricao: "Tonalizante Light Color 7.0 Louro Natural",
         preco: "R$ 18,99",
-        imagem: "img/Salon-adulto/tonalizante/7.0.jpe",
+        imagem: "img/Salon-adulto/tonalizante/7.0.webp",
         destaque: false,
         esgotado: false
     }

@@ -14,7 +14,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/oleo/sh.jpe",
+        imagem: "img/loreal/elseve/oleo/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/oleo/cond.jpe",
+        imagem: "img/loreal/elseve/oleo/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Óleo 100ml Elseve",
         preco: "R$ 42,99",
-        imagem: "img/loreal/elseve/oleo/oleo.jpe",
+        imagem: "img/loreal/elseve/oleo/oleo.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Máscara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/oleo/mascara.jpe",
+        imagem: "img/loreal/elseve/oleo/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/oleo/cr.jpe",
+        imagem: "img/loreal/elseve/oleo/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/longo-dos-sonhos/sh-400.jpe",
+        imagem: "img/loreal/elseve/longo-dos-sonhos/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/longo-dos-sonhos/cond-400.jpe",
+        imagem: "img/loreal/elseve/longo-dos-sonhos/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/longo-dos-sonhos/cr.jpe",
+        imagem: "img/loreal/elseve/longo-dos-sonhos/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/longo-dos-sonhos/mascara.jpe",
+        imagem: "img/loreal/elseve/longo-dos-sonhos/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -128,7 +128,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh-400.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -140,7 +140,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -152,7 +152,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -164,7 +164,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond-400.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -176,7 +176,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cr.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -188,7 +188,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/mascara.jpe",
+        imagem: "img/loreal/elseve/cachos-longos-dos-sonhos/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -203,7 +203,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/sh.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -215,7 +215,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condiconador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/cond.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -227,7 +227,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: " Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/cr.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -239,7 +239,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/mascara.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -251,7 +251,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/sh-400.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -263,7 +263,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/liso-dos-sonhos/cond-400.jpe",
+        imagem: "img/loreal/elseve/liso-dos-sonhos/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -278,7 +278,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/sh-400.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -290,7 +290,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/sh.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -302,7 +302,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/cond.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -314,7 +314,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/cond-400.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -326,7 +326,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/cr.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -338,7 +338,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/glycolic-gloss/masc.jpe",
+        imagem: "img/loreal/elseve/glycolic-gloss/masc.webp",
         destaque: false,
         esgotado: false
     },
@@ -353,7 +353,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/sh-400.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -365,7 +365,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/cond-400.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -377,7 +377,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/sh.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -389,7 +389,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/cond.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -401,7 +401,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/cr.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -413,7 +413,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Mascara 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/hidra-hialuronico/masc.jpe",
+        imagem: "img/loreal/elseve/hidra-hialuronico/masc.webp",
         destaque: false,
         esgotado: false
     },
@@ -428,7 +428,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/pure-hialuronico/sh-400.jpe",
+        imagem: "img/loreal/elseve/pure-hialuronico/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -440,7 +440,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/pure-hialuronico/cond-400.jpe",
+        imagem: "img/loreal/elseve/pure-hialuronico/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -452,7 +452,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/pure-hialuronico/sh.jpe",
+        imagem: "img/loreal/elseve/pure-hialuronico/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -464,7 +464,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/pure-hialuronico/cond.jpe",
+        imagem: "img/loreal/elseve/pure-hialuronico/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -476,7 +476,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/pure-hialuronico/masc.jpe",
+        imagem: "img/loreal/elseve/pure-hialuronico/masc.webp",
         destaque: false,
         esgotado: false
     },
@@ -491,7 +491,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo Reparação Total 5 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/reparacao/sh.jpe",
+        imagem: "img/loreal/elseve/reparacao/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -503,7 +503,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador Reparação Total 5 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/reparacao/cond.jpe",
+        imagem: "img/loreal/elseve/reparacao/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -515,7 +515,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Máscara Reparação Total 5 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/reparacao/mascara.jpe",
+        imagem: "img/loreal/elseve/reparacao/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -527,7 +527,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Reparação Total 5 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/reparacao/cr.jpe",
+        imagem: "img/loreal/elseve/reparacao/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -542,7 +542,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo Collagen Lifter 400ml Elseve",
         preco: "R$ 33,99",
-        imagem: "img/loreal/elseve/collagen-lifter/sh-400.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/sh-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -554,7 +554,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador Collagen Lifter 400ml Elseve",
         preco: "R$ 35,99",
-        imagem: "img/loreal/elseve/collagen-lifter/cond-400.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/cond-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -566,7 +566,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Shampoo Collagen Lifter 200ml Elseve",
         preco: "R$ 18,99",
-        imagem: "img/loreal/elseve/collagen-lifter/sh.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -578,7 +578,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Condicionador Collagen Lifter 200ml Elseve",
         preco: "R$ 19,99",
-        imagem: "img/loreal/elseve/collagen-lifter/cond.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -590,7 +590,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Máscara Collagen Lifter 300g Elseve",
         preco: "R$ 31,99",
-        imagem: "img/loreal/elseve/collagen-lifter/masc.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/masc.webp",
         destaque: false,
         esgotado: false
     },
@@ -602,7 +602,7 @@ const produtosLoreal = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Collagen Lifter 250ml Elseve",
         preco: "R$ 20,99",
-        imagem: "img/loreal/elseve/collagen-lifter/cr.jpe",
+        imagem: "img/loreal/elseve/collagen-lifter/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -619,7 +619,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 1 Preto",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/1.0.jpe",
+        imagem: "img/loreal/tinta/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -631,7 +631,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 2 Preto Clássico",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/2.0.jpe",
+        imagem: "img/loreal/tinta/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -643,7 +643,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 4 Castanho Natural",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/4.0.jpe",
+        imagem: "img/loreal/tinta/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -655,7 +655,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 5 Castanho Claro",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/5.0.jpe",
+        imagem: "img/loreal/tinta/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -667,7 +667,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 6 Louro Escuro",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/6.0.jpe",
+        imagem: "img/loreal/tinta/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -679,7 +679,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 6.7 Chocolate",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/6.7.jpe",
+        imagem: "img/loreal/tinta/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -691,7 +691,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tinta Imédia Excellence Creme 7 Louro Natural",
         preco: "R$ 29,99",
-        imagem: "img/loreal/tinta/7.0.jpe",
+        imagem: "img/loreal/tinta/7.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -705,7 +705,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 100 Preto Noite",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/100.jpe",
+        imagem: "img/loreal/tonalizante/100.webp",
         destaque: false,
         esgotado: false
     },
@@ -717,7 +717,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 210 Preto Azulado",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/210.jpe",
+        imagem: "img/loreal/tonalizante/210.webp",
         destaque: false,
         esgotado: false
     },
@@ -729,7 +729,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 300 Castanho Escuro",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/300.jpe",
+        imagem: "img/loreal/tonalizante/300.webp",
         destaque: false,
         esgotado: false
     },
@@ -741,7 +741,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 400 Castanho Natural",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/400.jpe",
+        imagem: "img/loreal/tonalizante/400.webp",
         destaque: false,
         esgotado: false
     },
@@ -753,7 +753,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 500 Castanho Claro",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/500.jpe",
+        imagem: "img/loreal/tonalizante/500.webp",
         destaque: false,
         esgotado: false
     },
@@ -765,7 +765,7 @@ const produtosLoreal = [
         categoria: "Coloração",
         descricao: "Tonalizante Casting Creme Gloss 600 Louro Escuro",
         preco: "R$ 35,99",
-        imagem: "img/loreal/tonalizante/600.jpe",
+        imagem: "img/loreal/tonalizante/600.webp",
         destaque: false,
         esgotado: false
     },

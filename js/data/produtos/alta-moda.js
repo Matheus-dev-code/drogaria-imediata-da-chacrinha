@@ -14,7 +14,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 1 Preto Negro",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/1.jpe",
+        imagem: "img/alta-moda/1.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 1.11 Preto Azulado",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/1.11.jpe",
+        imagem: "img/alta-moda/1.11.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 3 Castanho Escuro",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/3.jpe",
+        imagem: "img/alta-moda/3.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 4 Castanho",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/4.jpe",
+        imagem: "img/alta-moda/4.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 4.66 Castanho Vermelho Intenso",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/4.66.jpe",
+        imagem: "img/alta-moda/4.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 5 Castanho Claro",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/5.jpe",
+        imagem: "img/alta-moda/5.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 5.65 Marsala",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/5.65.jpe",
+        imagem: "img/alta-moda/5.65.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 6 Louro Escuro",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/6.jpe",
+        imagem: "img/alta-moda/6.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 6.35 Louro Escuro Dourado Acaju",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/6.35.jpe",
+        imagem: "img/alta-moda/6.35.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 6.7 Chocolate",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/6.7.jpe",
+        imagem: "img/alta-moda/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosAltaModa = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Alta Moda 7 Louro",
         preco: "R$ 11,99",
-        imagem: "img/alta-moda/7.jpe",
+        imagem: "img/alta-moda/7.webp",
         destaque: false,
         esgotado: false
     }

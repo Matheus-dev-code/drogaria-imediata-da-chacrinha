@@ -12,7 +12,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/definicao/cr-1.jpe",
+        imagem: "img/Seda/boom/definicao/cr-1.webp",
         destaque: false,
         esgotado: false
     },
@@ -24,7 +24,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/volumao/cr-1.jpe",
+        imagem: "img/Seda/boom/volumao/cr-1.webp",
         destaque: false,
         esgotado: false
     },
@@ -36,7 +36,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/definicao-intensa/cr-1.jpe",
+        imagem: "img/Seda/boom/definicao-intensa/cr-1.webp",
         destaque: false,
         esgotado: false
     },
@@ -48,7 +48,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/definicao-flexivel/cr-1.jpe",
+        imagem: "img/Seda/boom/definicao-flexivel/cr-1.webp",
         destaque: false,
         esgotado: false
     },
@@ -60,7 +60,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
-        imagem: "img/Seda/boom/volumao/cr-350.jpe",
+        imagem: "img/Seda/boom/volumao/cr-350.webp",
         destaque: false,
         esgotado: false
     },
@@ -72,7 +72,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
-        imagem: "img/Seda/boom/modelador/cr-350.jpe",
+        imagem: "img/Seda/boom/modelador/cr-350.webp",
         destaque: false,
         esgotado: false
     },
@@ -84,7 +84,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 350ml Seda Boom",
         preco: "R$ 15,49",
-        imagem: "img/Seda/boom/definicao-intensa/cr-350.jpe",
+        imagem: "img/Seda/boom/definicao-intensa/cr-350.webp",
         destaque: false,
         esgotado: false
     },
@@ -96,7 +96,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara de nutrição Seda Boom 500g",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/volumao/mascara.jpe",
+        imagem: "img/Seda/boom/volumao/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -108,7 +108,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara de Definição 500g Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/definicao-intensa/mascara.jpe",
+        imagem: "img/Seda/boom/definicao-intensa/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -120,7 +120,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 250ml Seda Boom",
         preco: "R$ 18,99",
-        imagem: "img/Seda/boom/modelador/condicionador.jpe",
+        imagem: "img/Seda/boom/modelador/condicionador.webp",
         destaque: false,
         esgotado: false
     },
@@ -132,7 +132,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 250ml Seda Boom",
         preco: "R$ 19,99",
-        imagem: "img/Seda/boom/modelador/condicionador.jpe",
+        imagem: "img/Seda/boom/modelador/condicionador.webp",
         destaque: false,
         esgotado: false
     },
@@ -144,7 +144,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara 500g Seda Boom",
         preco: "R$ 29,99",
-        imagem: "img/Seda/boom/modelador/mascara.jpe",
+        imagem: "img/Seda/boom/modelador/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -160,7 +160,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 300ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/colageno-vita-c/sh.jpe",
+        imagem: "img/Seda/colageno-vita-c/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -172,7 +172,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/colageno-vita-c/cond.jpe",
+        imagem: "img/Seda/colageno-vita-c/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -184,7 +184,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
-        imagem: "img/Seda/colageno-vita-c/cr-300.jpe",
+        imagem: "img/Seda/colageno-vita-c/cr-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -199,7 +199,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
-        imagem: "img/Seda/ceramidas/kit.jpe",
+        imagem: "img/Seda/ceramidas/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -211,7 +211,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/ceramidas/sh.jpe",
+        imagem: "img/Seda/ceramidas/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -223,7 +223,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/ceramidas/cond.jpe",
+        imagem: "img/Seda/ceramidas/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -235,7 +235,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara 300g Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/ceramidas/mascara.jpe",
+        imagem: "img/Seda/ceramidas/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -250,7 +250,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampo 300ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/glycol/sh.jpe",
+        imagem: "img/Seda/glycol/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -262,7 +262,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 300ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/glycol/cond.jpe",
+        imagem: "img/Seda/glycol/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -274,7 +274,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara 300g Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/glycol/mascara.jpe",
+        imagem: "img/Seda/glycol/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -289,7 +289,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Kit Sh 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
-        imagem: "img/Seda/liso-perfeito/kit.jpe",
+        imagem: "img/Seda/liso-perfeito/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -301,7 +301,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/liso-perfeito/sh.jpe",
+        imagem: "img/Seda/liso-perfeito/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -313,7 +313,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/liso-perfeito/cond.jpe",
+        imagem: "img/Seda/liso-perfeito/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -325,7 +325,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 1KG Seda",
         preco: "R$ 20,99",
-        imagem: "img/Seda/liso-perfeito/cr-1.jpe",
+        imagem: "img/Seda/liso-perfeito/cr-1.webp",
         destaque: false,
         esgotado: false
     },
@@ -337,7 +337,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
-        imagem: "img/Seda/liso-perfeito/cr-300.jpe",
+        imagem: "img/Seda/liso-perfeito/cr-300.webp",
         destaque: false,
         esgotado: false
     },
@@ -352,7 +352,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Kit Sh 300ml + Cond 190ml Seda",
         preco: "R$ 25,99",
-        imagem: "img/Seda/toque-de-seda/kit.jpe",
+        imagem: "img/Seda/toque-de-seda/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -364,7 +364,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "shampoo 300ml Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/toque-de-seda/sh.jpe",
+        imagem: "img/Seda/toque-de-seda/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -376,7 +376,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/toque-de-seda/cond.jpe",
+        imagem: "img/Seda/toque-de-seda/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -388,7 +388,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 11,99",
-        imagem: "img/Seda/toque-de-seda/cr.jpe",
+        imagem: "img/Seda/toque-de-seda/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -403,7 +403,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 300ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/babosa/sh.jpe",
+        imagem: "img/Seda/babosa/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -415,7 +415,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 250ml Seda",
         preco: "R$ 17,99",
-        imagem: "img/Seda/babosa/cond.jpe",
+        imagem: "img/Seda/babosa/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -427,7 +427,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
-        imagem: "img/Seda/babosa/cr.jpe",
+        imagem: "img/Seda/babosa/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -442,7 +442,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/cachos-definidos/sh.jpe",
+        imagem: "img/Seda/cachos-definidos/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -454,7 +454,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/cachos-definidos/cond.jpe",
+        imagem: "img/Seda/cachos-definidos/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -466,7 +466,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Creme de Pentear 300ml Seda",
         preco: "R$ 12,49",
-        imagem: "img/Seda/cachos-definidos/cr-350.jpe",
+        imagem: "img/Seda/cachos-definidos/cr-350.webp",
         destaque: false,
         esgotado: false
     },
@@ -478,7 +478,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Mascara 300g Seda",
         preco: "R$ 19,99",
-        imagem: "img/Seda/cachos-definidos/mascara.jpe",
+        imagem: "img/Seda/cachos-definidos/mascara.webp",
         destaque: false,
         esgotado: false
     },
@@ -493,7 +493,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/pretos-luminosos/sh.jpe",
+        imagem: "img/Seda/pretos-luminosos/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -505,7 +505,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/pretos-luminosos/cond.jpe",
+        imagem: "img/Seda/pretos-luminosos/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -520,7 +520,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/mega-crescimento/sh.jpe",
+        imagem: "img/Seda/mega-crescimento/sh.webp",
         destaque: false,
         esgotado: false
     },
@@ -532,7 +532,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 15,99",
-        imagem: "img/Seda/mega-crescimento/cond.jpe",
+        imagem: "img/Seda/mega-crescimento/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -548,7 +548,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Shampoo 325ml Seda",
         preco: "R$ 14,99",
-        imagem: "img/Seda/fora-de-linha/sh-hidra.jpe",
+        imagem: "img/Seda/fora-de-linha/sh-hidra.webp",
         destaque: true,
         esgotado: false
     },
@@ -560,7 +560,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
-        imagem: "img/Seda/fora-de-linha/argan.jpe",
+        imagem: "img/Seda/fora-de-linha/argan.webp",
         destaque: true,
         esgotado: false
     },
@@ -572,7 +572,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
-        imagem: "img/Seda/fora-de-linha/rest.jpe",
+        imagem: "img/Seda/fora-de-linha/rest.webp",
         destaque: true,
         esgotado: false
     },
@@ -584,7 +584,7 @@ const produtosSeda = [
         categoria: "Capilar",
         descricao: "Condicionador 325ml Seda",
         preco: "R$ 9,99",
-        imagem: "img/Seda/fora-de-linha/crespo.jpe",
+        imagem: "img/Seda/fora-de-linha/crespo.webp",
         destaque: true,
         esgotado: false
     },

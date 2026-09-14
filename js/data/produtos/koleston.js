@@ -14,7 +14,7 @@ const produtosKoleston = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Koleston 366 Acaju Púrpura",
         preco: "R$ 21,99",
-        imagem: "img/koleston/366.jpe",
+        imagem: "img/koleston/366.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosKoleston = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Koleston 46 Borgonha",
         preco: "R$ 21,99",
-        imagem: "img/koleston/46.jpe",
+        imagem: "img/koleston/46.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosKoleston = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Koleston 4446 Borgonha Vibrante",
         preco: "R$ 21,99",
-        imagem: "img/koleston/4446.jpe",
+        imagem: "img/koleston/4446.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosKoleston = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Koleston 54 Castanho Dourado Acobreado",
         preco: "R$ 21,99",
-        imagem: "img/koleston/54.jpe",
+        imagem: "img/koleston/54.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosKoleston = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Koleston 70 Louro Médio",
         preco: "R$ 21,99",
-        imagem: "img/koleston/70.jpe",
+        imagem: "img/koleston/70.webp",
         destaque: false,
         esgotado: false
     },

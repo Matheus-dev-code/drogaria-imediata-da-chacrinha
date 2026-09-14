@@ -14,7 +14,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Molecular 250ml",
         preco: "R$ 24,99 ",
-        imagem: "img/pantene/cond-250-molecular.jpe",
+        imagem: "img/pantene/cond-250-molecular.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Molecular 150ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-150-molecular.jpe",
+        imagem: "img/pantene/cond-150-molecular.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Molecular 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/sh-molecular.jpe",
+        imagem: "img/pantene/sh-molecular.webp",
         destaque: false,
         esgotado: false
     },
@@ -53,7 +53,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Liso Extremo 175ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-liso.jpe",
+        imagem: "img/pantene/cond-liso.webp",
         destaque: false,
         esgotado: false
     },
@@ -68,7 +68,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Restauração 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/sh-restauracao.jpe",
+        imagem: "img/pantene/sh-restauracao.webp",
         destaque: false,
         esgotado: false
     },
@@ -80,7 +80,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Máscara Pro-V Restauração 270ml",
         preco: "R$ 27,99 ",
-        imagem: "img/pantene/masc-restauracao.jpe",
+        imagem: "img/pantene/masc-restauracao.webp",
         destaque: false,
         esgotado: false
     },
@@ -92,7 +92,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Restauração 175ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-restauracao.jpe",
+        imagem: "img/pantene/cond-restauracao.webp",
         destaque: false,
         esgotado: false
     },
@@ -107,7 +107,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Máscara Pro-V Hidratação 270ml",
         preco: "R$ 27,99 ",
-        imagem: "img/pantene/masc-hidratacao.jpe",
+        imagem: "img/pantene/masc-hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -119,7 +119,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Hidratação 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/sh-hidratacao.jpe",
+        imagem: "img/pantene/sh-hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -131,7 +131,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Hidro Cauterização 175ml",
         preco: "R$ 14,99 ",
-        imagem: "img/pantene/cond-hidro.jpe",
+        imagem: "img/pantene/cond-hidro.webp",
         destaque: false,
         esgotado: false
     },
@@ -143,7 +143,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Hidratação 175ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-brilho.jpe",
+        imagem: "img/pantene/cond-brilho.webp",
         destaque: false,
         esgotado: false
     },
@@ -158,7 +158,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Brilho Extremo 175ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-brilho.jpe",
+        imagem: "img/pantene/cond-brilho.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Equilíbrio 175ml",
         preco: "R$ 17,99 ",
-        imagem: "img/pantene/sh-equilibrio.jpe",
+        imagem: "img/pantene/sh-equilibrio.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Equilíbrio 150ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-equilibrio.jpe",
+        imagem: "img/pantene/cond-equilibrio.webp",
         destaque: false,
         esgotado: false
     },
@@ -200,7 +200,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Biotinamina + B3 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/sh-biotinamina.jpe",
+        imagem: "img/pantene/sh-biotinamina.webp",
         destaque: false,
         esgotado: false
     },
@@ -212,7 +212,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Biotinamina + B3 150ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-biotinamina.jpe",
+        imagem: "img/pantene/cond-biotinamina.webp",
         destaque: false,
         esgotado: false
     },
@@ -227,7 +227,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Colágeno 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/sh-colageno.jpe",
+        imagem: "img/pantene/sh-colageno.webp",
         destaque: false,
         esgotado: false
     },
@@ -242,7 +242,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Ampola Capilar Reconstrução 3x15ml",
         preco: "R$ 22,99 ",
-        imagem: "img/pantene/reconstrucao.jpe",
+        imagem: "img/pantene/reconstrucao.webp",
         destaque: false,
         esgotado: false
     },
@@ -254,7 +254,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Ampola Capilar Hidratação 3x15ml",
         preco: "R$ 22,99 ",
-        imagem: "img/pantene/hidratacao.jpe",
+        imagem: "img/pantene/hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -266,7 +266,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Ampola Capilar Nutrição 3x15ml",
         preco: "R$ 22,99 ",
-        imagem: "img/pantene/nutricao.jpe",
+        imagem: "img/pantene/nutricao.webp",
         destaque: false,
         esgotado: false
     },
@@ -280,7 +280,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Queratina 175ml",
         preco: "R$ 16,49 ",
-        imagem: "img/pantene/pantene/sh-queratina.jpe",
+        imagem: "img/pantene/pantene/sh-queratina.webp",
         destaque: false,
         esgotado: false
     },
@@ -292,7 +292,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Queratina 150ml",
         preco: "R$ 16,99 ",
-        imagem: "img/pantene/cond-queratina.jpe",
+        imagem: "img/pantene/cond-queratina.webp",
         destaque: false,
         esgotado: false
     },
@@ -307,7 +307,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Shampoo Cachos 175ml",
         preco: "R$ 17,99 ",
-        imagem: "img/pantene/sh-cachos.jpe",
+        imagem: "img/pantene/sh-cachos.webp",
         destaque: false,
         esgotado: false
     },
@@ -319,7 +319,7 @@ const produtosPantene = [
         categoria: "Capilar",
         descricao: "Condicionador Cachos 175ml",
         preco: "R$ 15,99 ",
-        imagem: "img/pantene/cond-cachos.jpe",
+        imagem: "img/pantene/cond-cachos.webp",
         destaque: false,
         esgotado: false
     },

@@ -14,7 +14,7 @@ const produtosBepantol = [
         categoria: "Facial",
         descricao: "Creme Oil Free Bepantol derma 30g",
         preco: "R$ 37,89 ",
-        imagem: "img/bepantol/oil.jpe",
+        imagem: "img/bepantol/oil.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosBepantol = [
         categoria: "Corporal",
         descricao: "Creme Bepantol Derma 40g",
         preco: "R$ 50,25 ",
-        imagem: "img/bepantol/multi.jpe",
+        imagem: "img/bepantol/multi.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosBepantol = [
         categoria: "Corporal",
         descricao: "Creme Multirestaurador Com Rosa Mosqueta 20g",
         preco: "R$ 29,99 ",
-        imagem: "img/bepantol/rosa-mosqueta.jpe",
+        imagem: "img/bepantol/rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosBepantol = [
         categoria: "Facial",
         descricao: "Hidratante Facial Bepantol Derma 50ml",
         preco: "R$ 67,99 ",
-        imagem: "img/bepantol/restaurador.jpe",
+        imagem: "img/bepantol/restaurador.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosBepantol = [
         categoria: "Corporal",
         descricao: "Spray Oil Free Bepantol derma 50ml",
         preco: "R$ 44,99 ",
-        imagem: "img/bepantol/spray-oil.jpe",
+        imagem: "img/bepantol/spray-oil.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosBepantol = [
         categoria: "Capilar",
         descricao: "Solução Capilar Restauradora Bepantol derma 30g",
         preco: "R$ 31,99 ",
-        imagem: "img/bepantol/solucao.jpe",
+        imagem: "img/bepantol/solucao.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosBepantol = [
         categoria: "Labial",
         descricao: "Protetor Labial Bepantol Derma 4,5g",
         preco: "R$ 29,99 ",
-        imagem: "img/bepantol/labial.jpe",
+        imagem: "img/bepantol/labial.webp",
         destaque: false,
         esgotado: false
     },

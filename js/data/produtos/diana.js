@@ -14,7 +14,7 @@ const produtosDiana = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno com Abas Cobertura Suave 28 unidades",
         preco: "R$ 19,99 ",
-        imagem: "img/diana/noturno/28un.jpe",
+        imagem: "img/diana/noturno/28un.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosDiana = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno com Abas Cobertura Suave 8 unidades",
         preco: "R$ 6,99 ",
-        imagem: "img/diana/noturno/8un.jpe",
+        imagem: "img/diana/noturno/8un.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosDiana = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente com Abas Cobertura Suave 16 unidades",
         preco: "R$ 7,49 ",
-        imagem: "img/diana/comum/16un.jpe",
+        imagem: "img/diana/comum/16un.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosDiana = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente com Abas Cobertura Suave 8 unidades",
         preco: "R$ 4,99 ",
-        imagem: "img/diana/comum/8un.jpe",
+        imagem: "img/diana/comum/8un.webp",
         destaque: false,
         esgotado: false
     }

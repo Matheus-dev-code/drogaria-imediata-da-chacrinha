@@ -14,7 +14,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 20 Preta Amora",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/20.jpe",
+        imagem: "img/garnier/tinta/20.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 28 Preto Azulado Açaí",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/28.jpe",
+        imagem: "img/garnier/tinta/28.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 210 Preto Azulado",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/210.jpe",
+        imagem: "img/garnier/tinta/210.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 30 Castanho Escuro",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/30.jpe",
+        imagem: "img/garnier/tinta/30.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 366 Castanho Escuro Avermelhado Intenso",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/366.jpe",
+        imagem: "img/garnier/tinta/366.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 40 Castanho",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/40.jpe",
+        imagem: "img/garnier/tinta/40.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 50 Castanho Claro",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/50.jpe",
+        imagem: "img/garnier/tinta/50.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosGarnier = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Garnier Nutrisse 60 Louro Escuro",
         preco: "R$ 19,99",
-        imagem: "img/garnier/tinta/60.jpe",
+        imagem: "img/garnier/tinta/60.webp",
         destaque: false,
         esgotado: false
     }

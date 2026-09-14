@@ -14,7 +14,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 50g ",
         preco: "R$ 9,49 ",
-        imagem: "img/marcia/descolorante/camomila-50.jpe",
+        imagem: "img/marcia/descolorante/camomila-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 50g ",
         preco: "R$ 9,49 ",
-        imagem: "img/marcia/descolorante/argan-50.jpe",
+        imagem: "img/marcia/descolorante/argan-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/algas-20.jpe",
+        imagem: "img/marcia/descolorante/algas-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/argan-20.jpe",
+        imagem: "img/marcia/descolorante/argan-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/camomila-20.jpe",
+        imagem: "img/marcia/descolorante/camomila-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/coco-20.jpe",
+        imagem: "img/marcia/descolorante/coco-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/girassol-20.jpe",
+        imagem: "img/marcia/descolorante/girassol-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/queratina-20.jpe",
+        imagem: "img/marcia/descolorante/queratina-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Pó descolorante 20g ",
         preco: "R$ 4,99 ",
-        imagem: "img/marcia/descolorante/trigo-20.jpe",
+        imagem: "img/marcia/descolorante/trigo-20.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 70ml ",
         preco: "R$ 2,49 ",
-        imagem: "img/marcia/oxigenada/20-70.jpe",
+        imagem: "img/marcia/oxigenada/20-70.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 70ml ",
         preco: "R$ 2,49 ",
-        imagem: "img/marcia/oxigenada/30-70.jpe",
+        imagem: "img/marcia/oxigenada/30-70.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 70ml ",
         preco: "R$ 2,49 ",
-        imagem: "img/marcia/oxigenada/40-70.jpe",
+        imagem: "img/marcia/oxigenada/40-70.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 900ml ",
         preco: "R$ 17,99 ",
-        imagem: "img/marcia/oxigenada/20-900.jpe",
+        imagem: "img/marcia/oxigenada/20-900.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 900ml ",
         preco: "R$ 17,99 ",
-        imagem: "img/marcia/oxigenada/30-900.jpe",
+        imagem: "img/marcia/oxigenada/30-900.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosMarcia = [
         categoria: "Coloração",
         descricao: "Água Oxigenada 900ml ",
         preco: "R$ 17,99 ",
-        imagem: "img/marcia/oxigenada/40-900.jpe",
+        imagem: "img/marcia/oxigenada/40-900.webp",
         destaque: false,
         esgotado: false
     },

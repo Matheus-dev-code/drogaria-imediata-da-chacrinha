@@ -14,7 +14,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 250ml",
         preco: "R$ 27,99",
-        imagem: "img/dove/des/original-250.jpe",
+        imagem: "img/dove/des/original-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/original.jpe",
+        imagem: "img/dove/des/original.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/invisible.jpe",
+        imagem: "img/dove/des/invisible.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/beauty.jpe",
+        imagem: "img/dove/des/beauty.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/roma.jpe",
+        imagem: "img/dove/des/roma.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/pessego.jpe",
+        imagem: "img/dove/des/pessego.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/pepino.jpe",
+        imagem: "img/dove/des/pepino.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/pera.jpe",
+        imagem: "img/dove/des/pera.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/sem.jpe",
+        imagem: "img/dove/des/sem.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/energy.jpe",
+        imagem: "img/dove/des/energy.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/invisible-fresh.jpe",
+        imagem: "img/dove/des/invisible-fresh.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Dove 150ml",
         preco: "R$ 19,99",
-        imagem: "img/dove/des/Invisible-dry.jpe",
+        imagem: "img/dove/des/Invisible-dry.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
-        imagem: "img/dove/des/original-roll-on.jpe",
+        imagem: "img/dove/des/original-roll-on.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
-        imagem: "img/dove/des/lavanda-roll-on.jpe",
+        imagem: "img/dove/des/lavanda-roll-on.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
-        imagem: "img/dove/des/pessego-roll-on.jpe",
+        imagem: "img/dove/des/pessego-roll-on.webp",
         destaque: false,
         esgotado: false
     },
@@ -197,7 +197,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
-        imagem: "img/dove/des/roma-roll-on.jpe",
+        imagem: "img/dove/des/roma-roll-on.webp",
         destaque: false,
         esgotado: false
     },
@@ -209,7 +209,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Dove 50ml",
         preco: "R$ 12,99",
-        imagem: "img/dove/des/invisible-dry-roll-on.jpe",
+        imagem: "img/dove/des/invisible-dry-roll-on.webp",
         destaque: false,
         esgotado: false
     },
@@ -224,7 +224,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
-        imagem: "img/dove/des/cr-diaria.jpe",
+        imagem: "img/dove/des/cr-diaria.webp",
         destaque: false,
         esgotado: false
     },
@@ -236,7 +236,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
-        imagem: "img/dove/des/cr-irritacao.jpe",
+        imagem: "img/dove/des/cr-irritacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -248,7 +248,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Creme Desodorante Dove 50g",
         preco: "R$ 16,99",
-        imagem: "img/dove/des/cr-escurecimento.jpe",
+        imagem: "img/dove/des/cr-escurecimento.webp",
         destaque: false,
         esgotado: false
     },
@@ -263,7 +263,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Stick Desodorante Dove 45g",
         preco: "R$ 22,49",
-        imagem: "img/dove/des/stick-fresh.jpe",
+        imagem: "img/dove/des/stick-fresh.webp",
         destaque: false,
         esgotado: false
     },
@@ -275,7 +275,7 @@ const produtosDove = [
         categoria: "Desodorante",
         descricao: "Stick Desodorante Dove 45g",
         preco: "R$ 22,49",
-        imagem: "img/dove/des/stick-powder.jpe",
+        imagem: "img/dove/des/stick-powder.webp",
         destaque: false,
         esgotado: false
     },
@@ -290,7 +290,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/creme/retinol.jpe",
+        imagem: "img/dove/creme/retinol.webp",
         destaque: false,
         esgotado: false
     },
@@ -302,7 +302,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/creme/hialuronico.jpe",
+        imagem: "img/dove/creme/hialuronico.webp",
         destaque: false,
         esgotado: false
     },
@@ -314,7 +314,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/creme/pantenol.jpe",
+        imagem: "img/dove/creme/pantenol.webp",
         destaque: false,
         esgotado: false
     },
@@ -326,7 +326,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Sérum Corporal Dove 180ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/creme/ceramidas.jpe",
+        imagem: "img/dove/creme/ceramidas.webp",
         destaque: false,
         esgotado: false
     },
@@ -341,7 +341,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,99",
-        imagem: "img/dove/sabonete/original.jpe",
+        imagem: "img/dove/sabonete/original.webp",
         destaque: false,
         esgotado: false
     },
@@ -353,7 +353,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
-        imagem: "img/dove/sabonete/pele.jpe",
+        imagem: "img/dove/sabonete/pele.webp",
         destaque: false,
         esgotado: false
     },
@@ -365,7 +365,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
-        imagem: "img/dove/sabonete/antibac.jpe",
+        imagem: "img/dove/sabonete/antibac.webp",
         destaque: false,
         esgotado: false
     },
@@ -377,7 +377,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
-        imagem: "img/dove/sabonete/karite.jpe",
+        imagem: "img/dove/sabonete/karite.webp",
         destaque: false,
         esgotado: false
     },
@@ -389,7 +389,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete em Barra Dove 90g",
         preco: "R$ 5,49",
-        imagem: "img/dove/sabonete/erva.jpe",
+        imagem: "img/dove/sabonete/erva.webp",
         destaque: false,
         esgotado: false
     },
@@ -404,7 +404,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Dove 240ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/sabonete/oleo.jpe",
+        imagem: "img/dove/sabonete/oleo.webp",
         destaque: true,
         esgotado: false
     },
@@ -416,7 +416,7 @@ const produtosDove = [
         categoria: "Corporal",
         descricao: "Óleo Serum Corporal Dove 150ml",
         preco: "R$ 48,99",
-        imagem: "img/dove/oleo/serum.jpe",
+        imagem: "img/dove/oleo/serum.webp",
         destaque: true,
         esgotado: false
     },
@@ -431,7 +431,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/sabonete-liquido/original.jpe",
+        imagem: "img/dove/sabonete-liquido/original.webp",
         destaque: true,
         esgotado: false
     },
@@ -443,7 +443,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/sabonete-liquido/karite.jpe",
+        imagem: "img/dove/sabonete-liquido/karite.webp",
         destaque: true,
         esgotado: false
     },
@@ -455,7 +455,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 29,99",
-        imagem: "img/dove/sabonete-liquido/pele.jpe",
+        imagem: "img/dove/sabonete-liquido/pele.webp",
         destaque: true,
         esgotado: false
     },
@@ -467,7 +467,7 @@ const produtosDove = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Liquido Dove 250ml",
         preco: "R$ 16,49",
-        imagem: "img/dove/sabonete-liquido/antibac.jpe",
+        imagem: "img/dove/sabonete-liquido/antibac.webp",
         destaque: true,
         esgotado: false
     }

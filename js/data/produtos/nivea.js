@@ -15,7 +15,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/active-dry-men-250.jpe",
+        imagem: "img/nivea/des-aerosol/active-dry-men-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -27,7 +27,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/protect-men-250.jpe",
+        imagem: "img/nivea/des-aerosol/protect-men-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -39,7 +39,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/derma-defender-250.jpe",
+        imagem: "img/nivea/des-aerosol/derma-defender-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -51,7 +51,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/dry-comfort-250.jpe",
+        imagem: "img/nivea/des-aerosol/dry-comfort-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -63,7 +63,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/black-white-clear-250.jpe",
+        imagem: "img/nivea/des-aerosol/black-white-clear-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -75,7 +75,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 250ml",
         preco: "R$ 17,99",
-        imagem: "img/nivea/des-aerosol/pearl-250.jpe",
+        imagem: "img/nivea/des-aerosol/pearl-250.webp",
         destaque: false,
         esgotado: false
     },
@@ -90,7 +90,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/derma-vitamina-c.jpe",
+        imagem: "img/nivea/des-aerosol/derma-vitamina-c.webp",
         destaque: false,
         esgotado: false
     },
@@ -102,7 +102,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/derma-pro.jpe",
+        imagem: "img/nivea/des-aerosol/derma-pro.webp",
         destaque: false,
         esgotado: false
     },
@@ -114,7 +114,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/derma-vitamina-e.jpe",
+        imagem: "img/nivea/des-aerosol/derma-vitamina-e.webp",
         destaque: false,
         esgotado: false
     },
@@ -126,7 +126,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/black-white-clear.jpe",
+        imagem: "img/nivea/des-aerosol/black-white-clear.webp",
         destaque: false,
         esgotado: false
     },
@@ -138,7 +138,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/black-white-fresh.jpe",
+        imagem: "img/nivea/des-aerosol/black-white-fresh.webp",
         destaque: false,
         esgotado: false
     },
@@ -150,7 +150,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/protect-care-0.jpe",
+        imagem: "img/nivea/des-aerosol/protect-care-0.webp",
         destaque: false,
         esgotado: false
     },
@@ -162,7 +162,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/fresh-natural.jpe",
+        imagem: "img/nivea/des-aerosol/fresh-natural.webp",
         destaque: false,
         esgotado: false
     },
@@ -174,7 +174,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/dry-comfort.jpe",
+        imagem: "img/nivea/des-aerosol/dry-comfort.webp",
         destaque: false,
         esgotado: false
     },
@@ -186,7 +186,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/pearl.jpe",
+        imagem: "img/nivea/des-aerosol/pearl.webp",
         destaque: false,
         esgotado: false
     },
@@ -198,7 +198,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/derma-men-sensitive.jpe",
+        imagem: "img/nivea/des-aerosol/derma-men-sensitive.webp",
         destaque: false,
         esgotado: false
     },
@@ -210,7 +210,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/derma-men-defender.jpe",
+        imagem: "img/nivea/des-aerosol/derma-men-defender.webp",
         destaque: false,
         esgotado: false
     },
@@ -222,7 +222,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/black-white-original.jpe",
+        imagem: "img/nivea/des-aerosol/black-white-original.webp",
         destaque: false,
         esgotado: false
     },
@@ -234,7 +234,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/black-white-men-fresh.jpe",
+        imagem: "img/nivea/des-aerosol/black-white-men-fresh.webp",
         destaque: false,
         esgotado: false
     },
@@ -246,7 +246,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/amadeirado-men.jpe",
+        imagem: "img/nivea/des-aerosol/amadeirado-men.webp",
         destaque: false,
         esgotado: false
     },
@@ -258,7 +258,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/active-dry-men.jpe",
+        imagem: "img/nivea/des-aerosol/active-dry-men.webp",
         destaque: false,
         esgotado: false
     },
@@ -270,7 +270,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Nivea 150ml",
         preco: "R$ 15,99",
-        imagem: "img/nivea/des-aerosol/protect-men.jpe",
+        imagem: "img/nivea/des-aerosol/protect-men.webp",
         destaque: false,
         esgotado: false
     },
@@ -285,7 +285,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/derma-defender.jpe",
+        imagem: "img/nivea/des-roll-on/derma-defender.webp",
         destaque: false,
         esgotado: false
     },
@@ -297,7 +297,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/derma-vitamina-e.jpe",
+        imagem: "img/nivea/des-roll-on/derma-vitamina-e.webp",
         destaque: false,
         esgotado: false
     },
@@ -309,7 +309,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/black-white-clear.jpe",
+        imagem: "img/nivea/des-roll-on/black-white-clear.webp",
         destaque: false,
         esgotado: false
     },
@@ -321,7 +321,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/dry-confort.jpe",
+        imagem: "img/nivea/des-roll-on/dry-confort.webp",
         destaque: false,
         esgotado: false
     },
@@ -333,7 +333,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/protect.jpe",
+        imagem: "img/nivea/des-roll-on/protect.webp",
         destaque: false,
         esgotado: false
     },
@@ -345,7 +345,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/pearl.jpe",
+        imagem: "img/nivea/des-roll-on/pearl.webp",
         destaque: false,
         esgotado: false
     },
@@ -357,7 +357,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 10,99",
-        imagem: "img/nivea/des-roll-on/active-dry-men.jpe",
+        imagem: "img/nivea/des-roll-on/active-dry-men.webp",
         destaque: false,
         esgotado: false
     },
@@ -369,7 +369,7 @@ const produtosNivea = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Nivea 50ml",
         preco: "R$ 12,99",
-        imagem: "img/nivea/des-roll-on/black-white-original.jpe",
+        imagem: "img/nivea/des-roll-on/black-white-original.webp",
         destaque: false,
         esgotado: false
     },
@@ -384,7 +384,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 400ml",
         preco: "R$ 25,99",
-        imagem: "img/nivea/cr-corporal/milk-400.jpe",
+        imagem: "img/nivea/cr-corporal/milk-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -396,7 +396,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 400ml",
         preco: "R$ 26,99",
-        imagem: "img/nivea/cr-corporal/beleza-400.jpe",
+        imagem: "img/nivea/cr-corporal/beleza-400.webp",
         destaque: false,
         esgotado: false
     },
@@ -408,7 +408,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
-        imagem: "img/nivea/cr-corporal/milk-200.jpe",
+        imagem: "img/nivea/cr-corporal/milk-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -420,7 +420,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
-        imagem: "img/nivea/cr-corporal/beleza-200.jpe",
+        imagem: "img/nivea/cr-corporal/beleza-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -432,7 +432,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 18,99",
-        imagem: "img/nivea/cr-corporal/soft-200.jpe",
+        imagem: "img/nivea/cr-corporal/soft-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -444,7 +444,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Creme Corporal Nivea 200ml",
         preco: "R$ 31,99",
-        imagem: "img/nivea/cr-corporal/q10-200.jpe",
+        imagem: "img/nivea/cr-corporal/q10-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -459,7 +459,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 49g",
         preco: "R$ 54,99",
-        imagem: "img/nivea/cr-facial/antissinais-cellular.jpe",
+        imagem: "img/nivea/cr-facial/antissinais-cellular.webp",
         destaque: false,
         esgotado: false
     },
@@ -471,7 +471,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 49g",
         preco: "R$ 54,99",
-        imagem: "img/nivea/cr-facial/antissinais-diurno.jpe",
+        imagem: "img/nivea/cr-facial/antissinais-diurno.webp",
         destaque: false,
         esgotado: false
     },
@@ -483,7 +483,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
-        imagem: "img/nivea/cr-facial/7em1-noturno.jpe",
+        imagem: "img/nivea/cr-facial/7em1-noturno.webp",
         destaque: false,
         esgotado: false
     },
@@ -495,7 +495,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
-        imagem: "img/nivea/cr-facial/7em1-antissinais.jpe",
+        imagem: "img/nivea/cr-facial/7em1-antissinais.webp",
         destaque: false,
         esgotado: false
     },
@@ -507,7 +507,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
-        imagem: "img/nivea/cr-facial/7em1-nutritivo.jpe",
+        imagem: "img/nivea/cr-facial/7em1-nutritivo.webp",
         destaque: false,
         esgotado: false
     },
@@ -519,7 +519,7 @@ const produtosNivea = [
         categoria: "Facial",
         descricao: "Creme Facial Nivea 100g",
         preco: "R$ 24,99",
-        imagem: "img/nivea/cr-facial/7em1-radiante.jpe",
+        imagem: "img/nivea/cr-facial/7em1-radiante.webp",
         destaque: false,
         esgotado: false
     },
@@ -531,7 +531,7 @@ const produtosNivea = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Nivea 200ml",
         preco: "R$ 42,99",
-        imagem: "img/nivea/sabonete/oleo.jpe",
+        imagem: "img/nivea/sabonete/oleo.webp",
         destaque: false,
         esgotado: false
     },

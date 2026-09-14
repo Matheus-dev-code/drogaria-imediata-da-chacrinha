@@ -14,7 +14,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.0 Preto Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.0.jpe",
+        imagem: "img/probelle/tinta/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.2 Preto Ametista",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.2.jpe",
+        imagem: "img/probelle/tinta/1.2.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.6 Preto Malbec",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.6.jpe",
+        imagem: "img/probelle/tinta/1.6.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.7 Preto Azulado Especial",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.7+.jpe",
+        imagem: "img/probelle/tinta/1.7+.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.77 Preto Azulado Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.77.jpe",
+        imagem: "img/probelle/tinta/1.77.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.88 Preto Tabaco",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.88.jpe",
+        imagem: "img/probelle/tinta/1.88.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 1.11 Preto Azulado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/1.11.jpe",
+        imagem: "img/probelle/tinta/1.11.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 3.0 Castanho Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/3.0.jpe",
+        imagem: "img/probelle/tinta/3.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 3.66 Acaju Púrpura",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/3.66.jpe",
+        imagem: "img/probelle/tinta/3.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 4.0 Castanho Médio",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/4.0.jpe",
+        imagem: "img/probelle/tinta/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 4.7 Castanho Médio Marrom Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/4.7.jpe",
+        imagem: "img/probelle/tinta/4.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 5.0 Castanho Claro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/5.0.jpe",
+        imagem: "img/probelle/tinta/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -158,7 +158,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 5.26 Marsala Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/5.26.jpe",
+        imagem: "img/probelle/tinta/5.26.webp",
         destaque: false,
         esgotado: false
     },
@@ -170,7 +170,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 5.5 Acaju",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/5.5.jpe",
+        imagem: "img/probelle/tinta/5.5.webp",
         destaque: false,
         esgotado: false
     },
@@ -182,7 +182,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 6.0 Louro Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/6.0.jpe",
+        imagem: "img/probelle/tinta/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -194,7 +194,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 6.7 Louro Escuro Marrom",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/6.7.jpe",
+        imagem: "img/probelle/tinta/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -206,7 +206,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 7.0 Louro Médio",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/7.0.jpe",
+        imagem: "img/probelle/tinta/7.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -218,7 +218,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 7.1 Louro Médio Acinzentado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/7.1.jpe",
+        imagem: "img/probelle/tinta/7.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -230,7 +230,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 8.1 Louro Claro Acinzentado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/8.1.jpe",
+        imagem: "img/probelle/tinta/8.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -242,7 +242,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 8.26 Marsala",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/8.26.jpe",
+        imagem: "img/probelle/tinta/8.26.webp",
         destaque: false,
         esgotado: false
     },
@@ -254,7 +254,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 8.43 Louro Claro Cobre Dourado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/8.43.jpe",
+        imagem: "img/probelle/tinta/8.43.webp",
         destaque: false,
         esgotado: false
     },
@@ -266,7 +266,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Probelle Super Bonita 9.21 Louro Claríssimo Íris Cinza",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tinta/9.21.jpe",
+        imagem: "img/probelle/tinta/9.21.webp",
         destaque: false,
         esgotado: false
     },
@@ -281,7 +281,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.0 Preto Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.0.jpe",
+        imagem: "img/probelle/tonalizante/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -293,7 +293,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.01 Preto Carvão",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.01.jpe",
+        imagem: "img/probelle/tonalizante/1.01.webp",
         destaque: false,
         esgotado: false
     },
@@ -305,7 +305,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.2 Preto Ametista",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.2.jpe",
+        imagem: "img/probelle/tonalizante/1.2.webp",
         destaque: false,
         esgotado: false
     },
@@ -317,7 +317,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.6 Preto Malbec",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.6.jpe",
+        imagem: "img/probelle/tonalizante/1.6.webp",
         destaque: false,
         esgotado: false
     },
@@ -329,7 +329,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.7 Preto Azulado Especial",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.7+.jpe",
+        imagem: "img/probelle/tonalizante/1.7+.webp",
         destaque: false,
         esgotado: false
     },
@@ -341,7 +341,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.88 Preto Tabaco",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.88.jpe",
+        imagem: "img/probelle/tonalizante/1.88.webp",
         destaque: false,
         esgotado: false
     },
@@ -353,7 +353,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 1.110 Preto Intenso Profundo",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/1.110.jpe",
+        imagem: "img/probelle/tonalizante/1.110.webp",
         destaque: false,
         esgotado: false
     },
@@ -365,7 +365,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 2.0 Preto",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/2.0.jpe",
+        imagem: "img/probelle/tonalizante/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -377,7 +377,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 2.1 Preto Especial",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/2.1.jpe",
+        imagem: "img/probelle/tonalizante/2.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -389,7 +389,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 2.8 Preto Azulado Pérola",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/2.8.jpe",
+        imagem: "img/probelle/tonalizante/2.8.webp",
         destaque: false,
         esgotado: false
     },
@@ -401,7 +401,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 3.0 Castanho Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/3.0.jpe",
+        imagem: "img/probelle/tonalizante/3.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -413,7 +413,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 3.66 Castanho Escuro Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/3.66.jpe",
+        imagem: "img/probelle/tonalizante/3.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -425,7 +425,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 4.0 Castanho Médio",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/4.0.jpe",
+        imagem: "img/probelle/tonalizante/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -437,7 +437,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 4.66 Castanho Médio Vermelho Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/4.66.jpe",
+        imagem: "img/probelle/tonalizante/4.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -449,7 +449,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 4.7 Castanho Médio Marrom",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/4.7.jpe",
+        imagem: "img/probelle/tonalizante/4.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -461,7 +461,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 5.0 Castanho Claro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/5.0.jpe",
+        imagem: "img/probelle/tonalizante/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -473,7 +473,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 5.26 Marsala Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/5.26.jpe",
+        imagem: "img/probelle/tonalizante/5.26.webp",
         destaque: false,
         esgotado: false
     },
@@ -485,7 +485,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 5.5 Acaju",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/5.5.jpe",
+        imagem: "img/probelle/tonalizante/5.5.webp",
         destaque: false,
         esgotado: false
     },
@@ -497,7 +497,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 6.0 Louro Escuro",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/6.0.jpe",
+        imagem: "img/probelle/tonalizante/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -509,7 +509,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 6.1 Louro Escuro Acinzentado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/6.1.jpe",
+        imagem: "img/probelle/tonalizante/6.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -521,7 +521,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 6.6 Louro Escuro Vermelho Intenso",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/6.66.jpe",
+        imagem: "img/probelle/tonalizante/6.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -533,7 +533,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 6.7 Chocolate",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/6.7.jpe",
+        imagem: "img/probelle/tonalizante/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -545,7 +545,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 7.0 Louro Médio",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/7.0.jpe",
+        imagem: "img/probelle/tonalizante/7.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -557,7 +557,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 7.1 Louro Acinzentado",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/7.1.jpe",
+        imagem: "img/probelle/tonalizante/7.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -569,7 +569,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 7.37 Louro Dourado Marrom",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/7.37.jpe",
+        imagem: "img/probelle/tonalizante/7.37.webp",
         destaque: false,
         esgotado: false
     },
@@ -581,7 +581,7 @@ const produtosProbelle = [
         categoria: "Coloração",
         descricao: "Tonalizante Burguesinha 7.7 Louro Marrom",
         preco: "R$ 9,99",
-        imagem: "img/probelle/tonalizante/7.7.jpe",
+        imagem: "img/probelle/tonalizante/7.7.webp",
         destaque: false,
         esgotado: false
     },

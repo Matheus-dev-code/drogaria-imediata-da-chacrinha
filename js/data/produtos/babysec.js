@@ -14,7 +14,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Jumbinho ",
         preco: "R$ 22,99 ",
-        imagem: "img/babysec/jumbinho/p.jpe",
+        imagem: "img/babysec/jumbinho/p.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Jumbinho ",
         preco: "R$ 22,99 ",
-        imagem: "img/babysec/jumbinho/m.jpe",
+        imagem: "img/babysec/jumbinho/m.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Jumbinho ",
         preco: "R$ 22,99 ",
-        imagem: "img/babysec/jumbinho/g.jpe",
+        imagem: "img/babysec/jumbinho/g.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Jumbinho ",
         preco: "R$ 22,99 ",
-        imagem: "img/babysec/jumbinho/xg.jpe",
+        imagem: "img/babysec/jumbinho/xg.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Jumbinho ",
         preco: "R$ 22,99 ",
-        imagem: "img/babysec/jumbinho/xxg.jpe",
+        imagem: "img/babysec/jumbinho/xxg.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/mega/p.jpe",
+        imagem: "img/babysec/mega/p.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/mega/m.jpe",
+        imagem: "img/babysec/mega/m.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/mega/g.jpe",
+        imagem: "img/babysec/mega/g.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/mega/xg.jpe",
+        imagem: "img/babysec/mega/xg.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/mega/xxg.jpe",
+        imagem: "img/babysec/mega/xxg.webp",
         destaque: false,
         esgotado: false
     },
@@ -140,7 +140,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/Premium/m.jpe",
+        imagem: "img/babysec/Premium/m.webp",
         destaque: false,
         esgotado: false
     },
@@ -152,7 +152,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/Premium/g.jpe",
+        imagem: "img/babysec/Premium/g.webp",
         destaque: false,
         esgotado: false
     },
@@ -164,7 +164,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/Premium/xg.jpe",
+        imagem: "img/babysec/Premium/xg.webp",
         destaque: false,
         esgotado: false
     },
@@ -176,7 +176,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Mega ",
         preco: "R$ 39,99 ",
-        imagem: "img/babysec/Premium/xxg.jpe",
+        imagem: "img/babysec/Premium/xxg.webp",
         destaque: false,
         esgotado: false
     },
@@ -191,7 +191,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Hiper ",
         preco: "R$ 69,99 ",
-        imagem: "img/babysec/hiper/m.jpe",
+        imagem: "img/babysec/hiper/m.webp",
         destaque: false,
         esgotado: false
     },
@@ -203,7 +203,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Hiper ",
         preco: "R$ 69,99 ",
-        imagem: "img/babysec/hiper/g.jpe",
+        imagem: "img/babysec/hiper/g.webp",
         destaque: false,
         esgotado: false
     },
@@ -215,7 +215,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Hiper ",
         preco: "R$ 69,99 ",
-        imagem: "img/babysec/hiper/xg.jpe",
+        imagem: "img/babysec/hiper/xg.webp",
         destaque: false,
         esgotado: false
     },
@@ -227,7 +227,7 @@ const produtosBabysec = [
         categoria: "Higiene Pessoal",
         descricao: "Fralda Babysec Hiper ",
         preco: "R$ 69,99 ",
-        imagem: "img/babysec/hiper/xxg.jpe",
+        imagem: "img/babysec/hiper/xxg.webp",
         destaque: false,
         esgotado: false
     },

@@ -14,7 +14,7 @@ const produtosBepantriz = [
         categoria: "Corporal",
         descricao: "Creme derma Bepantriz 20g",
         preco: "R$ 24,99 ",
-        imagem: "img/bepantriz/derma.jpe",
+        imagem: "img/bepantriz/derma.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosBepantriz = [
         categoria: "Corporal",
         descricao: "Creme Tatoo Bepantriz 20g",
         preco: "R$ 29,99 ",
-        imagem: "img/bepantriz/tatoo.jpe",
+        imagem: "img/bepantriz/tatoo.webp",
         destaque: false,
         esgotado: false
     },

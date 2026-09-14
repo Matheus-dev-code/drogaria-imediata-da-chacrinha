@@ -14,7 +14,7 @@ const produtosAsepxia = [
         categoria: "Facial",
         descricao: "Gel Secativo Asepxia 15g",
         preco: "R$ 24,99 ",
-        imagem: "img/asepxia/secativo.jpe",
+        imagem: "img/asepxia/secativo.webp",
         destaque: false,
         esgotado: false
     },
@@ -29,7 +29,7 @@ const produtosAsepxia = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Antiacne Asepxia 80g",
         preco: "R$ 15,99 ",
-        imagem: "img/asepxia/detox.jpe",
+        imagem: "img/asepxia/detox.webp",
         destaque: false,
         esgotado: false
     },
@@ -41,7 +41,7 @@ const produtosAsepxia = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Antiacne Asepxia 80g",
         preco: "R$ 12,99 ",
-        imagem: "img/asepxia/Forte.jpe",
+        imagem: "img/asepxia/Forte.webp",
         destaque: false,
         esgotado: false
     },

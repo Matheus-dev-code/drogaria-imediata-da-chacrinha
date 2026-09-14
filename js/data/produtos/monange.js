@@ -14,7 +14,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/detox.jpe",
+        imagem: "img/monange/desodorante/detox.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/esporte.jpe",
+        imagem: "img/monange/desodorante/esporte.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/frutas.jpe",
+        imagem: "img/monange/desodorante/frutas.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/hidratacao.jpe",
+        imagem: "img/monange/desodorante/hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/invisivel.jpe",
+        imagem: "img/monange/desodorante/invisivel.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/lavanda.jpe",
+        imagem: "img/monange/desodorante/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/protecao.jpe",
+        imagem: "img/monange/desodorante/protecao.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosMonange = [
         categoria: "Desodorante",
         descricao: "Desodorante Monange 150ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/desodorante/sensivel.jpe",
+        imagem: "img/monange/desodorante/sensivel.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/frutas.jpe",
+        imagem: "img/monange/hidratante/frutas.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/lavanda.jpe",
+        imagem: "img/monange/hidratante/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/aveia.jpe",
+        imagem: "img/monange/hidratante/aveia.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/oliva.jpe",
+        imagem: "img/monange/hidratante/oliva.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/algodao.jpe",
+        imagem: "img/monange/hidratante/algodao.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/monange/hidratante/amendoas.jpe",
+        imagem: "img/monange/hidratante/amendoas.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosMonange = [
         categoria: "Corporal",
         descricao: "Hidratante Monange 200ml ",
         preco: "R$ 11,99 ",
-        imagem: "img/monange/hidratante/q10.jpe",
+        imagem: "img/monange/hidratante/q10.webp",
         destaque: false,
         esgotado: false
     },
@@ -200,7 +200,7 @@ const produtosMonange = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Monange 240ml ",
         preco: "R$ 10,49 ",
-        imagem: "img/monange/sabonete/frutas.jpe",
+        imagem: "img/monange/sabonete/frutas.webp",
         destaque: false,
         esgotado: false
     },
@@ -212,7 +212,7 @@ const produtosMonange = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Monange 240ml ",
         preco: "R$ 10,49 ",
-        imagem: "img/monange/sabonete/lavanda.jpe",
+        imagem: "img/monange/sabonete/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -224,7 +224,7 @@ const produtosMonange = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Monange 240ml ",
         preco: "R$ 10,49 ",
-        imagem: "img/monange/sabonete/oliva.jpe",
+        imagem: "img/monange/sabonete/oliva.webp",
         destaque: false,
         esgotado: false
     },
@@ -236,7 +236,7 @@ const produtosMonange = [
         categoria: "Higiene Pessoal",
         descricao: "Sabonete Monange 240ml ",
         preco: "R$ 10,49 ",
-        imagem: "img/monange/sabonete/detox.jpe",
+        imagem: "img/monange/sabonete/detox.webp",
         destaque: false,
         esgotado: false
     },

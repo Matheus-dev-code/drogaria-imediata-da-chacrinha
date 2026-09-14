@@ -14,7 +14,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/1.0.jpe",
+        imagem: "img/cor&ton/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/1.7+.jpe",
+        imagem: "img/cor&ton/1.7+.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/1.110.jpe",
+        imagem: "img/cor&ton/1.110.webp",
         destaque: false,
         esgotado: false
     },
@@ -53,7 +53,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/2.0.jpe",
+        imagem: "img/cor&ton/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -65,7 +65,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/2.1.jpe",
+        imagem: "img/cor&ton/2.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -80,7 +80,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/3.0.jpe",
+        imagem: "img/cor&ton/3.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -95,7 +95,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/4.0.jpe",
+        imagem: "img/cor&ton/4.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/5.0.jpe",
+        imagem: "img/cor&ton/5.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/5.3.jpe",
+        imagem: "img/cor&ton/5.3.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/5.546.jpe",
+        imagem: "img/cor&ton/5.546.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/5.777.jpe",
+        imagem: "img/cor&ton/5.777.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/6.0.jpe",
+        imagem: "img/cor&ton/6.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/6.66.jpe",
+        imagem: "img/cor&ton/6.66.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/6.7.jpe",
+        imagem: "img/cor&ton/6.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -197,7 +197,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/6.646.jpe",
+        imagem: "img/cor&ton/6.646.webp",
         destaque: false,
         esgotado: false
     },
@@ -212,7 +212,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/7.1.jpe",
+        imagem: "img/cor&ton/7.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -227,7 +227,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/8.0.jpe",
+        imagem: "img/cor&ton/8.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -239,7 +239,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/8.1.jpe",
+        imagem: "img/cor&ton/8.1.webp",
         destaque: false,
         esgotado: false
     },
@@ -254,7 +254,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/10.0.jpe",
+        imagem: "img/cor&ton/10.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -269,7 +269,7 @@ const produtosCoreton = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Cor&Ton",
         preco: "R$ 14,99",
-        imagem: "img/cor&ton/12.111.jpe",
+        imagem: "img/cor&ton/12.111.webp",
         destaque: false,
         esgotado: false
     },

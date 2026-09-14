@@ -14,7 +14,7 @@ const produtosAcnezil = [
         categoria: "Facial",
         descricao: "Gel de Tratamento Passo 2 Acnezil 20g",
         preco: "R$ 24,99 ",
-        imagem: "img/acnezil/gel-passo-2.jpe",
+        imagem: "img/acnezil/gel-passo-2.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosAcnezil = [
         categoria: "Facial",
         descricao: "Gel Secativo Acnezil 10g",
         preco: "R$ 24,99 ",
-        imagem: "img/acnezil/secativo.jpe",
+        imagem: "img/acnezil/secativo.webp",
         destaque: false,
         esgotado: false
     },

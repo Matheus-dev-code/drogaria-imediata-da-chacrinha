@@ -14,7 +14,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/flor-da-mata.jpe",
+        imagem: "img/muriel/colonia/flor-da-mata.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/rosa-mosqueta.jpe",
+        imagem: "img/muriel/colonia/rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/alfazema.jpe",
+        imagem: "img/muriel/colonia/alfazema.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/lavanda.jpe",
+        imagem: "img/muriel/colonia/lavanda.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/Mammy.jpe",
+        imagem: "img/muriel/colonia/Mammy.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosMuriel = [
         categoria: "Colônia/Perfume",
         descricao: "Deo Colonia 250ml",
         preco: "R$ 18,99",
-        imagem: "img/muriel/colonia/cerejeira.jpe",
+        imagem: "img/muriel/colonia/cerejeira.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/amendoa-com-avela.jpe",
+        imagem: "img/muriel/sabonete/amendoa-com-avela.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/amendoa-com-colageno.jpe",
+        imagem: "img/muriel/sabonete/amendoa-com-colageno.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/arabe.jpe",
+        imagem: "img/muriel/sabonete/arabe.webp",
         destaque: false,
         esgotado: false
     },
@@ -125,7 +125,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/pistache.jpe",
+        imagem: "img/muriel/sabonete/pistache.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/cereja.jpe",
+        imagem: "img/muriel/sabonete/cereja.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/roma.jpe",
+        imagem: "img/muriel/sabonete/roma.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosMuriel = [
         categoria: "Corporal",
         descricao: "Óleo de Banho Muriel 230ml",
         preco: "R$ 10,99",
-        imagem: "img/muriel/sabonete/rosa-mosqueta.jpe",
+        imagem: "img/muriel/sabonete/rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },

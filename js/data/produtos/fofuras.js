@@ -14,7 +14,7 @@ const produtosFofuras = [
         categoria: "Biscoitos",
         descricao: "Biscoito salgado sabor cebola 60g",
         preco: "R$ 2,70 ",
-        imagem: "img/alimentos/fofura/cebola.jpe",
+        imagem: "img/alimentos/fofura/cebola.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosFofuras = [
         categoria: "Biscoitos",
         descricao: "Biscoito salgado sabor requeijão 60g",
         preco: "R$ 2,70 ",
-        imagem: "img//alimentos/fofura/requeijao.jpe",
+        imagem: "img//alimentos/fofura/requeijao.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosFofuras = [
         categoria: "Biscoitos",
         descricao: "Biscoito salgado sabor churrasco 60g",
         preco: "R$ 2,70 ",
-        imagem: "img//alimentos/fofura/churrasco.jpe",
+        imagem: "img//alimentos/fofura/churrasco.webp",
         destaque: false,
         esgotado: false
     },
@@ -53,7 +53,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls sabor melancia 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/melancia.jpe",
+        imagem: "img/alimentos/halls/melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -65,7 +65,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls sabor cereja 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/cereja.jpe",
+        imagem: "img/alimentos/halls/cereja.webp",
         destaque: false,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls sabor mentol 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/mentol.jpe",
+        imagem: "img/alimentos/halls/mentol.webp",
         destaque: false,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls sabor uva verde 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/uva-verde.jpe",
+        imagem: "img/alimentos/halls/uva-verde.webp",
         destaque: false,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls sabor menta 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/menta.jpe",
+        imagem: "img/alimentos/halls/menta.webp",
         destaque: false,
         esgotado: false
     },
@@ -113,7 +113,7 @@ const produtosFofuras = [
         categoria: "Balas",
         descricao: "Bala Halls extra forte 20g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/halls/extra-forte.jpe",
+        imagem: "img/alimentos/halls/extra-forte.webp",
         destaque: false,
         esgotado: false
     },
@@ -128,7 +128,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident sabor canela 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/canela.jpe",
+        imagem: "img/alimentos/trident/canela.webp",
         destaque: false,
         esgotado: false
     },
@@ -140,7 +140,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident sabor morango 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/morango.jpe",
+        imagem: "img/alimentos/trident/morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -152,7 +152,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident sabor melancia 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/melancia.jpe",
+        imagem: "img/alimentos/trident/melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -164,7 +164,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident sabor menta 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/menta.jpe",
+        imagem: "img/alimentos/trident/menta.webp",
         destaque: false,
         esgotado: false
     },
@@ -176,7 +176,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident Xenses Intense 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/intense.jpe",
+        imagem: "img/alimentos/trident/intense.webp",
         destaque: false,
         esgotado: false
     },
@@ -188,7 +188,7 @@ const produtosFofuras = [
         categoria: "Chicletes",
         descricao: "Chiclete Trident Herbal 12g",
         preco: "R$ 2,99 ",
-        imagem: "img/alimentos/trident/herbal.jpe",
+        imagem: "img/alimentos/trident/herbal.webp",
         destaque: false,
         esgotado: false
     },
@@ -203,7 +203,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Doce de leite branco com recheio sabor chocolate 372g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/tortuguita/branco.jpe",
+        imagem: "img/alimentos/tortuguita/branco.webp",
         destaque: false,
         esgotado: false
     },
@@ -215,7 +215,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Doce ao leite areado com recheio sabor brigadeiro 372g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/tortuguita/areado.jpe",
+        imagem: "img/alimentos/tortuguita/areado.webp",
         destaque: false,
         esgotado: false
     },
@@ -227,7 +227,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Doce ao leite areado com recheio sabor baunilha 372g",
         preco: "R$ 1,99 ",
-        imagem: "img/alimentos/tortuguita/baunilha.jpe",
+        imagem: "img/alimentos/tortuguita/baunilha.webp",
         destaque: false,
         esgotado: false
     },
@@ -239,7 +239,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Confeitos Tortuguita 480g",
         preco: "R$ 4,99 ",
-        imagem: "img/alimentos/tortuguita/confeitos.jpe",
+        imagem: "img/alimentos/tortuguita/confeitos.webp",
         destaque: false,
         esgotado: false
     },
@@ -251,7 +251,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Tortuguita Chocovinhos",
         preco: "R$ 4,99 ",
-        imagem: "img/alimentos/tortuguita/chocovinhos.jpe",
+        imagem: "img/alimentos/tortuguita/chocovinhos.webp",
         destaque: false,
         esgotado: false
     },
@@ -266,7 +266,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Bis ao leite Lacta 100g",
         preco: "R$ 9,99 ",
-        imagem: "img/alimentos/bis/original.jpe",
+        imagem: "img/alimentos/bis/original.webp",
         destaque: false,
         esgotado: false
     },
@@ -278,7 +278,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Bis branco Lacta 100g",
         preco: "R$ 9,99 ",
-        imagem: "img/alimentos/bis/branco.jpe",
+        imagem: "img/alimentos/bis/branco.webp",
         destaque: false,
         esgotado: false
     },
@@ -290,7 +290,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Bis black Lacta 100g",
         preco: "R$ 9,99 ",
-        imagem: "img/alimentos/bis/black.jpe",
+        imagem: "img/alimentos/bis/black.webp",
         destaque: false,
         esgotado: false
     },
@@ -305,7 +305,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Creme de avelã Nutella 140g",
         preco: "R$ 15,49 ",
-        imagem: "img/alimentos/nutella/140g.jpe",
+        imagem: "img/alimentos/nutella/140g.webp",
         destaque: false,
         esgotado: false
     },
@@ -317,7 +317,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Barrinha Nutella B-Ready 220g",
         preco: "R$ 5,99 ",
-        imagem: "img/alimentos/nutella/220g.jpe",
+        imagem: "img/alimentos/nutella/220g.webp",
         destaque: false,
         esgotado: false
     },
@@ -332,7 +332,7 @@ const produtosFofuras = [
         categoria: "Doces",
         descricao: "Ovo de chocolate Kinder Joy com brinquedo 20g",
         preco: "R$ 9,99 ",
-        imagem: "img/alimentos/kinder/joy.jpe",
+        imagem: "img/alimentos/kinder/joy.webp",
         destaque: false,
         esgotado: false
     }

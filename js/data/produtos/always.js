@@ -14,7 +14,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho XXG com Abas Cobertura Suave 10 unidades",
         preco: "R$ 29,99 ",
-        imagem: "img/always/xxg-10.jpe",
+        imagem: "img/always/xxg-10.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho G com Abas Cobertura Suave 32 unidades",
         preco: "R$ 34,99 ",
-        imagem: "img/always/suave-32.jpe",
+        imagem: "img/always/suave-32.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho G com Abas Cobertura Suave 16 unidades",
         preco: "R$ 18,49 ",
-        imagem: "img/always/suave-16un.jpe",
+        imagem: "img/always/suave-16un.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho G com Abas Cobertura Seco 16 unidades",
         preco: "R$ 18,49 ",
-        imagem: "img/always/seco-16un.jpe",
+        imagem: "img/always/seco-16un.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho G com Abas Cobertura Suave 8 unidades",
         preco: "R$ 11,49 ",
-        imagem: "img/always/suave-10un.jpe",
+        imagem: "img/always/suave-10un.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosAlways = [
         categoria: "Higiene Pessoal",
         descricao: "Absorvente Noturno Tamanho G com Abas Seco 8 unidades",
         preco: "R$ 10,99 ",
-        imagem: "img/always/seco-8un.jpe",
+        imagem: "img/always/seco-8un.webp",
         destaque: false,
         esgotado: false
     }

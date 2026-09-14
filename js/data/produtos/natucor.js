@@ -14,7 +14,7 @@ const produtosNatucor = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Natucor 1.0 Preto Natural",
         preco: "R$ 11,99",
-        imagem: "img/natucor/1.0.jpe",
+        imagem: "img/natucor/1.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosNatucor = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Natucor 1.7 Preto Azulado",
         preco: "R$ 11,99",
-        imagem: "img/natucor/1.7.jpe",
+        imagem: "img/natucor/1.7.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosNatucor = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Natucor 1.110 Preto Intenso Profundo",
         preco: "R$ 11,99",
-        imagem: "img/natucor/1.110.jpe",
+        imagem: "img/natucor/1.110.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosNatucor = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Natucor 2.0 Preto Suave",
         preco: "R$ 11,99",
-        imagem: "img/natucor/2.0.jpe",
+        imagem: "img/natucor/2.0.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosNatucor = [
         categoria: "Coloração",
         descricao: "Tinta para cabelo Natucor 3.0 Castanho Escuro",
         preco: "R$ 11,99",
-        imagem: "img/natucor/3.0.jpe",
+        imagem: "img/natucor/3.0.webp",
         destaque: false,
         esgotado: false
     }

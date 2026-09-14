@@ -12,7 +12,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/avela.jpe",
+        imagem: "img/paixao/hidratante-corporal/avela.webp",
         destaque: false,
         esgotado: false
     },
@@ -24,7 +24,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/flor.jpe",
+        imagem: "img/paixao/hidratante-corporal/flor.webp",
         destaque: false,
         esgotado: false
     },
@@ -36,7 +36,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/framboesa.jpe",
+        imagem: "img/paixao/hidratante-corporal/framboesa.webp",
         destaque: false,
         esgotado: false
     },
@@ -48,7 +48,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/inspiradora.jpe",
+        imagem: "img/paixao/hidratante-corporal/inspiradora.webp",
         destaque: false,
         esgotado: false
     },
@@ -60,7 +60,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/irresistivel.jpe",
+        imagem: "img/paixao/hidratante-corporal/irresistivel.webp",
         destaque: false,
         esgotado: false
     },
@@ -72,7 +72,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Hidratante Corporal 200ml",
         preco: "R$ 10,99",
-        imagem: "img/paixao/hidratante-corporal/tentadora.jpe",
+        imagem: "img/paixao/hidratante-corporal/tentadora.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/avela-100.jpe",
+        imagem: "img/paixao/oleo-corporal/avela-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/flor-100.jpe",
+        imagem: "img/paixao/oleo-corporal/flor-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/framboesa-100.jpe",
+        imagem: "img/paixao/oleo-corporal/framboesa-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/inspiradora-100.jpe",
+        imagem: "img/paixao/oleo-corporal/inspiradora-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/irresistivel-100.jpe",
+        imagem: "img/paixao/oleo-corporal/irresistivel-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 100ml",
         preco: "R$ 14,99",
-        imagem: "img/paixao/oleo-corporal/tentadora-100.jpe",
+        imagem: "img/paixao/oleo-corporal/tentadora-100.webp",
         destaque: false,
         esgotado: false
     },
@@ -158,7 +158,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 200ml",
         preco: "R$ 24,99",
-        imagem: "img/paixao/oleo-corporal/inspiradora-200.jpe",
+        imagem: "img/paixao/oleo-corporal/inspiradora-200.webp",
         destaque: false,
         esgotado: false
     },
@@ -170,7 +170,7 @@ const produtosPaixao = [
         categoria: "Corporal",
         descricao: "Óleo Corporal 200ml",
         preco: "R$ 24,99",
-        imagem: "img/paixao/oleo-corporal/tentadora-200.jpe",
+        imagem: "img/paixao/oleo-corporal/tentadora-200.webp",
         destaque: false,
         esgotado: false
     }

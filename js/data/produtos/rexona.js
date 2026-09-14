@@ -14,7 +14,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona 250ml ",
         preco: "R$ 25,99 ",
-        imagem: "img/rexona/250/powder.jpe",
+        imagem: "img/rexona/250/powder.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona 250ml ",
         preco: "R$ 25,99 ",
-        imagem: "img/rexona/250/cotton.jpe",
+        imagem: "img/rexona/250/cotton.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona 250ml ",
         preco: "R$ 25,99 ",
-        imagem: "img/rexona/250/invisible.jpe",
+        imagem: "img/rexona/250/invisible.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona 250ml ",
         preco: "R$ 25,99 ",
-        imagem: "img/rexona/250/v8.jpe",
+        imagem: "img/rexona/250/v8.webp",
         destaque: false,
         esgotado: false
     },
@@ -65,7 +65,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Clinical 150ml ",
         preco: "R$ 23,99 ",
-        imagem: "img/rexona/clinical/extra.jpe",
+        imagem: "img/rexona/clinical/extra.webp",
         destaque: true,
         esgotado: false
     },
@@ -77,7 +77,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Clinical 150ml ",
         preco: "R$ 23,99 ",
-        imagem: "img/rexona/clinical/sem.jpe",
+        imagem: "img/rexona/clinical/sem.webp",
         destaque: true,
         esgotado: false
     },
@@ -89,7 +89,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Clinical 150ml ",
         preco: "R$ 23,99 ",
-        imagem: "img/rexona/clinical/clean.jpe",
+        imagem: "img/rexona/clinical/clean.webp",
         destaque: true,
         esgotado: false
     },
@@ -101,7 +101,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Clinical 150ml ",
         preco: "R$ 23,99 ",
-        imagem: "img/rexona/clinical/invisible.jpe",
+        imagem: "img/rexona/clinical/invisible.webp",
         destaque: true,
         esgotado: false
     },
@@ -117,7 +117,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/invisible.jpe",
+        imagem: "img/rexona/150/invisible.webp",
         destaque: false,
         esgotado: false
     },
@@ -129,7 +129,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/invisible-antibac.jpe",
+        imagem: "img/rexona/150/invisible-antibac.webp",
         destaque: false,
         esgotado: false
     },
@@ -141,7 +141,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/sem.jpe",
+        imagem: "img/rexona/150/sem.webp",
         destaque: false,
         esgotado: false
     },
@@ -153,7 +153,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/bamboo.jpe",
+        imagem: "img/rexona/150/bamboo.webp",
         destaque: false,
         esgotado: false
     },
@@ -165,7 +165,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/powder.jpe",
+        imagem: "img/rexona/150/powder.webp",
         destaque: false,
         esgotado: false
     },
@@ -177,7 +177,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/frutas.jpe",
+        imagem: "img/rexona/150/frutas.webp",
         destaque: false,
         esgotado: false
     },
@@ -189,7 +189,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/erva.jpe",
+        imagem: "img/rexona/150/erva.webp",
         destaque: false,
         esgotado: false
     },
@@ -201,7 +201,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/active.jpe",
+        imagem: "img/rexona/150/active.webp",
         destaque: false,
         esgotado: false
     },
@@ -213,7 +213,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona  150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/150/cotton.jpe",
+        imagem: "img/rexona/150/cotton.webp",
         destaque: false,
         esgotado: false
     },
@@ -229,7 +229,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/.jpe",
+        imagem: "img/rexona/men-150/.webp",
         destaque: false,
         esgotado: false
     },
@@ -241,7 +241,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/v8.jpe",
+        imagem: "img/rexona/men-150/v8.webp",
         destaque: false,
         esgotado: false
     },
@@ -253,7 +253,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/active.jpe",
+        imagem: "img/rexona/men-150/active.webp",
         destaque: false,
         esgotado: false
     },
@@ -265,7 +265,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/invisible.jpe",
+        imagem: "img/rexona/men-150/invisible.webp",
         destaque: false,
         esgotado: false
     },
@@ -277,7 +277,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/antibac.jpe",
+        imagem: "img/rexona/men-150/antibac.webp",
         destaque: false,
         esgotado: false
     },
@@ -289,7 +289,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/invisible-antibac.jpe",
+        imagem: "img/rexona/men-150/invisible-antibac.webp",
         destaque: false,
         esgotado: false
     },
@@ -301,7 +301,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/impacto.jpe",
+        imagem: "img/rexona/men-150/impacto.webp",
         destaque: false,
         esgotado: false
     },
@@ -313,7 +313,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Aerosol Rexona Men 150ml ",
         preco: "R$ 15,99 ",
-        imagem: "img/rexona/men-150/xtracool.jpe",
+        imagem: "img/rexona/men-150/xtracool.webp",
         destaque: false,
         esgotado: false
     },
@@ -328,7 +328,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 50ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/rexona/roll-on/bamboo-50.jpe",
+        imagem: "img/rexona/roll-on/bamboo-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -340,7 +340,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 50ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/rexona/roll-on/sem-50.jpe",
+        imagem: "img/rexona/roll-on/sem-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -352,7 +352,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 50ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/rexona/roll-on/active-50.jpe",
+        imagem: "img/rexona/roll-on/active-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -364,7 +364,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 50ml ",
         preco: "R$ 10,99 ",
-        imagem: "img/rexona/roll-on/v8-50.jpe",
+        imagem: "img/rexona/roll-on/v8-50.webp",
         destaque: false,
         esgotado: false
     },
@@ -376,7 +376,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 50ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/rexona/roll-on/v8-30.jpe",
+        imagem: "img/rexona/roll-on/v8-30.webp",
         destaque: false,
         esgotado: false
     },
@@ -388,7 +388,7 @@ const produtosRexona = [
         categoria: "Desodorante",
         descricao: "Desodorante Roll-on Rexona 30ml ",
         preco: "R$ 7,49 ",
-        imagem: "img/rexona/roll-on/active-30.jpe",
+        imagem: "img/rexona/roll-on/active-30.webp",
         destaque: false,
         esgotado: false
     },

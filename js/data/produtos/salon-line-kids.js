@@ -12,7 +12,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme para Pentear Cachinhos Sem Nós Kids 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-morango.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-morango.webp",
         destaque: true,
         esgotado: false
     },
@@ -24,7 +24,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme para Pentear Cachinhos Poderosos Kids 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-melao.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-melao.webp",
         destaque: true,
         esgotado: false
     },
@@ -36,7 +36,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Ativados Kids 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-manga.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-manga.webp",
         destaque: false,
         esgotado: false
     },
@@ -48,7 +48,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Nutridos Kids 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-chocolate.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-chocolate.webp",
         destaque: false,
         esgotado: false
     },
@@ -60,7 +60,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Hidratados Kids 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-maracuja.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -72,7 +72,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Sem Frizz 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-açai.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-açai.webp",
         destaque: true,
         esgotado: false
     },
@@ -84,7 +84,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Definidos 1KG",
         preco: "R$ 41,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-melancia.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -96,7 +96,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Cachinhos Brilhantes 1KG",
         preco: "R$ 41,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-uva.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme para Pentear Cachinhos Sem Nós Kids 1KG",
         preco: "R$ 29,99",
-        imagem: "img/Salon-kids/Salon-line-kids/cr-bob.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/cr-bob.webp",
         destaque: true,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Body Splash Salon line 200ml",
         preco: "R$ 24,99",
-        imagem: "img/Salon-adulto/bob-esponja/body-splash.jpe",
+        imagem: "img/Salon-adulto/bob-esponja/body-splash.webp",
         destaque: true,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "oleo de tratamento salon line 42ml",
         preco: "R$ 23,49",
-        imagem: "img/Salon-adulto/bob-esponja/oleo.jpe",
+        imagem: "img/Salon-adulto/bob-esponja/oleo.webp",
         destaque: false,
         esgotado: false
     },
@@ -148,7 +148,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Manga 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-manga.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-manga.webp",
         destaque: false,
         esgotado: false
     },
@@ -160,7 +160,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Manga 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-chocolate.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-chocolate.webp",
         destaque: false,
         esgotado: false
     },
@@ -172,7 +172,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Manga 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-uva.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -184,7 +184,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Melao 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-melao.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-melao.webp",
         destaque: false,
         esgotado: false
     },
@@ -196,7 +196,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Acai 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-acai.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-acai.webp",
         destaque: false,
         esgotado: false
     },
@@ -208,7 +208,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Kids Morango 550g",
         preco: "R$ 28,49",
-        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-morango.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-gelatina/gelatina-morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -222,7 +222,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear chiclete kids 300ml",
         preco: "R$ 19,99",
-        imagem: "img/Salon-kids/Salon-line-kids-chiclete/cr-chiclete-300ml.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-chiclete/cr-chiclete-300ml.webp",
         destaque: true,
         esgotado: false
     },
@@ -234,7 +234,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Ativador de Cachos Chiclete Kids 300ml",
         preco: "R$ 21,99",
-        imagem: "img/Salon-kids/Salon-line-kids-chiclete/ativador-de-cachos-300ml.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-chiclete/ativador-de-cachos-300ml.webp",
         destaque: false,
         esgotado: false
     },
@@ -248,7 +248,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Shampoo Super Oleos kids 300ml",
         preco: "R$ 24,99",
-        imagem: "img/Salon-line-kids-super-oleos/sh-super-oleos.jpe",
+        imagem: "img/Salon-line-kids-super-oleos/sh-super-oleos.webp",
         destaque: false,
         esgotado: false
     },
@@ -260,7 +260,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Condicionador Super oleos kids 300ml",
         preco: "R$ 19,99",
-        imagem: "img/Salon-kids/Salon-line-kids-super-oleos/cond-super-oleos.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-super-oleos/cond-super-oleos.webp",
         destaque: false,
         esgotado: false
     },
@@ -272,7 +272,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Ativador de Cachos Kids Super Oleos 300ml",
         preco: "R$ 23,99",
-        imagem: "img/Salon-kids/Salon-line-kids-super-oleos/ativador-de-cachos.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-super-oleos/ativador-de-cachos.webp",
         destaque: true,
         esgotado: false
     },
@@ -286,7 +286,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Shampoo Salon Line kids hidratacao 300ml",
         preco: "R$ 22,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/sh-hidratacao.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/sh-hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -298,7 +298,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Condicionador Salon line kids 300ml",
         preco: "R$ 19,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/cond-hidratacao.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/cond-hidratacao.webp",
         destaque: false,
         esgotado: false
     },
@@ -310,7 +310,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Ativador de Cachos Salon Line Kids",
         preco: "R$ 23,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/ativador-de-cachos.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/ativador-de-cachos.webp",
         destaque: false,
         esgotado: false
     },
@@ -322,7 +322,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Mascara Salon Line Kids 500g",
         preco: "R$ 21,49",
-        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/mascara.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/mascara.webp",
         destaque: true,
         esgotado: false
     },
@@ -334,7 +334,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Salon Line 1KG",
         preco: "R$ 37,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/cr-1KG.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidratacao/cr-1KG.webp",
         destaque: false,
         esgotado: false
     },
@@ -348,7 +348,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Condicionador Salon Line Kids 300ml",
         preco: "R$ 18,99",
-        imagem: "img/Salon-kids/Desembraracante/cond.jpe",
+        imagem: "img/Salon-kids/Desembaracante/cond.webp",
         destaque: false,
         esgotado: false
     },
@@ -360,7 +360,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear kids Meu liso 250ml",
         preco: "R$ 13,99",
-        imagem: "img/Salon-kids/Desembraracante/cr.jpe",
+        imagem: "img/Salon-kids/Desembaracante/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -374,7 +374,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Kit de SH 300ml + cond 300ml Salon line",
         preco: "R$ 34,99",
-        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/kit.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/kit.webp",
         destaque: false,
         esgotado: false
     },
@@ -386,7 +386,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme  Salon Line kids 1Kg",
         preco: "R$ 29,99",
-        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/cr.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -398,7 +398,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Gelatina Salon Line 550g",
         preco: "R$ 29,99",
-        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/gelatina.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-vanilla-vibes/gelatina.webp",
         destaque: false,
         esgotado: false
     },
@@ -412,7 +412,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme multifuncional Salon Line kids 300ml",
         preco: "R$ 14,99",
-        imagem: "img/Salon-kids/Salon-line-kids-multy/cr.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-multy/cr.webp",
         destaque: false,
         esgotado: false
     },
@@ -426,7 +426,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Kit Sh + Cond Salon Line Kids",
         preco: "R$ 21,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidra/kit.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidra/kit.webp",
         destaque: true,
         esgotado: false
     },
@@ -438,7 +438,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme Multifuncional Salon Line kids 1kg",
         preco: "R$ 32,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidra/cr-multi.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidra/cr-multi.webp",
         destaque: false,
         esgotado: false
     },
@@ -450,7 +450,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme de Pentear Salon line 300ml",
         preco: "R$ 13,99",
-        imagem: "img/Salon-kids/Salon-line-kids-hidra/cr-de-pentear.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-hidra/cr-de-pentear.webp",
         destaque: false,
         esgotado: false
     },
@@ -464,7 +464,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Creme Multifuncional Salon Line Kids 1KG",
         preco: "R$ 25,99",
-        imagem: "img/Salon-kids/Salon-line-kids-multi-cachinhos/cr-multifuncional.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids-multi-cachinhos/cr-multifuncional.webp",
         destaque: false,
         esgotado: false
     },
@@ -478,7 +478,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Kit SH 300ml + Cond 200ml Salon Line Kids",
         preco: "R$ 34,99",
-        imagem: "img/Salon-kids/Salon-line-kids/kit-melancia.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/kit-melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -490,7 +490,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Kit SH 300ml + Cond 200ml Salon Line Kids",
         preco: "R$ 32,99",
-        imagem: "img/Salon-kids/Salon-line-kids/kit-uva.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/kit-uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -502,7 +502,7 @@ const produtosSalonLineKids = [
         categoria: "Infantil",
         descricao: "Kit SH 300ml + Cond 200ml Salon Line Kids",
         preco: "R$ 34,99",
-        imagem: "img/Salon-kids/Salon-line-kids/kit-chocolate.jpe",
+        imagem: "img/Salon-kids/Salon-line-kids/kit-chocolate.webp",
         destaque: false,
         esgotado: false
     },

@@ -14,7 +14,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/alecrim.jpe",
+        imagem: "img/natuhair/oleo-capilar/alecrim.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/alho.jpe",
+        imagem: "img/natuhair/oleo-capilar/alho.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/argan.jpe",
+        imagem: "img/natuhair/oleo-capilar/argan.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/azeite-de-oliva.jpe",
+        imagem: "img/natuhair/oleo-capilar/azeite-de-oliva.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/coco.jpe",
+        imagem: "img/natuhair/oleo-capilar/coco.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/dpantenol.jpe",
+        imagem: "img/natuhair/oleo-capilar/dpantenol.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/jojoba.jpe",
+        imagem: "img/natuhair/oleo-capilar/jojoba.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/linhaca.jpe",
+        imagem: "img/natuhair/oleo-capilar/linhaca.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/mandioca.jpe",
+        imagem: "img/natuhair/oleo-capilar/mandioca.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/melaleuca.jpe",
+        imagem: "img/natuhair/oleo-capilar/melaleuca.webp",
         destaque: false,
         esgotado: false
     },
@@ -134,7 +134,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/mix.jpe",
+        imagem: "img/natuhair/oleo-capilar/mix.webp",
         destaque: false,
         esgotado: false
     },
@@ -146,7 +146,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/natuvim.jpe",
+        imagem: "img/natuhair/oleo-capilar/natuvim.webp",
         destaque: false,
         esgotado: false
     },
@@ -158,7 +158,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/rosa-mosqueta.jpe",
+        imagem: "img/natuhair/oleo-capilar/rosa-mosqueta.webp",
         destaque: false,
         esgotado: false
     },
@@ -170,7 +170,7 @@ const produtosNatuhair = [
         categoria: "Capilar",
         descricao: "Óleo Capilar 60ml ",
         preco: "R$ 12,49 ",
-        imagem: "img/natuhair/oleo-capilar/uva.jpe",
+        imagem: "img/natuhair/oleo-capilar/uva.webp",
         destaque: false,
         esgotado: false
     },

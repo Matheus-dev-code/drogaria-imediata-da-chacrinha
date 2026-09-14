@@ -14,7 +14,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Coquetel de Frutas 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/coquetel.jpe",
+        imagem: "img/skala/cr/coquetel.webp",
         destaque: false,
         esgotado: false
     },
@@ -26,7 +26,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Cereja 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/cereja.jpe",
+        imagem: "img/skala/cr/cereja.webp",
         destaque: false,
         esgotado: false
     },
@@ -38,7 +38,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Manga 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/manga.jpe",
+        imagem: "img/skala/cr/manga.webp",
         destaque: false,
         esgotado: false
     },
@@ -50,7 +50,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Morango 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/morango.jpe",
+        imagem: "img/skala/cr/morango.webp",
         destaque: false,
         esgotado: false
     },
@@ -62,7 +62,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Uva 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/uva.jpe",
+        imagem: "img/skala/cr/uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -74,7 +74,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Açaí 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/acai.jpe",
+        imagem: "img/skala/cr/acai.webp",
         destaque: false,
         esgotado: false
     },
@@ -86,7 +86,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Coco 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/coco.jpe",
+        imagem: "img/skala/cr/coco.webp",
         destaque: false,
         esgotado: false
     },
@@ -98,7 +98,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Cacau 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/cacau.jpe",
+        imagem: "img/skala/cr/cacau.webp",
         destaque: false,
         esgotado: false
     },
@@ -110,7 +110,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Melancia 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/melancia.jpe",
+        imagem: "img/skala/cr/melancia.webp",
         destaque: false,
         esgotado: false
     },
@@ -122,7 +122,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Frutástica Maracujá 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/maracuja.jpe",
+        imagem: "img/skala/cr/maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -137,7 +137,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Glicólico 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/glicolico.jpe",
+        imagem: "img/skala/cr/glicolico.webp",
         destaque: false,
         esgotado: false
     },
@@ -149,7 +149,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert 12 em 1 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/12em1.jpe",
+        imagem: "img/skala/cr/12em1.webp",
         destaque: false,
         esgotado: false
     },
@@ -161,7 +161,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Ceramidas 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/ceramidas.jpe",
+        imagem: "img/skala/cr/ceramidas.webp",
         destaque: false,
         esgotado: false
     },
@@ -173,7 +173,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Potão Desmaiador Divino 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/desmaiador.jpe",
+        imagem: "img/skala/cr/desmaiador.webp",
         destaque: false,
         esgotado: false
     },
@@ -185,7 +185,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Potão Divino 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/divino-potao.jpe",
+        imagem: "img/skala/cr/divino-potao.webp",
         destaque: false,
         esgotado: false
     },
@@ -197,7 +197,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Divino Potinho 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/divino-potinho.jpe",
+        imagem: "img/skala/cr/divino-potinho.webp",
         destaque: false,
         esgotado: false
     },
@@ -209,7 +209,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Amido de Milho 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/amido.jpe",
+        imagem: "img/skala/cr/amido.webp",
         destaque: false,
         esgotado: false
     },
@@ -221,7 +221,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Amidinho de Milho 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/amidinho.jpe",
+        imagem: "img/skala/cr/amidinho.webp",
         destaque: false,
         esgotado: false
     },
@@ -233,7 +233,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme Expert Jaborandi 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/jaborandi.jpe",
+        imagem: "img/skala/cr/jaborandi.webp",
         destaque: false,
         esgotado: false
     },
@@ -248,7 +248,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Potão do Amor 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/amor.jpe",
+        imagem: "img/skala/cr/amor.webp",
         destaque: false,
         esgotado: false
     },
@@ -260,7 +260,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear #Mais Cachos 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/cachos.jpe",
+        imagem: "img/skala/cr/cachos.webp",
         destaque: false,
         esgotado: false
     },
@@ -272,7 +272,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear #Mais Cachinhos 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/cachinhos.jpe",
+        imagem: "img/skala/cr/cachinhos.webp",
         destaque: false,
         esgotado: false
     },
@@ -284,7 +284,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear #Mais Crespos 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/crespo.jpe",
+        imagem: "img/skala/cr/crespo.webp",
         destaque: false,
         esgotado: false
     },
@@ -296,7 +296,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear #Mais Crespinho 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/crespinho.jpe",
+        imagem: "img/skala/cr/crespinho.webp",
         destaque: false,
         esgotado: false
     },
@@ -308,7 +308,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear #Mais Liso 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/mais-liso.jpe",
+        imagem: "img/skala/cr/mais-liso.webp",
         destaque: false,
         esgotado: false
     },
@@ -320,7 +320,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Vinagre de Maçã 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/vinagre.jpe",
+        imagem: "img/skala/cr/vinagre.webp",
         destaque: false,
         esgotado: false
     },
@@ -335,7 +335,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Skala Lama Negra 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/lama.jpe",
+        imagem: "img/skala/cr/lama.webp",
         destaque: false,
         esgotado: false
     },
@@ -347,7 +347,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Skala Manteiga de Karité 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/manteiga.jpe",
+        imagem: "img/skala/cr/manteiga.webp",
         destaque: false,
         esgotado: false
     },
@@ -359,7 +359,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Skala Acachonados 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/acachonados.jpe",
+        imagem: "img/skala/cr/acachonados.webp",
         destaque: false,
         esgotado: false
     },
@@ -371,7 +371,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Skala Divina Cor 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/divina-cor.jpe",
+        imagem: "img/skala/cr/divina-cor.webp",
         destaque: false,
         esgotado: false
     },
@@ -383,7 +383,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Creme de Pentear Skala Argila Branca 1kg",
         preco: "R$ 11,99 ",
-        imagem: "img/skala/cr/argila-branca.jpe",
+        imagem: "img/skala/cr/argila-branca.webp",
         destaque: false,
         esgotado: false
     },
@@ -398,7 +398,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Amido de Milho",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/amido.jpe",
+        imagem: "img/skala/kit/amido.webp",
         destaque: false,
         esgotado: false
     },
@@ -410,7 +410,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Maracujá",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/maracuja.jpe",
+        imagem: "img/skala/kit/maracuja.webp",
         destaque: false,
         esgotado: false
     },
@@ -422,7 +422,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Crespinho Divino",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/crespinho.jpe",
+        imagem: "img/skala/kit/crespinho.webp",
         destaque: false,
         esgotado: false
     },
@@ -434,7 +434,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml #Mais Cachos",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/cachos.jpe",
+        imagem: "img/skala/kit/cachos.webp",
         destaque: false,
         esgotado: false
     },
@@ -446,7 +446,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Cereja",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/cereja.jpe",
+        imagem: "img/skala/kit/cereja.webp",
         destaque: false,
         esgotado: false
     },
@@ -458,7 +458,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Ceramidas",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/ceramidas.jpe",
+        imagem: "img/skala/kit/ceramidas.webp",
         destaque: false,
         esgotado: false
     },
@@ -470,7 +470,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Ácido Hialurônico",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/acido.jpe",
+        imagem: "img/skala/kit/acido.webp",
         destaque: false,
         esgotado: false
     },
@@ -482,7 +482,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml #Mais Cachinhos",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/cachinhos.jpe",
+        imagem: "img/skala/kit/cachinhos.webp",
         destaque: false,
         esgotado: false
     },
@@ -494,7 +494,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Uva",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/uva.jpe",
+        imagem: "img/skala/kit/uva.webp",
         destaque: false,
         esgotado: false
     },
@@ -506,7 +506,7 @@ const produtosSkala = [
         categoria: "Capilar",
         descricao: "Kit Shampoo 325ml + Condicionador 200ml Morango",
         preco: "R$ 15,99 ",
-        imagem: "img/skala/kit/morango.jpe",
+        imagem: "img/skala/kit/morango.webp",
         destaque: false,
         esgotado: false
     },
