@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8B0045">
+    <title>Drogaria Imediata da Chacrinha - Cosméticos & Perfumaria</title>
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="description" content="Cosméticos, perfumaria e produtos de beleza com entrega rápida na Chacrinha - RJ">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Drogaria">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                    alt="Drogaria Imediata da Chacrinha" class="logo-img">
+            </div>
+
+            <div class="header-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="header-search-input" placeholder="Buscar produtos..." autocomplete="off">
+                <button class="header-search-clear" id="header-search-clear" aria-label="Limpar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#promocoes">Ofertas</a></li>
+                    <li><a href="#banners">Marcas</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="busca-mobile-icon" id="buscaMobileIcon" title="Buscar">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="favoritos-icon" id="favoritosIcon" title="Meus Favoritos">
+                        <i class="fas fa-heart"></i>
+                        <span class="favoritos-badge" id="favoritosBadge">0</span>
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                    <div class="menu-mobile" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Produtos de Beleza e Cuidados</h2>
+                <p>Salon Line, Salon Line Kids, Seda, L'Oréal Paris, Paixão e muito mais</p>
+                <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="promocoes" id="promocoes">
+        <div class="container">
+            <h2>🔥 Ofertas da Semana</h2>
+            <p class="promocoes-subtitulo">Aproveite antes que acabe!</p>
+
+            <div class="promocoes-carrossel">
+                <button class="promocoes-nav promocoes-prev" id="promocoesPrev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="promocoes-viewport">
+                    <div class="promocoes-track" id="promocoesTrack"></div>
+                </div>
+                <button class="promocoes-nav promocoes-next" id="promocoesNext" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="promocoes-indicadores" id="promocoesIndicadores"></div>
+        </div>
+    </section>
+
+    <section class="banners-marcas" id="banners">
+        <div class="container">
+            <h2>Marcas em Destaque</h2>
+            <p class="banners-subtitulo">Clique em uma marca para ver os produtos</p>
+
+            <div class="banners-carrossel">
+                <button class="banners-nav banners-prev" id="bannersPrev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="banners-viewport">
+                    <div class="banners-track" id="bannersTrack"></div>
+                </div>
+                <button class="banners-nav banners-next" id="bannersNext" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="banners-indicadores" id="bannersIndicadores"></div>
+        </div>
+    </section>
+
+    <section class="destaques" id="destaques">
+        <div class="container">
+            <h2>🌟 Em Destaque</h2>
+            <p class="destaques-subtitulo">Os produtos mais queridos pelos nossos clientes</p>
+
+            <div class="destaques-carrossel">
+                <button class="destaques-nav destaques-prev" id="destaquePrev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="destaques-viewport">
+                    <div class="destaques-track" id="destaquesTrack"></div>
+                </div>
+                <button class="destaques-nav destaques-next" id="destaqueNext" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="destaques-indicadores" id="destaquesIndicadores"></div>
+        </div>
+    </section>
+
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <h2>Categorias</h2>
+
+            <div class="categorias-grid">
+                <button class="btn-categoria active" data-categoria="todos" title="Todos os produtos">
+                    <i class="fas fa-th-large"></i><span>Todos</span>
+                </button>
+                <button class="btn-categoria" data-categoria="promocao" title="Produtos em promoção">
+                    <i class="fas fa-fire"></i><span>Promoção</span>
+                </button>
+                <button class="btn-categoria" data-categoria="cabelo" title="Produtos para cabelos">
+                    <i class="fas fa-spa"></i><span>Cabelos</span>
+                </button>
+                <button class="btn-categoria" data-categoria="kids" title="Produtos infantis">
+                    <i class="fas fa-child"></i><span>Kids</span>
+                </button>
+                <button class="btn-categoria" data-categoria="corpo" title="Cuidados com o corpo">
+                    <i class="fas fa-hand-sparkles"></i><span>Corpo</span>
+                </button>
+                <button class="btn-categoria" data-categoria="higiene" title="Produtos de higiene">
+                    <i class="fas fa-shower"></i><span>Higiene</span>
+                </button>
+                <button class="btn-categoria" data-categoria="pele" title="Cuidados com a pele">
+                    <i class="fas fa-smile"></i><span>Pele</span>
+                </button>
+                <button class="btn-categoria" data-categoria="barba" title="Produtos para barba">
+                    <i class="fas fa-user-tie"></i><span>Barba</span>
+                </button>
+                <button class="btn-categoria" data-categoria="perfumaria" title="Perfumes e colônias">
+                    <i class="fas fa-perfume"></i><span>Perfumaria</span>
+                </button>
+                <button class="btn-categoria" data-categoria="maquiagem" title="Maquiagem e acessórios">
+                    <i class="fas fa-paint-brush"></i><span>Maquiagem</span>
+                </button>
+                <button class="btn-categoria" data-categoria="tintas" title="Tintas e descolorantes">
+                    <i class="fas fa-palette"></i><span>Tintas</span>
+                </button>
+                <button class="btn-categoria" data-categoria="alimentos" title="Alimentos e doces">
+                    <i class="fas fa-utensils"></i><span>Alimentos</span>
+                </button>
+            </div>
+
+            <div class="sub-categorias" id="subCategorias" style="display: none;">
+                <div class="sub-categorias-header">
+                    <i class="fas fa-filter"></i>
+                    <span id="subCategoriaLabel">Filtrar por:</span>
+                </div>
+                <div class="sub-categorias-buttons" id="subCategoriasButtons"></div>
+            </div>
+
+            <div class="filtros-rapidos">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar produtos..." id="search-input">
+                </div>
+
+                <div class="dropdown-wrapper">
+                    <select id="marcaSelect" aria-label="Filtrar por marca">
+                        <option value="todas">Todas as Marcas</option>
+                        <option value="acnezil">Acnezil</option>
+                        <option value="alta moda">Alta Moda</option>
+                        <option value="asepxia">Asepxia</option>
+                        <option value="always">Always</option>
+                        <option value="babysec">Babysec</option>
+                        <option value="baruel baby">Baruel Baby</option>
+                        <option value="bepantol">Bepantol</option>
+                        <option value="bepantriz">Bepantriz</option>
+                        <option value="bic">BIC</option>
+                        <option value="bozzano">Bozzano</option>
+                        <option value="cicatricure">Cicatricure</option>
+                        <option value="cor&ton">Cor &amp; Ton</option>
+                        <option value="diana">Diana</option>
+                        <option value="dove">Dove</option>
+                        <option value="face beautiful">Face Beautiful</option>
+                        <option value="fofuras">Fofuras</option>
+                        <option value="garnier">Garnier</option>
+                        <option value="gillette">Gillette</option>
+                        <option value="giovanna baby">Giovanna Baby</option>
+                        <option value="granado">Granado</option>
+                        <option value="halls">Halls</option>
+                        <option value="hard hair">Hard Hair</option>
+                        <option value="herbissimo">Herbíssimo</option>
+                        <option value="intimus">Intimus</option>
+                        <option value="koleston">Koleston</option>
+                        <option value="l'oréal paris">L'Oréal Paris</option>
+                        <option value="lux">Lux</option>
+                        <option value="marcia">Marcia</option>
+                        <option value="maxton">Maxton</option>
+                        <option value="mentol">Mentol</option>
+                        <option value="monange">Monange</option>
+                        <option value="muriel">Muriel</option>
+                        <option value="muriel baby">Muriel Baby</option>
+                        <option value="natuhair">Natuhair</option>
+                        <option value="natucor">Natucor</option>
+                        <option value="nivea">Nivea</option>
+                        <option value="novex">Novex</option>
+                        <option value="ny.looks">Ny.Looks</option>
+                        <option value="paixao">Paixão</option>
+                        <option value="pantene">Pantene</option>
+                        <option value="probelle">Probelle</option>
+                        <option value="protex">Protex</option>
+                        <option value="rexona">Rexona</option>
+                        <option value="salon line">Salon Line</option>
+                        <option value="salon line kids">Salon Line Kids</option>
+                        <option value="seda">Seda</option>
+                        <option value="skala">Skala</option>
+                        <option value="tortuguita">Tortuguita</option>
+                        <option value="trident">Trident</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-wrapper" id="linhasWrapper" style="display:none;">
+                    <select id="linhaSelect" aria-label="Filtrar por linha">
+                        <option value="todas">Todas as Linhas</option>
+                    </select>
+                </div>
+
+                <span class="filtros-ativos" id="filtrosAtivos"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="contador-produtos" id="contador-produtos"></div>
+            <div class="produtos-grid" id="produtosGrid"></div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                        alt="Drogaria Imediata da Chacrinha" class="sobre-logo">
+                    <h3>Drogaria Imediata da Chacrinha</h3>
+                    <p>Trabalhamos com as melhores marcas de cosméticos e perfumaria. Nossa missão é oferecer produtos
+                        de qualidade com o melhor atendimento e preços competitivos.</p>
+                    <div class="info-contato">
+                        <div class="contato-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(21) 96958-3871</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg a Sáb: 7h às 22h</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Entregas até 21h30 (Seg a Sáb)</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Domingo: 8h às 18h</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Entregas até 17h30 (Dom)</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chacrinha - Rio de Janeiro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                            alt="Drogaria Imediata da Chacrinha">
+                        <h3>Drogaria Imediata da Chacrinha</h3>
+                    </div>
+                    <p>Produtos de beleza que cuidam de você</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#promocoes">Ofertas</a></li>
+                        <li><a href="#banners">Marcas</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Políticas e Termos</h3>
+                    <ul>
+                        <li>
+                            <a href="legal.html#privacidade">
+                                <i class="fas fa-lock"></i> Política de Privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="legal.html#termos">
+                                <i class="fas fa-file-contract"></i> Termos de Uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="legal.html#trocas">
+                                <i class="fas fa-exchange-alt"></i> Troca e Devolução
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p><i class="fab fa-whatsapp"></i> (21) 96958-3871</p>
+                    <p><i class="fas fa-envelope"></i> contato@drogariaimediata.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chacrinha - Rio de Janeiro</p>
+                    <p><i class="fas fa-clock"></i> Seg a Sáb: 7h às 22h</p>
+                    <p><i class="fas fa-clock"></i> Domingo: 8h às 18h</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Drogaria Imediata Da Chacrinha Perfumaria. Todos os direitos reservados.</p>
+                <p style="margin-top: 8px; font-size: 11px;">
+                    <a href="legal.html#privacidade" style="color: rgba(255,255,255,0.6);">Privacidade</a> ·
+                    <a href="legal.html#termos" style="color: rgba(255,255,255,0.6);">Termos</a> ·
+                    <a href="legal.html#trocas" style="color: rgba(255,255,255,0.6);">Trocas</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Meu Carrinho</h2>
+                <button class="cart-close" id="cartClose">&times;</button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <div class="frete-progress" id="freteProgress">
+                    <div class="frete-info">
+                        <span id="freteTexto">💸 Faltam R$ 10,00 para frete grátis!</span>
+                        <span id="freteStatus">🛒</span>
+                    </div>
+                    <div class="frete-bar">
+                        <div class="frete-bar-fill" id="freteBarFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <button class="btn-primary btn-continuar-comprando" onclick="fecharCarrinho()">Continuar Comprando</button>
+                </div>
+                <div class="cart-items" id="cartItems"></div>
+            </div>
+            <div class="cart-footer" id="cartFooter">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-esvaziar" id="btnEsvaziarCarrinho">
+                        <i class="fas fa-trash"></i> Esvaziar
+                    </button>
+                    <button class="btn-finalizar" id="btnFinalizarPedido">
+                        <i class="fab fa-whatsapp"></i> Finalizar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Produto adicionado ao carrinho!</span>
+    </div>
+
+    <button class="btn-topo" id="btnTopo" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <a href="https://wa.me/5521969583871?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos!"
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+
+    <script src="js/config/firebase-config.js"></script>
+
+    <script src="js/data/produtos/pantene.js"></script>
+    <script src="js/data/produtos/salon-line-kids.js"></script>
+    <script src="js/data/produtos/salon-line-adulto.js"></script>
+    <script src="js/data/produtos/seda.js"></script>
+    <script src="js/data/produtos/loreal.js"></script>
+    <script src="js/data/produtos/paixao.js"></script>
+    <script src="js/data/produtos/maxton.js"></script>
+    <script src="js/data/produtos/coreton.js"></script>
+    <script src="js/data/produtos/dove.js"></script>
+    <script src="js/data/produtos/nivea.js"></script>
+    <script src="js/data/produtos/muriel.js"></script>
+    <script src="js/data/produtos/acnezil.js"></script>
+    <script src="js/data/produtos/asepxia.js"></script>
+    <script src="js/data/produtos/bepantriz.js"></script>
+    <script src="js/data/produtos/bepantol.js"></script>
+    <script src="js/data/produtos/baruel-baby.js"></script>
+    <script src="js/data/produtos/face-beautiful.js"></script>
+    <script src="js/data/produtos/cicatricure.js"></script>
+    <script src="js/data/produtos/hard-hair.js"></script>
+    <script src="js/data/produtos/ny-looks.js"></script>
+    <script src="js/data/produtos/bozzano.js"></script>
+    <script src="js/data/produtos/rexona.js"></script>
+    <script src="js/data/produtos/babysec.js"></script>
+    <script src="js/data/produtos/monange.js"></script>
+    <script src="js/data/produtos/giovanna-baby.js"></script>
+    <script src="js/data/produtos/marcia.js"></script>
+    <script src="js/data/produtos/muriel-baby.js"></script>
+    <script src="js/data/produtos/natuhair.js"></script>
+    <script src="js/data/produtos/granado.js"></script>
+    <script src="js/data/produtos/skala.js"></script>
+    <script src="js/data/produtos/koleston.js"></script>
+    <script src="js/data/produtos/garnier.js"></script>
+    <script src="js/data/produtos/alta-moda.js"></script>
+    <script src="js/data/produtos/natucor.js"></script>
+    <script src="js/data/produtos/probelle.js"></script>
+    <script src="js/data/produtos/diana.js"></script>
+    <script src="js/data/produtos/always.js"></script>
+    <script src="js/data/produtos/intimus.js"></script>
+    <script src="js/data/produtos/fofuras.js"></script>
+    <script src="js/data/produtos/gillette.js"></script>
+    <script src="js/data/produtos/bic.js"></script>
+    <script src="js/data/produtos/protex.js"></script>
+    <script src="js/data/produtos/lux.js"></script>
+    <script src="js/data/produtos/novex.js"></script>
+    <script src="js/data/produtos/herbissimo.js"></script>
+
+    <script src="js/data/banners.js"></script>
+    <script src="js/data/promocoes.js"></script>
+
+    <script src="js/modules/utils.js"></script>
+    <script src="js/modules/busca-inteligente.js"></script>
+    <script src="js/modules/analytics.js"></script>
+
+    <script src="js/modules/visualizacoes.js"></script>
+    <script src="js/modules/produtos.js"></script>
+    <script src="js/modules/carrinho.js"></script>
+    <script src="js/modules/filtros.js"></script>
+    <script src="js/modules/ui.js"></script>
+    <script src="js/modules/destaques.js"></script>
+    <script src="js/modules/banners.js"></script>
+    <script src="js/modules/promocoes.js"></script>
+    <script src="js/modules/admin.js"></script>
+    <script src="js/modules/favoritos.js"></script>
+    <script src="js/modules/header-search.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

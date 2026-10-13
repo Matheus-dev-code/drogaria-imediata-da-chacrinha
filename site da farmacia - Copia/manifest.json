@@ -1,0 +1,20 @@
+{
+  "name": "Drogaria Imediata da Chacrinha",
+  "short_name": "Drogaria",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF7F5",
+  "theme_color": "#8B0045",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
