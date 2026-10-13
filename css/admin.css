@@ -1,0 +1,36 @@
+/* ============================================================
+   ADMIN.CSS
+   ------------------------------------------------------------
+   Estilos exclusivos do painel administrativo:
+   modal de login e barra superior quando logado.
+   ============================================================ */
+
+
+/* ============================================================
+   01. MODAL DE LOGIN
+   ============================================================ */
+
+#adminModal input:focus {
+    border-color: #8B0045;
+}
+
+#btnLoginAdmin:hover {
+    background: #6a0035;
+}
+
+#btnFecharModal:hover {
+    background: #bbb;
+}
+
+
+/* ============================================================
+   02. BARRA SUPERIOR DO ADMIN
+   ============================================================ */
+
+#resetEstoqueBtn:hover {
+    background: #cc0000;
+}
+
+#logoutAdminBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

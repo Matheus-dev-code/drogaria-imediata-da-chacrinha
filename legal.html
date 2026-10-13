@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8B0045">
+    <meta name="description" content="Política de Privacidade, Termos de Uso e Política de Troca e Devolução - Drogaria Imediata da Chacrinha">
+    <title>Políticas e Termos - Drogaria Imediata da Chacrinha</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* ============================================
+           ESTILO EXCLUSIVO DA PÁGINA LEGAL
+           ============================================ */
+        .legal-page {
+            padding: 100px 0 60px;
+            background: var(--paper);
+            min-height: 100vh;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .legal-header h1 {
+            font-family: var(--font-display);
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .legal-header p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+        .legal-aviso {
+            background: #FFF8E1;
+            border-left: 5px solid #FFC107;
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin-bottom: 32px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .legal-aviso i {
+            color: #FF9800;
+            font-size: 26px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .legal-aviso-content {
+            flex: 1;
+        }
+
+        .legal-aviso-content strong {
+            color: #E65100;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .legal-aviso-content p {
+            color: #5D4037;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .legal-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 40px;
+            padding: 16px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .legal-nav a {
+            padding: 8px 18px;
+            background: var(--primary-tint);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .legal-nav a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .legal-section {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+            scroll-margin-top: 100px;
+        }
+
+        .legal-section h2 {
+            font-family: var(--font-display);
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 8px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .legal-section .legal-atualizacao {
+            font-size: 12px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .legal-section h3 {
+            font-family: var(--font-display);
+            color: var(--primary-dark);
+            font-size: 18px;
+            margin: 24px 0 10px;
+        }
+
+        .legal-section p {
+            color: var(--ink);
+            font-size: 14.5px;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .legal-section ul,
+        .legal-section ol {
+            margin: 12px 0 16px 24px;
+            color: var(--ink);
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+
+        .legal-section li {
+            margin-bottom: 6px;
+        }
+
+        .legal-section strong {
+            color: var(--primary-dark);
+        }
+
+        .legal-section a {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .legal-box {
+            background: var(--primary-tint);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--ink);
+            border-left: 4px solid var(--primary);
+        }
+
+        .legal-box strong {
+            color: var(--primary-dark);
+        }
+
+        .legal-alerta {
+            background: #FFEBEE;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #B71C1C;
+            border-left: 4px solid #E13B55;
+        }
+
+        .legal-alerta strong {
+            color: #C62828;
+        }
+
+        .legal-clima {
+            background: #FFF3E0;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #E65100;
+            border-left: 4px solid #FF9800;
+        }
+
+        .legal-clima strong {
+            color: #BF360C;
+        }
+
+        .legal-conferencia {
+            background: #E8F5E9;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #1B5E20;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .legal-conferencia strong {
+            color: #2E7D32;
+        }
+
+        .legal-seguranca {
+            background: #E3F2FD;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #0D47A1;
+            border-left: 4px solid #2196F3;
+        }
+
+        .legal-seguranca strong {
+            color: #1565C0;
+        }
+
+        /* Bloco roxo (kids) */
+        .legal-kids {
+            background: #F3E5F5;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4A148C;
+            border-left: 4px solid #9C27B0;
+        }
+
+        .legal-kids strong {
+            color: #6A1B9A;
+        }
+
+        /* Bloco rosa (promoções) */
+        .legal-promo {
+            background: #FCE4EC;
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #880E4F;
+            border-left: 4px solid #E91E63;
+        }
+
+        .legal-promo strong {
+            color: #AD1457;
+        }
+
+        .empresa-info {
+            background: linear-gradient(135deg, var(--primary-tint), #FFF5F8);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 16px 0 24px;
+            border: 1px solid rgba(139, 0, 69, 0.15);
+        }
+
+        .empresa-info h4 {
+            color: var(--primary);
+            font-family: var(--font-display);
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .empresa-info p {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: var(--ink);
+        }
+
+        .empresa-info p strong {
+            color: var(--primary-dark);
+            display: inline-block;
+            min-width: 100px;
+        }
+
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 20px;
+            transition: all 0.2s;
+        }
+
+        .btn-voltar:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .legal-page { padding: 90px 0 40px; }
+            .legal-header h1 { font-size: 24px; }
+            .legal-section { padding: 24px 20px; }
+            .legal-section h2 { font-size: 20px; }
+            .legal-section h3 { font-size: 16px; }
+            .legal-nav a { font-size: 12px; padding: 6px 14px; }
+            .legal-aviso { flex-direction: column; gap: 10px; padding: 16px 18px; }
+            .legal-aviso i { font-size: 22px; }
+            .legal-aviso-content strong { font-size: 14px; }
+            .legal-aviso-content p { font-size: 12.5px; }
+            .empresa-info p strong { min-width: auto; display: block; margin-bottom: 2px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dYEwPGeFar93DcuhbKkThhZdpA2_EP_VqwRBpCXg0g&s=10"
+                    alt="Drogaria Imediata da Chacrinha" class="logo-img">
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Voltar ao Site</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="index.html" class="btn-voltar" style="margin: 0;">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="legal-page">
+        <div class="legal-container">
+
+            <div class="legal-header">
+                <h1>Políticas e Termos</h1>
+                <p>Última atualização: <span id="dataAtual"></span> · Versão 1.0</p>
+            </div>
+
+            <div class="legal-aviso">
+                <i class="fas fa-image"></i>
+                <div class="legal-aviso-content">
+                    <strong>📸 Sobre as imagens dos produtos</strong>
+                    <p>
+                        Algumas imagens do site foram editadas com o auxílio de
+                        <strong>inteligência artificial</strong> para remoção de fundo e melhoria visual.
+                        Eventualmente podem conter pequenos erros de texto, cores ou detalhes na embalagem.
+                        As imagens são <strong>meramente ilustrativas</strong> e podem não representar
+                        fielmente o produto final. Em caso de dúvida, fale conosco pelo WhatsApp
+                        <strong>(21) 96958-3871</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="legal-nav">
+                <a href="#privacidade">🔒 Política de Privacidade</a>
+                <a href="#termos">📜 Termos de Uso</a>
+                <a href="#trocas">🔄 Troca e Devolução</a>
+            </div>
+
+            <!-- ======================================== -->
+            <!-- POLÍTICA DE PRIVACIDADE                   -->
+            <!-- ======================================== -->
+            <section class="legal-section" id="privacidade">
+                <h2>🔒 Política de Privacidade</h2>
+                <p class="legal-atualizacao">Em conformidade com a LGPD (Lei nº 13.709/2018)</p>
+
+                <h3>1. Quem somos</h3>
+                <div class="empresa-info">
+                    <h4><i class="fas fa-store"></i> Dados da Empresa</h4>
+                    <p><strong>Razão Social:</strong> Drogaria Imediata da Chacrinha</p>
+                    <p><strong>CNPJ:</strong> 40.261.917/0001-64</p>
+                    <p><strong>Endereço:</strong> Estrada Comandante Luiz Souto, 450 - Tanque, Rio de Janeiro - RJ, CEP 22733-040</p>
+                    <p><strong>WhatsApp:</strong> (21) 96958-3871</p>
+                    <p><strong>E-mail:</strong> contato@drogariaimediata.com</p>
+                </div>
+
+                <h3>2. Quais dados coletamos</h3>
+                <p>Coletamos apenas os dados necessários para atender o seu pedido:</p>
+                <ul>
+                    <li><strong>Nome completo</strong> — para identificação do pedido</li>
+                    <li><strong>Endereço de entrega</strong> — para entrega</li>
+                    <li><strong>Forma de pagamento</strong> — apenas para processar o pedido</li>
+                    <li><strong>Itens do carrinho</strong> — para montar o pedido</li>
+                </ul>
+                <p><strong>Não coletamos</strong> dados sensíveis como CPF, RG, dados bancários ou senhas.</p>
+
+                <h3>3. Como usamos seus dados</h3>
+                <ul>
+                    <li>Processar e entregar seu pedido</li>
+                    <li>Entrar em contato sobre o pedido via WhatsApp</li>
+                    <li>Salvar seus dados no navegador (para agilizar a próxima compra)</li>
+                </ul>
+
+                <h3>4. Compartilhamento de dados</h3>
+                <p>
+                    <strong>Não vendemos nem compartilhamos</strong> seus dados com terceiros.
+                    Seus dados ficam armazenados apenas no seu próprio navegador e no nosso sistema interno.
+                </p>
+
+                <h3>5. Cookies e ferramentas de análise</h3>
+                <p>
+                    Este site utiliza <strong>cookies</strong> e ferramentas de análise (como
+                    <strong>Google Analytics</strong> e <strong>Firebase</strong>) para:
+                </p>
+                <ul>
+                    <li>Entender como os visitantes usam o site</li>
+                    <li>Melhorar a experiência de navegação</li>
+                    <li>Medir o desempenho das páginas e produtos</li>
+                </ul>
+                <p>
+                    Os dados coletados são <strong>anônimos</strong> e incluem: páginas visitadas,
+                    tempo de permanência, tipo de dispositivo e localização aproximada.
+                </p>
+                <div class="legal-box">
+                    <strong>🍪 Como desativar os cookies:</strong> Você pode desativar os cookies nas
+                    configurações do seu navegador. Ao desativar, algumas funcionalidades podem não
+                    funcionar corretamente.
+                </div>
+
+                <h3>6. Sobre as imagens dos produtos</h3>
+                <p>
+                    Informamos que <strong>algumas imagens de produtos deste site foram editadas com o auxílio
+                    de ferramentas de inteligência artificial</strong> (IA), principalmente para remoção do
+                    fundo, melhoria de nitidez e padronização visual.
+                </p>
+                <p>
+                    Esse processo <strong>não altera o produto em si</strong>, mas pode eventualmente gerar
+                    pequenos erros visuais na imagem.
+                </p>
+                <div class="legal-box">
+                    <strong>💡 Importante:</strong> Se você receber um produto com características visivelmente
+                    diferentes da imagem do site, você tem o direito de recusar a entrega ou solicitar a
+                    troca, conforme nossa <a href="#trocas">Política de Troca e Devolução</a>.
+                </div>
+
+                <h3>7. Links externos</h3>
+                <p>
+                    Este site contém links para serviços externos, como <strong>WhatsApp</strong>,
+                    <strong>redes sociais</strong> e ferramentas do <strong>Google</strong>. Não nos
+                    responsabilizamos pelo conteúdo, políticas ou práticas de privacidade desses sites.
+                </p>
+
+                <h3>8. Seus direitos (LGPD)</h3>
+                <ul>
+                    <li>Saber quais dados temos sobre você</li>
+                    <li>Corrigir dados incompletos ou desatualizados</li>
+                    <li>Solicitar a exclusão dos seus dados</li>
+                    <li>Revogar o consentimento a qualquer momento</li>
+                </ul>
+
+                <h3>9. Segurança</h3>
+                <p>
+                    Utilizamos conexão segura (HTTPS) e armazenamos os dados de forma criptografada.
+                    Os dados do carrinho ficam salvos no <strong>seu próprio navegador</strong>.
+                </p>
+
+                <h3>10. Contato</h3>
+                <p>
+                    Para exercer seus direitos ou tirar dúvidas, entre em contato pelo WhatsApp:
+                    <strong>(21) 96958-3871</strong> ou pelo e-mail <strong>contato@drogariaimediata.com</strong>.
+                </p>
+            </section>
+
+            <!-- ======================================== -->
+            <!-- TERMOS DE USO                             -->
+            <!-- ======================================== -->
+            <section class="legal-section" id="termos">
+                <h2>📜 Termos de Uso</h2>
+                <p class="legal-atualizacao">Ao usar este site, você concorda com os termos abaixo</p>
+
+                <h3>1. Aceitação dos termos</h3>
+                <p>
+                    Ao acessar e usar este site, você declara ter lido, entendido e aceito todos os termos
+                    descritos nesta página. Caso não concorde, pedimos que não utilize o site.
+                </p>
+
+                <h3>2. Sobre as imagens e produtos</h3>
+                <p>
+                    As imagens dos produtos são <strong>meramente ilustrativas</strong> e podem conter
+                    pequenas variações de cor, embalagem, texto ou tamanho em relação ao produto físico.
+                </p>
+
+                <h3>2.1. Sobre os preços</h3>
+                <p>
+                    Os preços exibidos no site podem ser <strong>alterados sem aviso prévio</strong>,
+                    seja por mudança de custo, promoção encerrada ou atualização do catálogo.
+                </p>
+                <div class="legal-alerta">
+                    <strong>⚠️ Importante:</strong> O preço <strong>válido</strong> é sempre o
+                    <strong>confirmado pela nossa equipe via WhatsApp</strong> no momento da finalização
+                    do pedido.
+                </div>
+                <div class="legal-alerta">
+                    <strong>📌 Erro de preço:</strong> Em caso de erro evidente de preço no site
+                    (ex: produto com valor muito abaixo do mercado), a farmácia
+                    <strong>não é obrigada a honrar o valor exibido</strong>.
+                </div>
+
+                <h3>2.2. Sobre fragrâncias, alérgenos e componentes</h3>
+                <p>
+                    Nossos produtos incluem cosméticos, perfumaria, produtos de higiene e limpeza que
+                    <strong>podem conter componentes alergênicos</strong>, como:
+                </p>
+                <ul>
+                    <li>Fragrâncias e essências</li>
+                    <li>Conservantes e corantes</li>
+                    <li>Óleos essenciais e extratos vegetais</li>
+                    <li>Derivados de plantas e flores</li>
+                    <li>Componentes químicos como sulfatos, parabenos e silicones</li>
+                </ul>
+                <div class="legal-clima">
+                    <strong>⚠️ Atenção:</strong> Se você tem <strong>alergias conhecidas</strong>,
+                    <strong>pele sensível</strong> ou alguma <strong>condição dermatológica</strong>,
+                    consulte sempre a lista de ingredientes na embalagem antes de usar.
+                </div>
+
+                <h3>2.3. Restrição de idade</h3>
+                <p>
+                    Alguns produtos comercializados podem ser <strong>restritos a maiores de 18 anos</strong>
+                    ou exigir <strong>cuidados especiais</strong> (como tintas de cabelo, produtos químicos
+                    de alisamento, descolorantes e produtos de limpeza pesada).
+                </p>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Ao finalizar a compra, você declara ser
+                    <strong>maior de 18 anos</strong>.
+                </div>
+
+                <h3>2.4. Produtos para crianças (linha Kids)</h3>
+                <p>
+                    Trabalhamos com produtos da linha <strong>Kids</strong> e <strong>Baby</strong>
+                    (shampoo, condicionador, creme de pentear, sabonete, colônia, etc.). Esses produtos
+                    são formulados especialmente para crianças, mas exigem cuidados:
+                </p>
+                <div class="legal-kids">
+                    <strong>👶 Atenção:</strong> Produtos da linha infantil devem ser usados
+                    <strong>sempre com a supervisão de um adulto</strong>.
+                </div>
+                <ul>
+                    <li>Manter <strong>fora do alcance de crianças</strong></li>
+                    <li>Não deixar a criança manusear o produto sozinha</li>
+                    <li>Evitar contato com os olhos e mucosas</li>
+                    <li>Em caso de contato acidental com os olhos, lavar com água em abundância</li>
+                    <li>Em caso de ingestão acidental, procurar atendimento médico imediatamente</li>
+                    <li>Suspender o uso em caso de irritação ou reação alérgica</li>
+                </ul>
+                <p>
+                    A <strong>Drogaria Imediata da Chacrinha</strong> não se responsabiliza por uso
+                    inadequado dos produtos infantis sem supervisão de adulto.
+                </p>
+
+                <h3>2.5. Uso dos produtos e responsabilidade do cliente</h3>
+                <p>
+                    A <strong>Drogaria Imediata da Chacrinha</strong> atua exclusivamente como
+                    <strong>revendedora</strong> dos produtos comercializados. Isso significa que:
+                </p>
+                <ul>
+                    <li><strong>Nós vendemos</strong> os produtos — <strong>não aplicamos</strong> nem
+                        prestamos serviços de aplicação</li>
+                    <li>O <strong>uso, manuseio e aplicação</strong> dos produtos é de
+                        <strong>responsabilidade exclusiva do cliente</strong></li>
+                    <li>Não nos responsabilizamos por <strong>resultados</strong> obtidos com o uso dos produtos</li>
+                    <li>Não nos responsabilizamos por <strong>danos</strong> causados pelo uso indevido,
+                        aplicação incorreta ou desrespeito às instruções do fabricante</li>
+                </ul>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Produtos como <strong>tintas, descolorantes,
+                    alisamentos, progressivas, produtos de limpeza pesada e similares</strong> exigem
+                    cuidados especiais. <strong>Recomendamos fortemente</strong> que produtos químicos
+                    capilares sejam aplicados por um profissional habilitado.
+                </div>
+
+                <h3>2.6. Não é consulta médica nem farmacêutica</h3>
+                <div class="legal-seguranca">
+                    <strong>💊 Importante:</strong> As informações contidas neste site
+                    <strong>NÃO substituem</strong> consulta médica, farmacêutica ou de
+                    profissional de saúde. Os produtos comercializados <strong>não são recomendações
+                    médicas</strong> e não devem ser usados para autodiagnóstico ou automedicação.
+                </div>
+                <p>
+                    Em caso de <strong>sintomas persistentes, reações inesperadas ou dúvidas sobre
+                    saúde</strong>, procure sempre um médico ou farmacêutico.
+                </p>
+
+                <h3>2.7. Prazo de validade dos produtos</h3>
+                <p>
+                    Todos os produtos comercializados têm <strong>prazo de validade definido pelo
+                    fabricante</strong> e são vendidos dentro do prazo de validade.
+                </p>
+                <ul>
+                    <li><strong>Não vendemos</strong> produtos vencidos</li>
+                    <li>A <strong>validade está sempre impressa</strong> na embalagem do produto</li>
+                    <li>O cliente deve <strong>conferir a validade no ato da entrega</strong></li>
+                    <li>Após o recebimento, a <strong>conservação adequada é de responsabilidade do cliente</strong></li>
+                </ul>
+                <div class="legal-conferencia">
+                    <strong>✅ Recomendação:</strong> Ao receber seu pedido, verifique a data de validade
+                    de todos os produtos. Se notar algo irregular (produto vencido, próximo do vencimento
+                    ou embalagem comprometida), <strong>recuse a entrega</strong> e nos informe na hora
+                    pelo WhatsApp <strong>(21) 96958-3871</strong>.
+                </div>
+                <p>
+                    Caso o produto esteja vencido no momento da entrega, faremos a
+                    <strong>troca imediata</strong> sem custo ou a <strong>devolução do valor</strong>.
+                </p>
+
+                <h3>3. Pedidos e pagamentos</h3>
+                <p>
+                    Os pedidos são finalizados via <strong>WhatsApp</strong>. Após enviar o pedido,
+                    nossa equipe entrará em contato para confirmar disponibilidade, forma de pagamento e prazo
+                    de entrega.
+                </p>
+                <p>Aceitamos as seguintes formas de pagamento:</p>
+                <ul>
+                    <li>💵 Dinheiro (na entrega)</li>
+                    <li>💳 Cartão de Crédito ou Débito (na maquininha, na entrega)</li>
+                    <li>⚡ PIX (entrega liberada após envio do comprovante)</li>
+                </ul>
+
+                <div class="legal-seguranca">
+                    <strong>🔒 Sobre a confirmação do pedido:</strong> O pedido só é considerado
+                    <strong>válido e confirmado</strong> após a resposta da nossa equipe pelo
+                    <strong>WhatsApp</strong>.
+                </div>
+
+                <h3>3.1. Integridade da mensagem do pedido no WhatsApp</h3>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> É <strong>terminantemente proibido</strong> alterar,
+                    modificar, adicionar ou remover itens, preços, quantidades ou qualquer informação da
+                    mensagem gerada automaticamente pelo site ao enviar o pedido pelo WhatsApp.
+                </div>
+                <p>
+                    A mensagem de pedido é gerada automaticamente pelo site e contém as informações
+                    oficiais do carrinho. Qualquer alteração feita manualmente pelo cliente
+                    <strong>não será válida</strong>.
+                </p>
+                <div class="legal-alerta">
+                    <strong>📌 Importante:</strong> Caso o cliente altere o valor, os produtos ou as
+                    quantidades da mensagem no WhatsApp, o pedido será <strong>automaticamente cancelado</strong>
+                    ou <strong>corrigido</strong> com base no carrinho real do site.
+                </div>
+
+                <h3>3.2. Comunicações via WhatsApp</h3>
+                <p>
+                    Ao fazer um pedido pelo site, você <strong>concorda em receber mensagens pelo
+                    WhatsApp</strong> relacionadas ao seu pedido, como:
+                </p>
+                <ul>
+                    <li>Confirmação do pedido</li>
+                    <li>Dúvidas sobre endereço ou produtos</li>
+                    <li>Informações sobre entrega</li>
+                    <li>Avisos de imprevistos (produto em falta, clima, etc.)</li>
+                </ul>
+                <div class="legal-seguranca">
+                    <strong>📱 Importante:</strong> Nossas mensagens são
+                    <strong>apenas sobre o seu pedido</strong>. <strong>Não enviamos spam</strong>,
+                    propagandas não solicitadas ou mensagens promocionais sem sua autorização.
+                </div>
+                <p>
+                    Você pode <strong>solicitar o encerramento das comunicações</strong> a qualquer
+                    momento, apenas nos informando pelo WhatsApp. Após o pedido ser entregue, não
+                    enviaremos mais mensagens, exceto se houver necessidade.
+                </p>
+
+                <h3>4. Entrega</h3>
+                <p>
+                    Atendemos apenas os seguintes bairros: Praça Seca, Chacrinha, Bato, Chácara,
+                    Capitão Menezes e Capitão Machado.
+                </p>
+
+                <h3>4.1. Prazo de entrega</h3>
+                <p>
+                    O prazo estimado de entrega é de <strong>30 minutos a 2 horas</strong>, podendo variar
+                    conforme distância, volume de pedidos, clima e disponibilidade dos produtos.
+                </p>
+
+                <h3>4.2. Frete grátis — regras</h3>
+                <p>
+                    Oferecemos <strong>frete grátis</strong> para pedidos acima de <strong>R$ 10,00</strong>
+                    em produtos, mas com algumas regras:
+                </p>
+                <ul>
+                    <li>Válido apenas para <strong>pedidos acima de R$ 10,00</strong> em produtos</li>
+                    <li>Válido <strong>apenas na área de entrega</strong> (bairros atendidos)</li>
+                    <li>Não é cumulativo com outras promoções de frete</li>
+                    <li>Pode ser <strong>alterado ou suspenso a qualquer momento</strong>, sem aviso prévio</li>
+                    <li><strong>Pedido mínimo de R$ 10,00</strong> em produtos</li>
+                </ul>
+                <div class="legal-box">
+                    <strong>🚚 Dica:</strong> Para garantir o frete grátis, faça pedidos acima de R$ 10,00
+                    em produtos.
+                </div>
+
+                <h3>4.3. Horário de funcionamento e entregas</h3>
+                <p>Nosso horário de atendimento é:</p>
+                <ul>
+                    <li><strong>Segunda a Sábado:</strong> 7h às 22h</li>
+                    <li><strong>Domingo:</strong> 8h às 18h</li>
+                </ul>
+                <p>As entregas são realizadas dentro dos seguintes horários:</p>
+                <ul>
+                    <li><strong>Segunda a Sábado:</strong> até 21h30</li>
+                    <li><strong>Domingo:</strong> até 17h30</li>
+                </ul>
+
+                <h3>4.4. Pedidos fora do horário de funcionamento</h3>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Não nos responsabilizamos por pedidos realizados
+                    <strong>fora do horário de funcionamento</strong> da farmácia ou que excedam o
+                    horário limite de entregas.
+                </div>
+                <p>
+                    Caso o cliente finalize um pedido fora do horário, ele será considerado
+                    como <strong>agendamento para o próximo dia útil</strong>.
+                </p>
+
+                <h3>4.5. Produtos sensíveis ao clima (doces, chocolates, biscoitos)</h3>
+                <div class="legal-clima">
+                    <strong>🌡️ Atenção:</strong> Em dias de <strong>muito calor</strong>, <strong>chuva forte</strong>
+                    ou <strong>alta umidade</strong>, produtos como chocolates, biscoitos recheados, balas
+                    e doces em geral podem <strong>derreter, amolecer, quebrar ou chegar alterados</strong>.
+                </div>
+                <p>
+                    Nossa equipe <strong>não se responsabiliza</strong> por alterações físicas
+                    causadas por condições climáticas extremas durante o transporte.
+                </p>
+
+                <h3>4.6. Produtos em falta no estoque</h3>
+                <p>
+                    Nosso site mostra o <strong>estoque aproximado</strong> em tempo real, mas podem
+                    ocorrer divergências.
+                </p>
+                <p>
+                    Caso algum produto esteja <strong>indisponível</strong> no momento da separação,
+                    entraremos em contato para oferecer alternativa, remover o item ou cancelar
+                    parcialmente o pedido.
+                </p>
+
+                <h3>5. Política de promoções e cupons</h3>
+                <p>
+                    Periodicamente, oferecemos <strong>promoções, descontos e cupons</strong> em produtos
+                    ou categorias específicas. Ao aproveitar qualquer promoção, você concorda que:
+                </p>
+                <div class="legal-promo">
+                    <strong>🎁 Regras das promoções:</strong>
+                </div>
+                <ul>
+                    <li><strong>Promoções têm prazo de validade</strong> e podem ser encerradas
+                        a qualquer momento, sem aviso prévio</li>
+                    <li><strong>Não são cumulativas</strong> com outras promoções, cupons ou descontos,
+                        exceto se expressamente informado</li>
+                    <li>Estão <strong>sujeitas à disponibilidade de estoque</strong> — pode acabar antes
+                        do prazo final</li>
+                    <li>Podem ser <strong>canceladas ou alteradas</strong> em caso de erro de divulgação,
+                        preço, sistema ou estoque</li>
+                    <li>O uso indevido ou tentativa de fraude pode levar ao cancelamento do pedido</li>
+                    <li><strong>Cupons têm prazo</strong>, valor mínimo e uso único (salvo indicação contrária)</li>
+                </ul>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Em caso de promoção com erro evidente (preço
+                    extremamente abaixo do mercado, desconto acima de 90%, etc.), a farmácia
+                    <strong>não é obrigada a honrar</strong> a oferta. O cliente será comunicado
+                    e o pedido poderá ser cancelado sem penalidade.
+                </div>
+
+                <h3>6. Responsabilidades do cliente</h3>
+                <p>Você é responsável por:</p>
+                <ul>
+                    <li>Fornecer endereço de entrega correto e completo</li>
+                    <li>Estar disponível para receber o pedido no prazo combinado</li>
+                    <li><strong>Conferir todos os itens no ato da entrega</strong>, na presença do entregador</li>
+                    <li>Informar um ponto de referência claro para facilitar a localização</li>
+                    <li>Manter o WhatsApp ativo e responder às mensagens do entregador</li>
+                    <li>Fazer pedidos apenas dentro do horário de funcionamento da farmácia</li>
+                    <li>Receber e armazenar corretamente produtos sensíveis ao clima</li>
+                    <li>Ser maior de 18 anos ou estar acompanhado por responsável</li>
+                    <li>Verificar ingredientes e componentes antes de usar produtos cosméticos</li>
+                    <li>Usar os produtos conforme as instruções do fabricante</li>
+                    <li><strong>Supervisionar crianças</strong> ao usar produtos da linha Kids</li>
+                    <li><strong>Conferir o prazo de validade</strong> dos produtos no ato da entrega</li>
+                </ul>
+
+                <h3>6.1. Taxa de reentrega (entrega não realizada)</h3>
+                <p>
+                    Caso o entregador compareça ao endereço informado e <strong>não consiga realizar a entrega</strong>
+                    por motivos como:
+                </p>
+                <ul>
+                    <li>Ausência do cliente no local</li>
+                    <li>Endereço incorreto ou incompleto</li>
+                    <li>Cliente não atende às ligações/mensagens do entregador</li>
+                    <li>Recusa do pedido no momento da entrega</li>
+                </ul>
+                <p>
+                    Será cobrada uma <strong>taxa de reentrega</strong> referente ao deslocamento até o local,
+                    calculada com base na <strong>distância percorrida</strong> e nas despesas do entregador.
+                </p>
+
+                <h3>6.2. Cancelamento de pedido</h3>
+                <p>
+                    O cliente pode solicitar o cancelamento do pedido a qualquer momento, mas as
+                    condições variam conforme o estágio da entrega:
+                </p>
+                <div class="legal-conferencia">
+                    <strong>✅ Cancelamento ANTES da entrega sair:</strong> Sem custo.
+                </div>
+                <div class="legal-alerta">
+                    <strong>⚠️ Cancelamento APÓS o entregador ir ao local:</strong> Será
+                    <strong>cobrada uma taxa de entrega</strong> referente ao deslocamento realizado.
+                </div>
+                <p><strong>Para cancelar um pedido:</strong></p>
+                <ol>
+                    <li>Entre em contato pelo WhatsApp: <strong>(21) 96958-3871</strong></li>
+                    <li>Informe o número/nome do pedido</li>
+                    <li>Informe o motivo do cancelamento</li>
+                    <li>Aguarde a confirmação da nossa equipe</li>
+                </ol>
+
+                <h3>6.3. Troca por erro do cliente ou defeito</h3>
+                <p>
+                    Em caso de <strong>troca por erro do cliente</strong> ou <strong>trocas em geral</strong>,
+                    o cliente <strong>deve comparecer à loja física</strong> para realizar a troca.
+                </p>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Para que a troca seja aceita, o produto deve estar
+                    <strong>lacrado, sem violação, sem uso e na embalagem original</strong>.
+                </div>
+                <p>
+                    <strong>Endereço da loja física:</strong><br>
+                    Estrada Comandante Luiz Souto, 450 - Tanque, Rio de Janeiro - RJ, CEP 22733-040
+                </p>
+
+                <h3>7. Disponibilidade de estoque</h3>
+                <p>
+                    Trabalhamos com <strong>estoque em tempo real</strong>, mas o site pode apresentar
+                    pequenas divergências em relação ao estoque físico da loja.
+                </p>
+
+                <h3>8. Força maior</h3>
+                <p>
+                    Não nos responsabilizamos por atrasos ou falhas na entrega causados por
+                    <strong>força maior</strong>, incluindo:
+                </p>
+                <ul>
+                    <li>Chuvas fortes, tempestades, alagamentos</li>
+                    <li>Trânsito intenso ou bloqueios de vias</li>
+                    <li>Greves, manifestações ou eventos públicos</li>
+                    <li>Falhas de energia, internet ou sistemas</li>
+                    <li>Outras situações fora do nosso controle</li>
+                </ul>
+
+                <h3>9. Propriedade intelectual</h3>
+                <p>
+                    Todos os conteúdos deste site (textos, imagens, layout) são de propriedade da
+                    <strong>Drogaria Imediata da Chacrinha</strong> ou de seus fornecedores. É proibida a
+                    reprodução sem autorização.
+                </p>
+
+                <h3>10. Alterações dos termos</h3>
+                <p>
+                    Reservamo-nos o direito de alterar estes termos a qualquer momento. Recomendamos
+                    revisitar esta página periodicamente.
+                </p>
+            </section>
+
+            <!-- ======================================== -->
+            <!-- POLÍTICA DE TROCA E DEVOLUÇÃO             -->
+            <!-- ======================================== -->
+            <section class="legal-section" id="trocas">
+                <h2>🔄 Política de Troca e Devolução</h2>
+                <p class="legal-atualizacao">Em conformidade com o CDC (Código de Defesa do Consumidor)</p>
+
+                <h3>1. Direito de arrependimento</h3>
+                <p>
+                    Conforme o <strong>artigo 49 do Código de Defesa do Consumidor</strong>, você tem até
+                    <strong>7 (sete) dias corridos</strong> após o recebimento do produto para desistir da compra,
+                    sem precisar justificar o motivo.
+                </p>
+                <p>
+                    Nesse caso, o produto deve estar <strong>lacrado, sem uso, na embalagem original</strong>
+                    e o valor será devolvido integralmente.
+                </p>
+
+                <h3>2. Produtos com defeito</h3>
+                <p>
+                    Se o produto apresentar defeito de fabricação, entre em contato pelo WhatsApp
+                    <strong>(21) 96958-3871</strong> em até <strong>7 dias</strong> após o recebimento,
+                    enviando fotos do produto.
+                </p>
+
+                <h3>3. Produtos errados</h3>
+                <p>
+                    Se você receber um produto diferente do que pediu, entre em contato <strong>imediatamente</strong>
+                    pelo WhatsApp. Faremos a troca sem custo adicional.
+                </p>
+
+                <h3>4. Produto diferente da imagem do site</h3>
+                <p>
+                    Se você receber um produto com características <strong>visivelmente diferentes</strong>
+                    da imagem do site, entre em contato imediatamente pelo WhatsApp. Nós faremos a
+                    <strong>troca sem custo</strong> ou a <strong>devolução integral do valor</strong>.
+                </p>
+
+                <h3>5. Produtos sensíveis ao clima (chocolates, doces, biscoitos)</h3>
+                <p>
+                    Produtos como <strong>chocolates, doces, biscoitos, balas e similares</strong> são
+                    sensíveis ao calor e à umidade. Em dias de <strong>temperatura muito alta</strong>,
+                    <strong>chuva forte</strong> ou <strong>umidade elevada</strong>, esses produtos podem
+                    chegar <strong>derretidos, amolecidos, quebrados ou com textura alterada</strong>.
+                </p>
+                <p>
+                    Essas alterações são <strong>naturais</strong> e <strong>não caracterizam defeito de
+                    fabricação</strong>. Nesses casos:
+                </p>
+                <ul>
+                    <li>O produto <strong>não é considerado com defeito</strong></li>
+                    <li><strong>Não há obrigação de troca</strong> por parte da farmácia</li>
+                    <li>O cliente pode avaliar caso a caso com nossa equipe via WhatsApp</li>
+                </ul>
+                <div class="legal-clima">
+                    <strong>🌡️ Importante:</strong> Recomendamos que o cliente <strong>inspecione o produto
+                    no momento da entrega</strong>. Se o produto estiver visivelmente comprometido pelo calor
+                    ou pela chuva, o cliente pode <strong>recusar a entrega</strong> e nos informar na hora.
+                </div>
+                <p><strong>Exceções:</strong> A troca poderá ser feita (a nosso critério) se:</p>
+                <ul>
+                    <li>O produto chegar <strong>completamente derretido</strong> e impróprio para consumo</li>
+                    <li>A embalagem estiver <strong>violada ou danificada</strong> por mau transporte</li>
+                    <li>O produto estiver <strong>vencido</strong> ou fora do prazo de validade</li>
+                    <li>Houver <strong>erro no envio</strong> (produto diferente do pedido)</li>
+                </ul>
+
+                <h3>6. Produtos vencidos ou com validade curta</h3>
+                <p>
+                    Caso você receba um produto <strong>vencido</strong> ou com validade muito próxima
+                    do vencimento (menos de 30 dias), entre em contato <strong>imediatamente</strong>
+                    pelo WhatsApp.
+                </p>
+                <div class="legal-conferencia">
+                    <strong>✅ Importante:</strong> Faremos a <strong>troca imediata</strong> por um
+                    produto dentro do prazo ou a <strong>devolução integral do valor</strong>,
+                    conforme sua preferência.
+                </div>
+
+                <h3>7. Conferência obrigatória no ato da entrega</h3>
+                <p>
+                    Ao receber seu pedido, <strong>você deve conferir todos os itens na presença do entregador</strong>:
+                </p>
+                <ul>
+                    <li>Se a <strong>quantidade de produtos</strong> está correta</li>
+                    <li>Se <strong>todos os itens pedidos</strong> foram entregues</li>
+                    <li>Se a <strong>embalagem está lacrada</strong> e em bom estado</li>
+                    <li>Se o <strong>produto corresponde</strong> ao que foi pedido</li>
+                    <li>Se <strong>não há sinais de vazamento</strong>, amassado ou violação</li>
+                    <li>Se o produto <strong>não está vencido</strong> ou fora do prazo de validade</li>
+                </ul>
+                <div class="legal-conferencia">
+                    <strong>✅ Importante:</strong> A conferência no ato da entrega é <strong>obrigatória</strong>
+                    e é o <strong>momento correto</strong> para reportar qualquer problema.
+                </div>
+                <div class="legal-alerta">
+                    <strong>⚠️ Atenção:</strong> Após o recebimento e confirmação da entrega,
+                    <strong>não nos responsabilizamos por itens faltantes, danificados ou trocados</strong>.
+                </div>
+
+                <h3>8. Trocas por erro do cliente</h3>
+                <p>
+                    Em caso de <strong>troca por erro do cliente</strong>, a troca
+                    <strong>deve ser feita na loja física</strong>.
+                </p>
+                <ul>
+                    <li>O produto deve estar <strong>lacrado, sem violação, sem uso e na embalagem original</strong></li>
+                    <li>Produtos com <strong>lacre violado, abertos ou usados NÃO serão aceitos</strong></li>
+                    <li>É necessário apresentar o comprovante do pedido</li>
+                </ul>
+                <p>
+                    <strong>Endereço da loja física:</strong><br>
+                    Estrada Comandante Luiz Souto, 450 - Tanque, Rio de Janeiro - RJ
+                </p>
+
+                <h3>9. Produtos que NÃO podem ser trocados</h3>
+                <p>Por questões de higiene, segurança e natureza do produto, <strong>não aceitamos troca</strong> de:</p>
+                <ul>
+                    <li>Produtos de higiene pessoal já abertos</li>
+                    <li>Cosméticos usados ou com lacre violado</li>
+                    <li>Alimentos com embalagem aberta</li>
+                    <li>Produtos íntimos (absorventes, fraldas abertas)</li>
+                    <li>Produtos sensíveis ao clima que sofreram alteração natural</li>
+                </ul>
+
+                <h3>10. Como solicitar troca ou devolução</h3>
+                <ol>
+                    <li>Entre em contato pelo WhatsApp: <strong>(21) 96958-3871</strong></li>
+                    <li>Informe o número do pedido e o motivo</li>
+                    <li>Envie fotos do produto (se aplicável)</li>
+                    <li>Aguarde nossa resposta com as instruções</li>
+                </ol>
+
+                <h3>11. Prazos para reembolso</h3>
+                <p>Após aprovação da devolução:</p>
+                <ul>
+                    <li><strong>PIX:</strong> reembolso em até 3 dias úteis</li>
+                    <li><strong>Cartão:</strong> estorno na próxima fatura (prazo da operadora)</li>
+                    <li><strong>Dinheiro:</strong> reembolso em espécie ou PIX</li>
+                </ul>
+
+                <h3>12. Contato</h3>
+                <p>Para qualquer dúvida sobre troca ou devolução, fale com a gente:</p>
+                <p>
+                    📱 WhatsApp: <strong>(21) 96958-3871</strong><br>
+                    📧 E-mail: <strong>contato@drogariaimediata.com</strong>
+                </p>
+            </section>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="btn-voltar">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Site
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding: 20px 0;">
+                <p>&copy; <span id="anoAtual"></span> Drogaria Imediata da Chacrinha Perfumaria. Todos os direitos reservados.</p>
+                <p style="margin-top: 8px; font-size: 11px;">
+                    <a href="#privacidade" style="color: rgba(255,255,255,0.6);">Privacidade</a> ·
+                    <a href="#termos" style="color: rgba(255,255,255,0.6);">Termos</a> ·
+                    <a href="#trocas" style="color: rgba(255,255,255,0.6);">Trocas</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('dataAtual').textContent = new Date().toLocaleDateString('pt-BR');
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
