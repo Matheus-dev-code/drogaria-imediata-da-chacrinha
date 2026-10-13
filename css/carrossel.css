@@ -1,0 +1,642 @@
+/* ============================================================
+   CARROSSEL.CSS
+   ------------------------------------------------------------
+   Todos os carrosséis da página:
+   - Promoções (1 card por vez, com barra de progresso)
+   - Marcas (1 card por vez, com barra de progresso)
+   - Destaques (vitrine deslizante)
+   ============================================================ */
+
+
+/* ============================================================
+   01. CARROSSEL DE PROMOÇÕES
+   ============================================================ */
+
+.promocoes {
+    padding: 40px 0 30px;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.promocoes h2 {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.promocoes h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--promocao), var(--secondary));
+}
+
+.promocoes-subtitulo {
+    text-align: center;
+    color: var(--gray);
+    font-size: 15px;
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+
+.promocoes-carrossel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.promocoes-viewport {
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    position: relative;
+    aspect-ratio: 3 / 4;
+    max-height: 520px;
+    box-shadow: var(--shadow-md);
+    background: var(--gray-light);
+}
+
+.promocoes-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.promocao-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--promocao);
+}
+
+.promocao-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.promocao-slide:hover .promocao-slide-img {
+    transform: scale(1.05);
+}
+
+.promocao-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.45) 40%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 24px;
+    color: white;
+    pointer-events: none;
+}
+
+.promocao-tag {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--promocao);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.5);
+    animation: pulsePromoTag 2s infinite;
+}
+
+.promocao-slide-titulo {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.promocao-slide-subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.95;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.promocao-slide-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 11px 24px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    align-self: flex-start;
+    transition: transform 0.25s ease;
+}
+
+.promocao-slide:hover .promocao-slide-cta {
+    transform: translateX(4px);
+}
+
+.promocao-slide-cta i {
+    transition: transform 0.25s ease;
+}
+
+.promocao-slide:hover .promocao-slide-cta i {
+    transform: translateX(3px);
+}
+
+
+/* ----- Barra de progresso (promoções) ----- */
+
+.promocoes-progresso {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: var(--promocao);
+    border-radius: 0 4px 4px 0;
+    z-index: 3;
+    width: 0%;
+    pointer-events: none;
+}
+
+.promocoes-progresso.ativo {
+    animation: progressoBanner 5s linear forwards;
+}
+
+
+/* ----- Navegação promoções ----- */
+
+.promocoes-nav {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border: none;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.promocoes-nav:hover {
+    background: var(--promocao);
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+}
+
+.promocoes-nav:active {
+    transform: scale(0.92);
+}
+
+.promocoes-indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.promocao-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.promocao-dot:hover {
+    background: var(--promocao);
+    transform: scale(1.2);
+}
+
+.promocao-dot.active {
+    width: 32px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--promocao), var(--secondary));
+}
+
+
+/* ============================================================
+   02. CARROSSEL DE MARCAS
+   ============================================================ */
+
+.banners-marcas {
+    padding: 40px 0 30px;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.banners-marcas h2 {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.banners-marcas h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+.banners-subtitulo {
+    text-align: center;
+    color: var(--gray);
+    font-size: 15px;
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+
+.banners-carrossel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.banners-viewport {
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    position: relative;
+    aspect-ratio: 3 / 4;
+    max-height: 520px;
+    box-shadow: var(--shadow-md);
+    background: var(--gray-light);
+}
+
+.banners-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.banner-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--primary);
+}
+
+.banner-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.banner-slide:hover .banner-slide-img {
+    transform: scale(1.05);
+}
+
+.banner-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.45) 40%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 24px;
+    color: white;
+    pointer-events: none;
+}
+
+.banner-slide-titulo {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.banner-slide-subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.95;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-slide-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 11px 24px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    align-self: flex-start;
+    transition: transform 0.25s ease;
+}
+
+.banner-slide:hover .banner-slide-cta {
+    transform: translateX(4px);
+}
+
+.banner-slide-cta i {
+    transition: transform 0.25s ease;
+}
+
+.banner-slide:hover .banner-slide-cta i {
+    transform: translateX(3px);
+}
+
+
+/* ----- Barra de progresso (marcas) ----- */
+
+.banners-progresso {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 0 4px 4px 0;
+    z-index: 3;
+    width: 0%;
+    pointer-events: none;
+}
+
+.banners-progresso.ativo {
+    animation: progressoBanner 4s linear forwards;
+}
+
+
+/* ----- Navegação marcas ----- */
+
+.banners-nav {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border: none;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.banners-nav:hover:not(:disabled) {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(139, 0, 69, 0.35);
+}
+
+.banners-nav:active:not(:disabled) {
+    transform: scale(0.92);
+}
+
+.banners-nav:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.banners-indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.banner-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.banner-dot:hover {
+    background: var(--secondary);
+    transform: scale(1.2);
+}
+
+.banner-dot.active {
+    width: 32px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+
+/* ============================================================
+   03. CARROSSEL DE DESTAQUES (VITRINE)
+   ============================================================ */
+
+.destaques {
+    padding: 40px 0 30px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.destaques h2 {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.destaques h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+.destaques-subtitulo {
+    text-align: center;
+    color: var(--gray);
+    font-size: 15px;
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+
+.destaques-carrossel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding: 0 4px;
+}
+
+.destaques-viewport {
+    flex: 1;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    position: relative;
+}
+
+.destaques-track {
+    display: flex;
+    gap: 14px;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+    padding: 6px 2px;
+}
+
+.destaques-track .produto-card {
+    flex: 0 0 calc(50% - 7px);
+    opacity: 1;
+    animation: none;
+}
+
+.destaques-track .produto-card.visible {
+    opacity: 1;
+}
+
+
+/* ----- Navegação destaques ----- */
+
+.destaques-nav {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border: none;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.destaques-nav:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(139, 0, 69, 0.35);
+}
+
+.destaques-nav:active {
+    transform: scale(0.92);
+}
+
+.destaques-indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.destaque-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.destaque-dot:hover {
+    background: var(--secondary);
+    transform: scale(1.2);
+}
+
+.destaque-dot.active {
+    width: 32px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}

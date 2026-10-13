@@ -1,0 +1,1060 @@
+/* ============================================================
+   COMPONENTS.CSS
+   ------------------------------------------------------------
+   Componentes reutilizáveis: botões, cards de produto, toast,
+   badges, avaliações e utilitários visuais.
+   ============================================================ */
+
+
+/* ============================================================
+   01. BOTÃO PRIMÁRIO (CTA DO BANNER)
+   ============================================================ */
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 32px;
+    background: linear-gradient(135deg, var(--secondary-light), var(--secondary));
+    color: var(--primary-dark);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    touch-action: manipulation;
+}
+
+.btn-primary::after {
+    content: '\2192';
+    transition: transform 0.25s ease;
+}
+
+.btn-primary:active {
+    transform: scale(0.96);
+}
+
+@media (hover: hover) {
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.26);
+    }
+    .btn-primary:hover::after {
+        transform: translateX(3px);
+    }
+}
+
+
+/* ============================================================
+   02. TOAST / NOTIFICAÇÃO
+   ============================================================ */
+
+.toast-notification {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1001;
+    transform: translateX(120%);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    max-width: 320px;
+}
+
+.toast-notification.show {
+    transform: translateX(0);
+}
+
+.toast-notification i {
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+
+/* ============================================================
+   03. CARD DE PRODUTO
+   ============================================================ */
+
+.produto-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s;
+    touch-action: manipulation;
+    position: relative;
+    animation: fadeInUp 0.4s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.produto-card.visible {
+    opacity: 1;
+}
+
+.produto-card:active {
+    transform: scale(0.98);
+}
+
+@media (hover: hover) {
+    .produto-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+    }
+}
+
+.produto-card.destaque {
+    box-shadow: 0 0 0 2px var(--secondary), var(--shadow-sm);
+}
+
+.produto-card.promocao {
+    border: 2px solid var(--promocao);
+    position: relative;
+}
+
+
+/* ----- Badge de promoção (foguinho) ----- */
+
+.produto-card.promocao .badge-promocao {
+    position: absolute;
+    top: 12px;
+    left: -8px;
+    background: var(--promocao);
+    color: white;
+    padding: 4px 16px 4px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 0 20px 20px 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    animation: pulsePromocao 2s infinite;
+}
+
+.produto-card.promocao .badge-promocao i {
+    font-size: 14px;
+}
+
+
+/* ----- Estado esgotado ----- */
+
+.produto-card.esgotado {
+    opacity: 0.85;
+    position: relative;
+}
+
+.produto-card.esgotado::after {
+    content: 'ESGOTADO';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    background: rgba(225, 59, 85, 0.9);
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 5px;
+    z-index: 10;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    box-shadow: var(--shadow-md);
+    pointer-events: none;
+}
+
+.esgotado-badge-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--esgotado);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 0 2px 10px rgba(225, 59, 85, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulseBadge 2s infinite;
+}
+
+
+/* ----- Badge "No carrinho" ----- */
+
+.produto-card .no-carrinho-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #25D366;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 0 2px 10px rgba(37, 211, 102, 0.35);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    animation: fadeIn 0.3s ease;
+}
+
+.produto-card .no-carrinho-badge i {
+    font-size: 12px;
+}
+
+
+/* ============================================================
+   04. AVALIAÇÃO (ESTRELAS)
+   ============================================================ */
+
+.produto-avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0 10px;
+}
+
+.produto-avaliacao .estrelas {
+    display: flex;
+    gap: 2px;
+    color: #FFB800;
+    font-size: 14px;
+}
+
+.produto-avaliacao .estrelas .vazia {
+    color: #ddd;
+}
+
+.produto-avaliacao .avaliacao-numero {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.produto-avaliacao .avaliacao-total {
+    font-size: 11px;
+    color: var(--gray);
+}
+
+
+/* ============================================================
+   05. IMAGEM DO PRODUTO
+   ============================================================ */
+
+.produto-imagem {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--paper), var(--gray-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+    .produto-card:hover .produto-imagem img {
+        transform: scale(1.04);
+    }
+}
+
+
+/* ============================================================
+   06. INFO DO PRODUTO
+   ============================================================ */
+
+.produto-info {
+    padding: 14px;
+}
+
+.produto-tags {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.produto-categoria {
+    display: inline-block;
+    padding: 3px 9px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.produto-tipo {
+    display: inline-block;
+    padding: 3px 9px;
+    background: var(--gray-light);
+    color: var(--gray);
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.produto-tipo.kids-tag {
+    background: linear-gradient(135deg, var(--kids), var(--kids-light));
+    color: white;
+    font-weight: 700;
+}
+
+.produto-linha {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--gray);
+    margin-bottom: 4px;
+    font-weight: 500;
+    background: var(--gray-light);
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+.produto-nome {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--ink);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.produto-descricao {
+    color: var(--gray);
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   07. PREÇO (NORMAL E EM PROMOÇÃO)
+   ============================================================ */
+
+/* Preço normal (sem promoção) */
+.produto-preco {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+/* Preço em promoção (com preço atual + antigo) */
+.produto-preco .preco-atual {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--promocao);
+}
+
+.produto-preco .preco-antigo {
+    font-size: 13px;
+    color: var(--gray);
+    text-decoration: line-through;
+    font-weight: 500;
+    opacity: 0.85;
+    margin-left: 6px;
+}
+
+
+/* ============================================================
+   08. SELO DE DESCONTO (ex: 15% OFF)
+   ============================================================ */
+
+.selo-desconto {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF5722, #E64A19);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px rgba(255, 87, 34, 0.35);
+    margin-bottom: 8px;
+    animation: pulsePromocao 2s infinite;
+}
+
+
+/* ============================================================
+   09. BOTÕES DO CARD (WHATSAPP / CARRINHO)
+   ============================================================ */
+
+/* Botão WhatsApp — só aparece em produtos ESGOTADOS */
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    transition: all 0.25s ease;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    margin-bottom: 6px;
+}
+
+.btn-whatsapp:active {
+    transform: scale(0.97);
+    background: #128C7E;
+}
+
+@media (hover: hover) {
+    .btn-whatsapp:hover {
+        box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+        transform: translateY(-2px);
+    }
+}
+
+.btn-whatsapp i {
+    font-size: 16px;
+}
+
+/* Botão Adicionar ao Carrinho */
+.btn-add-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-add-cart:active {
+    transform: scale(0.97);
+}
+
+.btn-add-cart.in-cart {
+    background: #4CAF50;
+}
+
+.btn-add-cart.in-cart i {
+    animation: fadeIn 0.3s ease;
+}
+
+@media (hover: hover) {
+    .btn-add-cart:hover:not(.in-cart) {
+        background: var(--primary-dark);
+        box-shadow: 0 4px 12px rgba(139, 0, 69, 0.3);
+    }
+}
+
+.btn-esgotado {
+    transition: all 0.2s !important;
+}
+
+.btn-esgotado:active {
+    transform: scale(0.95);
+}
+
+
+/* ============================================================
+   10. SELOS / TAGS DIVERSAS
+   ============================================================ */
+
+.tag-promocao {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--esgotado);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.frete-gratis {
+    display: inline-block;
+    background: var(--estoque);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* ============================================================
+   11. PAGINAÇÃO (LISTA DE PRODUTOS)
+   ============================================================ */
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 34px 16px;
+    flex-wrap: wrap;
+}
+
+.btn-pagina {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--border);
+    background: white;
+    color: var(--ink);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pagina:hover:not(:disabled) {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.btn-pagina.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(139, 0, 69, 0.3);
+}
+
+.btn-pagina:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.btn-pagina.pontos {
+    border: none;
+    background: transparent;
+    cursor: default;
+    font-size: 18px;
+    color: var(--gray);
+}
+
+.info-pagina {
+    font-size: 13px;
+    color: var(--gray);
+    margin-left: 15px;
+    font-weight: 600;
+}
+/* ============================================================ */
+/* FAVORITOS - BOTÃO NO HEADER                                  */
+/* ============================================================ */
+
+.favoritos-icon {
+    position: relative;
+    font-size: 22px;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.favoritos-icon:active {
+    transform: scale(0.9);
+}
+
+.favoritos-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #E13B55;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transform: translate(6px, -6px);
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.favoritos-badge.pulse {
+    animation: badgePulse 0.4s ease;
+}
+
+/* ============================================================ */
+/* FAVORITOS - BOTÃO NO CARD DO PRODUTO                         */
+/* ============================================================ */
+
+.btn-favorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+    z-index: 6;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-favorito:hover {
+    transform: scale(1.1);
+    color: #E13B55;
+}
+
+.btn-favorito:active {
+    transform: scale(0.9);
+}
+
+.btn-favorito.ativo {
+    color: #E13B55;
+    animation: pulseBadge 0.4s ease;
+}
+
+/* ============================================================ */
+/* FAVORITOS - MODAL                                            */
+/* ============================================================ */
+
+.favoritos-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+    padding: 20px;
+}
+
+.favoritos-modal {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    max-width: 520px;
+    width: 100%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-lg);
+    animation: slideUp 0.3s ease;
+}
+
+.favoritos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.favoritos-header h2 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favoritos-header h2 i {
+    color: #E13B55;
+}
+
+.favoritos-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--gray);
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.favoritos-close:hover {
+    color: var(--esgotado);
+}
+
+.favoritos-body {
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.favoritos-vazio {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--gray);
+}
+
+.favoritos-vazio i {
+    font-size: 56px;
+    color: var(--border);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.favoritos-vazio p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.favoritos-vazio small {
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.favorito-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--paper);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+
+.favorito-item:hover {
+    background: var(--gray-light);
+}
+
+.favorito-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    border: 1px solid var(--border);
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.favorito-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.favorito-nome {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.favorito-marca {
+    font-size: 11px;
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.favorito-preco {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.favorito-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.btn-fav-add-cart {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-fav-add-cart:hover {
+    background: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+.btn-fav-add-cart:active {
+    transform: scale(0.9);
+}
+
+.btn-fav-remover {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-fav-remover:hover {
+    background: #E13B55;
+    color: white;
+    border-color: #E13B55;
+}
+
+.favorito-esgotado {
+    background: var(--esgotado);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.favoritos-footer {
+    padding: 16px 24px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.btn-limpar-favoritos {
+    background: var(--gray-light);
+    color: var(--gray);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: var(--font-body);
+}
+
+.btn-limpar-favoritos:hover {
+    background: #E13B55;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .favorito-img {
+        width: 50px;
+        height: 50px;
+    }
+    .favorito-nome {
+        font-size: 12px;
+    }
+    .btn-fav-add-cart,
+    .btn-fav-remover {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+
+/* ============================================================ */
+/* CONTADOR DE VISUALIZAÇÕES                                    */
+/* ============================================================ */
+
+.produto-visualizacoes {
+    font-size: 11px;
+    color: var(--gray);
+    margin: 6px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+}
+
+.produto-visualizacoes strong {
+    color: #FF5722;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+/* Ajuste no mobile */
+@media (max-width: 480px) {
+    .produto-visualizacoes {
+        font-size: 9.5px;
+        margin: 4px 0 5px;
+    }
+    .produto-visualizacoes strong {
+        font-size: 10.5px;
+    }
+}
+
+/* ============================================================ */
+/* BOTÃO DE COMPARTILHAR NO WHATSAPP                            */
+/* ============================================================ */
+
+/* Botão redondo no canto da imagem (canto superior esquerdo) */
+.btn-compartilhar-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+    z-index: 6;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-compartilhar-img:hover {
+    transform: scale(1.1);
+    background: #25D366;
+    color: white;
+}
+
+.btn-compartilhar-img:active {
+    transform: scale(0.9);
+}
+
+/* Botão de texto (embaixo, junto dos outros) */
+.btn-compartilhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    background: transparent;
+    color: var(--gray);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-compartilhar:hover {
+    background: #25D366;
+    color: white;
+    border-color: #25D366;
+}
+
+.btn-compartilhar:active {
+    transform: scale(0.97);
+}
+
+.btn-compartilhar i {
+    font-size: 13px;
+}
+
+/* Ajuste mobile */
+@media (max-width: 480px) {
+    .btn-compartilhar-img {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .btn-compartilhar {
+        font-size: 10px;
+        padding: 6px;
+    }
+    .btn-compartilhar i {
+        font-size: 11px;
+    }
+}
