@@ -3,7 +3,7 @@
 // ========================================
 
 // ========================================
-// ESTRELAS DE AVALIAÇÃO (mantida caso use depois)
+// ESTRELAS DE AVALIAÇÃO
 // ========================================
 
 function renderizarEstrelas(avaliacao) {
@@ -13,18 +13,9 @@ function renderizarEstrelas(avaliacao) {
     const estrelasVazias = 5 - estrelasCheias - (meiaEstrela ? 1 : 0);
 
     let html = '';
-
-    for (let i = 0; i < estrelasCheias; i++) {
-        html += '<i class="fas fa-star"></i>';
-    }
-
-    if (meiaEstrela) {
-        html += '<i class="fas fa-star-half-alt"></i>';
-    }
-
-    for (let i = 0; i < estrelasVazias; i++) {
-        html += '<i class="fas fa-star vazia"></i>';
-    }
+    for (let i = 0; i < estrelasCheias; i++) html += '<i class="fas fa-star"></i>';
+    if (meiaEstrela) html += '<i class="fas fa-star-half-alt"></i>';
+    for (let i = 0; i < estrelasVazias; i++) html += '<i class="fas fa-star vazia"></i>';
 
     return html;
 }
@@ -133,9 +124,7 @@ function initScrollReveal() {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
+            if (entry.isIntersecting) entry.target.classList.add('visible');
         });
     }, {
         threshold: 0.1,
@@ -251,6 +240,7 @@ function verificarDisponibilidade(nome, marca, preco) {
 
 // ========================================
 // 📱 COMPARTILHAR PRODUTO NO WHATSAPP
+// ✅ AGORA COM LINK DIRETO PARA O PRODUTO
 // ========================================
 
 function compartilharProduto(produto) {
@@ -261,31 +251,20 @@ function compartilharProduto(produto) {
     const preco = produto.preco || '';
     const descricao = produto.descricao || '';
 
-    // Monta a URL do site (raiz)
-    const url = window.location.origin + window.location.pathname;
+    // 🔑 URL com ID do produto (?p=ID)
+    const url = `${window.location.origin}${window.location.pathname}?p=${encodeURIComponent(produto.id)}`;
 
-    // Monta a mensagem
     let mensagem = `Olha que achei na Drogaria Imediata da Chacrinha:\n\n`;
     mensagem += `✨ *${nome}*\n`;
-
-    if (marca) {
-        mensagem += `🏷️ Marca: ${marca}\n`;
-    }
-    if (preco) {
-        mensagem += `💰 Preço: ${preco}\n`;
-    }
-    if (descricao) {
-        mensagem += `📝 ${descricao}\n`;
-    }
-
+    if (marca) mensagem += `🏷️ Marca: ${marca}\n`;
+    if (preco) mensagem += `💰 Preço: ${preco}\n`;
+    if (descricao) mensagem += `📝 ${descricao}\n`;
     mensagem += `\n🛒 Confira aqui: ${url}`;
 
-    // Mostra toast
     if (typeof mostrarToast === 'function') {
         mostrarToast('📱 Abrindo WhatsApp...');
     }
 
-    // Registra no Analytics (se existir)
     if (typeof registrarEvento === 'function') {
         registrarEvento('share', {
             content_type: 'product',
@@ -294,7 +273,6 @@ function compartilharProduto(produto) {
         });
     }
 
-    // Abre WhatsApp via <a> (mais confiável em mobile)
     const link = document.createElement('a');
     link.href = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
     link.target = '_blank';
@@ -302,6 +280,100 @@ function compartilharProduto(produto) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+// ========================================
+// 🔗 ABRIR PRODUTO VIA LINK COMPARTILHADO (?p=ID)
+// ========================================
+
+function abrirProdutoPorLink() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('p');
+
+    if (!id) return;
+
+    console.log(`🔗 Link compartilhado detectado. Produto ID: ${id}`);
+
+    // Espera os produtos carregarem (tenta até 20x, 200ms cada = 4s)
+    const tentarAbrir = (tentativas = 0) => {
+        const produtos = (typeof produtosEnriquecidos !== 'undefined' && produtosEnriquecidos.length)
+            ? produtosEnriquecidos
+            : (typeof window.produtosEnriquecidos !== 'undefined' ? window.produtosEnriquecidos : []);
+
+        if (!produtos.length && tentativas < 20) {
+            return setTimeout(() => tentarAbrir(tentativas + 1), 200);
+        }
+
+        const produto = produtos.find(p => String(p.id) === String(id));
+
+        if (!produto) {
+            console.warn(`⚠️ Produto ${id} não encontrado`);
+            if (typeof mostrarToast === 'function') {
+                mostrarToast('⚠️ Produto não encontrado');
+            }
+            return;
+        }
+
+        console.log(`✅ Produto encontrado: ${produto.nome}`);
+
+        // 🔑 1. Força o filtro pela MARCA do produto pra garantir que ele apareça
+        // (a paginação só mostra 12 por vez, então sem filtrar pode não estar na tela)
+        const selectMarca = document.getElementById('marcaSelect');
+        if (selectMarca && produto.marca) {
+            const option = Array.from(selectMarca.options).find(
+                o => o.value.toLowerCase() === String(produto.marca).toLowerCase()
+            );
+
+            if (option) {
+                selectMarca.value = option.value;
+                selectMarca.dispatchEvent(new Event('change'));
+                console.log(`🎯 Filtro de marca aplicado: ${option.value}`);
+            } else {
+                // Fallback: filtra manualmente
+                if (typeof window.marcaAtual !== 'undefined') {
+                    window.marcaAtual = produto.marca.toLowerCase();
+                }
+                if (typeof aplicarFiltros === 'function') aplicarFiltros();
+            }
+        }
+
+        // 🔑 2. Aguarda renderização do filtro antes de rolar
+        setTimeout(() => {
+            const secao = document.getElementById('produtos');
+            if (secao && typeof scrollParaElemento === 'function') {
+                scrollParaElemento(secao);
+            } else if (secao) {
+                secao.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            // 🔑 3. Depois do scroll, destaca o card
+            setTimeout(() => {
+                const card = document.querySelector(`.produto-card[data-id="${String(id)}"]`);
+
+                if (card) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Efeito visual de destaque
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.boxShadow = '0 0 0 4px var(--secondary), 0 20px 48px rgba(201,162,74,0.6)';
+                    card.style.transform = 'scale(1.04)';
+
+                    setTimeout(() => {
+                        card.style.boxShadow = '';
+                        card.style.transform = '';
+                    }, 4000);
+
+                    if (typeof mostrarToast === 'function') {
+                        mostrarToast(`✨ ${produto.nome}`);
+                    }
+                } else {
+                    console.warn('⚠️ Card não encontrado no DOM após filtro');
+                }
+            }, 900);
+        }, 300);
+    };
+
+    tentarAbrir();
 }
 
 // ========================================
@@ -333,6 +405,7 @@ window.configurarMenuMobile = configurarMenuMobile;
 window.configurarBotaoTopo = configurarBotaoTopo;
 window.verificarDisponibilidade = verificarDisponibilidade;
 window.compartilharProduto = compartilharProduto;
+window.abrirProdutoPorLink = abrirProdutoPorLink;  // ← NOVA
 window.configurarSmoothScroll = configurarSmoothScroll;
 
 console.log('✅ Módulo UI carregado com sucesso!');

@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         produtosEnriquecidos = carregarTodosProdutos();
         console.log('📦 Total de produtos carregados:', produtosEnriquecidos.length);
 
-        // 👀 Inicializa o contador de visualizações
         if (typeof inicializarVisualizacoes === 'function') {
             inicializarVisualizacoes(produtosEnriquecidos);
         }
@@ -68,7 +67,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // ========================================
     // 4. CONFIGURA ACESSO ESCONDIDO AO ADMIN
-    //    (duplo clique no logo OU Ctrl+Shift+A)
     // ========================================
     try {
         configurarAcessoAdminEscondido();
@@ -128,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // ========================================
-    // 9. CORREÇÃO DE EMERGÊNCIA
+    // 9. CORREÇÃO DE EMERGÊNCIA (IDs determinísticos)
     // ========================================
     setTimeout(() => {
         try { forcarCorrecaoIds(); }
@@ -230,11 +228,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
+    // ========================================
+    // 18. 🔗 ABRIR PRODUTO VIA LINK COMPARTILHADO (?p=ID)
+    // ========================================
+    setTimeout(() => {
+        try {
+            if (typeof abrirProdutoPorLink === 'function') {
+                abrirProdutoPorLink();
+            }
+        } catch (e) {
+            console.warn('⚠️ Erro ao abrir produto por link:', e);
+        }
+    }, 1200);
+
     console.log('✅ Sistema carregado com sucesso!');
 });
 
 // ========================================
-// CORREÇÃO DE EMERGÊNCIA - IDs Duplicados
+// CORREÇÃO DE EMERGÊNCIA - IDs DUPLICADOS
+// ✅ IDs DETERMINÍSTICOS (não mudam ao recarregar)
 // ========================================
 
 function forcarCorrecaoIds() {
@@ -253,14 +265,25 @@ function forcarCorrecaoIds() {
     let corrigidos = 0;
 
     lista.forEach((produto, index) => {
-        if (!produto.id || produto.id === null || produto.id === undefined || idsVistos.has(produto.id)) {
-            produto.id = 100000 + index + (Date.now() % 1000);
+        const idAtual = produto.id;
+
+        // Verifica se é inválido OU duplicado
+        if (!idAtual || idsVistos.has(idAtual)) {
+            // 🔑 Gera ID determinístico (mesmo produto = mesmo ID sempre)
+            const base = String(produto.nome || '') + '|' + String(produto.marca || '') + '|' + index;
+            let hash = 0;
+            for (let i = 0; i < base.length; i++) {
+                hash = ((hash << 5) - hash) + base.charCodeAt(i);
+                hash |= 0;
+            }
+            produto.id = Math.abs(hash) + 100000;
             corrigidos++;
         }
+
         idsVistos.add(produto.id);
     });
 
-    console.log(`✅ ${corrigidos} IDs corrigidos`);
+    console.log(`✅ ${corrigidos} IDs corrigidos (determinísticos)`);
 
     if (typeof enriquecerProdutos === 'function') {
         produtosEnriquecidos = enriquecerProdutos(lista);

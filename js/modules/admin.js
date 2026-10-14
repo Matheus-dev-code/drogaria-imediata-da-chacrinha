@@ -11,6 +11,16 @@ const MAX_ATTEMPTS = 5;
 const LOCKOUT_TIME = 5 * 60 * 1000; // 5 minutos
 
 // ========================================
+// 🔑 SINCRONIZA window.isAdmin COM A VARIÁVEL LOCAL
+// ========================================
+
+Object.defineProperty(window, 'isAdmin', {
+    get: () => isAdmin,
+    set: (v) => { isAdmin = !!v; },
+    configurable: true
+});
+
+// ========================================
 // AUTENTICAÇÃO
 // ========================================
 
@@ -69,9 +79,7 @@ function autenticarAdmin(senha) {
             if (error.code === 'auth/wrong-password') {
                 if (adminLoginAttempts >= MAX_ATTEMPTS) {
                     mensagem = '🚫 Bloqueado por 5 minutos. Muitas tentativas.';
-                    setTimeout(() => {
-                        adminLoginAttempts = 0;
-                    }, LOCKOUT_TIME);
+                    setTimeout(() => { adminLoginAttempts = 0; }, LOCKOUT_TIME);
                 } else {
                     mensagem = `❌ Senha incorreta (${adminLoginAttempts}/${MAX_ATTEMPTS})`;
                 }
@@ -180,13 +188,7 @@ function removerBarraAdmin() {
 // ACESSO ESCONDIDO AO ADMIN
 // ========================================
 
-/**
- * Configura formas escondidas de acessar o painel admin:
- * 1. Duplo clique no logo
- * 2. Ctrl + Shift + A (atalho de teclado)
- */
 function configurarAcessoAdminEscondido() {
-    // 1. Duplo clique no logo
     const logo = document.querySelector('.logo');
     if (logo) {
         logo.addEventListener('dblclick', function (e) {
@@ -203,7 +205,6 @@ function configurarAcessoAdminEscondido() {
         });
     }
 
-    // 2. Atalho de teclado: Ctrl + Shift + A
     document.addEventListener('keydown', function (e) {
         if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
             e.preventDefault();
@@ -594,7 +595,6 @@ function observarCards() {
 // EXPORTA FUNÇÕES GLOBAIS
 // ========================================
 
-window.isAdmin = isAdmin;
 window.verificarAdmin = verificarAdmin;
 window.autenticarAdmin = autenticarAdmin;
 window.logoutAdmin = logoutAdmin;
