@@ -1,0 +1,346 @@
+/* ============================================================
+   CARRINHO.CSS
+   ------------------------------------------------------------
+   Modal do carrinho, barra de progresso do frete grátis e
+   itens adicionados.
+   ============================================================ */
+
+
+/* ============================================================
+   01. OVERLAY E MODAL
+   ============================================================ */
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+.cart-overlay.open {
+    display: flex;
+}
+
+.cart-modal {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    max-width: 520px;
+    width: 95%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-lg);
+    animation: slideUp 0.3s ease;
+}
+
+
+/* ============================================================
+   02. CABEÇALHO DO CARRINHO
+   ============================================================ */
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.cart-header h2 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-header h2 i {
+    color: var(--secondary);
+}
+
+.cart-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--gray);
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+
+.cart-close:hover {
+    color: var(--esgotado);
+}
+
+
+/* ============================================================
+   03. CORPO DO CARRINHO
+   ============================================================ */
+
+.cart-body {
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+
+/* ----- Progresso do frete grátis ----- */
+
+.frete-progress {
+    background: var(--frete-bar-bg);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid #C8E6C9;
+    display: none;
+}
+
+.frete-progress.visible {
+    display: block;
+}
+
+.frete-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+
+.frete-info .frete-status {
+    color: var(--frete-bar);
+    font-size: 18px;
+}
+
+.frete-bar {
+    width: 100%;
+    height: 8px;
+    background: #C8E6C9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.frete-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #66BB6A, #43A047);
+    border-radius: 20px;
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    width: 0%;
+}
+
+
+/* ----- Estado vazio ----- */
+
+.cart-empty {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--gray);
+}
+
+.cart-empty i {
+    font-size: 56px;
+    color: var(--border);
+    margin-bottom: 16px;
+}
+
+.cart-empty p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-continuar-comprando {
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   04. ITENS DO CARRINHO
+   ============================================================ */
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--paper);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    transition: background 0.2s;
+}
+
+.cart-item:hover {
+    background: var(--gray-light);
+}
+
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info .nome {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cart-item-info .preco {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 2px;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-item-actions button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--ink);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-actions button:active {
+    transform: scale(0.9);
+}
+
+.cart-item-actions .qtd {
+    min-width: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cart-item-actions .btn-remover {
+    background: none;
+    border: none;
+    color: var(--esgotado);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s;
+}
+
+.cart-item-actions .btn-remover:active {
+    transform: scale(1.2);
+}
+
+
+/* ============================================================
+   05. RODAPÉ DO CARRINHO (TOTAL + AÇÕES)
+   ============================================================ */
+
+.cart-footer {
+    padding: 16px 24px 20px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding: 0 4px;
+}
+
+.cart-total span:last-child {
+    color: var(--primary);
+    font-family: var(--font-display);
+    font-size: 22px;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-esvaziar {
+    flex: 1;
+    padding: 12px;
+    background: var(--gray-light);
+    color: var(--gray);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-esvaziar:active {
+    transform: scale(0.97);
+}
+
+.btn-finalizar {
+    flex: 2;
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-finalizar:active {
+    transform: scale(0.97);
+    background: #128C7E;
+}

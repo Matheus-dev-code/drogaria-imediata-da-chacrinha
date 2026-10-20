@@ -1,0 +1,838 @@
+/* ============================================================
+   RESPONSIVE.CSS
+   ------------------------------------------------------------
+   Todas as media queries do site, agrupadas por breakpoint
+   e organizadas em ordem crescente (mobile-first).
+   ------------------------------------------------------------
+   Breakpoints:
+   - 480px   (mobile grande)
+   - 640px   (tablet pequeno)
+   - 768px   (tablet)
+   - 1024px  (desktop)
+   - 768px   (max — tablet pra baixo)
+   - 480px   (max — mobile)
+   - 360px   (max — mobile pequeno)
+   ============================================================ */
+
+
+/* ============================================================
+   01. @media (min-width: 480px)
+   ============================================================ */
+
+@media (min-width: 480px) {
+    .categorias-grid {
+        grid-template-columns: repeat(4, 1fr);   /* 4 colunas x 3 linhas = 12 itens */
+        gap: 12px;
+    }
+}
+
+
+/* ============================================================
+   02. @media (min-width: 640px)
+   ============================================================ */
+
+@media (min-width: 640px) {
+    /* ----- Carrossel de Promoções ----- */
+    .promocoes-viewport {
+        aspect-ratio: 16 / 9;
+        max-height: 440px;
+    }
+
+    .promocao-slide-titulo {
+        font-size: 40px;
+    }
+
+    .promocao-slide-subtitulo {
+        font-size: 16px;
+    }
+
+    .promocao-slide-overlay {
+        padding: 40px 44px;
+    }
+
+    /* ----- Carrossel de Marcas ----- */
+    .banners-viewport {
+        aspect-ratio: 16 / 9;
+        max-height: 440px;
+    }
+
+    .banner-slide-titulo {
+        font-size: 40px;
+    }
+
+    .banner-slide-subtitulo {
+        font-size: 16px;
+    }
+
+    .banner-slide-overlay {
+        padding: 40px 44px;
+    }
+}
+
+
+/* ============================================================
+   03. @media (min-width: 768px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+    /* ----- Layout base ----- */
+    .container {
+        padding: 0 30px;
+    }
+
+    header .container {
+        padding: 15px 30px;
+    }
+
+    /* ----- Logo ----- */
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ----- Nav desktop ----- */
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        gap: 28px;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    /* ----- Carrossel de Promoções ----- */
+    .promocoes {
+        padding: 50px 0 40px;
+    }
+
+    .promocoes-carrossel {
+        gap: 20px;
+    }
+
+    .promocoes-nav {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        font-size: 18px;
+    }
+
+    .promocao-slide-titulo {
+        font-size: 48px;
+    }
+
+    .promocao-slide-subtitulo {
+        font-size: 18px;
+    }
+
+    .promocao-slide-cta {
+        font-size: 14px;
+        padding: 13px 30px;
+    }
+
+    /* ----- Carrossel de Marcas ----- */
+    .banners-marcas {
+        padding: 50px 0 40px;
+    }
+
+    .banners-carrossel {
+        gap: 20px;
+    }
+
+    .banners-nav {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        font-size: 18px;
+    }
+
+    .banner-slide-titulo {
+        font-size: 48px;
+    }
+
+    .banner-slide-subtitulo {
+        font-size: 18px;
+    }
+
+    .banner-slide-cta {
+        font-size: 14px;
+        padding: 13px 30px;
+    }
+
+    /* ----- Carrossel de Destaques ----- */
+    .destaques-carrossel {
+        gap: 16px;
+    }
+
+    .destaques-nav {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 17px;
+    }
+
+    .destaques-track .produto-card {
+        flex: 0 0 calc(33.333% - 10px);
+    }
+
+    /* ----- Grade de produtos ----- */
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        padding: 0 15px;
+    }
+
+    .produto-imagem {
+        height: 250px;
+    }
+
+    /* ----- Sobre ----- */
+    .info-contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ----- Footer ----- */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ----- Carrinho ----- */
+    .cart-modal {
+        max-width: 560px;
+    }
+
+    /* ----- Botão topo ----- */
+    .btn-topo {
+        bottom: 100px;
+        right: 30px;
+        width: 54px;
+        height: 54px;
+        font-size: 22px;
+    }
+
+    /* ----- Categorias: 6 colunas x 2 linhas ----- */
+    .categorias-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+    }
+
+    /* ----- Filtros rápidos: lado a lado ----- */
+    .filtros-rapidos {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search-wrapper {
+        flex: 2;
+        min-width: 200px;
+    }
+
+    .dropdown-wrapper {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .filtros-ativos {
+        flex: 0 0 auto;
+        min-width: 100px;
+    }
+}
+
+
+/* ============================================================
+   04. @media (min-width: 1024px)
+   ============================================================ */
+
+@media (min-width: 1024px) {
+    /* ----- Carrossel de Destaques ----- */
+    .destaques-track .produto-card {
+        flex: 0 0 calc(25% - 11px);
+    }
+
+    /* ----- Carrossel de Promoções ----- */
+    .promocoes-viewport {
+        max-height: 500px;
+    }
+
+    /* ----- Carrossel de Marcas ----- */
+    .banners-viewport {
+        max-height: 500px;
+    }
+
+    /* ----- Grade de produtos ----- */
+    .produtos-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+    }
+
+    .produto-nome {
+        font-size: 16px;
+    }
+
+    /* ----- Sobre ----- */
+    .sobre-texto {
+        padding: 44px 60px;
+    }
+}
+
+
+/* ============================================================
+   05. @media (max-width: 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+    /* ----- Paginação ----- */
+    .btn-pagina {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .info-pagina {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    /* ----- Card esgotado ----- */
+    .produto-card.esgotado::after {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    /* ----- Barra de admin ----- */
+    #adminBar {
+        font-size: 11px !important;
+        gap: 10px !important;
+        padding: 6px 12px !important;
+    }
+
+    /* ----- Carrinho ----- */
+    .cart-modal {
+        max-height: 90vh;
+        width: 98%;
+    }
+
+    .cart-item {
+        padding: 10px;
+    }
+
+    .cart-item-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cart-item-info .nome {
+        font-size: 12px;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+    }
+
+    .btn-esvaziar,
+    .btn-finalizar {
+        flex: none;
+    }
+}
+
+
+/* ============================================================
+   06. @media (max-width: 480px)
+   ============================================================ */
+
+@media (max-width: 480px) {
+    /* ----- Carrossel de Promoções ----- */
+    .promocoes {
+        padding: 30px 0 24px;
+    }
+
+    .promocoes-nav {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 13px;
+    }
+
+    .promocoes-carrossel {
+        gap: 6px;
+    }
+
+    .promocoes-viewport {
+        aspect-ratio: 3 / 4;
+        max-height: 460px;
+    }
+
+    .promocao-slide-titulo {
+        font-size: 24px;
+    }
+
+    .promocao-slide-subtitulo {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .promocao-slide-overlay {
+        padding: 20px 18px;
+    }
+
+    .promocao-slide-cta {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+
+    .promocoes h2 {
+        font-size: 24px;
+    }
+
+    .promocoes-subtitulo {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .promocoes-indicadores {
+        gap: 6px;
+        margin-top: 16px;
+    }
+
+    .promocao-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .promocao-dot.active {
+        width: 24px;
+    }
+
+    /* ----- Carrossel de Marcas ----- */
+    .banners-marcas {
+        padding: 30px 0 24px;
+    }
+
+    .banners-nav {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 13px;
+    }
+
+    .banners-carrossel {
+        gap: 6px;
+    }
+
+    .banners-viewport {
+        aspect-ratio: 3 / 4;
+        max-height: 460px;
+    }
+
+    .banner-slide-titulo {
+        font-size: 24px;
+    }
+
+    .banner-slide-subtitulo {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .banner-slide-overlay {
+        padding: 20px 18px;
+    }
+
+    .banner-slide-cta {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+
+    .banners-marcas h2 {
+        font-size: 24px;
+    }
+
+    .banners-subtitulo {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .banners-indicadores {
+        gap: 6px;
+        margin-top: 16px;
+    }
+
+    .banner-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .banner-dot.active {
+        width: 24px;
+    }
+}
+
+
+/* ============================================================
+   07. CORREÇÕES MOBILE — ANTI-SCROLL E AJUSTES GERAIS
+   ============================================================ */
+
+/* Impede o site de "dançar" para os lados */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Garante que imagens e vídeos nunca estourem */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Evita que qualquer elemento force largura maior que a tela */
+*, *::before, *::after {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* Palavras longas não estouram o container */
+.produto-nome,
+.produto-descricao,
+.cart-item-info .nome {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+/* ============================================================
+   08. AJUSTES PARA CELULAR (até 480px)
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+    /* ---- 2 colunas em produtos ---- */
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 6px;
+    }
+
+    /* Ajustes dos cards para caber em 2 colunas */
+    .produto-card {
+        border-radius: 12px;
+    }
+
+    .produto-imagem {
+        height: 140px;
+    }
+
+    .produto-info {
+        padding: 8px;
+    }
+
+    .produto-nome {
+        font-size: 11px;
+        line-height: 1.25;
+        -webkit-line-clamp: 2;
+        margin-bottom: 4px;
+    }
+
+    .produto-descricao {
+        font-size: 9px;
+        -webkit-line-clamp: 1;
+        margin-bottom: 6px;
+    }
+
+    .produto-tags {
+        gap: 3px;
+        margin-bottom: 5px;
+    }
+
+    .produto-categoria,
+    .produto-tipo {
+        font-size: 8px;
+        padding: 2px 6px;
+    }
+
+    .produto-avaliacao {
+        gap: 3px;
+        margin: 4px 0 6px;
+    }
+
+    .produto-avaliacao .estrelas {
+        font-size: 11px;
+    }
+
+    .produto-avaliacao .avaliacao-numero,
+    .produto-avaliacao .avaliacao-total {
+        font-size: 9px;
+    }
+
+    .produto-preco {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+
+    .produto-preco .preco-antigo {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    .btn-whatsapp,
+    .btn-add-cart {
+        padding: 8px 6px;
+        font-size: 10px;
+    }
+
+    .btn-whatsapp i,
+    .btn-add-cart i {
+        font-size: 11px;
+    }
+
+    .frete-gratis {
+        font-size: 8px;
+        padding: 2px 6px;
+    }
+
+    /* Desconto/produto em promoção */
+    .produto-card.promocao .badge-promocao {
+        font-size: 9px;
+        padding: 3px 10px 3px 12px;
+    }
+
+    /* Estado esgotado */
+    .produto-card.esgotado::after {
+        font-size: 11px;
+        padding: 4px 10px;
+        letter-spacing: 1px;
+    }
+
+    .esgotado-badge-img {
+        font-size: 8px;
+        padding: 3px 8px;
+    }
+
+    /* ---- Categorias: 3 colunas (padrão mobile) ---- */
+    .categorias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    .btn-categoria {
+        padding: 10px 4px;
+        font-size: 10px;
+    }
+
+    .btn-categoria i {
+        font-size: 18px;
+    }
+
+    .btn-categoria span {
+        font-size: 9.5px;
+    }
+
+    /* ---- Header: logo menor ---- */
+    header .container {
+        padding: 10px 12px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+
+    /* ---- Banner principal (caso exista) ---- */
+    .banner {
+        padding: 60px 0 80px;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    /* ---- Seção sobre ---- */
+    .sobre-texto {
+        padding: 24px 18px;
+    }
+
+    .sobre-texto h3 {
+        font-size: 18px;
+    }
+
+    .sobre-texto p {
+        font-size: 13px;
+    }
+
+    /* ---- Contato em coluna ---- */
+    .info-contato {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contato-item {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    /* ---- Carrinho: card do item ---- */
+    .cart-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .cart-item-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* ---- Botão WhatsApp flutuante: menor ---- */
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .btn-topo {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        bottom: 80px;
+        right: 16px;
+    }
+
+    /* ---- Toast: ocupar menos espaço ---- */
+    .toast-notification {
+        right: 12px;
+        left: 12px;
+        bottom: 76px;
+        max-width: none;
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    /* ---- Footer mais compacto ---- */
+    .footer-content {
+        gap: 20px;
+    }
+
+    .footer-col h3 {
+        font-size: 15px;
+    }
+
+    .footer-col p,
+    .footer-col ul li a {
+        font-size: 13px;
+    }
+}
+
+
+/* ============================================================
+   09. AJUSTES PARA CELULAR PEQUENO (até 360px)
+   ============================================================ */
+
+@media (max-width: 360px) {
+
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Em telas muito pequenas, 1 coluna fica melhor */
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content h2 {
+        font-size: 20px;
+    }
+
+    .banner-content p {
+        font-size: 12px;
+    }
+
+    .destaques-track .produto-card {
+        flex: 0 0 100%;
+    }
+
+    .produto-nome {
+        font-size: 14px;
+    }
+
+    .cart-item-actions button {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+}
+
+
+/* ============================================================
+   10. ORIENTAÇÃO PAISAGEM EM CELULAR
+   ============================================================ */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .banner {
+        padding: 50px 0 70px;
+    }
+
+    .banners-viewport,
+    .promocoes-viewport {
+        aspect-ratio: 16 / 9;
+        max-height: 320px;
+    }
+}
+
+
+/* ============================================================
+   11. TELAS TOUCH (dedos, sem hover)
+   ============================================================ */
+
+@media (hover: none) and (pointer: coarse) {
+
+    /* Botões maiores para dedo */
+    .btn-add-cart,
+    .btn-whatsapp {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    .btn-categoria {
+        padding: 16px 8px;
+    }
+
+    /* Remove efeitos que só funcionam com mouse */
+    .produto-card:hover {
+        transform: none;
+    }
+
+    .produto-card:hover .produto-imagem img {
+        transform: none;
+    }
+}
