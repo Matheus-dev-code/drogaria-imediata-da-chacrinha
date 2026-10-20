@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/carrossel.css">
     <link rel="stylesheet" href="css/carrinho.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -45,10 +44,6 @@
 
             <nav>
                 <ul id="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#promocoes">Ofertas</a></li>
-                    <li><a href="#banners">Marcas</a></li>
-                    <li><a href="#destaques">Destaques</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#categorias">Categorias</a></li>
                     <li><a href="#sobre">Sobre</a></li>
@@ -72,79 +67,6 @@
             </nav>
         </div>
     </header>
-
-    <section class="banner" id="home">
-        <div class="container">
-            <div class="banner-content">
-                <h2>Produtos de Beleza e Cuidados</h2>
-                <p>Salon Line, Salon Line Kids, Seda, L'Oréal Paris, Paixão e muito mais</p>
-                <a href="#produtos" class="btn-primary">Ver Produtos</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="promocoes" id="promocoes">
-        <div class="container">
-            <h2>🔥 Ofertas da Semana</h2>
-            <p class="promocoes-subtitulo">Aproveite antes que acabe!</p>
-
-            <div class="promocoes-carrossel">
-                <button class="promocoes-nav promocoes-prev" id="promocoesPrev" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="promocoes-viewport">
-                    <div class="promocoes-track" id="promocoesTrack"></div>
-                </div>
-                <button class="promocoes-nav promocoes-next" id="promocoesNext" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <div class="promocoes-indicadores" id="promocoesIndicadores"></div>
-        </div>
-    </section>
-
-    <section class="banners-marcas" id="banners">
-        <div class="container">
-            <h2>Marcas em Destaque</h2>
-            <p class="banners-subtitulo">Clique em uma marca para ver os produtos</p>
-
-            <div class="banners-carrossel">
-                <button class="banners-nav banners-prev" id="bannersPrev" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="banners-viewport">
-                    <div class="banners-track" id="bannersTrack"></div>
-                </div>
-                <button class="banners-nav banners-next" id="bannersNext" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <div class="banners-indicadores" id="bannersIndicadores"></div>
-        </div>
-    </section>
-
-    <section class="destaques" id="destaques">
-        <div class="container">
-            <h2>🌟 Em Destaque</h2>
-            <p class="destaques-subtitulo">Os produtos mais queridos pelos nossos clientes</p>
-
-            <div class="destaques-carrossel">
-                <button class="destaques-nav destaques-prev" id="destaquePrev" aria-label="Anterior">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="destaques-viewport">
-                    <div class="destaques-track" id="destaquesTrack"></div>
-                </div>
-                <button class="destaques-nav destaques-next" id="destaqueNext" aria-label="Próximo">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <div class="destaques-indicadores" id="destaquesIndicadores"></div>
-        </div>
-    </section>
 
     <section class="categorias" id="categorias">
         <div class="container">
@@ -333,10 +255,6 @@
                 <div class="footer-col">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#promocoes">Ofertas</a></li>
-                        <li><a href="#banners">Marcas</a></li>
-                        <li><a href="#destaques">Destaques</a></li>
                         <li><a href="#produtos">Produtos</a></li>
                         <li><a href="#categorias">Categorias</a></li>
                         <li><a href="#sobre">Sobre</a></li>
@@ -502,12 +420,6 @@
     <script src="js/data/produtos/herbissimo.js" defer></script>
 
     <!-- ============================================ -->
-    <!-- DADOS EXTRAS (banners + promoções) -->
-    <!-- ============================================ -->
-    <script src="js/data/banners.js" defer></script>
-    <script src="js/data/promocoes.js" defer></script>
-
-    <!-- ============================================ -->
     <!-- MÓDULOS -->
     <!-- ============================================ -->
     <script src="js/modules/utils.js" defer></script>
@@ -518,9 +430,6 @@
     <script src="js/modules/carrinho.js" defer></script>
     <script src="js/modules/filtros.js" defer></script>
     <script src="js/modules/ui.js" defer></script>
-    <script src="js/modules/destaques.js" defer></script>
-    <script src="js/modules/banners.js" defer></script>
-    <script src="js/modules/promocoes.js" defer></script>
     <script src="js/modules/admin.js" defer></script>
     <script src="js/modules/favoritos.js" defer></script>
     <script src="js/modules/header-search.js" defer></script>

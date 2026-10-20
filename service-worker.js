@@ -3,7 +3,7 @@
 // Otimizado para Netlify (paths relativos)
 // ========================================
 
-const CACHE_NAME = 'drogaria-v2';
+const CACHE_NAME = 'drogaria-v3';
 
 const ASSETS = [
     './',
@@ -14,7 +14,6 @@ const ASSETS = [
     './css/layout.css',
     './css/components.css',
     './css/sections.css',
-    './css/carrossel.css',
     './css/carrinho.css',
     './css/admin.css',
     './css/animations.css',
@@ -30,9 +29,6 @@ const ASSETS = [
     './js/modules/analytics.js',
     './js/modules/header-search.js',
     './js/modules/visualizacoes.js',
-    './js/modules/destaques.js',
-    './js/modules/banners.js',
-    './js/modules/promocoes.js',
     './js/modules/admin.js'
 ];
 
