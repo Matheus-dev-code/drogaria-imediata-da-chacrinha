@@ -1,0 +1,85 @@
+// ========================================
+// PRODUTOS Musa
+// ========================================
+
+const produtosMusa = [
+
+    // ========== Shampoos (5) ==========
+
+    {
+        id: "musa-shampoo-neutro-extrato-de-algodao-48l",
+        nome: "Shampoo Musa Neutro Extrato de Algodão 4,8L",
+        marca: "Musa",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Shampoo Neutro Extrato de Algodão Musa 4,8L",
+        preco: "R$ 41,99",
+        precoOriginal: "R$ 52,99",
+        desconto: 20,
+        imagem: "img/musa/shampoo-48-algodao.webp",
+        destaque: true,
+        esgotado: false,
+        promocao: true,
+    },
+    {
+        id: "musa-shampoo-neutro-48l",
+        nome: "Shampoo Musa Neutro 4,8L",
+        marca: "Musa",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Shampoo Neutro Musa 4,8L",
+        preco: "R$ 41,99",
+        precoOriginal: "R$ 52,99",
+        desconto: 20,
+        imagem: "img/musa/shampoo-48-neutro.webp",
+        destaque: true,
+        esgotado: false,
+        promocao: true,
+    },
+    {
+        id: "musa-shampoo-agua-de-coco-950ml",
+        nome: "Shampoo Musa Água de Coco 950ml",
+        marca: "Musa",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Shampoo Água de Coco Musa 950ml",
+        preco: "R$ 10,99",
+        precoOriginal: "R$ 13,49",
+        desconto: 18,
+        imagem: "img/musa/sh-agua-de-coco-950.webp",
+        destaque: true,
+        esgotado: false,
+        promocao: true,
+    },
+    {
+        id: "musa-shampoo-de-glicerina-e-queratina-950ml",
+        nome: "Shampoo Musa de Glicerina e Queratina 950ml",
+        marca: "Musa",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Shampoo de Glicerina e Queratina Musa 950ml",
+        preco: "R$ 10,99",
+        precoOriginal: "R$ 13,49",
+        desconto: 18,
+        imagem: "img/musa/sh-queratina-950.webp",
+        destaque: true,
+        esgotado: false,
+        promocao: true,
+    },
+    {
+        id: "musa-shampoo-de-jaborandi-950ml",
+        nome: "Shampoo Musa de Jaborandi 950ml",
+        marca: "Musa",
+        tipo: "Cabelo",
+        categoria: "Capilar",
+        descricao: "Shampoo de Jaborandi Musa 950ml",
+        preco: "R$ 10,99",
+        precoOriginal: "R$ 13,49",
+        desconto: 18,
+        imagem: "img/musa/sh-jaborandi-950.webp",
+        destaque: true,
+        esgotado: false,
+        promocao: true,
+    }
+
+];

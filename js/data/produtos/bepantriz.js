@@ -1,0 +1,34 @@
+// ========================================
+// PRODUTOS bepantriz
+// ========================================
+
+const produtosBepantriz = [
+
+    // ========== pomadas (2) ==========
+
+    {
+        id: "bepantriz-derma-creme-20g",
+        nome: "Bepantriz Derma Creme 20g",
+        marca: "Bepantriz",
+        tipo: "Corpo",
+        categoria: "Corporal",
+        descricao: "Creme derma Bepantriz 20g",
+        preco: "R$ 24,99",
+        imagem: "img/bepantriz/derma.webp",
+        destaque: false,
+        esgotado: false
+    },
+    {
+        id: "bepantriz-tattoo-creme-20g",
+        nome: "Bepantriz Tattoo Creme 20g",
+        marca: "Bepantriz",
+        tipo: "Corpo",
+        categoria: "Corporal",
+        descricao: "Creme Tatoo Bepantriz 20g",
+        preco: "R$ 29,99",
+        imagem: "img/bepantriz/tatoo.webp",
+        destaque: false,
+        esgotado: false
+    },
+
+];
